@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Energy Capital Stack Tool</title>
+<meta name="description" content="Match a clean energy project to every Illinois program that funds it. Illinois DCEO, Office of Energy and Business Utilization.">
+<style>
+  :root{
+    --ink:#0A2E4D; --ink2:#123C61; --green:#0D497F; --moss:#6BA3D6;
+    --gold:#D9A21B; --rust:#A8462E; --paper:#FFFFFF; --soft:#EFF4F9;
+    --body:#36495A; --muted:#6B7E90; --line:#D3E0EB;
+    --serif:"Franklin Gothic Medium","Franklin Gothic","Arial Narrow",Arial,sans-serif;
+    --sans:"Franklin Gothic Book","Franklin Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);color:var(--body);background:var(--paper);line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  a{color:var(--green)}
+
+  header{background:var(--ink);color:#fff;padding:52px 0 44px}
+  header .kick{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 12px}
+  header h1{font-family:var(--serif);font-size:clamp(30px,4.4vw,46px);line-height:1.1;margin:0 0 14px;font-weight:700}
+  header p{margin:0;max-width:860px;color:#C3D6E5;font-size:20.5px}
+  header .stamp{margin-top:26px;font-size:12px;color:#8AA3B8}
+  .herocta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:28px}
+  .cta-primary{font:inherit;font-size:17.5px;font-weight:700;color:var(--ink);background:var(--gold);
+               padding:14px 26px;border-radius:8px;text-decoration:none;display:inline-block}
+  .cta-primary:hover{background:#EBB53A}
+  .cta-secondary{font-size:16px;color:#BFD4E6;text-decoration:underline}
+  .cta-secondary:hover{color:#fff}
+
+  section{padding:52px 0;border-bottom:1px solid var(--line)}
+  section.dark{background:var(--ink);color:#fff;border-bottom:none}
+  h2{font-family:var(--serif);font-size:32px;color:var(--ink);margin:0 0 6px;font-weight:700}
+  section.dark h2{color:#fff}
+  .lede{margin:0 0 28px;color:var(--muted);font-size:18.5px;max-width:860px}
+  section.dark .lede{color:#A9C2D8}
+  .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 10px}
+
+  /* filters */
+  .filters{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:30px}
+  @media(max-width:760px){.filters{grid-template-columns:1fr}}
+  .flabel{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:0 0 10px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{font:inherit;font-size:16.5px;padding:10px 17px;border-radius:999px;border:1px solid var(--line);
+        background:var(--paper);color:var(--body);cursor:pointer;transition:.13s}
+  .chip:hover{border-color:var(--moss)}
+  .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+
+  .resultbar{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+             padding:14px 0 18px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .resultbar strong{font-family:var(--serif);font-size:26px;color:var(--ink)}
+  .reset{font-size:15.5px;background:none;border:none;color:var(--green);cursor:pointer;text-decoration:underline;font:inherit;padding:0}
+
+  /* program cards */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+  .card{border:1px solid var(--line);border-radius:8px;padding:18px 18px 16px;background:var(--paper);display:flex;flex-direction:column}
+  .card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:8px}
+  .card .agency{font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--green)}
+  .card .kind{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+              padding:3px 8px;border-radius:4px;background:var(--soft);color:var(--ink);white-space:nowrap}
+  .card h3{font-family:var(--serif);font-size:21px;margin:0 0 8px;line-height:1.25}
+  .card h3 a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--moss)}
+  .card h3 a:hover{color:var(--green);border-bottom-color:var(--gold)}
+  .card p{margin:0 0 12px;font-size:16.5px;color:var(--body)}
+  .card .tags{margin-top:auto;display:flex;flex-wrap:wrap;gap:5px}
+  .tag{font-size:13px;padding:4px 9px;border-radius:4px;background:var(--soft);color:var(--muted)}
+  .card.flag{border-color:var(--gold);background:#FBF4E6}
+  .card.flag .kind{background:#F3E0B4;color:var(--rust)}
+  .card .go{font-size:15px;font-weight:700;color:var(--green);text-decoration:none;margin-bottom:10px;display:inline-block}
+  .card .go:hover{color:var(--gold)}
+  .empty{padding:34px;border:1px dashed var(--line);border-radius:8px;text-align:center;color:var(--muted)}
+
+  /* web */
+  .webwrap{background:var(--ink);border-radius:10px;padding:8px}
+
+  /* web */
+  .webwrap{background:var(--ink);border-radius:10px;padding:8px}
+
+  #gate{position:fixed;inset:0;background:var(--ink);z-index:9999;display:flex;
+        align-items:center;justify-content:center;padding:24px}
+  #gate .box{max-width:460px;width:100%;background:#0F3A63;border:1px solid #2A6098;
+             border-radius:10px;padding:32px}
+  #gate p.kick{color:var(--gold);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+               font-weight:700;margin:0 0 10px}
+  #gate h2{font-family:var(--serif);color:#fff;font-size:24px;margin:0 0 10px}
+  #gate p.sub{color:#C3D6E5;font-size:16.5px;margin:0 0 20px;line-height:1.5}
+  #gate input{width:100%;box-sizing:border-box;font:inherit;font-size:17px;padding:13px 15px;
+              border-radius:8px;border:1px solid #2A6098;background:#0A2E4D;color:#fff}
+  #gate button{margin-top:12px;width:100%;font:inherit;font-size:17px;font-weight:700;
+               padding:12px 14px;border-radius:8px;border:0;background:var(--gold);
+               color:var(--ink);cursor:pointer}
+  #gate .err{color:#F0B4A0;font-size:14px;margin:12px 0 0;min-height:18px}
+  svg.web{width:100%;height:auto;display:block}
+  svg.web .spoke{stroke:#123C61;stroke-width:1.4}
+  svg.web .spoke.on{stroke:var(--gold);stroke-width:2.6}
+  svg.web .node circle{fill:var(--moss);stroke:var(--ink);stroke-width:3;cursor:pointer;transition:.13s}
+  svg.web .node:hover circle,svg.web .node:focus circle{fill:var(--gold);r:12}
+  svg.web .node text{fill:#E4EEF6;font-family:var(--sans);font-size:16px;font-weight:600;cursor:pointer}
+  svg.web .node .cnt{fill:#A9C2D8;font-size:13.5px;font-weight:400}
+  svg.web .hub{fill:var(--gold)}
+  svg.web .hubtext{fill:var(--ink);font-family:var(--sans);font-size:16px;font-weight:700;text-anchor:middle}
+  svg.web .hubsub{fill:var(--ink);font-size:12px;text-anchor:middle;opacity:.75}
+
+  /* start-here pathway diagram — deliberately different from the agency web:
+     rounded chip nodes instead of circles, two-tone (moss=who, gold=what) instead of uniform */
+  .webwrap.pathway{background:var(--soft);border:1px solid var(--line);margin:26px 0 30px}
+  svg.pw .pwhub{fill:var(--ink)}
+  svg.pw .pwhub + text.hubtext{fill:#fff}
+  svg.pw text.hubtext{fill:#fff;font-family:var(--serif);font-size:23px;font-weight:700;text-anchor:middle}
+  svg.pw text.hubsub{fill:#BFD4E6;font-size:12.5px;text-anchor:middle}
+  svg.pw .pwspoke{stroke:#C3D6E5;stroke-width:1.3;transition:.15s}
+  svg.pw .pwspoke.on{stroke:var(--gold);stroke-width:2.6}
+  svg.pw .pwnode rect{fill:#fff;stroke:var(--moss);stroke-width:1.4;cursor:pointer;transition:.13s}
+  svg.pw .pwnode.pwR rect{stroke:var(--gold)}
+  svg.pw .pwnode rect.sel{fill:var(--ink);stroke:var(--ink)}
+  svg.pw .pwnode.pwR rect.sel{fill:var(--gold);stroke:var(--gold)}
+  svg.pw .pwnode text{fill:var(--ink);font-family:var(--sans);font-size:16px;font-weight:600;cursor:pointer;pointer-events:none}
+  svg.pw .pwnode text.sel{fill:#fff}
+  svg.pw .pwnode.pwR text.sel{fill:var(--ink)}
+  svg.pw .pwnode:hover rect{stroke-width:2.4}
+
+  /* stacks */
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+  .tab{font:inherit;font-size:15.5px;padding:11px 19px;border-radius:6px;border:1px solid #123C61;
+       background:transparent;color:#C3D6E5;cursor:pointer}
+  .tab[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:700}
+  .stack{display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:start}
+  @media(max-width:860px){.stack{grid-template-columns:1fr}}
+  .scenario{background:var(--ink2);border-radius:8px;padding:22px}
+  .scenario .lbl{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--moss);font-weight:700}
+  .scenario .total{font-family:var(--serif);font-size:34px;color:#fff;margin:4px 0 18px;font-weight:700}
+  .scenario ul{margin:6px 0 18px;padding-left:18px;color:#BFD4E6;font-size:15px}
+  .scenario li{margin-bottom:5px}
+  .first{border:1px solid var(--gold);border-radius:6px;padding:14px;font-size:14.5px;color:#fff}
+  .bar{display:flex;height:56px;border-radius:6px;overflow:hidden;margin-bottom:6px}
+  .bar div{display:flex;align-items:center;justify-content:center;font-size:14.5px;font-weight:700;
+           border-right:2px solid var(--ink)}
+  .barnote{font-size:13px;color:#8AA3B8;font-style:italic;margin:0 0 20px}
+  .lrow{display:grid;grid-template-columns:22px 58px 1fr auto;gap:12px;align-items:start;
+        padding:13px 0;border-top:1px solid #2B4A3E}
+  .lrow .sw{width:14px;height:14px;border-radius:3px;margin-top:4px}
+  .lrow .pc{font-family:var(--serif);font-size:20.5px;font-weight:700;color:#fff}
+  .lrow .nm{font-size:16px;font-weight:700;color:#fff}
+  .lrow .nt{font-size:13.5px;color:#A9C2D8;margin-top:3px}
+  .lrow .ag{font-size:12.5px;font-weight:700;color:var(--moss);white-space:nowrap;padding-top:3px}
+  @media(max-width:640px){.lrow{grid-template-columns:22px 52px 1fr}.lrow .ag{display:none}}
+
+  /* four-layer funding framework */
+  .layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-bottom:26px}
+  .layer{border:1px solid var(--line);border-radius:8px;padding:20px;background:var(--soft)}
+  .ltag{width:30px;height:30px;border-radius:7px;color:#fff;font-family:var(--serif);font-weight:700;
+        font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .layer h3{margin:0 0 4px;font-family:var(--serif);font-size:19.5px;color:var(--ink)}
+  .layer .src{margin:0 0 10px;font-size:12.5px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:.04em}
+  .layer p:last-child{margin:0;font-size:15px;color:var(--body)}
+  .rules{background:var(--ink);border-radius:8px;padding:24px 26px}
+  .rulehead{margin:0 0 16px;font-family:var(--serif);font-size:20.5px;color:var(--gold);font-weight:700}
+  .rulegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .rulegrid strong{display:block;color:#fff;font-size:16px;margin-bottom:6px}
+  .rulegrid span{display:block;color:#C3D6E5;font-size:14.5px;line-height:1.5}
+
+  /* clocks */
+  .clocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .clock{background:var(--ink2);border:1px solid #123C61;border-radius:8px;padding:20px}
+  .clock .d{font-family:var(--serif);font-size:25.5px;font-weight:700;margin-bottom:4px}
+  .clock h4{margin:0 0 8px;font-size:15.5px;color:#fff}
+  .clock p{margin:0;font-size:14.5px;color:#C3D6E5}
+
+  footer{padding:34px 0 60px;font-size:13.5px;color:var(--muted)}
+  footer p{margin:0 0 8px;max-width:900px}
+  .skip{position:absolute;left:-9999px}
+  .skip:focus{left:12px;top:12px;background:#fff;padding:8px;z-index:9}
+</style>
+</head>
+<body>
+<a class="skip" href="#navigator">Skip to the navigator</a>
+
+<header>
+  <div class="wrap">
+    <p class="kick">Illinois DCEO · Office of Energy and Business Utilization</p>
+    <h1>Clean Energy Capital Stack Tool</h1>
+    <p>I have a project. Illinois' clean energy ecosystem spans many agencies, and more than one of them will pay for it.
+       Tell this page who I am and what I want to build, and it shows every door — and links me straight to it.</p>
+    <div class="herocta">
+      <a class="cta-primary" href="#navigator">Start here</a>
+      <a class="cta-secondary" href="#glance">or explore the full ecosystem</a>
+    </div>
+    <p class="stamp">Program links verified September 4, 2026. Nothing on this page is a commitment of funds.</p>
+  </div>
+</header>
+
+<section id="navigator">
+  <div class="wrap">
+    <p class="eyebrow">Start here</p>
+    <h2>Who I am, and what I want to build</h2>
+    <p class="lede">Select all that apply in either row. Leave a row empty to see everything in it.</p>
+
+    <div class="filters">
+      <div>
+        <p class="flabel">I am &mdash; select all that apply</p>
+        <div class="chips" id="audChips"></div>
+      </div>
+      <div>
+        <p class="flabel">I want to build &mdash; select all that apply</p>
+        <div class="chips" id="typeChips"></div>
+      </div>
+    </div>
+
+    <div class="webwrap pathway">
+      <svg class="web pw" viewBox="0 0 1049 640" role="img" aria-label="Diagram connecting client types to project types through the programs they match">
+        <line class="pwspoke pwL" data-id="cbo" x1="327" y1="55.0" x2="475" y2="320"/>
+<line class="pwspoke pwL" data-id="muni" x1="327" y1="161.0" x2="475" y2="320"/>
+<line class="pwspoke pwL" data-id="smallbiz" x1="327" y1="267.0" x2="475" y2="320"/>
+<line class="pwspoke pwL" data-id="contractor" x1="327" y1="373.0" x2="475" y2="320"/>
+<line class="pwspoke pwL" data-id="developer" x1="327" y1="479.0" x2="475" y2="320"/>
+<line class="pwspoke pwL" data-id="resident" x1="327" y1="585.0" x2="475" y2="320"/>
+        <line class="pwspoke pwR" data-id="ee" x1="475" y1="320" x2="623" y2="28.0"/>
+<line class="pwspoke pwR" data-id="elec" x1="475" y1="320" x2="623" y2="86.4"/>
+<line class="pwspoke pwR" data-id="solar" x1="475" y1="320" x2="623" y2="144.8"/>
+<line class="pwspoke pwR" data-id="csolar" x1="475" y1="320" x2="623" y2="203.2"/>
+<line class="pwspoke pwR" data-id="predev" x1="475" y1="320" x2="623" y2="261.6"/>
+<line class="pwspoke pwR" data-id="storage" x1="475" y1="320" x2="623" y2="320.0"/>
+<line class="pwspoke pwR" data-id="ev" x1="475" y1="320" x2="623" y2="378.4"/>
+<line class="pwspoke pwR" data-id="workforce" x1="475" y1="320" x2="623" y2="436.8"/>
+<line class="pwspoke pwR" data-id="newcon" x1="475" y1="320" x2="623" y2="495.2"/>
+<line class="pwspoke pwR" data-id="plan" x1="475" y1="320" x2="623" y2="553.6"/>
+<line class="pwspoke pwR" data-id="capital" x1="475" y1="320" x2="623" y2="612.0"/>
+        <circle class="hub pwhub" cx="475" cy="320" r="58"/>
+        <text class="hubtext" id="pwcount" x="475" y="314">83</text>
+        <text class="hubsub" id="pwcountlabel" x="475" y="334">programs match</text>
+        <g class="pwnode pwL" data-id="cbo" tabindex="0" role="button" aria-label="Community-based organization">
+    <rect x="40.0" y="36.0" width="287" height="38" rx="8"/>
+    <text x="309.0" y="60.5" text-anchor="end">Community-based organization</text>
+  </g>
+<g class="pwnode pwL" data-id="muni" tabindex="0" role="button" aria-label="Municipality">
+    <rect x="183.0" y="142.0" width="144" height="38" rx="8"/>
+    <text x="309.0" y="166.5" text-anchor="end">Municipality</text>
+  </g>
+<g class="pwnode pwL" data-id="smallbiz" tabindex="0" role="button" aria-label="Small business owner">
+    <rect x="111.0" y="248.0" width="216" height="38" rx="8"/>
+    <text x="309.0" y="272.5" text-anchor="end">Small business owner</text>
+  </g>
+<g class="pwnode pwL" data-id="contractor" tabindex="0" role="button" aria-label="Contractor / EEC">
+    <rect x="147.0" y="354.0" width="180" height="38" rx="8"/>
+    <text x="309.0" y="378.5" text-anchor="end">Contractor / EEC</text>
+  </g>
+<g class="pwnode pwL" data-id="developer" tabindex="0" role="button" aria-label="Developer">
+    <rect x="210.0" y="460.0" width="117" height="38" rx="8"/>
+    <text x="309.0" y="484.5" text-anchor="end">Developer</text>
+  </g>
+<g class="pwnode pwL" data-id="resident" tabindex="0" role="button" aria-label="Resident / household">
+    <rect x="111.0" y="566.0" width="216" height="38" rx="8"/>
+    <text x="309.0" y="590.5" text-anchor="end">Resident / household</text>
+  </g>
+        <g class="pwnode pwR" data-id="ee" tabindex="0" role="button" aria-label="Energy efficiency upgrades">
+    <rect x="623.0" y="9.0" width="314" height="38" rx="8"/>
+    <text x="641.0" y="33.5" text-anchor="start">EE — Energy efficiency upgrades</text>
+  </g>
+<g class="pwnode pwR" data-id="elec" tabindex="0" role="button" aria-label="Building electrification">
+    <rect x="623.0" y="67.4" width="296" height="38" rx="8"/>
+    <text x="641.0" y="91.9" text-anchor="start">EL — Building electrification</text>
+  </g>
+<g class="pwnode pwR" data-id="solar" tabindex="0" role="button" aria-label="Solar installation">
+    <rect x="623.0" y="125.8" width="243" height="38" rx="8"/>
+    <text x="641.0" y="150.3" text-anchor="start">PV — Solar installation</text>
+  </g>
+<g class="pwnode pwR" data-id="csolar" tabindex="0" role="button" aria-label="Community solar">
+    <rect x="623.0" y="184.2" width="216" height="38" rx="8"/>
+    <text x="641.0" y="208.7" text-anchor="start">CS — Community solar</text>
+  </g>
+<g class="pwnode pwR" data-id="predev" tabindex="0" role="button" aria-label="Predevelopment &amp; soft costs">
+    <rect x="623.0" y="242.6" width="323" height="38" rx="8"/>
+    <text x="641.0" y="267.1" text-anchor="start">PD — Predevelopment &amp; soft costs</text>
+  </g>
+<g class="pwnode pwR" data-id="storage" tabindex="0" role="button" aria-label="Storage &amp; resilience">
+    <rect x="623.0" y="301.0" width="261" height="38" rx="8"/>
+    <text x="641.0" y="325.5" text-anchor="start">ST — Storage &amp; resilience</text>
+  </g>
+<g class="pwnode pwR" data-id="ev" tabindex="0" role="button" aria-label="EV &amp; fleet electrification">
+    <rect x="623.0" y="359.4" width="314" height="38" rx="8"/>
+    <text x="641.0" y="383.9" text-anchor="start">EV — EV &amp; fleet electrification</text>
+  </g>
+<g class="pwnode pwR" data-id="workforce" tabindex="0" role="button" aria-label="Workforce &amp; contractor capacity">
+    <rect x="623.0" y="417.8" width="359" height="38" rx="8"/>
+    <text x="641.0" y="442.3" text-anchor="start">WF — Workforce &amp; contractor capacity</text>
+  </g>
+<g class="pwnode pwR" data-id="newcon" tabindex="0" role="button" aria-label="New construction &amp; code">
+    <rect x="623.0" y="476.2" width="287" height="38" rx="8"/>
+    <text x="641.0" y="500.7" text-anchor="start">NC — New construction &amp; code</text>
+  </g>
+<g class="pwnode pwR" data-id="plan" tabindex="0" role="button" aria-label="Planning &amp; organizational capacity">
+    <rect x="623.0" y="534.6" width="386" height="38" rx="8"/>
+    <text x="641.0" y="559.1" text-anchor="start">PL — Planning &amp; organizational capacity</text>
+  </g>
+<g class="pwnode pwR" data-id="capital" tabindex="0" role="button" aria-label="General capital &amp; construction">
+    <rect x="623.0" y="593.0" width="350" height="38" rx="8"/>
+    <text x="641.0" y="617.5" text-anchor="start">GC — General capital &amp; construction</text>
+  </g>
+      </svg>
+    </div>
+
+    <div class="resultbar">
+      <strong id="count"></strong>
+      <button class="reset" id="reset" type="button">Clear my selections</button>
+    </div>
+
+    <div class="grid" id="results"></div>
+  </div>
+</section>
+
+<section id="glance">
+  <div class="wrap">
+    <p class="eyebrow">The whole picture</p>
+    <h2>Network at a glance</h2>
+    <p class="lede">Illinois&rsquo; clean energy ecosystem spans many agencies &mdash; this is all of them in one picture. Different from the diagram above: that one follows your pathway, this one shows the whole map. Click any agency to pull every program it funds into the results above.</p>
+    <div class="webwrap">
+      <svg class="web" viewBox="0 0 1180 690" role="img" aria-label="Radial diagram of Illinois clean energy funding agencies">
+        <line class="spoke" data-agency="DCEO" x1="590" y1="340" x2="590.0" y2="88.0"/>
+<line class="spoke" data-agency="IPA" x1="590" y1="340" x2="732.7" y2="105.0"/>
+<line class="spoke" data-agency="IFA Climate Bank" x1="590" y1="340" x2="856.1" y2="153.8"/>
+<line class="spoke" data-agency="Illinois Commerce Commission" x1="590" y1="340" x2="943.6" y2="227.7"/>
+<line class="spoke" data-agency="ComEd" x1="590" y1="340" x2="983.3" y2="316.7"/>
+<line class="spoke" data-agency="Ameren Illinois" x1="590" y1="340" x2="969.9" y2="409.0"/>
+<line class="spoke" data-agency="Nicor Gas" x1="590" y1="340" x2="905.2" y2="491.9"/>
+<line class="spoke" data-agency="All ICC-regulated utilities" x1="590" y1="340" x2="797.9" y2="554.3"/>
+<line class="spoke" data-agency="IHDA" x1="590" y1="340" x2="662.6" y2="587.7"/>
+<line class="spoke" data-agency="IEPA" x1="590" y1="340" x2="517.4" y2="587.7"/>
+<line class="spoke" data-agency="IDOT" x1="590" y1="340" x2="382.1" y2="554.3"/>
+<line class="spoke" data-agency="IRS" x1="590" y1="340" x2="274.8" y2="491.9"/>
+<line class="spoke" data-agency="Federal (other)" x1="590" y1="340" x2="210.1" y2="409.0"/>
+<line class="spoke" data-agency="DCEO OET" x1="590" y1="340" x2="196.7" y2="316.7"/>
+<line class="spoke" data-agency="DCEO OEIT" x1="590" y1="340" x2="236.4" y2="227.7"/>
+<line class="spoke" data-agency="Illinois State Treasurer" x1="590" y1="340" x2="323.9" y2="153.8"/>
+<line class="spoke" data-agency="Private &amp; Philanthropic Funders" x1="590" y1="340" x2="447.3" y2="105.0"/>
+        <circle class="hub" cx="590" cy="340" r="62"/>
+        <text class="hubtext" x="590" y="336">Your client's</text>
+        <text class="hubtext" x="590" y="353">project</text>
+        <text class="hubsub" x="590" y="370">one of eleven types</text>
+        <g class="node" data-agency="DCEO" tabindex="0" role="button" aria-label="DCEO, 17 programs">
+    <circle cx="590.0" cy="88.0" r="9"/>
+    <text x="606.0" y="87.0" text-anchor="start">DCEO</text>
+    <text class="cnt" x="606.0" y="101.0" text-anchor="start">17 programs</text>
+  </g>
+<g class="node" data-agency="IPA" tabindex="0" role="button" aria-label="IPA, 6 programs">
+    <circle cx="732.7" cy="105.0" r="9"/>
+    <text x="748.7" y="104.0" text-anchor="start">IPA</text>
+    <text class="cnt" x="748.7" y="118.0" text-anchor="start">6 programs</text>
+  </g>
+<g class="node" data-agency="IFA Climate Bank" tabindex="0" role="button" aria-label="IFA Climate Bank, 20 programs">
+    <circle cx="856.1" cy="153.8" r="9"/>
+    <text x="872.1" y="152.8" text-anchor="start">IFA / Climate Bank</text>
+    <text class="cnt" x="872.1" y="166.8" text-anchor="start">20 programs</text>
+  </g>
+<g class="node" data-agency="Illinois Commerce Commission" tabindex="0" role="button" aria-label="Illinois Commerce Commission, 3 programs">
+    <circle cx="943.6" cy="227.7" r="9"/>
+    <text x="959.6" y="226.7" text-anchor="start">Illinois Commerce Comm.</text>
+    <text class="cnt" x="959.6" y="240.7" text-anchor="start">3 programs</text>
+  </g>
+<g class="node" data-agency="ComEd" tabindex="0" role="button" aria-label="ComEd, 1 programs">
+    <circle cx="983.3" cy="316.7" r="9"/>
+    <text x="999.3" y="315.7" text-anchor="start">ComEd</text>
+    <text class="cnt" x="999.3" y="329.7" text-anchor="start">1 program</text>
+  </g>
+<g class="node" data-agency="Ameren Illinois" tabindex="0" role="button" aria-label="Ameren Illinois, 1 programs">
+    <circle cx="969.9" cy="409.0" r="9"/>
+    <text x="985.9" y="408.0" text-anchor="start">Ameren Illinois</text>
+    <text class="cnt" x="985.9" y="422.0" text-anchor="start">1 program</text>
+  </g>
+<g class="node" data-agency="Nicor Gas" tabindex="0" role="button" aria-label="Nicor Gas, 2 programs">
+    <circle cx="905.2" cy="491.9" r="9"/>
+    <text x="921.2" y="490.9" text-anchor="start">Nicor Gas</text>
+    <text class="cnt" x="921.2" y="504.9" text-anchor="start">2 programs</text>
+  </g>
+<g class="node" data-agency="All ICC-regulated utilities" tabindex="0" role="button" aria-label="All ICC-regulated utilities, 1 programs">
+    <circle cx="797.9" cy="554.3" r="9"/>
+    <text x="813.9" y="553.3" text-anchor="start">Utilities — VPP</text>
+    <text class="cnt" x="813.9" y="567.3" text-anchor="start">1 program</text>
+  </g>
+<g class="node" data-agency="IHDA" tabindex="0" role="button" aria-label="IHDA, 2 programs">
+    <circle cx="662.6" cy="587.7" r="9"/>
+    <text x="678.6" y="586.7" text-anchor="start">IHDA</text>
+    <text class="cnt" x="678.6" y="600.7" text-anchor="start">2 programs</text>
+  </g>
+<g class="node" data-agency="IEPA" tabindex="0" role="button" aria-label="IEPA, 7 programs">
+    <circle cx="517.4" cy="587.7" r="9"/>
+    <text x="501.4" y="586.7" text-anchor="end">IEPA</text>
+    <text class="cnt" x="501.4" y="600.7" text-anchor="end">7 programs</text>
+  </g>
+<g class="node" data-agency="IDOT" tabindex="0" role="button" aria-label="IDOT, 2 programs">
+    <circle cx="382.1" cy="554.3" r="9"/>
+    <text x="366.1" y="553.3" text-anchor="end">IDOT</text>
+    <text class="cnt" x="366.1" y="567.3" text-anchor="end">2 programs</text>
+  </g>
+<g class="node" data-agency="IRS" tabindex="0" role="button" aria-label="IRS, 4 programs">
+    <circle cx="274.8" cy="491.9" r="9"/>
+    <text x="258.8" y="490.9" text-anchor="end">IRS</text>
+    <text class="cnt" x="258.8" y="504.9" text-anchor="end">4 programs</text>
+  </g>
+<g class="node" data-agency="Federal (other)" tabindex="0" role="button" aria-label="Federal (other), 5 programs">
+    <circle cx="210.1" cy="409.0" r="9"/>
+    <text x="194.1" y="408.0" text-anchor="end">Federal (other)</text>
+    <text class="cnt" x="194.1" y="422.0" text-anchor="end">5 programs</text>
+  </g>
+<g class="node" data-agency="DCEO OET" tabindex="0" role="button" aria-label="DCEO OET, 2 programs">
+    <circle cx="196.7" cy="316.7" r="9"/>
+    <text x="180.7" y="315.7" text-anchor="end">DCEO OET</text>
+    <text class="cnt" x="180.7" y="329.7" text-anchor="end">2 programs</text>
+  </g>
+<g class="node" data-agency="DCEO OEIT" tabindex="0" role="button" aria-label="DCEO OEIT, 3 programs">
+    <circle cx="236.4" cy="227.7" r="9"/>
+    <text x="220.4" y="226.7" text-anchor="end">DCEO OEIT</text>
+    <text class="cnt" x="220.4" y="240.7" text-anchor="end">3 programs</text>
+  </g>
+<g class="node" data-agency="Illinois State Treasurer" tabindex="0" role="button" aria-label="Illinois State Treasurer, 1 programs">
+    <circle cx="323.9" cy="153.8" r="9"/>
+    <text x="307.9" y="152.8" text-anchor="end">Illinois State Treasurer</text>
+    <text class="cnt" x="307.9" y="166.8" text-anchor="end">1 program</text>
+  </g>
+<g class="node" data-agency="Private &amp; Philanthropic Funders" tabindex="0" role="button" aria-label="Private &amp; Philanthropic Funders, 6 programs">
+    <circle cx="447.3" cy="105.0" r="9"/>
+    <text x="431.3" y="104.0" text-anchor="end">Private &amp; Philanthropic</text>
+    <text class="cnt" x="431.3" y="118.0" text-anchor="end">6 programs</text>
+  </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="howmoney">
+  <div class="wrap">
+    <p class="eyebrow">The framework</p>
+    <h2>Nothing is funded once. Everything is funded four ways.</h2>
+    <p class="lede">Every clean energy project can carry four kinds of funding at once. Knowing which four is what gets it built.</p>
+    <div class="layers">
+      <div class="layer">
+        <div class="ltag" style="background:#0D497F">1</div>
+        <h3>Grant</h3>
+        <p class="src">DCEO &middot; IFA federal awards &middot; USDA</p>
+        <p>Never repaid. Almost always pays for the part nobody else will touch: predevelopment, engineering, community engagement, staff time.</p>
+      </div>
+      <div class="layer">
+        <div class="ltag" style="background:#2E77B4">2</div>
+        <h3>Incentive &amp; rebate</h3>
+        <p class="src">IPA &middot; ComEd &middot; Ameren &middot; Nicor</p>
+        <p>Paid per unit of output or savings. Illinois Shines pays fifteen years of REC value up front. Utility rebates pay on installed measures.</p>
+      </div>
+      <div class="layer">
+        <div class="ltag" style="background:#5A7488">3</div>
+        <h3>Debt</h3>
+        <p class="src">IFA Climate Bank &middot; enrolled lenders &middot; ESPC</p>
+        <p>Repaid, but on terms nobody gets on the open market. SSBCI buys the rate to 2%. C-PACE moves repayment onto the tax bill.</p>
+      </div>
+      <div class="layer">
+        <div class="ltag" style="background:#D9A21B">4</div>
+        <h3>Tax</h3>
+        <p class="src">IRS &middot; client's CPA</p>
+        <p>30% of eligible cost under Section 48E, plus depreciation. Tax-exempt owners take it as cash through elective pay.</p>
+      </div>
+    </div>
+    <div class="rules">
+      <p class="rulehead">Three rules that decide whether the stack holds</p>
+      <div class="rulegrid">
+        <div><strong>Grant first, debt last.</strong><span>Grant and incentive dollars are what make the debt sizeable. Size the loan after you know the grants, never before.</span></div>
+        <div><strong>Two programs, one cost, one time.</strong><span>Layering is legal. Paying for the same invoice twice is not. Keep a cost-allocation line for every dollar.</span></div>
+        <div><strong>Tax-exempt does not mean no tax credit.</strong><span>Elective pay turns 48E into cash for churches, nonprofits and municipalities. This is the most missed line in the state.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="eyebrow">Deliverable for consultants</p>
+    <h2>How the money actually assembles</h2>
+    <p class="lede">Three real capital stacks. Same logic every time: grant first, incentive second, tax third, debt last, equity smallest.
+       Percentages are planning ratios for illustration, not quotes.</p>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div id="stack"></div>
+  </div>
+</section>
+
+<section class="dark" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Timing</p>
+    <h2>Three clocks are already running</h2>
+    <p class="lede">A consultant who knows these three dates is worth more than one who knows every program.</p>
+    <div class="clocks">
+      <div class="clock"><div class="d" style="color:#A8462E">Dec 31, 2027</div>
+        <h4>Federal solar credit</h4>
+        <p>The July 4, 2026 begin-construction deadline has passed. Any solar project starting now must be placed in service by this date to claim Section 48E at all. Projects that safe-harbored have until Dec 31, 2030.</p></div>
+      <div class="clock"><div class="d" style="color:#D9A21B">Dec 31, 2026</div>
+        <h4>Illinois EV rebate cycle</h4>
+        <p>Open now. $2,000 per eligible new or used EV, plus $2,000 more for low-income applicants. Vehicle price under $80,000, apply within 180 days of purchase.</p></div>
+      <div class="clock"><div class="d" style="color:#6FB894">2027 – 2030</div>
+        <h4>Storage is the long runway</h4>
+        <p>Standalone storage keeps its federal credit past the solar cliff, and CRGA commits Illinois to 3,000 MW by 2030 under 20-year contracts. This is where the next five years of work is.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>How to use this.</strong> Filter, then click the program name. Every link goes to the agency's own page,
+       not to a summary. If a program says it is not yet accepting applications, do not put it in a client's budget.</p>
+    <p>Layering rules are program-specific. Two programs may fund one project, but never the same invoice twice.
+       Confirm cost allocation in writing with each program officer before a client signs anything.</p>
+    <p>Illinois Department of Commerce and Economic Opportunity · Office of Energy and Business Utilization.
+       Verified September 4, 2026.</p>
+  </div>
+</footer>
+
+<script>
+
+var D = {"PROGRAMS":[{"id":"eef","agency":"DCEO","name":"Equitable Energy Future Grant (EEF)","kind":"Grant","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","v":"2026-09-04","detail":"$250K–$1M. Seed and predevelopment funding for Equity Eligible Contractors and equity-building projects.","funds":["predev","solar","ee","csolar","capital"],"serves":["cbo","smallbiz","contractor"]},{"id":"cses","agency":"DCEO","name":"Community Solar Energy Sovereignty Grant (CSES)","kind":"Grant","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","v":"2026-09-04","detail":"Up to $8.5M/yr. Predevelopment and development for community-owned solar. Municipalities and community organizations.","funds":["csolar","predev"],"serves":["cbo","muni"]},{"id":"incub","agency":"DCEO","name":"Clean Energy Contractor Incubator","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/ceja-contractor-programs.html","v":"carry","detail":"Business development, bonding and insurance support for small and equity eligible contractors.","funds":["workforce"],"serves":["contractor","smallbiz"]},{"id":"primes","agency":"DCEO","name":"Clean Energy Primes Accelerator","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/ceja-contractor-programs.html","v":"carry","detail":"Capital access and prime-contractor readiness for established equity eligible firms.","funds":["workforce"],"serves":["contractor","smallbiz"]},{"id":"hubs","agency":"DCEO","name":"Clean Jobs Workforce Hubs","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"2026-09-04","detail":"Regional training and placement. Note: CEJA workforce training funding opportunities are closed; DCEO says check back fall 2026.","funds":["workforce"],"serves":["cbo","contractor"]},{"id":"climworks","agency":"DCEO","name":"Climate Works Pre-Apprenticeship","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"2026-09-04","detail":"Pre-apprenticeship pipeline into building trades for clean energy work.","funds":["workforce"],"serves":["cbo"]},{"id":"navigators","agency":"DCEO","name":"Energy Transition Navigators","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"carry","detail":"Community outreach staff who connect residents and businesses to CEJA programs.","funds":["plan","workforce"],"serves":["cbo","muni"]},{"id":"etcg","agency":"DCEO","name":"Energy Transition Community Grants","kind":"Grant","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","v":"2026-09-04","detail":"For communities affected by plant or mine closure. Awards sized to property tax and job losses.","funds":["plan","predev","capital","newcon"],"serves":["muni","cbo"]},{"id":"ihwap","agency":"DCEO","name":"Illinois Home Weatherization Assistance Program","kind":"Direct install","url":"https://dceo.illinois.gov/communityservices/homeweatherization.html","v":"carry","detail":"Income-qualified weatherization and efficiency measures delivered through local agencies.","funds":["ee","elec"],"serves":["cbo","resident"]},{"id":"cejamap","agency":"DCEO","name":"CEJA Program Map","kind":"Tool","url":"https://dceo.illinois.gov/ceja/map.html","v":"carry","detail":"Live map of workforce hubs, contractor programs, EJ and R3 community layers.","funds":["plan"],"serves":["cbo","muni","smallbiz","contractor"]},{"id":"shines","agency":"IPA","name":"Illinois Shines (Adjustable Block)","kind":"Incentive","url":"https://illinoisshines.com/","v":"2026-09-04","detail":"Upfront lump-sum payment for 15 years of REC value. PY 2026-27 opened June 1, 2026 with a 1,000 MW initial allocation across Small DG, Large DG, Traditional Community Solar and CDCS.","funds":["solar","csolar"],"serves":["smallbiz","cbo","muni","contractor"]},{"id":"ilsfa","agency":"IPA","name":"Illinois Solar for All","kind":"Incentive","url":"https://www.illinoissfa.com/","v":"carry","detail":"No-upfront-cost solar for income-qualified households, nonprofits and public facilities in EJ communities.","funds":["solar","csolar"],"serves":["cbo","resident"]},{"id":"storage","agency":"IPA","name":"CRGA Energy Storage Procurement","kind":"Incentive","url":"https://ipa.illinois.gov/renewable-resources/energy-storage.html","v":"2026-09-04","detail":"20-year Indexed Storage Credit contracts. 3,000 MW target committed to commercial operation by Dec 31, 2030. First procurement August 2026.","funds":["storage"],"serves":["contractor","muni"]},{"id":"crga","agency":"IPA","name":"CRGA Implementation Hub","kind":"Policy","url":"https://ipa.illinois.gov/renewable-resources/energy-storage.html","v":"2026-09-04","detail":"Public Act 104-0458, signed Jan 8, 2026, effective June 1, 2026. Storage, virtual power plants, expanded efficiency, state integrated resource planning.","funds":["storage","ee","plan"],"serves":["muni","cbo","smallbiz","contractor"]},{"id":"cpace","agency":"IFA Climate Bank","name":"C-PACE Financing","kind":"Debt","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"Long-term financing repaid through a voluntary property assessment. Up to 25% of property value. Existing buildings and new construction. Not available to government-owned property.","funds":["ee","elec","solar","newcon","capital"],"serves":["smallbiz","cbo","developer"]},{"id":"ssbci","agency":"IFA Climate Bank","name":"Climate Bank Finance / SSBCI Loan Participation","kind":"Debt","url":"https://illinoisclimatebank.com/financing-programs/developers-contractors/state-small-business-credit-initiative-ssbci/","v":"2026-09-04","detail":"Loans $25K–$2M covering 25–50% of project cost. Interest bought down to 2% max, 1% for socially and economically disadvantaged and very small businesses. Applied through an enrolled lender, not directly.","funds":["ee","elec","solar","ev","storage","capital"],"serves":["smallbiz","contractor","developer"]},{"id":"cbhub","agency":"IFA Climate Bank","name":"Climate Bank Financing Directory","kind":"Tool","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"All Climate Bank programs sorted by who you are: residents, developers and contractors, local governments and nonprofits, municipal and cooperative utilities.","funds":["plan"],"serves":["cbo","muni","smallbiz","contractor","resident"]},{"id":"ifafed","agency":"IFA Climate Bank","name":"Federal Funding Programs (Grid Resilience, EE Revolving Loan Fund)","kind":"Grant / Debt","url":"https://www.il-fa.com/programs/cb/federal-funding","v":"2026-09-04","detail":"Includes the DOE Grid Resilience State formula allocation and the Energy Efficiency Revolving Loan Fund capitalization.","funds":["ee","storage","plan","capital"],"serves":["muni","cbo","developer"]},{"id":"iccdg","agency":"Illinois Commerce Commission","name":"DG / EE Measures / EV Installer Certification","kind":"Credential","url":"https://icc.illinois.gov/","v":"carry","detail":"Required before a contractor can install for others or touch utility incentive money. Rolling applications. EE Measures recertification due June 1 annually.","funds":["workforce"],"serves":["contractor","smallbiz"]},{"id":"eeup","agency":"Illinois Commerce Commission","name":"Equitable Energy Upgrade Program","kind":"Not yet live","url":"https://icc.illinois.gov/","v":"carry","detail":"Tariffed on-bill program. Still in rulemaking (Docket 25-0863). Delivered through utility tariffs, not directly by ICC. Do not build a capital stack on it yet.","funds":["ee","elec"],"serves":["resident","smallbiz"]},{"id":"comed","agency":"ComEd","name":"ComEd Energy Efficiency (Business & Residential)","kind":"Rebate","url":"https://www.comed.com/WaysToSave","v":"carry","detail":"Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026–2029 plan.","funds":["ee","elec"],"serves":["smallbiz","cbo","muni"]},{"id":"ameren","agency":"Ameren Illinois","name":"Ameren Illinois Energy Efficiency","kind":"Rebate","url":"https://www.amerenillinoissavings.com/","v":"carry","detail":"Standard and custom business incentives, retro-commissioning, income-qualified programs.","funds":["ee","elec"],"serves":["smallbiz","cbo","muni"]},{"id":"nicor","agency":"Nicor Gas","name":"Nicor Gas Energy Efficiency","kind":"Rebate","url":"https://www.nicorgas.com/","v":"carry","detail":"Gas efficiency rebates. CRGA allows Nicor, Peoples and North Shore to pursue increased energy reduction goals.","funds":["ee"],"serves":["smallbiz","cbo","muni"]},{"id":"vpp","agency":"All ICC-regulated utilities","name":"Virtual Power Plant Programs (CRGA)","kind":"Incentive","url":"https://ipa.illinois.gov/renewable-resources/energy-storage.html","v":"2026-09-04","detail":"New under CRGA. Pays households and businesses for smart thermostats, solar, small batteries and EVs dispatched at peak. Utilities filed program details June 1, 2026.","funds":["storage","ee","ev"],"serves":["smallbiz","cbo","muni","resident"]},{"id":"ihda","agency":"IHDA","name":"Multifamily Retrofit & Preservation Financing","kind":"Debt / Equity","url":"https://www.ihda.org/","v":"carry","detail":"Layered financing for affordable multifamily including energy retrofits and new all-electric construction.","funds":["ee","elec","newcon"],"serves":["cbo","developer"]},{"id":"evrebate","agency":"IEPA","name":"Electric Vehicle Rebate Program","kind":"Rebate","url":"https://epa.illinois.gov/topics/ceja/electric-vehicle-rebates.html","v":"2026-09-04","detail":"$2,000 per eligible new or used EV, plus $2,000 more for low-income applicants. Vehicle price under $80,000. Application cycle OPEN August 1 – December 31, 2026. Apply within 180 days of purchase.","funds":["ev"],"serves":["resident"]},{"id":"idot","agency":"IDOT","name":"EV Charging & Transportation Infrastructure","kind":"Grant","url":"https://idot.illinois.gov/","v":"carry","detail":"NEVI corridor charging and related transportation infrastructure grants.","funds":["ev"],"serves":["muni","smallbiz"]},{"id":"itc48e","agency":"IRS","name":"Section 48E Clean Electricity Investment Credit","kind":"Tax credit","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","v":"2026-09-04","detail":"30% base credit. The July 4, 2026 begin-construction deadline has passed. Projects that started by then have until Dec 31, 2030. Everything starting now must be PLACED IN SERVICE by Dec 31, 2027. Foreign entity sourcing rules apply.","funds":["solar","storage","capital"],"serves":["smallbiz","cbo","muni","developer"]},{"id":"electivepay","agency":"IRS","name":"Elective Pay (Direct Pay)","kind":"Tax credit","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","v":"carry","detail":"Lets nonprofits, churches, municipalities and other tax-exempt owners receive 48E as a cash payment. This is the single most under-used tool in the CBO and municipal stack.","funds":["solar","storage","ev","capital"],"serves":["cbo","muni"]},{"id":"storage48e","agency":"IRS","name":"48E for Standalone Storage","kind":"Tax credit","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","v":"2026-09-04","detail":"Battery storage not co-located with solar is NOT subject to the accelerated solar and wind deadlines. Its longer runway is why storage is the strongest 2027–2030 play.","funds":["storage"],"serves":["muni","smallbiz","developer"]},{"id":"resi25d","agency":"IRS","name":"Section 25D Residential Credit — TERMINATED","kind":"Expired","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","v":"2026-09-04","detail":"Ended December 31, 2025 with no step-down. Any client still budgeting a 30% homeowner credit has a hole in their pro forma.","funds":["solar"],"serves":["resident"]},{"id":"reap","agency":"USDA","name":"Rural Energy for America Program (REAP)","kind":"Grant / Loan guarantee","url":"https://www.rd.usda.gov/","v":"carry","detail":"Grants and loan guarantees for rural small businesses and agricultural producers doing efficiency or renewables.","funds":["ee","solar","elec"],"serves":["smallbiz"]},{"id":"dceogrants","agency":"DCEO","name":"DCEO Grant Opportunities — search all programs","kind":"Tool","url":"https://dceo.illinois.gov/aboutdceo/grant-opportunities.html","v":"2026-09-04","detail":"Every open DCEO NOFO, not just energy. Grocery initiative, community development, infrastructure, small business — these often cover the capital and construction lines that energy programs will not.","funds":["capital","predev","plan","newcon","ee"],"serves":["cbo","muni","smallbiz","contractor","developer"]},{"id":"oet","agency":"DCEO OET","name":"Office of Employment & Training — WIOA & regional workforce","kind":"Workforce","url":"https://dceo.illinois.gov/assistanceforindividuals/jobtraining.html","v":"2026-09-04","detail":"Regional Workforce Managers, WIOA-funded training dollars, Apprenticeship Illinois and Job Training Economic Development. This is how a client staffs the project once it is funded.","funds":["workforce"],"serves":["cbo","muni","smallbiz","contractor","developer"]},{"id":"worknet","agency":"DCEO OET","name":"Illinois workNet — local workforce board finder","kind":"Tool","url":"https://www.illinoisworknet.com/","v":"2026-09-04","detail":"Find the Local Workforce Innovation Area and American Job Center that serves the client's county. First call for hiring, training dollars and on-the-job training contracts.","funds":["workforce"],"serves":["cbo","muni","smallbiz","contractor"]},{"id":"oeit","agency":"DCEO OEIT","name":"Office of Entrepreneurship, Innovation & Technology — small business assistance","kind":"Technical assistance","url":"https://dceo.illinois.gov/businesshelp/smallbusinessassistance.html","v":"2026-09-04","detail":"Small Business Development Centers, Business Information Center, procurement and certification help. The office that gets a contractor bid-ready and a small business bankable.","funds":["workforce","capital"],"serves":["smallbiz","contractor","cbo"]},{"id":"advil","agency":"DCEO OEIT","name":"Advantage Illinois — low-interest loan programs","kind":"Loan","url":"https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html","v":"2026-09-04","detail":"Participation loans and credit enhancement for Illinois small businesses. Pairs with IFA SSBCI on the debt line of a capital stack.","funds":["capital","ee","solar","elec"],"serves":["smallbiz","contractor"]},{"id":"ilworks","agency":"DCEO OEIT","name":"Illinois Works — bid credit & contractor resources","kind":"Technical assistance","url":"https://dceo.illinois.gov/businesshelp/illinois-works-bid-credit-program.html","v":"2026-09-04","detail":"Bid credit program and apprenticeship resources for contractors on public works. Relevant to any project carrying prevailing wage or PLA requirements.","funds":["workforce"],"serves":["contractor","smallbiz"]},{"id":"eecbg","agency":"IEPA","name":"Energy Efficiency & Conservation Block Grant (EECBG)","kind":"Grant","url":"https://epa.illinois.gov/topics/energy/energy-efficiency/energy-efficiency-conservation-block-grant.html","v":"2026-09-04","detail":"DOE/IIJA money for municipal and county strategic energy plans, energy audits and publicly owned building upgrades. Awards ran $50K–$250K. Final round was awarded August 2025 — watch for reauthorization before you budget it.","funds":["plan","ee","predev","elec"],"serves":["muni"]},{"id":"iepaenergy","agency":"IEPA","name":"Office of Energy — codes training, assessments & trust funds","kind":"Technical assistance","url":"https://epa.illinois.gov/","v":"2026-09-04","detail":"Energy Code training and technical support, wastewater treatment plant energy assessments, and the Energy Efficiency Trust Fund for low-income and government facilities.","funds":["ee","newcon","plan"],"serves":["muni","contractor","cbo"]},{"id":"schoolbus","agency":"IEPA","name":"Electric School Bus & fleet programs","kind":"Grant","url":"https://epa.illinois.gov/","v":"2026-09-04","detail":"Replacement funding for diesel school buses and public fleet vehicles, prioritizing environmental justice areas.","funds":["ev"],"serves":["muni"]},{"id":"ifagrid","agency":"IFA Climate Bank","name":"GRID — grid resilience for municipal utilities & co-ops","kind":"Grant","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"DOE 40101(d) grid resilience grants distributed by the Climate Bank. Award range roughly $150,000 to $8,000,000. Built for small utilities and disadvantaged communities.","funds":["storage","capital","plan"],"serves":["muni"]},{"id":"ifaplanning","agency":"IFA Climate Bank","name":"Small Utility Clean Energy Planning Grant","kind":"Grant","url":"https://illinoisclimatebank.com/financing-programs/municipal-cooperative-utilities/clean-energy-planning/","v":"2026-09-04","detail":"CPRG-funded planning money for municipal and cooperative utilities: technical assessments, procurement strategy and PPA readiness. Rolling application plus competitive rounds.","funds":["plan","predev"],"serves":["muni"]},{"id":"ifastretch","agency":"IFA Climate Bank","name":"Stretch Energy Code adoption support","kind":"Grant","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"Helps municipalities adopt, implement and enforce the Illinois Stretch Energy Code — staff time, training and legal review.","funds":["newcon","plan"],"serves":["muni"]},{"id":"ifabridge","agency":"IFA Climate Bank","name":"Federal Tax Credit / REC Bridge Loan","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"Short-term financing that covers the gap between paying for a project and receiving the federal credit through elective pay, or the Illinois Shines REC payment.","funds":["solar","storage","ee","capital"],"serves":["muni","cbo","developer"]},{"id":"ifasovereignty","agency":"IFA Climate Bank","name":"Energy Sovereignty Loan","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"Low-cost debt supporting community ownership of clean energy assets rather than third-party ownership.","funds":["csolar","solar","capital"],"serves":["cbo","muni"]},{"id":"ifahubs","agency":"IFA Climate Bank","name":"Community Resilience Hubs & Community Charging","kind":"Grant / Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-04","detail":"Backup power and solar-plus-storage at community facilities, and publicly accessible EV charging in underserved areas.","funds":["storage","ev","capital"],"serves":["muni","cbo"]},{"id":"idotprog","agency":"IDOT","name":"NEVI, Carbon Reduction, CMAQ & Freight-Port Infrastructure","kind":"Grant","url":"https://idot.illinois.gov/","v":"2026-09-04","detail":"Four federal formula and competitive programs a village or county can use for corridor charging, fleet depots, congestion and air quality projects, and freight infrastructure.","funds":["ev","capital"],"serves":["muni","developer"]},{"id":"iccnetmeter","agency":"Illinois Commerce Commission","name":"Net metering & distributed generation rules","kind":"Tariff","url":"https://icc.illinois.gov/","v":"2026-09-04","detail":"Retail-rate net metering for systems up to 2 MW, plus the DG installer certification your contractor must hold. Sets what the solar actually earns on the bill.","funds":["solar","storage"],"serves":["muni","smallbiz","cbo","resident"]},{"id":"cbn","agency":"DCEO","name":"Clean Building Navigator & Concierge (CPRG)","kind":"Technical assistance","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","v":"2026-09-04","detail":"Outreach, intake, contractor coordination and project navigation for residents and small businesses pursuing electrification and efficiency upgrades.","funds":["ee","elec","plan"],"serves":["smallbiz","resident","cbo","muni"]},{"id":"ihdagrrp","agency":"IHDA","name":"Green Resilient Retrofit & Energy Efficiency Program","kind":"Grant / Loan","url":"https://www.ihda.org/","v":"2026-09-04","detail":"Retrofit and resilience financing for affordable multifamily housing — relevant when a municipality or CBO controls housing stock.","funds":["ee","elec","capital","newcon"],"serves":["muni","cbo","developer"]},{"id":"iac","agency":"ICCB","name":"Industrial Assessment Center — UIC","kind":"Technical assistance","url":"https://iac.uic.edu/","v":"2026-09-08","detail":"DOE-funded program pairing trained staff and students to conduct free energy and pollution assessments at mid-size industrial facilities. UIC is Illinois' center, one of 28 nationally.","funds":["ee","workforce"],"serves":["smallbiz","developer","contractor"]},{"id":"pab","agency":"IFA Climate Bank","name":"Private Activity Bonds","kind":"Loan","url":"https://www.il-fa.com/programs/private-activity-bonds","v":"2026-09-08","detail":"Tax-exempt financing for 501(c)(3) organizations and other conduit borrowers to finance or refinance capital expenditures, including clean energy assets.","funds":["capital","predev"],"serves":["cbo","muni","developer"]},{"id":"ggrf","agency":"US EPA","name":"Greenhouse Gas Reduction Fund (GGRF)","kind":"Grant","url":"https://www.epa.gov/greenhouse-gas-reduction-fund","v":"2026-09-08","detail":"Federal program funding clean energy and climate projects in low-income and disadvantaged communities. Solar for All Expansion and National Clean Investment Fund instruments are in litigation with funding paused — confirm current status before counting on this.","funds":["capital","solar","ee","csolar"],"serves":["cbo","muni"]},{"id":"eetf","agency":"IEPA","name":"Energy Efficiency Trust Fund Grant Program","kind":"Grant","url":"https://epa.illinois.gov/topics/energy/energy-efficiency/energy-efficiency-trust-fund-grant.html","v":"2026-09-08","detail":"Funds residential energy efficiency projects for public housing authorities, local governments, or nonprofit organizations.","funds":["ee"],"serves":["muni","cbo"]},{"id":"eeassess","agency":"IEPA","name":"Energy Efficiency Assessment Program","kind":"Grant","url":"https://epa.illinois.gov/topics/energy/energy-efficiency/energy-efficiency-assessment-program.html","v":"2026-09-08","detail":"Grant funding for public housing authorities, local governments, or nonprofit organizations to assess energy efficiency opportunities before committing to a project.","funds":["ee","predev","plan"],"serves":["muni","cbo"]},{"id":"revil","agency":"DCEO","name":"REV Illinois Act","kind":"Tax incentive","url":"https://dceo.illinois.gov/businesshelp/rev.html","v":"2026-09-08","detail":"Reimagining Energy and Vehicles in Illinois Act — a highly competitive incentive program for manufacturers of EVs, EV components, and renewable energy equipment locating or expanding in Illinois.","funds":["ev","capital","newcon"],"serves":["developer","smallbiz"]},{"id":"dotcfi","agency":"US DOT","name":"Charging & Fueling Infrastructure Grant","kind":"Grant","url":"https://www.transportation.gov/rural/grant-toolkit/charging-and-fueling-infrastructure-grant-program","v":"2026-09-08","detail":"Federal discretionary grant for publicly accessible EV charging and alternative fueling infrastructure, with a rural and community set-aside.","funds":["ev"],"serves":["muni","developer"]},{"id":"drivingcleaner","agency":"IEPA","name":"Driving a Cleaner Illinois","kind":"Grant","url":"https://epa.illinois.gov/topics/air-quality/driving-a-cleaner-illinois.html","v":"2026-09-08","detail":"Funded by the Volkswagen settlement and federal DERA dollars. Covers charging station infrastructure and other mobile-source electrification projects, including publicly accessible charging.","funds":["ev"],"serves":["muni","smallbiz","contractor"]},{"id":"returning","agency":"DCEO","name":"Returning Resident Clean Jobs Training Program","kind":"Grant","url":"https://dceo.illinois.gov/aboutdceo/grantopportunities/3361-2715.html","v":"2026-09-08","detail":"CEJA program delivering clean jobs training inside Illinois Department of Corrections facilities to individuals within 36 months of release, and post-release support into employment.","funds":["workforce"],"serves":["cbo"]},{"id":"eecportal","agency":"IPA","name":"Equity Eligible Person & Contractor Portal","kind":"Tool","url":"https://portal.illinoisabp.com/","v":"2026-09-08","detail":"Illinois Shines portal for Approved Vendors and their designees. Homeowners, businesses and contractors use it to confirm Equity Eligible status before applying.","funds":["solar","csolar","workforce"],"serves":["contractor","smallbiz","resident"]},{"id":"sba504","agency":"US Small Business Administration","name":"SBA 504 Loans","kind":"Loan","url":"https://www.sba.gov/funding-programs/loans/504-loans","v":"2026-09-08","detail":"Long-term, fixed-rate financing for major fixed assets — real estate, equipment — that promote business growth. Usable for clean energy retrofits bundled into a larger capital project.","funds":["capital"],"serves":["smallbiz"]},{"id":"iltreasurer","agency":"Illinois State Treasurer","name":"Charitable Trust Grant","kind":"Grant","url":"https://illinoistreasurer.gov/Office_of_the_Treasurer/Charitable_Trust/Charitable_Trust_Grant_Eligibility","v":"2026-09-08","detail":"General economic development funding for nonprofits. Not clean-energy specific, but usable for a CBO's broader capital campaign.","funds":["capital"],"serves":["cbo"]},{"id":"fleetelec","agency":"IFA Climate Bank","name":"Fleet Electrification Financing","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Climate Bank debt product for converting municipal, business or nonprofit vehicle fleets to electric.","funds":["ev"],"serves":["muni","smallbiz","developer"]},{"id":"leasetoown","agency":"IFA Climate Bank","name":"Standard Offer Lease-to-Own","kind":"Financing","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Lets a homeowner or small nonprofit access solar or efficiency upgrades with no upfront cost, paying down to ownership over time.","funds":["solar","ee"],"serves":["resident","cbo"]},{"id":"carbonfreeschools","agency":"IFA Climate Bank","name":"Carbon Free Schools","kind":"Grant / Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Financing and technical support for Illinois school districts pursuing solar, storage and efficiency upgrades.","funds":["ee","solar","capital"],"serves":["muni"]},{"id":"workingcapital","agency":"IFA Climate Bank","name":"Working Capital Loan","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Short-term operating capital for contractors and small businesses carrying a clean energy project through to payment.","funds":["capital"],"serves":["contractor","smallbiz"]},{"id":"ifabuildelec","agency":"IFA Climate Bank","name":"Building Electrification Financing","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Climate Bank debt product specifically for heat pump and all-electric conversion projects.","funds":["elec"],"serves":["muni","cbo","smallbiz"]},{"id":"contractorportal","agency":"IFA Climate Bank","name":"Contractor Portal","kind":"Tool","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Climate Bank's intake tool for contractors to access financing products and track applications.","funds":["workforce"],"serves":["contractor"]},{"id":"fourfj","agency":"IFA Climate Bank","name":"Federal Funds for Future Jobs (4FJ) Procurement","kind":"Technical assistance","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"IFA procurement and technical assistance pathway connecting contractors to federal clean energy job opportunities.","funds":["workforce"],"serves":["contractor"]},{"id":"brightneighborhood","agency":"IPA","name":"Bright Neighborhood Pilot","kind":"Grant / Pilot","url":"https://illinoisshines.com/","v":"2026-09-08","detail":"Illinois Shines pilot supporting community solar development targeted at specific equity investment eligible communities.","funds":["csolar","solar"],"serves":["cbo","resident"]},{"id":"doelpo","agency":"IFA Climate Bank","name":"DOE Loan Programs Office / SEFI Partnership","kind":"Loan","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Illinois Climate Bank is a designated State Energy Financing Institution, which gives Illinois projects access to DOE Loan Programs Office credit support on large clean energy deals.","funds":["capital"],"serves":["muni","developer"]},{"id":"enablingupgrades","agency":"IFA Climate Bank","name":"Enabling Upgrades for Solar","kind":"Grant","url":"https://illinoisclimatebank.com/financing-programs/","v":"2026-09-08","detail":"Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed — a common hidden cost that stalls a project.","funds":["solar","elec"],"serves":["resident","cbo","smallbiz"]},{"id":"solarpipeline","agency":"DCEO","name":"Solar Training Pipeline Program","kind":"Grant / Workforce","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"2026-09-08","detail":"Established under the Future Energy Jobs Act (FEJA), now continued through DCEO. Builds a pool of trained solar installers, with priority for foster care alumni and returning citizens. Feeds into Illinois Solar for All projects.","funds":["workforce"],"serves":["cbo","contractor"]},{"id":"craftapprentice","agency":"DCEO","name":"Craft Apprenticeship Program","kind":"Grant / Workforce","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"2026-09-08","detail":"FEJA-established program administered with IBEW to place solar and electrical trades training inside existing union apprenticeship programs statewide.","funds":["workforce"],"serves":["contractor"]},{"id":"multicultural","agency":"DCEO","name":"Multicultural Jobs Program","kind":"Grant / Workforce","url":"https://dceo.illinois.gov/ceja/workforce-training-programs.html","v":"2026-09-08","detail":"FEJA-established program funding diversity-focused community organizations to deliver clean energy job training, sales and business-expansion support.","funds":["workforce"],"serves":["cbo"]},{"id":"pepsico","agency":"PepsiCo (private)","name":"Juntos Crecemos Grant Program","kind":"Philanthropic","url":"https://helloalice.com/grants/pepsico-juntos-crecemos-grant-program/","v":"2026-09-08","detail":"$10,000 grants for woman-owned food and beverage small businesses nationwide. Not clean-energy specific — general small business capital.","funds":["capital"],"serves":["smallbiz"]},{"id":"nicorpillars","agency":"Nicor Gas","name":"Pillars of Giving","kind":"Philanthropic","url":"https://www.nicorgas.com/company/about-us/charitable-giving/pillars-of-giving.html","v":"2026-09-08","detail":"Nicor's charitable program supporting education, workforce and technical/vocational training aligned with its service territory.","funds":["capital"],"serves":["cbo"]},{"id":"footlocker","agency":"LISC / Foot Locker Foundation (private)","name":"Community Empowerment Program","kind":"Philanthropic","url":"https://www.lisc.org/our-initiatives/sports-recreation/foot-locker-foundation-community-empowerment-program/","v":"2026-09-08","detail":"Youth-focused community grants. Not clean-energy specific — relevant if a CBO's clean energy work is bundled with a youth or community facility.","funds":["capital"],"serves":["cbo"]},{"id":"midlandsb","agency":"Midland States Bank Foundation (private)","name":"Fall Awards","kind":"Philanthropic","url":"https://www.midlandsb.com/who-we-are/foundation","v":"2026-09-08","detail":"Grants for nonprofits and small businesses across education, workforce development, housing and economic development.","funds":["capital"],"serves":["smallbiz","cbo"]},{"id":"tmobilehometown","agency":"T-Mobile (private)","name":"Hometown Grants","kind":"Philanthropic","url":"https://www.t-mobile.com/brand/hometown-grants","v":"2026-09-08","detail":"Capital grants for small-town community development projects nationwide, open to local government and nonprofit applicants.","funds":["capital"],"serves":["muni","cbo"]},{"id":"forefrontmsi","agency":"Forefront (nonprofit)","name":"Mission Sustainability Initiative Grants","kind":"Philanthropic","url":"https://myforefront.org/programs-services/msi/msi-grants/","v":"2026-09-08","detail":"Capacity-building and strategic planning grants for Illinois nonprofits — useful for a CBO building the organizational capacity to run a clean energy program.","funds":["plan","capital"],"serves":["cbo"]},{"id":"walmartspark","agency":"Walmart (private)","name":"Spark Good Local Grants","kind":"Philanthropic","url":"https://walmart.org/how-we-give/program-guidelines/spark-good-local-grants-guidelines","v":"2026-09-08","detail":"Local cash grants from nearby Walmart stores and distribution centers for community, youth and education projects.","funds":["capital"],"serves":["cbo"]}],"PROJECT_TYPES":[{"id":"ee","code":"EE","name":"Energy efficiency upgrades","ex":"HVAC, lighting, controls, insulation, air sealing, roof and envelope"},{"id":"elec","code":"EL","name":"Building electrification","ex":"Heat pumps, heat pump water heaters, induction, panel and service upgrades"},{"id":"solar","code":"PV","name":"Solar installation","ex":"Rooftop, ground mount, parking canopy, solar paired with storage"},{"id":"csolar","code":"CS","name":"Community solar","ex":"Subscriber projects, community-owned and community-driven solar"},{"id":"predev","code":"PD","name":"Predevelopment & soft costs","ex":"Feasibility, engineering, legal, site control, interconnection, permitting, outreach"},{"id":"storage","code":"ST","name":"Storage & resilience","ex":"Batteries, backup power, resilience hubs, virtual power plant enrollment"},{"id":"ev","code":"EV","name":"EV & fleet electrification","ex":"Chargers, fleet conversion, school and transit buses, depot infrastructure"},{"id":"workforce","code":"WF","name":"Workforce & contractor capacity","ex":"Training, apprenticeship, bonding, insurance, certification, prime readiness"},{"id":"newcon","code":"NC","name":"New construction & code","ex":"All-electric new build, stretch energy code adoption, affordable housing"},{"id":"plan","code":"PL","name":"Planning & organizational capacity","ex":"Energy plans, benchmarking ordinances, staff capacity, community engagement"},{"id":"capital","code":"GC","name":"General capital & construction","ex":"Hard costs, equipment purchase, construction, building acquisition and improvement"}],"AUDIENCES":[{"id":"cbo","name":"Community-based organization"},{"id":"muni","name":"Municipality"},{"id":"smallbiz","name":"Small business owner"},{"id":"contractor","name":"Contractor / EEC"},{"id":"developer","name":"Developer"},{"id":"resident","name":"Resident / household"}],"STACKS":[{"id":"cbo","wf":[{"name":"CEJA Workforce Hub","note":"Recruit and place the install crew from the same community the array serves.","agency":"DCEO"},{"name":"Energy Transition Navigators","note":"Paid outreach staff to sign up income-qualified subscribers.","agency":"DCEO"},{"name":"Contractor Incubator + OEIT","note":"Get the community contractor bonded, insured and bid-ready before the RFP.","agency":"DCEO"}],"audience":"Community-Based Organization","project":"500 kW community solar — community center rooftop plus parking canopy","total":"$1,400,000","facts":["Nonprofit owner, no tax appetite","Subscribers are income-qualified households","18-month predevelopment runway"],"layers":[{"pct":15,"source":"Grant","program":"CSES Grant","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","agency":"DCEO","color":"0D497F","note":"Predevelopment and development. Also unlocks EEF if you partner with an Equity Eligible Contractor."},{"pct":30,"source":"Incentive","program":"Illinois Shines — CDCS category","url":"https://illinoisshines.com/community-driven-community-solar/","agency":"IPA","color":"4A8FC7","note":"Upfront lump sum for 15 years of REC value. Scored application, minimum 6 points to contract."},{"pct":25,"source":"Tax credit, taken as cash","program":"48E via Elective Pay","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","agency":"IRS","color":"E0A526","note":"A nonprofit gets the 30% credit as a direct payment. Most CBOs leave this on the table."},{"pct":25,"source":"Debt","program":"Climate Bank Finance / mission lender","url":"https://illinoisclimatebank.com/financing-programs/","agency":"IFA Climate Bank","color":"5A7488","note":"Rate bought down through an enrolled lender. Sized against subscriber revenue."},{"pct":5,"source":"Owner equity","program":"Capital campaign / reserves","agency":"Organization","color":"B6C9DA","note":"The smallest line and the hardest to raise. Start here, not last."}],"first":"First move: confirm elective pay eligibility before you size the debt. It changes every other number on the page."},{"id":"muni","audience":"Municipality","project":"Village hall and public works retrofit — heat pumps, LED, controls, 250 kW solar, 500 kWh storage","total":"$2,600,000","facts":["Tax-exempt owner, cannot use C-PACE","Bond capacity available but politically expensive","Facilities are 40+ years old"],"wf":[{"name":"Illinois workNet / OET","note":"Local workforce board funds on-the-job training for the village's own maintenance staff.","agency":"DCEO OET"},{"name":"Illinois Works bid credit","note":"Bid credit for apprentice hours on the public works contract.","agency":"DCEO OEIT"},{"name":"Primes Accelerator + Incubator","note":"Widens the bidder pool so the village gets more than two responses.","agency":"DCEO"}],"layers":[{"pct":10,"source":"Planning grant","program":"EECBG · Clean Energy Planning grants","url":"https://illinoisclimatebank.com/financing-programs/municipal-cooperative-utilities/clean-energy-planning/","agency":"IEPA / IFA","color":"0D497F","note":"Audits, energy plans, Stretch Code adoption. EECBG's last round was awarded Aug 2025 — confirm status."},{"pct":12,"source":"Rebate","program":"Utility efficiency incentives + free assessments","url":"https://www.comed.com/WaysToSave","agency":"ComEd / Ameren / Nicor","color":"4A8FC7","note":"Prescriptive plus custom. CRGA expands these budgets and triples the low-income minimum."},{"pct":22,"source":"Tax credit, taken as cash","program":"48E via Elective Pay — solar and storage","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","agency":"IRS","color":"E0A526","note":"Storage keeps its longer runway. Solar starting now must be in service by Dec 31, 2027."},{"pct":10,"source":"Incentive","program":"Illinois Shines — Small DG + retail net metering","url":"https://illinoisshines.com/","agency":"IPA / ICC","color":"9DBEDA","note":"Upfront REC payment. Public schools and EEC projects get prioritized capacity."},{"pct":36,"source":"Debt","program":"ESPC, lease-purchase, GRID, or bridge loan","url":"https://illinoisclimatebank.com/financing-programs/","agency":"IFA / market","color":"5A7488","note":"ESPC moves this off the capital budget. GRID is grant money if the village owns its utility."},{"pct":10,"source":"Capital budget","program":"General fund, bond, or ETCG","url":"https://dceo.illinois.gov/ceja/other-ceja-programs.html","agency":"Village / DCEO","color":"B6C9DA","note":"ETCG covers predevelopment AND capital if the community had a plant or mine closure."}],"crossnote":"CROSS-CHECK against slide 21 of Helpful CEJA Slides. Also on the table for a village, even though it is not in this stack:\n• IEPA Office of Energy — Energy Code training and technical support, wastewater treatment plant energy assessments, Energy Efficiency Trust Fund.\n• IFA Climate Bank — Energy Sovereignty Loan for community ownership, Community Resilience Hubs, Community Charging, C-PACE for private property inside the village, Enabling Upgrades for Solar, Carbon Free Schools.\n• Fleet and transportation — IEPA Electric School Bus and EV Rebate, Charging Incentive Program, and IDOT's NEVI, Carbon Reduction Program, CMAQ and Competitive Freight-Port Infrastructure. Add these the moment the scope touches vehicles.\n• Codes and construction — Building Energy Codes, Stretch Energy Codes, Capital Development Board stretch goals.\n• Housing stock — IHDA Green Resilient Retrofit and Energy Efficiency Program, DCEO Weatherization Assistance.\n• People — Energy Equity Portal, Energy Transition Navigators, Workforce Hubs, Returning Residents, Climate Works.\n• Grid and rates — ICC net metering, Multi-Year Integrated Grid Plans, Equitable Energy Upgrade Program (still in rulemaking).\nNon-energy capital for the same building often sits in a DCEO community development or infrastructure NOFO. Search the full DCEO grant catalog, not just the CEJA page.","first":"First move: check whether the village owns its utility. If it does, GRID and the Small Utility Clean Energy Planning Grant are built only for you."},{"id":"smallbiz","wf":[{"name":"SBDC / Business Information Center","note":"Free help sizing the loan package and the financial statements the lender wants.","agency":"DCEO OEIT"},{"name":"WIOA training dollars via OET","note":"Offsets the cost of retraining staff on the new equipment and controls.","agency":"DCEO OET"},{"name":"Contractor Incubator","note":"If the client is also the installer, this is the bonding and insurance line.","agency":"DCEO"}],"audience":"Small Business Owner","project":"18,000 sf light industrial building — HVAC, envelope, LED, 100 kW rooftop solar","total":"$640,000","facts":["Owner-occupied, taxable entity","Existing banking relationship","Wants payback under 7 years"],"layers":[{"pct":15,"source":"Rebate","program":"Utility custom and prescriptive incentives","url":"https://www.amerenillinoissavings.com/","agency":"ComEd / Ameren / Nicor","color":"0D497F","note":"Apply before you buy equipment. Pre-approval is required on custom measures."},{"pct":12,"source":"Incentive","program":"Illinois Shines — Small DG","url":"https://illinoisshines.com/","agency":"IPA","color":"4A8FC7","note":"Paid through an Approved Vendor. The contractor must hold ICC DG installer certification."},{"pct":25,"source":"Tax credit","program":"Section 48E","url":"https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview","agency":"IRS","color":"E0A526","note":"30% base. Must be placed in service by Dec 31, 2027 unless construction started by July 4, 2026."},{"pct":8,"source":"Depreciation","program":"MACRS / bonus depreciation","agency":"IRS","color":"9DBEDA","note":"Real cash value in year one. Your client's CPA, not the installer, sizes this line."},{"pct":30,"source":"Debt","program":"SSBCI Loan Participation or C-PACE","url":"https://illinoisclimatebank.com/financing-programs/developers-contractors/state-small-business-credit-initiative-ssbci/","agency":"IFA Climate Bank","color":"5A7488","note":"SSBCI buys the rate down to 2% max, 1% if the owner qualifies as SEDI or very small business."},{"pct":10,"source":"Owner equity","program":"Cash or existing line","agency":"Business","color":"B6C9DA","note":"Ten percent is the realistic floor once the rebates and credits are stacked."}],"first":"First move: SSBCI is applied for through the client's own bank, not through IFA. Enroll the lender before you scope the project."}]};
+var selAud = [], selType = [];
+
+function el(t, cls, txt){ var e=document.createElement(t); if(cls){e.className=cls;} if(txt!==null&&txt!==undefined){e.appendChild(document.createTextNode(txt));} return e; }
+function findBy(arr, id){ for(var i=0;i<arr.length;i++){ if(arr[i].id===id) return arr[i]; } return null; }
+function anyOf(arr, sel){ if(!sel || !sel.length) return true; for(var i=0;i<sel.length;i++){ if(has(arr, sel[i])) return true; } return false; }
+function labels(src, sel){
+  if(!sel || !sel.length) return null;
+  var out=[], i, o; for(i=0;i<sel.length;i++){ o=findBy(src, sel[i]); if(o) out.push(o.name.toLowerCase()); }
+  if(out.length===1) return out[0];
+  if(out.length===2) return out[0]+" or "+out[1];
+  return out.slice(0,-1).join(", ")+" or "+out[out.length-1];
+}
+function has(arr, v){ for(var i=0;i<arr.length;i++){ if(arr[i]===v) return true; } return false; }
+
+function toggleSel(key, id){
+  var cur = (key==="aud") ? selAud : selType, out = [], hit = false, k;
+  for(k=0;k<cur.length;k++){ if(cur[k]===id){ hit = true; } else { out.push(cur[k]); } }
+  if(!hit){ out.push(id); }
+  if(key==="aud"){ selAud = out; } else { selType = out; }
+  clearSpokes(); sync(); render();
+}
+
+function buildChips(host, items, key){
+  var box = document.getElementById(host);
+  for(var i=0;i<items.length;i++){
+    (function(it){
+      var b = el("button","chip",it.name);
+      b.type="button"; b.setAttribute("aria-pressed","false"); b.setAttribute("data-id", it.id);
+      b.onclick = function(){ toggleSel(key, it.id); };
+      box.appendChild(b);
+    })(items[i]);
+  }
+}
+
+function wirePathwayNodes(){
+  var nodes = document.querySelectorAll("svg.pw .pwnode");
+  for(var i=0;i<nodes.length;i++){
+    (function(n){
+      var key = n.classList.contains("pwL") ? "aud" : "type";
+      var id = n.getAttribute("data-id");
+      function go(){ toggleSel(key, id); }
+      n.onclick = go;
+      n.onkeydown = function(e){ if(e.keyCode===13 || e.keyCode===32){ e.preventDefault(); go(); } };
+    })(nodes[i]);
+  }
+}
+function sync(){
+  var a = document.querySelectorAll("#audChips .chip"), i;
+  for(i=0;i<a.length;i++){ a[i].setAttribute("aria-pressed", has(selAud, a[i].getAttribute("data-id")) ? "true":"false"); }
+  var t = document.querySelectorAll("#typeChips .chip");
+  for(i=0;i<t.length;i++){ t[i].setAttribute("aria-pressed", has(selType, t[i].getAttribute("data-id")) ? "true":"false"); }
+
+  var pn = document.querySelectorAll("svg.pw .pwnode"), on, id, key, isSel, rect, txt;
+  for(i=0;i<pn.length;i++){
+    on = pn[i]; id = on.getAttribute("data-id"); key = on.classList.contains("pwL") ? selAud : selType;
+    isSel = has(key, id);
+    rect = on.querySelector("rect"); txt = on.querySelector("text");
+    if(rect){ rect.setAttribute("class", isSel ? "sel" : ""); }
+    if(txt){ txt.setAttribute("class", isSel ? "sel" : ""); }
+  }
+  var ps = document.querySelectorAll("svg.pw .pwspoke");
+  for(i=0;i<ps.length;i++){
+    id = ps[i].getAttribute("data-id");
+    key = ps[i].classList.contains("pwL") ? selAud : selType;
+    ps[i].setAttribute("class", "pwspoke " + (ps[i].classList.contains("pwL")?"pwL":"pwR") + (has(key, id) ? " on" : ""));
+  }
+}
+function clearSpokes(){
+  var sp = document.querySelectorAll("svg.web .spoke");
+  for(var i=0;i<sp.length;i++){ sp[i].setAttribute("class","spoke"); }
+}
+
+function card(p){
+  var flag = (p.kind === "Not yet live" || p.kind === "Expired");
+  var c = el("div","card" + (flag ? " flag" : ""));
+  var top = el("div","top");
+  top.appendChild(el("span","agency",p.agency));
+  top.appendChild(el("span","kind",p.kind));
+  c.appendChild(top);
+  var h = el("h3");
+  var link = el("a",null,p.name);
+  link.href = p.url; link.target="_blank"; link.rel="noopener";
+  h.appendChild(link); c.appendChild(h);
+  c.appendChild(el("p",null,p.detail));
+  var go = el("a","go","Open the program page →");
+  go.href = p.url; go.target="_blank"; go.rel="noopener";
+  c.appendChild(go);
+  var tags = el("div","tags");
+  for(var i=0;i<p.funds.length;i++){
+    var pt = findBy(D.PROJECT_TYPES, p.funds[i]);
+    if(pt){ tags.appendChild(el("span","tag",pt.name)); }
+  }
+  c.appendChild(tags);
+  return c;
+}
+
+function paint(list, headline){
+  var out = document.getElementById("results");
+  out.innerHTML = "";
+  document.getElementById("count").innerHTML = "";
+  document.getElementById("count").appendChild(document.createTextNode(headline));
+  if(!list.length){
+    out.appendChild(el("div","empty","No program in this database matches that combination. Widen one filter — or treat it as a gap worth reporting."));
+    return;
+  }
+  for(var i=0;i<list.length;i++){ out.appendChild(card(list[i])); }
+}
+
+function render(){
+  var list = [], i;
+  for(i=0;i<D.PROGRAMS.length;i++){
+    var p = D.PROGRAMS[i];
+    if(anyOf(p.serves, selAud) && anyOf(p.funds, selType)){ list.push(p); }
+  }
+  var a = labels(D.AUDIENCES, selAud), t = labels(D.PROJECT_TYPES, selType);
+  var head = list.length + (list.length===1 ? " program" : " programs");
+  if(a && t){ head += " for " + a + " doing " + t; }
+  else if(a){ head += " for " + a; }
+  else if(t){ head += " for " + t; }
+  paint(list, head);
+  var pc = document.getElementById("pwcount"), pl = document.getElementById("pwcountlabel");
+  if(pc){ pc.textContent = list.length; }
+  if(pl){ pl.textContent = list.length===1 ? "program matches" : "programs match"; }
+}
+
+var GROUP_AGENCIES = {
+  "Private & Philanthropic Funders": ["PepsiCo (private)","LISC / Foot Locker Foundation (private)","Midland States Bank Foundation (private)","T-Mobile (private)","Forefront (nonprofit)","Walmart (private)"],
+  "Federal (other)": ["USDA","ICCB","US EPA","US DOT","US Small Business Administration"]
+};
+var nodesEls = document.querySelectorAll("svg.web .node");
+for(var ni=0; ni<nodesEls.length; ni++){
+  (function(n){
+    function go(){
+      var ag = n.getAttribute("data-agency"), i;
+      var raw = GROUP_AGENCIES[ag] || [ag];
+      selAud = []; selType = []; sync();
+      var list = [];
+      for(i=0;i<D.PROGRAMS.length;i++){ if(has(raw, D.PROGRAMS[i].agency)){ list.push(D.PROGRAMS[i]); } }
+      paint(list, list.length + (list.length===1?" program":" programs") + " from " + ag);
+      var sp = document.querySelectorAll("svg.web .spoke");
+      for(i=0;i<sp.length;i++){
+        sp[i].setAttribute("class", sp[i].getAttribute("data-agency") === ag ? "spoke on" : "spoke");
+      }
+      var target = document.getElementById("navigator");
+      if(target.scrollIntoView){ target.scrollIntoView(true); }
+    }
+    n.onclick = go;
+    n.onkeydown = function(e){ if(e.keyCode===13 || e.keyCode===32){ e.preventDefault(); go(); } };
+  })(nodesEls[ni]);
+}
+
+function drawStack(id){
+  var st = findBy(D.STACKS, id), i;
+  var host = document.getElementById("stack");
+  host.innerHTML = "";
+  var wrap = el("div","stack");
+
+  var sc = el("div","scenario");
+  sc.appendChild(el("p","lbl","Total project cost"));
+  sc.appendChild(el("div","total",st.total));
+  sc.appendChild(el("p","lbl","The project"));
+  var pr = el("p",null,st.project);
+  pr.style.color="#BFD4E6"; pr.style.fontSize="13.5px"; pr.style.margin="6px 0 16px";
+  sc.appendChild(pr);
+  sc.appendChild(el("p","lbl","The situation"));
+  var ul = el("ul");
+  for(i=0;i<st.facts.length;i++){ ul.appendChild(el("li",null,st.facts[i])); }
+  sc.appendChild(ul);
+  sc.appendChild(el("div","first",st.first));
+  wrap.appendChild(sc);
+
+  var right = el("div");
+  var bar = el("div","bar");
+  for(i=0;i<st.layers.length;i++){
+    var l = st.layers[i];
+    var d = el("div", null, l.pct < 8 ? "" : (l.pct + "%"));
+    var dark = (l.color==="D9A21B" || l.color==="B8C4BC" || l.color==="E3C97A");
+    d.style.width = l.pct + "%";
+    d.style.background = "#" + l.color;
+    d.style.color = dark ? "#0F2E22" : "#ffffff";
+    bar.appendChild(d);
+  }
+  right.appendChild(bar);
+  right.appendChild(el("p","barnote","100% of project cost, left to right"));
+
+  for(i=0;i<st.layers.length;i++){
+    var ly = st.layers[i];
+    var r = el("div","lrow");
+    var sw = el("div","sw"); sw.style.background = "#" + ly.color; r.appendChild(sw);
+    r.appendChild(el("div","pc", ly.pct + "%"));
+    var mid = el("div");
+    mid.appendChild(el("div","nm", ly.source + " — " + ly.program));
+    mid.appendChild(el("div","nt", ly.note));
+    r.appendChild(mid);
+    r.appendChild(el("div","ag", ly.agency));
+    right.appendChild(r);
+  }
+  wrap.appendChild(right);
+  host.appendChild(wrap);
+}
+
+var tabs = document.getElementById("tabs");
+for(var si=0; si<D.STACKS.length; si++){
+  (function(s, idx){
+    var b = el("button","tab",s.audience);
+    b.type="button"; b.setAttribute("role","tab");
+    b.setAttribute("aria-selected", idx===0 ? "true" : "false");
+    b.onclick = function(){
+      var all = document.querySelectorAll("#tabs .tab");
+      for(var k=0;k<all.length;k++){ all[k].setAttribute("aria-selected","false"); }
+      b.setAttribute("aria-selected","true");
+      drawStack(s.id);
+    };
+    tabs.appendChild(b);
+  })(D.STACKS[si], si);
+}
+
+document.getElementById("reset").onclick = function(){
+  selAud = []; selType = []; clearSpokes(); sync(); render();
+};
+
+buildChips("audChips", D.AUDIENCES, "aud");
+buildChips("typeChips", D.PROJECT_TYPES, "type");
+wirePathwayNodes();
+sync();
+render();
+drawStack(D.STACKS[0].id);
+</script>
+</body>
+</html>

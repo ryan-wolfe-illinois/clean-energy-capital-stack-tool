@@ -1,0 +1,70 @@
+{
+  "project_types": [
+    {
+      "id": "ee",
+      "code": "EE",
+      "name": "Energy efficiency upgrades",
+      "ex": "HVAC, lighting, controls, insulation, air sealing, roof and envelope"
+    },
+    {
+      "id": "elec",
+      "code": "EL",
+      "name": "Building electrification",
+      "ex": "Heat pumps, heat pump water heaters, induction, panel and service upgrades"
+    },
+    {
+      "id": "solar",
+      "code": "PV",
+      "name": "Solar installation",
+      "ex": "Rooftop, ground mount, parking canopy, solar paired with storage"
+    },
+    {
+      "id": "csolar",
+      "code": "CS",
+      "name": "Community solar",
+      "ex": "Subscriber projects, community-owned and community-driven solar"
+    },
+    {
+      "id": "predev",
+      "code": "PD",
+      "name": "Predevelopment & soft costs",
+      "ex": "Feasibility, engineering, legal, site control, interconnection, permitting, outreach"
+    },
+    {
+      "id": "storage",
+      "code": "ST",
+      "name": "Storage & resilience",
+      "ex": "Batteries, backup power, resilience hubs, virtual power plant enrollment"
+    },
+    {
+      "id": "ev",
+      "code": "EV",
+      "name": "EV & fleet electrification",
+      "ex": "Chargers, fleet conversion, school and transit buses, depot infrastructure"
+    },
+    {
+      "id": "workforce",
+      "code": "WF",
+      "name": "Workforce & contractor capacity",
+      "ex": "Training, apprenticeship, bonding, insurance, certification, prime readiness"
+    },
+    {
+      "id": "newcon",
+      "code": "NC",
+      "name": "New construction & code",
+      "ex": "All-electric new build, stretch energy code adoption, affordable housing"
+    },
+    {
+      "id": "plan",
+      "code": "PL",
+      "name": "Planning & organizational capacity",
+      "ex": "Energy plans, benchmarking ordinances, staff capacity, community engagement"
+    },
+    {
+      "id": "capital",
+      "code": "GC",
+      "name": "General capital & construction",
+      "ex": "Hard costs, equipment purchase, construction, building acquisition and improvement"
+    }
+  ]
+}

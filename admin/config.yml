@@ -1,0 +1,126 @@
+backend:
+  name: github
+  # REQUIRED — fill in before this works.
+  # Format: your-github-username-or-org/repo-name
+  repo: YOUR-ORG/clean-energy-capital-stack-tool
+  branch: main
+  # REQUIRED — the address of the small OAuth helper described in
+  # SETUP.md. Decap calls "<base_url>/auth" and "<base_url>/callback" to
+  # sign people in with GitHub. Leave this pointed at the placeholder
+  # until the Cloudflare Worker is deployed (step 4 in SETUP.md).
+  base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+
+# No image/file uploads in this tool, so no media_folder is needed.
+
+# Everything below this line defines the editing screen. Two collections
+# on purpose: PROGRAMS is the one that changes every year (links go stale,
+# programs close, new ones launch). SETTINGS is the one field you touch
+# during the annual pass to update the "verified" date. Project types,
+# audiences, and the three capital-stack scenarios are NOT exposed here —
+# they're structural (other things reference their ids), so a bad edit to
+# one of those would break the filters. Change those in the repo directly
+# if they ever genuinely need to change, which should be rare.
+
+collections:
+  - name: "programs"
+    label: "Funding Programs"
+    description: "Every program in the tool. Add one for a new program, edit one when a link or description changes, delete one when a program is permanently gone (use 'Not yet live' or 'Expired' under Status instead of deleting, if it might come back)."
+    files:
+      - name: "programs"
+        label: "All Programs"
+        file: "data/programs.json"
+        fields:
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            summary: "{{fields.agency}} — {{fields.name}}"
+            fields:
+              - label: "Internal ID"
+                name: "id"
+                widget: "string"
+                hint: "Lowercase, no spaces, must be unique (e.g. 'ihwap'). Only change this if you know a filter references it — safest to leave alone once set."
+              - label: "Agency"
+                name: "agency"
+                widget: "string"
+                hint: "Exactly as it should appear on the network diagram, e.g. 'DCEO', 'IFA Climate Bank', 'ComEd'. Reusing an existing agency name exactly (spelling and all) keeps that program grouped with the others from the same agency."
+              - label: "Program Name"
+                name: "name"
+                widget: "string"
+              - label: "Status"
+                name: "kind"
+                widget: "select"
+                options:
+                  - "Grant"
+                  - "Loan"
+                  - "Grant / Loan"
+                  - "Debt"
+                  - "Debt / Equity"
+                  - "Tax credit"
+                  - "Tax incentive"
+                  - "Rebate"
+                  - "Incentive"
+                  - "Tariff"
+                  - "Financing"
+                  - "Technical assistance"
+                  - "Direct install"
+                  - "Workforce"
+                  - "Credential"
+                  - "Tool"
+                  - "Policy"
+                  - "Philanthropic"
+                  - "Not yet live"
+                  - "Expired"
+                hint: "'Not yet live' and 'Expired' both still show in the tool, flagged, instead of disappearing — that's usually better than deleting."
+              - label: "Application Link"
+                name: "url"
+                widget: "string"
+                pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"]
+              - label: "Last Verified"
+                name: "v"
+                widget: "string"
+                pattern: ['^\d{4}-\d{2}-\d{2}$', "Use YYYY-MM-DD, e.g. 2026-09-04"]
+                hint: "The date you personally checked this link and description were still accurate."
+              - label: "Description"
+                name: "detail"
+                widget: "text"
+                hint: "One or two sentences. This is what shows on the program's card."
+              - label: "Funds These Project Types"
+                name: "funds"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Energy efficiency upgrades", value: "ee" }
+                  - { label: "Building electrification", value: "elec" }
+                  - { label: "Solar installation", value: "solar" }
+                  - { label: "Community solar", value: "csolar" }
+                  - { label: "Predevelopment & soft costs", value: "predev" }
+                  - { label: "Storage & resilience", value: "storage" }
+                  - { label: "EV & fleet electrification", value: "ev" }
+                  - { label: "Workforce & contractor capacity", value: "workforce" }
+                  - { label: "New construction & code", value: "newcon" }
+                  - { label: "Planning & organizational capacity", value: "plan" }
+                  - { label: "General capital & construction", value: "capital" }
+              - label: "Serves These Client Types"
+                name: "serves"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Community-based organization", value: "cbo" }
+                  - { label: "Municipality", value: "muni" }
+                  - { label: "Small business owner", value: "smallbiz" }
+                  - { label: "Contractor / EEC", value: "contractor" }
+                  - { label: "Developer", value: "developer" }
+                  - { label: "Resident / household", value: "resident" }
+
+  - name: "settings"
+    label: "Site Settings"
+    description: "The one field to touch during the annual review pass."
+    files:
+      - name: "settings"
+        label: "Verified Date"
+        file: "data/settings.json"
+        fields:
+          - label: "Programs Verified As Of"
+            name: "verified_date"
+            widget: "string"
+            hint: "Plain text, shown to visitors at the top and bottom of the page. Example: September 4, 2026"
