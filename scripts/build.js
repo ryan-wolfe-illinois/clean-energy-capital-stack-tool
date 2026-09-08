@@ -323,8 +323,8 @@ const html = `<!DOCTYPE html>
 <section id="navigator">
   <div class="wrap">
     <p class="eyebrow">Start here</p>
-    <h2>Who I am, and what I want to build</h2>
-    <p class="lede">Select all that apply in either row. Leave a row empty to see everything in it.</p>
+    <h2>I am, I want to build</h2>
+    <p class="lede">Select all that apply. Leave a row empty to see everything in it.</p>
 
     <div class="filters">
       <div>
@@ -335,6 +335,11 @@ const html = `<!DOCTYPE html>
         <p class="flabel">I want to build &mdash; select all that apply</p>
         <div class="chips" id="typeChips"></div>
       </div>
+    </div>
+
+    <div class="resultbar">
+      <strong id="count"></strong>
+      <button class="reset" id="reset" type="button">Clear my selections</button>
     </div>
 
     <div class="webwrap pathway">
@@ -349,11 +354,6 @@ const html = `<!DOCTYPE html>
       </svg>
     </div>
 
-    <div class="resultbar">
-      <strong id="count"></strong>
-      <button class="reset" id="reset" type="button">Clear my selections</button>
-    </div>
-
     <div class="grid" id="results"></div>
   </div>
 </section>
@@ -362,7 +362,7 @@ const html = `<!DOCTYPE html>
   <div class="wrap">
     <p class="eyebrow">The whole picture</p>
     <h2>Network at a glance</h2>
-    <p class="lede">Illinois&rsquo; clean energy ecosystem spans many agencies &mdash; this is all of them in one picture. Different from the diagram above: that one follows your pathway, this one shows the whole map. Click any agency to pull every program it funds into the results above.</p>
+    <p class="lede">Illinois&rsquo; clean energy ecosystem spans many agencies &mdash; this is all of them in one picture. Different from the diagram above: that one follows your pathway, this showed the entire ecosystem. Click any agency to pull every program it funds into the results above.</p>
     <div class="webwrap">
       <svg class="web" viewBox="0 0 1180 690" role="img" aria-label="Radial diagram of Illinois clean energy funding agencies">
         ${spokes}
@@ -577,7 +577,8 @@ function render(){
     if(anyOf(p.serves, selAud) && anyOf(p.funds, selType)){ list.push(p); }
   }
   var a = labels(D.AUDIENCES, selAud), t = labels(D.PROJECT_TYPES, selType);
-  var head = list.length + (list.length===1 ? " program" : " programs");
+  var head = (a || t) ? "Based on your selections, your project has access to " : "Your project has access to ";
+  head += list.length + (list.length===1 ? " program" : " programs");
   if(a && t){ head += " for " + a + " doing " + t; }
   else if(a){ head += " for " + a; }
   else if(t){ head += " for " + t; }
