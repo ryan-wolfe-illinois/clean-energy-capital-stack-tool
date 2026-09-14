@@ -7,7 +7,7 @@
       "kind": "Grant",
       "url": "https://dceo.illinois.gov/ceja/other-ceja-programs.html",
       "v": "2026-09-04",
-      "detail": "$250K–$1M. Seed and predevelopment funding for Equity Eligible Contractors and equity-building projects.",
+      "detail": "$250K\u2013$1M. Seed and predevelopment funding for Equity Eligible Contractors and equity-building projects.",
       "funds": [
         "predev",
         "solar",
@@ -15,13 +15,15 @@
         "csolar",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "smallbiz",
         "contractor"
       ]
-        },
+    },
     {
       "id": "cses",
       "agency": "DCEO",
@@ -34,12 +36,13 @@
         "csolar",
         "predev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni"
       ]
-    
     },
     {
       "id": "incub",
@@ -52,12 +55,14 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz"
       ]
-        },
+    },
     {
       "id": "primes",
       "agency": "DCEO",
@@ -69,12 +74,14 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz"
       ]
-       },
+    },
     {
       "id": "hubs",
       "agency": "DCEO",
@@ -86,12 +93,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "contractor"
       ]
-   
     },
     {
       "id": "climworks",
@@ -104,11 +112,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
-     },
+    },
     {
       "id": "navigators",
       "agency": "DCEO",
@@ -121,12 +131,14 @@
         "plan",
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni"
       ]
-       },
+    },
     {
       "id": "etcg",
       "agency": "DCEO",
@@ -141,12 +153,14 @@
         "capital",
         "newcon"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo"
       ]
-       },
+    },
     {
       "id": "ihwap",
       "agency": "DCEO",
@@ -159,12 +173,14 @@
         "ee",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "resident"
       ]
-        },
+    },
     {
       "id": "cejamap",
       "agency": "DCEO",
@@ -176,7 +192,9 @@
       "funds": [
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -196,7 +214,9 @@
         "solar",
         "csolar"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
@@ -216,12 +236,14 @@
         "solar",
         "csolar"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "resident"
       ]
-        },
+    },
     {
       "id": "storage",
       "agency": "IPA",
@@ -233,12 +255,14 @@
       "funds": [
         "storage"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "muni"
       ]
-      },
+    },
     {
       "id": "crga",
       "agency": "IPA",
@@ -252,14 +276,16 @@
         "ee",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo",
         "smallbiz",
         "contractor"
       ]
-       },
+    },
     {
       "id": "cpace",
       "agency": "IFA Climate Bank",
@@ -275,7 +301,9 @@
         "newcon",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
@@ -289,7 +317,7 @@
       "kind": "Debt",
       "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/state-small-business-credit-initiative-ssbci/",
       "v": "2026-09-04",
-      "detail": "Loans $25K–$2M covering 25–50% of project cost. Interest bought down to 2% max, 1% for socially and economically disadvantaged and very small businesses. Applied through an enrolled lender, not directly.",
+      "detail": "Loans $25K\u2013$2M covering 25\u201350% of project cost. Interest bought down to 2% max, 1% for socially and economically disadvantaged and very small businesses. Applied through an enrolled lender, not directly.",
       "funds": [
         "ee",
         "elec",
@@ -298,7 +326,9 @@
         "storage",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "contractor",
@@ -316,7 +346,9 @@
       "funds": [
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -324,7 +356,7 @@
         "contractor",
         "resident"
       ]
-      },
+    },
     {
       "id": "ifafed",
       "agency": "IFA Climate Bank",
@@ -339,13 +371,15 @@
         "plan",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-      },
+    },
     {
       "id": "iccdg",
       "agency": "Illinois Commerce Commission",
@@ -357,12 +391,14 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      },
+    },
     {
       "id": "eeup",
       "agency": "Illinois Commerce Commission",
@@ -375,7 +411,9 @@
         "ee",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "resident",
         "smallbiz"
@@ -388,18 +426,20 @@
       "kind": "Rebate",
       "url": "https://www.comed.com/WaysToSave",
       "v": "carry",
-      "detail": "Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026–2029 plan.",
+      "detail": "Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026\u20132029 plan.",
       "funds": [
         "ee",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-         },
+    },
     {
       "id": "ameren",
       "agency": "Ameren Illinois",
@@ -412,13 +452,15 @@
         "ee",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-         },
+    },
     {
       "id": "nicor",
       "agency": "Nicor Gas",
@@ -430,13 +472,15 @@
       "funds": [
         "ee"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-        },
+    },
     {
       "id": "vpp",
       "agency": "All ICC-regulated utilities",
@@ -450,14 +494,16 @@
         "ee",
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "resident"
       ]
-       },
+    },
     {
       "id": "ihda",
       "agency": "IHDA",
@@ -471,12 +517,14 @@
         "elec",
         "newcon"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "developer"
       ]
-         },
+    },
     {
       "id": "evrebate",
       "agency": "IEPA",
@@ -484,15 +532,17 @@
       "kind": "Rebate",
       "url": "https://epa.illinois.gov/topics/ceja/electric-vehicle-rebates.html",
       "v": "2026-09-04",
-      "detail": "$2,000 per eligible new or used EV, plus $2,000 more for low-income applicants. Vehicle price under $80,000. Application cycle OPEN August 1 – December 31, 2026. Apply within 180 days of purchase.",
+      "detail": "$2,000 per eligible new or used EV, plus $2,000 more for low-income applicants. Vehicle price under $80,000. Application cycle OPEN August 1 \u2013 December 31, 2026. Apply within 180 days of purchase.",
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "resident"
       ]
-        },
+    },
     {
       "id": "idot",
       "agency": "IDOT",
@@ -504,12 +554,14 @@
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "smallbiz"
       ]
-         },
+    },
     {
       "id": "itc48e",
       "agency": "IRS",
@@ -523,7 +575,9 @@
         "storage",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo",
@@ -545,12 +599,14 @@
         "ev",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni"
       ]
-        },
+    },
     {
       "id": "storage48e",
       "agency": "IRS",
@@ -558,21 +614,23 @@
       "kind": "Tax credit",
       "url": "https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview",
       "v": "2026-09-04",
-      "detail": "Battery storage not co-located with solar is NOT subject to the accelerated solar and wind deadlines. Its longer runway is why storage is the strongest 2027–2030 play.",
+      "detail": "Battery storage not co-located with solar is NOT subject to the accelerated solar and wind deadlines. Its longer runway is why storage is the strongest 2027\u20132030 play.",
       "funds": [
         "storage"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "smallbiz",
         "developer"
       ]
-        },
+    },
     {
       "id": "resi25d",
       "agency": "IRS",
-      "name": "Section 25D Residential Credit — TERMINATED",
+      "name": "Section 25D Residential Credit \u2014 TERMINATED",
       "kind": "Expired",
       "url": "https://www.irs.gov/credits-deductions/elective-pay-and-transferability-frequently-asked-questions-overview",
       "v": "2026-09-04",
@@ -580,11 +638,13 @@
       "funds": [
         "solar"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "resident"
       ]
-         },
+    },
     {
       "id": "reap",
       "agency": "USDA",
@@ -598,19 +658,21 @@
         "solar",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz"
       ]
-         },
+    },
     {
       "id": "dceogrants",
       "agency": "DCEO",
-      "name": "DCEO Grant Opportunities — search all programs",
+      "name": "DCEO Grant Opportunities \u2014 search all programs",
       "kind": "Tool",
       "url": "https://dceo.illinois.gov/aboutdceo/grant-opportunities.html",
       "v": "2026-09-04",
-      "detail": "Every open DCEO NOFO, not just energy. Grocery initiative, community development, infrastructure, small business — these often cover the capital and construction lines that energy programs will not.",
+      "detail": "Every open DCEO NOFO, not just energy. Grocery initiative, community development, infrastructure, small business \u2014 these often cover the capital and construction lines that energy programs will not.",
       "funds": [
         "capital",
         "predev",
@@ -618,7 +680,9 @@
         "newcon",
         "ee"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -626,11 +690,11 @@
         "contractor",
         "developer"
       ]
-        },
+    },
     {
       "id": "oet",
       "agency": "DCEO OET",
-      "name": "Office of Employment & Training — WIOA & regional workforce",
+      "name": "Office of Employment & Training \u2014 WIOA & regional workforce",
       "kind": "Workforce",
       "url": "https://dceo.illinois.gov/assistanceforindividuals/jobtraining.html",
       "v": "2026-09-04",
@@ -638,7 +702,9 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -646,11 +712,11 @@
         "contractor",
         "developer"
       ]
-        },
+    },
     {
       "id": "worknet",
       "agency": "DCEO OET",
-      "name": "Illinois workNet — local workforce board finder",
+      "name": "Illinois workNet \u2014 local workforce board finder",
       "kind": "Tool",
       "url": "https://www.illinoisworknet.com/",
       "v": "2026-09-04",
@@ -658,7 +724,9 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -669,7 +737,7 @@
     {
       "id": "oeit",
       "agency": "DCEO OEIT",
-      "name": "Office of Entrepreneurship, Innovation & Technology — small business assistance",
+      "name": "Office of Entrepreneurship, Innovation & Technology \u2014 small business assistance",
       "kind": "Technical assistance",
       "url": "https://dceo.illinois.gov/businesshelp/smallbusinessassistance.html",
       "v": "2026-09-04",
@@ -678,7 +746,9 @@
         "workforce",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "contractor",
@@ -688,7 +758,7 @@
     {
       "id": "advil",
       "agency": "DCEO OEIT",
-      "name": "Advantage Illinois — low-interest loan programs",
+      "name": "Advantage Illinois \u2014 low-interest loan programs",
       "kind": "Loan",
       "url": "https://dceo.illinois.gov/businesshelp/lowinterestloanprograms.html",
       "v": "2026-09-04",
@@ -699,16 +769,18 @@
         "solar",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "contractor"
       ]
-        },
+    },
     {
       "id": "ilworks",
       "agency": "DCEO OEIT",
-      "name": "Illinois Works — bid credit & contractor resources",
+      "name": "Illinois Works \u2014 bid credit & contractor resources",
       "kind": "Technical assistance",
       "url": "https://dceo.illinois.gov/businesshelp/illinois-works-bid-credit-program.html",
       "v": "2026-09-04",
@@ -716,12 +788,14 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz"
       ]
-       },
+    },
     {
       "id": "eecbg",
       "agency": "IEPA",
@@ -729,22 +803,24 @@
       "kind": "Grant",
       "url": "https://epa.illinois.gov/topics/energy/energy-efficiency/energy-efficiency-conservation-block-grant.html",
       "v": "2026-09-04",
-      "detail": "DOE/IIJA money for municipal and county strategic energy plans, energy audits and publicly owned building upgrades. Awards ran $50K–$250K. Final round was awarded August 2025 — watch for reauthorization before you budget it.",
+      "detail": "DOE/IIJA money for municipal and county strategic energy plans, energy audits and publicly owned building upgrades. Awards ran $50K\u2013$250K. Final round was awarded August 2025 \u2014 watch for reauthorization before you budget it.",
       "funds": [
         "plan",
         "ee",
         "predev",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
-       },
+    },
     {
       "id": "iepaenergy",
       "agency": "IEPA",
-      "name": "Office of Energy — codes training, assessments & trust funds",
+      "name": "Office of Energy \u2014 codes training, assessments & trust funds",
       "kind": "Technical assistance",
       "url": "https://epa.illinois.gov/",
       "v": "2026-09-04",
@@ -754,7 +830,9 @@
         "newcon",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "contractor",
@@ -772,15 +850,17 @@
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
-       },
+    },
     {
       "id": "ifagrid",
       "agency": "IFA Climate Bank",
-      "name": "GRID — grid resilience for municipal utilities & co-ops",
+      "name": "GRID \u2014 grid resilience for municipal utilities & co-ops",
       "kind": "Grant",
       "url": "https://illinoisclimatebank.com/financing-programs/",
       "v": "2026-09-04",
@@ -790,11 +870,13 @@
         "capital",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
-       },
+    },
     {
       "id": "ifaplanning",
       "agency": "IFA Climate Bank",
@@ -807,11 +889,13 @@
         "plan",
         "predev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
-        },
+    },
     {
       "id": "ifastretch",
       "agency": "IFA Climate Bank",
@@ -819,12 +903,14 @@
       "kind": "Grant",
       "url": "https://illinoisclimatebank.com/financing-programs/",
       "v": "2026-09-04",
-      "detail": "Helps municipalities adopt, implement and enforce the Illinois Stretch Energy Code — staff time, training and legal review.",
+      "detail": "Helps municipalities adopt, implement and enforce the Illinois Stretch Energy Code \u2014 staff time, training and legal review.",
       "funds": [
         "newcon",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
@@ -843,13 +929,15 @@
         "ee",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-         },
+    },
     {
       "id": "ifasovereignty",
       "agency": "IFA Climate Bank",
@@ -863,12 +951,14 @@
         "solar",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni"
       ]
-       },
+    },
     {
       "id": "ifahubs",
       "agency": "IFA Climate Bank",
@@ -882,12 +972,14 @@
         "ev",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo"
       ]
-       },
+    },
     {
       "id": "idotprog",
       "agency": "IDOT",
@@ -900,7 +992,9 @@
         "ev",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "developer"
@@ -918,14 +1012,16 @@
         "solar",
         "storage"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "smallbiz",
         "cbo",
         "resident"
       ]
-       },
+    },
     {
       "id": "cbn",
       "agency": "DCEO",
@@ -939,14 +1035,16 @@
         "elec",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "resident",
         "cbo",
         "muni"
       ]
-        },
+    },
     {
       "id": "ihdagrrp",
       "agency": "IHDA",
@@ -954,24 +1052,26 @@
       "kind": "Grant / Loan",
       "url": "https://www.ihda.org/",
       "v": "2026-09-04",
-      "detail": "Retrofit and resilience financing for affordable multifamily housing — relevant when a municipality or CBO controls housing stock.",
+      "detail": "Retrofit and resilience financing for affordable multifamily housing \u2014 relevant when a municipality or CBO controls housing stock.",
       "funds": [
         "ee",
         "elec",
         "capital",
         "newcon"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-        },
+    },
     {
       "id": "iac",
       "agency": "ICCB",
-      "name": "Industrial Assessment Center — UIC",
+      "name": "Industrial Assessment Center \u2014 UIC",
       "kind": "Technical assistance",
       "url": "https://iac.uic.edu/",
       "v": "2026-09-08",
@@ -980,13 +1080,15 @@
         "ee",
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "developer",
         "contractor"
       ]
-       },
+    },
     {
       "id": "pab",
       "agency": "IFA Climate Bank",
@@ -999,7 +1101,9 @@
         "capital",
         "predev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni",
@@ -1013,19 +1117,21 @@
       "kind": "Grant",
       "url": "https://www.epa.gov/greenhouse-gas-reduction-fund",
       "v": "2026-09-08",
-      "detail": "Federal program funding clean energy and climate projects in low-income and disadvantaged communities. Solar for All Expansion and National Clean Investment Fund instruments are in litigation with funding paused — confirm current status before counting on this.",
+      "detail": "Federal program funding clean energy and climate projects in low-income and disadvantaged communities. Solar for All Expansion and National Clean Investment Fund instruments are in litigation with funding paused \u2014 confirm current status before counting on this.",
       "funds": [
         "capital",
         "solar",
         "ee",
         "csolar"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "muni"
       ]
-       },
+    },
     {
       "id": "eetf",
       "agency": "IEPA",
@@ -1037,12 +1143,14 @@
       "funds": [
         "ee"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo"
       ]
-       },
+    },
     {
       "id": "eeassess",
       "agency": "IEPA",
@@ -1056,7 +1164,9 @@
         "predev",
         "plan"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo"
@@ -1069,18 +1179,20 @@
       "kind": "Tax incentive",
       "url": "https://dceo.illinois.gov/businesshelp/rev.html",
       "v": "2026-09-08",
-      "detail": "Reimagining Energy and Vehicles in Illinois Act — a highly competitive incentive program for manufacturers of EVs, EV components, and renewable energy equipment locating or expanding in Illinois.",
+      "detail": "Reimagining Energy and Vehicles in Illinois Act \u2014 a highly competitive incentive program for manufacturers of EVs, EV components, and renewable energy equipment locating or expanding in Illinois.",
       "funds": [
         "ev",
         "capital",
         "newcon"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "developer",
         "smallbiz"
       ]
-     },
+    },
     {
       "id": "dotcfi",
       "agency": "US DOT",
@@ -1092,7 +1204,9 @@
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "developer"
@@ -1109,13 +1223,15 @@
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "smallbiz",
         "contractor"
       ]
-     },
+    },
     {
       "id": "returning",
       "agency": "DCEO",
@@ -1127,11 +1243,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
-     },
+    },
     {
       "id": "eecportal",
       "agency": "IPA",
@@ -1145,7 +1263,9 @@
         "csolar",
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz",
@@ -1159,11 +1279,13 @@
       "kind": "Loan",
       "url": "https://www.sba.gov/funding-programs/loans/504-loans",
       "v": "2026-09-08",
-      "detail": "Long-term, fixed-rate financing for major fixed assets — real estate, equipment — that promote business growth. Usable for clean energy retrofits bundled into a larger capital project.",
+      "detail": "Long-term, fixed-rate financing for major fixed assets \u2014 real estate, equipment \u2014 that promote business growth. Usable for clean energy retrofits bundled into a larger capital project.",
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz"
       ]
@@ -1179,11 +1301,13 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
-       },
+    },
     {
       "id": "fleetelec",
       "agency": "IFA Climate Bank",
@@ -1195,7 +1319,9 @@
       "funds": [
         "ev"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "smallbiz",
@@ -1214,12 +1340,14 @@
         "solar",
         "ee"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "resident",
         "cbo"
       ]
-        },
+    },
     {
       "id": "carbonfreeschools",
       "agency": "IFA Climate Bank",
@@ -1233,7 +1361,9 @@
         "solar",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni"
       ]
@@ -1249,7 +1379,9 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor",
         "smallbiz"
@@ -1266,13 +1398,15 @@
       "funds": [
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo",
         "smallbiz"
       ]
-      },
+    },
     {
       "id": "contractorportal",
       "agency": "IFA Climate Bank",
@@ -1284,11 +1418,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor"
       ]
-         },
+    },
     {
       "id": "fourfj",
       "agency": "IFA Climate Bank",
@@ -1300,11 +1436,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor"
       ]
-        },
+    },
     {
       "id": "brightneighborhood",
       "agency": "IPA",
@@ -1317,7 +1455,9 @@
         "csolar",
         "solar"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "resident"
@@ -1334,7 +1474,9 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "developer"
@@ -1347,12 +1489,14 @@
       "kind": "Grant",
       "url": "https://illinoisclimatebank.com/financing-programs/",
       "v": "2026-09-08",
-      "detail": "Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed — a common hidden cost that stalls a project.",
+      "detail": "Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed \u2014 a common hidden cost that stalls a project.",
       "funds": [
         "solar",
         "elec"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "resident",
         "cbo",
@@ -1370,7 +1514,9 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo",
         "contractor"
@@ -1387,11 +1533,13 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "contractor"
       ]
-     },
+    },
     {
       "id": "multicultural",
       "agency": "DCEO",
@@ -1403,7 +1551,9 @@
       "funds": [
         "workforce"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
@@ -1415,11 +1565,13 @@
       "kind": "Philanthropic",
       "url": "https://helloalice.com/grants/pepsico-juntos-crecemos-grant-program/",
       "v": "2026-09-08",
-      "detail": "$10,000 grants for woman-owned food and beverage small businesses nationwide. Not clean-energy specific — general small business capital.",
+      "detail": "$10,000 grants for woman-owned food and beverage small businesses nationwide. Not clean-energy specific \u2014 general small business capital.",
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz"
       ]
@@ -1435,7 +1587,9 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
@@ -1447,11 +1601,13 @@
       "kind": "Philanthropic",
       "url": "https://www.lisc.org/our-initiatives/sports-recreation/foot-locker-foundation-community-empowerment-program/",
       "v": "2026-09-08",
-      "detail": "Youth-focused community grants. Not clean-energy specific — relevant if a CBO's clean energy work is bundled with a youth or community facility.",
+      "detail": "Youth-focused community grants. Not clean-energy specific \u2014 relevant if a CBO's clean energy work is bundled with a youth or community facility.",
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
@@ -1467,12 +1623,14 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "smallbiz",
         "cbo"
       ]
-      },
+    },
     {
       "id": "tmobilehometown",
       "agency": "T-Mobile (private)",
@@ -1484,7 +1642,9 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "muni",
         "cbo"
@@ -1497,12 +1657,14 @@
       "kind": "Philanthropic",
       "url": "https://myforefront.org/programs-services/msi/msi-grants/",
       "v": "2026-09-08",
-      "detail": "Capacity-building and strategic planning grants for Illinois nonprofits — useful for a CBO building the organizational capacity to run a clean energy program.",
+      "detail": "Capacity-building and strategic planning grants for Illinois nonprofits \u2014 useful for a CBO building the organizational capacity to run a clean energy program.",
       "funds": [
         "plan",
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
@@ -1518,10 +1680,12 @@
       "funds": [
         "capital"
       ],
-      "regions": ["statewide"]
+      "regions": [
+        "statewide"
+      ],
       "serves": [
         "cbo"
       ]
-        }
+    }
   ]
 }
