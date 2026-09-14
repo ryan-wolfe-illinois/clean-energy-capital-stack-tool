@@ -1,0 +1,58 @@
+{
+  "regions": [
+    {
+      "id": "statewide",
+      "name": "Statewide"
+    },
+    {
+      "id": "central",
+      "name": "Central",
+      "counties": ["Cass", "Christian", "Greene", "Logan", "Macon", "Macoupin", "Menard", "Montgomery", "Morgan", "Sangamon", "Scott", "Shelby"]
+    },
+    {
+      "id": "eastcentral",
+      "name": "East Central",
+      "counties": ["Champaign", "Douglas", "Ford", "Iroquois", "Piatt", "Vermilion"]
+    },
+    {
+      "id": "northcentral",
+      "name": "North Central",
+      "counties": ["De Witt", "Fulton", "Livingston", "McLean", "Marshall", "Mason", "Peoria", "Stark", "Tazewell", "Woodford"]
+    },
+    {
+      "id": "northeast",
+      "name": "Northeast",
+      "counties": ["Cook", "DeKalb", "DuPage", "Grundy", "Kane", "Kankakee", "Kendall", "Lake", "McHenry", "Will"]
+    },
+    {
+      "id": "northernstateline",
+      "name": "Northern Stateline",
+      "counties": ["Boone", "Ogle", "Stephenson", "Winnebago"]
+    },
+    {
+      "id": "northwest",
+      "name": "Northwest",
+      "counties": ["Bureau", "Carroll", "Henry", "Jo Daviess", "La Salle", "Lee", "Mercer", "Putnam", "Rock Island", "Whiteside"]
+    },
+    {
+      "id": "southeastern",
+      "name": "Southeastern",
+      "counties": ["Clark", "Clay", "Coles", "Crawford", "Cumberland", "Edgar", "Effingham", "Fayette", "Jasper", "Lawrence", "Marion", "Moultrie", "Richland"]
+    },
+    {
+      "id": "southern",
+      "name": "Southern",
+      "counties": ["Alexander", "Edwards", "Franklin", "Gallatin", "Hamilton", "Hardin", "Jackson", "Jefferson", "Johnson", "Massac", "Perry", "Pope", "Pulaski", "Saline", "Union", "Wabash", "Wayne", "White", "Williamson"]
+    },
+    {
+      "id": "southwestern",
+      "name": "Southwestern",
+      "counties": ["Bond", "Calhoun", "Clinton", "Jersey", "Madison", "Monroe", "Randolph", "St. Clair", "Washington"]
+    },
+    {
+      "id": "westcentral",
+      "name": "West Central",
+      "counties": ["Adams", "Brown", "Hancock", "Henderson", "Knox", "McDonough", "Pike", "Schuyler", "Warren"]
+    }
+  ]
+}
