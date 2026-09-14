@@ -10,15 +10,16 @@ const PROGRAMS = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "programs.json")
 const PROJECT_TYPES = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "project-types.json"))).project_types;
 const AUDIENCES = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "audiences.json"))).audiences;
 const STACKS = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "stacks.json"))).stacks;
+const REGIONS = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "regions.json"))).regions;
 const SETTINGS = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "settings.json")));
 
-const DATA = JSON.stringify({ PROGRAMS, PROJECT_TYPES, AUDIENCES, STACKS });
+const DATA = JSON.stringify({ PROGRAMS, PROJECT_TYPES, AUDIENCES, REGIONS, STACKS });
 
 // ---- radial web geometry --------------------------------------------------
 // The diagram groups one-off funders so it stays at the scale Ryan already
 // describes in the intro copy ("thirteen agencies, three utilities") rather
 // than growing a spoke per program source. Program cards below still show
-// the real, specific agency — this grouping is display-only.
+// the real, specific source — this grouping is display-only.
 const DIAGRAM_GROUP = {
   "PepsiCo (private)": "Private & Philanthropic Funders",
   "LISC / Foot Locker Foundation (private)": "Private & Philanthropic Funders",
@@ -43,7 +44,7 @@ PROGRAMS.forEach(p => {
 });
 
 const CX = 590, CY = 340, RX = 395, RY = 252;
-const SHORT = { "IFA Climate Bank":"IFA / Climate Bank", "Illinois Commerce Commission":"Illinois Commerce Comm.", "All ICC-regulated utilities":"Utilities \u2014 VPP", "Private & Philanthropic Funders":"Private & Philanthropic" };
+const SHORT = { "IFA Climate Bank":"IFA / Climate Bank", "Illinois Commerce Commission":"Illinois Commerce Comm.", "All ICC-regulated utilities":"Utilities — VPP", "Private & Philanthropic Funders":"Private & Philanthropic" };
 function agencyCount(g) {
   const raw = GROUP_AGENCIES[g];
   if (raw) return PROGRAMS.filter(p => raw.indexOf(p.agency) !== -1).length;
@@ -89,7 +90,7 @@ function estWidth(text) {
 }
 const PAD_X = 18, BOX_H = 38;
 const leftLabels = AUDIENCES.map(a => a.name);
-const rightLabels = PROJECT_TYPES.map(t => t.code + " \u2014 " + t.name);
+const rightLabels = PROJECT_TYPES.map(t => t.code + " — " + t.name);
 const maxLeftW = Math.max.apply(null, leftLabels.map(function(t){ return estWidth(t); })) + PAD_X * 2;
 const maxRightW = Math.max.apply(null, rightLabels.map(function(t){ return estWidth(t); })) + PAD_X * 2;
 
@@ -106,7 +107,7 @@ const leftN = AUDIENCES.map((a, i) => ({
 }));
 const rightN = PROJECT_TYPES.map((t, i) => ({
   ...t, x: RIGHT_ANCHOR_X, y: 28 + i * ((PH - 56) / (PROJECT_TYPES.length - 1)),
-  w: estWidth(t.code + " \u2014 " + t.name) + PAD_X * 2,
+  w: estWidth(t.code + " — " + t.name) + PAD_X * 2,
 }));
 const pwSpokesL = leftN.map(n =>
   `<line class="pwspoke pwL" data-id="${esc(n.id)}" x1="${n.x}" y1="${n.y.toFixed(1)}" x2="${PHUB_X}" y2="${PHUB_Y}"/>`
@@ -133,7 +134,7 @@ const html = `<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clean Energy Capital Stack Tool</title>
-<meta name="description" content="Match a clean energy project to every Illinois program that funds it. Illinois DCEO, Office of Energy and Business Utilization.">
+<meta name="description" content="Match a clean energy project to every Illinois program that funds it. Illinois DCEO, Office of Energy and Business Utility.">
 <style>
   :root{
     --ink:#0A2E4D; --ink2:#123C61; --green:#0D497F; --moss:#6BA3D6;
@@ -169,7 +170,7 @@ const html = `<!DOCTYPE html>
 
   /* filters */
   .filters{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:30px}
-  @media(max-width:760px){.filters{grid-template-columns:1fr}}
+  @media(max-width:900px){.filters{grid-template-columns:1fr}}
   .flabel{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin:0 0 10px}
   .chips{display:flex;flex-wrap:wrap;gap:7px}
   .chip{font:inherit;font-size:16.5px;padding:10px 17px;border-radius:999px;border:1px solid var(--line);
@@ -308,10 +309,11 @@ const html = `<!DOCTYPE html>
 
 <header>
   <div class="wrap">
-    <p class="kick">Illinois DCEO · Office of Energy and Business Utilization</p>
+    <p class="kick">Illinois DCEO · Office of Energy and Business Utility</p>
     <h1>Clean Energy Capital Stack Tool</h1>
-    <p>I have a project. Illinois' clean energy ecosystem spans many agencies, and more than one of them will pay for it.
-       Tell this page who I am and what I want to build, and it shows every door — and links me straight to it.</p>
+    <p>Illinois' clean energy landscape includes numerous programs, agencies, and funding opportunities. Each is designed to support different types of projects and project sponsors. This tool helps users identify the resources that best align with their role and development goals. By selecting who you are and what you intend to build, the tool will guide you to the programs, incentives, and supports available across the state's clean energy ecosystem.
+    </p>
+    <p style="margin-top: 12px;">Start by identifying your profile and project type, or explore the full ecosystem to learn more.</p>
     <div class="herocta">
       <a class="cta-primary" href="#navigator">Start here</a>
       <a class="cta-secondary" href="#glance">or explore the full ecosystem</a>
@@ -323,17 +325,21 @@ const html = `<!DOCTYPE html>
 <section id="navigator">
   <div class="wrap">
     <p class="eyebrow">Start here</p>
-    <h2>I am, I want to build</h2>
+    <h2>I am, I want to build, I'm located in</h2>
     <p class="lede">Select all that apply. Leave a row empty to see everything in it.</p>
 
     <div class="filters">
       <div>
-        <p class="flabel">I am &mdash; select all that apply</p>
+        <p class="flabel">I am — select all that apply</p>
         <div class="chips" id="audChips"></div>
       </div>
       <div>
-        <p class="flabel">I want to build &mdash; select all that apply</p>
+        <p class="flabel">I want to build — select all that apply</p>
         <div class="chips" id="typeChips"></div>
+      </div>
+      <div>
+        <p class="flabel">I'm located in — select one or more regions</p>
+        <div class="chips" id="regionChips"></div>
       </div>
     </div>
 
@@ -362,9 +368,9 @@ const html = `<!DOCTYPE html>
   <div class="wrap">
     <p class="eyebrow">The whole picture</p>
     <h2>Network at a glance</h2>
-    <p class="lede">Illinois&rsquo; clean energy ecosystem spans many agencies &mdash; this is all of them in one picture. Different from the diagram above: that one follows your pathway, this showed the entire ecosystem. Click any agency to pull every program it funds into the results above.</p>
+    <p class="lede">Illinois' clean energy ecosystem includes many funding sources. This is all of them in one picture. Different from the diagram above: that one follows your pathway, this showed the entire ecosystem. Click any source to pull every program it funds into the results above.</p>
     <div class="webwrap">
-      <svg class="web" viewBox="0 0 1180 690" role="img" aria-label="Radial diagram of Illinois clean energy funding agencies">
+      <svg class="web" viewBox="0 0 1180 690" role="img" aria-label="Radial diagram of Illinois clean energy funding sources">
         ${spokes}
         <circle class="hub" cx="${CX}" cy="${CY}" r="62"/>
         <text class="hubtext" x="${CX}" y="${CY - 4}">Your client's</text>
@@ -385,25 +391,25 @@ const html = `<!DOCTYPE html>
       <div class="layer">
         <div class="ltag" style="background:#0D497F">1</div>
         <h3>Grant</h3>
-        <p class="src">DCEO &middot; IFA federal awards &middot; USDA</p>
+        <p class="src">DCEO · IFA federal awards · USDA</p>
         <p>Never repaid. Almost always pays for the part nobody else will touch: predevelopment, engineering, community engagement, staff time.</p>
       </div>
       <div class="layer">
         <div class="ltag" style="background:#2E77B4">2</div>
-        <h3>Incentive &amp; rebate</h3>
-        <p class="src">IPA &middot; ComEd &middot; Ameren &middot; Nicor</p>
+        <h3>Incentive & rebate</h3>
+        <p class="src">IPA · ComEd · Ameren · Nicor</p>
         <p>Paid per unit of output or savings. Illinois Shines pays fifteen years of REC value up front. Utility rebates pay on installed measures.</p>
       </div>
       <div class="layer">
         <div class="ltag" style="background:#5A7488">3</div>
         <h3>Debt</h3>
-        <p class="src">IFA Climate Bank &middot; enrolled lenders &middot; ESPC</p>
+        <p class="src">IFA Climate Bank · enrolled lenders · ESPC</p>
         <p>Repaid, but on terms nobody gets on the open market. SSBCI buys the rate to 2%. C-PACE moves repayment onto the tax bill.</p>
       </div>
       <div class="layer">
         <div class="ltag" style="background:#D9A21B">4</div>
         <h3>Tax</h3>
-        <p class="src">IRS &middot; client's CPA</p>
+        <p class="src">IRS · client's CPA</p>
         <p>30% of eligible cost under Section 48E, plus depreciation. Tax-exempt owners take it as cash through elective pay.</p>
       </div>
     </div>
@@ -450,19 +456,16 @@ const html = `<!DOCTYPE html>
 
 <footer>
   <div class="wrap">
-    <p><strong>How to use this.</strong> Filter, then click the program name. Every link goes to the agency's own page,
-       not to a summary. If a program says it is not yet accepting applications, do not put it in a client's budget.</p>
-    <p>Layering rules are program-specific. Two programs may fund one project, but never the same invoice twice.
-       Confirm cost allocation in writing with each program officer before a client signs anything.</p>
-    <p>Illinois Department of Commerce and Economic Opportunity · Office of Energy and Business Utilization.
-       Verified ${SETTINGS.verified_date}.</p>
+    <p><strong>How to use this.</strong> Filter, then click the program name. Every link goes to the source's own page, not to a summary. If a program says it is not yet accepting applications, do not put it in a client's budget.</p>
+    <p>Layering rules are program-specific. Two programs may fund one project, but never the same invoice twice. Confirm cost allocation in writing with each program officer before a client signs anything.</p>
+    <p>Illinois Department of Commerce and Economic Opportunity · Office of Energy and Business Utility. Verified ${SETTINGS.verified_date}.</p>
   </div>
 </footer>
 
 <script>
 
 var D = ${DATA};
-var selAud = [], selType = [];
+var selAud = [], selType = [], selReg = [];
 
 function el(t, cls, txt){ var e=document.createElement(t); if(cls){e.className=cls;} if(txt!==null&&txt!==undefined){e.appendChild(document.createTextNode(txt));} return e; }
 function findBy(arr, id){ for(var i=0;i<arr.length;i++){ if(arr[i].id===id) return arr[i]; } return null; }
@@ -477,10 +480,10 @@ function labels(src, sel){
 function has(arr, v){ for(var i=0;i<arr.length;i++){ if(arr[i]===v) return true; } return false; }
 
 function toggleSel(key, id){
-  var cur = (key==="aud") ? selAud : selType, out = [], hit = false, k;
+  var cur = (key==="aud") ? selAud : (key==="type") ? selType : selReg, out = [], hit = false, k;
   for(k=0;k<cur.length;k++){ if(cur[k]===id){ hit = true; } else { out.push(cur[k]); } }
   if(!hit){ out.push(id); }
-  if(key==="aud"){ selAud = out; } else { selType = out; }
+  if(key==="aud"){ selAud = out; } else if(key==="type"){ selType = out; } else { selReg = out; }
   clearSpokes(); sync(); render();
 }
 
@@ -513,6 +516,8 @@ function sync(){
   for(i=0;i<a.length;i++){ a[i].setAttribute("aria-pressed", has(selAud, a[i].getAttribute("data-id")) ? "true":"false"); }
   var t = document.querySelectorAll("#typeChips .chip");
   for(i=0;i<t.length;i++){ t[i].setAttribute("aria-pressed", has(selType, t[i].getAttribute("data-id")) ? "true":"false"); }
+  var r = document.querySelectorAll("#regionChips .chip");
+  for(i=0;i<r.length;i++){ r[i].setAttribute("aria-pressed", has(selReg, r[i].getAttribute("data-id")) ? "true":"false"); }
 
   var pn = document.querySelectorAll("svg.pw .pwnode"), on, id, key, isSel, rect, txt;
   for(i=0;i<pn.length;i++){
@@ -534,6 +539,17 @@ function clearSpokes(){
   for(var i=0;i<sp.length;i++){ sp[i].setAttribute("class","spoke"); }
 }
 
+function programMatchesRegion(prog) {
+  if (!selReg || !selReg.length) return true;
+  if (!prog.regions) return true;
+  var progRegs = prog.regions;
+  if (progRegs.indexOf("statewide") !== -1) return true;
+  for (var i = 0; i < selReg.length; i++) {
+    if (progRegs.indexOf(selReg[i]) !== -1) return true;
+  }
+  return false;
+}
+
 function card(p){
   var flag = (p.kind === "Not yet live" || p.kind === "Expired");
   var c = el("div","card" + (flag ? " flag" : ""));
@@ -546,7 +562,7 @@ function card(p){
   link.href = p.url; link.target="_blank"; link.rel="noopener";
   h.appendChild(link); c.appendChild(h);
   c.appendChild(el("p",null,p.detail));
-  var go = el("a","go","Open the program page \u2192");
+  var go = el("a","go","Open the program page →");
   go.href = p.url; go.target="_blank"; go.rel="noopener";
   c.appendChild(go);
   var tags = el("div","tags");
@@ -564,7 +580,7 @@ function paint(list, headline){
   document.getElementById("count").innerHTML = "";
   document.getElementById("count").appendChild(document.createTextNode(headline));
   if(!list.length){
-    out.appendChild(el("div","empty","No program in this database matches that combination. Widen one filter \u2014 or treat it as a gap worth reporting."));
+    out.appendChild(el("div","empty","No program in this database matches that combination. Widen one filter — or treat it as a gap worth reporting."));
     return;
   }
   for(var i=0;i<list.length;i++){ out.appendChild(card(list[i])); }
@@ -574,14 +590,15 @@ function render(){
   var list = [], i;
   for(i=0;i<D.PROGRAMS.length;i++){
     var p = D.PROGRAMS[i];
-    if(anyOf(p.serves, selAud) && anyOf(p.funds, selType)){ list.push(p); }
+    if(anyOf(p.serves, selAud) && anyOf(p.funds, selType) && programMatchesRegion(p)){ list.push(p); }
   }
-  var a = labels(D.AUDIENCES, selAud), t = labels(D.PROJECT_TYPES, selType);
-  var head = (a || t) ? "Based on your selections, your project has access to " : "Your project has access to ";
+  var a = labels(D.AUDIENCES, selAud), t = labels(D.PROJECT_TYPES, selType), r = labels(D.REGIONS, selReg);
+  var head = (a || t || r) ? "Based on your selections, your project has access to " : "Your project has access to ";
   head += list.length + (list.length===1 ? " program" : " programs");
   if(a && t){ head += " for " + a + " doing " + t; }
   else if(a){ head += " for " + a; }
   else if(t){ head += " for " + t; }
+  if(r){ head += " in " + r; }
   paint(list, head);
   var pc = document.getElementById("pwcount"), pl = document.getElementById("pwcountlabel");
   if(pc){ pc.textContent = list.length; }
@@ -598,7 +615,7 @@ for(var ni=0; ni<nodesEls.length; ni++){
     function go(){
       var ag = n.getAttribute("data-agency"), i;
       var raw = GROUP_AGENCIES[ag] || [ag];
-      selAud = []; selType = []; sync();
+      selAud = []; selType = []; selReg = []; sync();
       var list = [];
       for(i=0;i<D.PROGRAMS.length;i++){ if(has(raw, D.PROGRAMS[i].agency)){ list.push(D.PROGRAMS[i]); } }
       paint(list, list.length + (list.length===1?" program":" programs") + " from " + ag);
@@ -654,7 +671,7 @@ function drawStack(id){
     var sw = el("div","sw"); sw.style.background = "#" + ly.color; r.appendChild(sw);
     r.appendChild(el("div","pc", ly.pct + "%"));
     var mid = el("div");
-    mid.appendChild(el("div","nm", ly.source + " \u2014 " + ly.program));
+    mid.appendChild(el("div","nm", ly.source + " — " + ly.program));
     mid.appendChild(el("div","nt", ly.note));
     r.appendChild(mid);
     r.appendChild(el("div","ag", ly.agency));
@@ -681,11 +698,12 @@ for(var si=0; si<D.STACKS.length; si++){
 }
 
 document.getElementById("reset").onclick = function(){
-  selAud = []; selType = []; clearSpokes(); sync(); render();
+  selAud = []; selType = []; selReg = []; clearSpokes(); sync(); render();
 };
 
 buildChips("audChips", D.AUDIENCES, "aud");
 buildChips("typeChips", D.PROJECT_TYPES, "type");
+buildChips("regionChips", D.REGIONS, "reg");
 wirePathwayNodes();
 sync();
 render();
