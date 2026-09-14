@@ -111,7 +111,73 @@ collections:
                   - { label: "Contractor / EEC", value: "contractor" }
                   - { label: "Developer", value: "developer" }
                   - { label: "Resident / household", value: "resident" }
-
+    - label: "Geographic Scope"
+                name: "regions"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Statewide", value: "statewide" }
+                  - { label: "Central", value: "central" }
+                  - { label: "East Central", value: "eastcentral" }
+                  - { label: "North Central", value: "northcentral" }
+                  - { label: "Northeast", value: "northeast" }
+                  - { label: "Northern Stateline", value: "northernstateline" }
+                  - { label: "Northwest", value: "northwest" }
+                  - { label: "Southeastern", value: "southeastern" }
+                  - { label: "Southern", value: "southern" }
+                  - { label: "Southwestern", value: "southwestern" }
+                  - { label: "West Central", value: "westcentral" }
+                hint: "Select all regions where this program operates. Most are statewide; only a few are region-specific."
+ 
+================================================================================
+ 
+FULL EXAMPLE of what the programs list section should look like:
+ 
+  - name: "programs"
+    label: "Funding Programs"
+    description: "Every program in the tool..."
+    files:
+      - name: "programs"
+        label: "All Programs"
+        file: "data/programs.json"
+        fields:
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            summary: "{{fields.agency}} — {{fields.name}}"
+            fields:
+              - label: "Internal ID"
+                name: "id"
+                widget: "string"
+                hint: "Lowercase, no spaces, must be unique..."
+              [... all existing fields ...]
+              - label: "Serves These Client Types"
+                name: "serves"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Community-based organization", value: "cbo" }
+                  [... etc ...]
+              
+              # ADD THE NEW FIELD HERE:
+              - label: "Geographic Scope"
+                name: "regions"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Statewide", value: "statewide" }
+                  - { label: "Central", value: "central" }
+                  - { label: "East Central", value: "eastcentral" }
+                  - { label: "North Central", value: "northcentral" }
+                  - { label: "Northeast", value: "northeast" }
+                  - { label: "Northern Stateline", value: "northernstateline" }
+                  - { label: "Northwest", value: "northwest" }
+                  - { label: "Southeastern", value: "southeastern" }
+                  - { label: "Southern", value: "southern" }
+                  - { label: "Southwestern", value: "southwestern" }
+                  - { label: "West Central", value: "westcentral" }
+                hint: "Select all regions where this program operates. Most are statewide; only a few are region-specific."
+ 
   - name: "settings"
     label: "Site Settings"
     description: "The one field to touch during the annual review pass."
