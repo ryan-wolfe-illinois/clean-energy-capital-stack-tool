@@ -15,13 +15,13 @@
         "csolar",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "smallbiz",
         "contractor"
       ]
-     "regions": ["statewide"] 
-    },
+        },
     {
       "id": "cses",
       "agency": "DCEO",
@@ -34,11 +34,12 @@
         "csolar",
         "predev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
+    
     },
     {
       "id": "incub",
@@ -51,12 +52,12 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "primes",
       "agency": "DCEO",
@@ -68,12 +69,12 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "hubs",
       "agency": "DCEO",
@@ -85,11 +86,12 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "contractor"
       ]
-      "regions": ["statewide"]
+   
     },
     {
       "id": "climworks",
@@ -102,11 +104,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+     },
     {
       "id": "navigators",
       "agency": "DCEO",
@@ -119,12 +121,12 @@
         "plan",
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "etcg",
       "agency": "DCEO",
@@ -139,12 +141,12 @@
         "capital",
         "newcon"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "ihwap",
       "agency": "DCEO",
@@ -157,12 +159,12 @@
         "ee",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "cejamap",
       "agency": "DCEO",
@@ -174,13 +176,13 @@
       "funds": [
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
         "smallbiz",
         "contractor"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "shines",
@@ -194,13 +196,13 @@
         "solar",
         "csolar"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "contractor"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "ilsfa",
@@ -214,12 +216,12 @@
         "solar",
         "csolar"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "storage",
       "agency": "IPA",
@@ -231,12 +233,12 @@
       "funds": [
         "storage"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "crga",
       "agency": "IPA",
@@ -250,14 +252,14 @@
         "ee",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo",
         "smallbiz",
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "cpace",
       "agency": "IFA Climate Bank",
@@ -273,12 +275,12 @@
         "newcon",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "ssbci",
@@ -296,12 +298,12 @@
         "storage",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "contractor",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "cbhub",
@@ -314,6 +316,7 @@
       "funds": [
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
@@ -321,8 +324,7 @@
         "contractor",
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "ifafed",
       "agency": "IFA Climate Bank",
@@ -337,13 +339,13 @@
         "plan",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "iccdg",
       "agency": "Illinois Commerce Commission",
@@ -355,12 +357,12 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "eeup",
       "agency": "Illinois Commerce Commission",
@@ -373,11 +375,11 @@
         "ee",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "resident",
         "smallbiz"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "comed",
@@ -391,13 +393,13 @@
         "ee",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "ameren",
       "agency": "Ameren Illinois",
@@ -410,13 +412,13 @@
         "ee",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "nicor",
       "agency": "Nicor Gas",
@@ -428,13 +430,13 @@
       "funds": [
         "ee"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "vpp",
       "agency": "All ICC-regulated utilities",
@@ -448,14 +450,14 @@
         "ee",
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "ihda",
       "agency": "IHDA",
@@ -469,12 +471,12 @@
         "elec",
         "newcon"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "evrebate",
       "agency": "IEPA",
@@ -486,11 +488,11 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "idot",
       "agency": "IDOT",
@@ -502,12 +504,12 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "itc48e",
       "agency": "IRS",
@@ -521,13 +523,13 @@
         "storage",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "electivepay",
@@ -543,12 +545,12 @@
         "ev",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "storage48e",
       "agency": "IRS",
@@ -560,13 +562,13 @@
       "funds": [
         "storage"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "smallbiz",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "resi25d",
       "agency": "IRS",
@@ -578,11 +580,11 @@
       "funds": [
         "solar"
       ],
+      "regions": ["statewide"]
       "serves": [
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "reap",
       "agency": "USDA",
@@ -596,11 +598,11 @@
         "solar",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "dceogrants",
       "agency": "DCEO",
@@ -616,6 +618,7 @@
         "newcon",
         "ee"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
@@ -623,8 +626,7 @@
         "contractor",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "oet",
       "agency": "DCEO OET",
@@ -636,6 +638,7 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
@@ -643,8 +646,7 @@
         "contractor",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "worknet",
       "agency": "DCEO OET",
@@ -656,13 +658,13 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
         "smallbiz",
         "contractor"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "oeit",
@@ -676,12 +678,12 @@
         "workforce",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "contractor",
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "advil",
@@ -697,12 +699,12 @@
         "solar",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "ilworks",
       "agency": "DCEO OEIT",
@@ -714,12 +716,12 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "eecbg",
       "agency": "IEPA",
@@ -734,11 +736,11 @@
         "predev",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "iepaenergy",
       "agency": "IEPA",
@@ -752,12 +754,12 @@
         "newcon",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "contractor",
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "schoolbus",
@@ -770,11 +772,11 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "ifagrid",
       "agency": "IFA Climate Bank",
@@ -788,11 +790,11 @@
         "capital",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "ifaplanning",
       "agency": "IFA Climate Bank",
@@ -805,11 +807,11 @@
         "plan",
         "predev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "ifastretch",
       "agency": "IFA Climate Bank",
@@ -822,10 +824,10 @@
         "newcon",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "ifabridge",
@@ -841,13 +843,13 @@
         "ee",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "ifasovereignty",
       "agency": "IFA Climate Bank",
@@ -861,12 +863,12 @@
         "solar",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "ifahubs",
       "agency": "IFA Climate Bank",
@@ -880,12 +882,12 @@
         "ev",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "idotprog",
       "agency": "IDOT",
@@ -898,11 +900,11 @@
         "ev",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "iccnetmeter",
@@ -916,14 +918,14 @@
         "solar",
         "storage"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "smallbiz",
         "cbo",
         "resident"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "cbn",
       "agency": "DCEO",
@@ -937,14 +939,14 @@
         "elec",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "resident",
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "ihdagrrp",
       "agency": "IHDA",
@@ -959,13 +961,13 @@
         "capital",
         "newcon"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo",
         "developer"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "iac",
       "agency": "ICCB",
@@ -978,13 +980,13 @@
         "ee",
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "developer",
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "pab",
       "agency": "IFA Climate Bank",
@@ -997,12 +999,12 @@
         "capital",
         "predev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "ggrf",
@@ -1018,12 +1020,12 @@
         "ee",
         "csolar"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "muni"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "eetf",
       "agency": "IEPA",
@@ -1035,12 +1037,12 @@
       "funds": [
         "ee"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "eeassess",
       "agency": "IEPA",
@@ -1054,11 +1056,11 @@
         "predev",
         "plan"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "revil",
@@ -1073,12 +1075,12 @@
         "capital",
         "newcon"
       ],
+      "regions": ["statewide"]
       "serves": [
         "developer",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+     },
     {
       "id": "dotcfi",
       "agency": "US DOT",
@@ -1090,11 +1092,11 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "drivingcleaner",
@@ -1107,13 +1109,13 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "smallbiz",
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+     },
     {
       "id": "returning",
       "agency": "DCEO",
@@ -1125,11 +1127,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+     },
     {
       "id": "eecportal",
       "agency": "IPA",
@@ -1143,12 +1145,12 @@
         "csolar",
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz",
         "resident"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "sba504",
@@ -1161,10 +1163,10 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "iltreasurer",
@@ -1177,11 +1179,11 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+       },
     {
       "id": "fleetelec",
       "agency": "IFA Climate Bank",
@@ -1193,12 +1195,12 @@
       "funds": [
         "ev"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "smallbiz",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "leasetoown",
@@ -1212,12 +1214,12 @@
         "solar",
         "ee"
       ],
+      "regions": ["statewide"]
       "serves": [
         "resident",
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "carbonfreeschools",
       "agency": "IFA Climate Bank",
@@ -1231,10 +1233,10 @@
         "solar",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "workingcapital",
@@ -1247,11 +1249,11 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor",
         "smallbiz"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "ifabuildelec",
@@ -1264,13 +1266,13 @@
       "funds": [
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo",
         "smallbiz"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "contractorportal",
       "agency": "IFA Climate Bank",
@@ -1282,11 +1284,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+         },
     {
       "id": "fourfj",
       "agency": "IFA Climate Bank",
@@ -1298,11 +1300,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+        },
     {
       "id": "brightneighborhood",
       "agency": "IPA",
@@ -1315,11 +1317,11 @@
         "csolar",
         "solar"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "resident"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "doelpo",
@@ -1332,11 +1334,11 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "developer"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "enablingupgrades",
@@ -1350,12 +1352,12 @@
         "solar",
         "elec"
       ],
+      "regions": ["statewide"]
       "serves": [
         "resident",
         "cbo",
         "smallbiz"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "solarpipeline",
@@ -1368,11 +1370,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo",
         "contractor"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "craftapprentice",
@@ -1385,11 +1387,11 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "contractor"
       ]
-      "regions": ["statewide"]
-    },
+     },
     {
       "id": "multicultural",
       "agency": "DCEO",
@@ -1401,10 +1403,10 @@
       "funds": [
         "workforce"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "pepsico",
@@ -1417,10 +1419,10 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "nicorpillars",
@@ -1433,10 +1435,10 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "footlocker",
@@ -1449,10 +1451,10 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "midlandsb",
@@ -1465,12 +1467,12 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "smallbiz",
         "cbo"
       ]
-      "regions": ["statewide"]
-    },
+      },
     {
       "id": "tmobilehometown",
       "agency": "T-Mobile (private)",
@@ -1482,11 +1484,11 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "muni",
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "forefrontmsi",
@@ -1500,10 +1502,10 @@
         "plan",
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
     },
     {
       "id": "walmartspark",
@@ -1516,10 +1518,10 @@
       "funds": [
         "capital"
       ],
+      "regions": ["statewide"]
       "serves": [
         "cbo"
       ]
-      "regions": ["statewide"]
-    }
+        }
   ]
 }
