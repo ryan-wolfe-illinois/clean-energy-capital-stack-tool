@@ -741,6 +741,105 @@ wirePathwayNodes();
 sync();
 render();
 drawStack(D.STACKS[0].id);
+  /* ============================================================
+   REGION FILTER
+   Paste this block immediately before the closing </script> tag
+   at the bottom of index.html. It is self-contained: it adds the
+   third chip row, adds the region state, and redefines render()
+   and the reset button to account for it. Nothing above needs to
+   change.
+   ============================================================ */
+
+var selRegion = [];
+
+// Statewide programs always match, whatever region is selected.
+function regionOK(p) {
+  if (!selRegion.length) return true;
+  var r = p.regions || ["statewide"];
+  if (has(r, "statewide")) return true;
+  return anyOf(r, selRegion);
+}
+
+(function addRegionRow() {
+  var filters = document.querySelector("#navigator .filters");
+  if (!filters || document.getElementById("regionChips")) return;
+
+  // three columns on wide screens, wrapping down gracefully on narrow ones
+  filters.style.gridTemplateColumns = "repeat(auto-fit, minmax(260px, 1fr))";
+
+  var col = document.createElement("div");
+  var lab = document.createElement("p");
+  lab.className = "flabel";
+  lab.appendChild(document.createTextNode("I'm located in \u2014 select all that apply"));
+  var box = document.createElement("div");
+  box.className = "chips";
+  box.id = "regionChips";
+  col.appendChild(lab);
+  col.appendChild(box);
+  filters.appendChild(col);
+
+  for (var i = 0; i < D.REGIONS.length; i++) {
+    (function (rg) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("data-id", rg.id);
+      b.appendChild(document.createTextNode(rg.name));
+      b.onclick = function () { toggleRegion(rg.id); };
+      box.appendChild(b);
+    })(D.REGIONS[i]);
+  }
+})();
+
+function toggleRegion(id) {
+  var out = [], hit = false, k;
+  for (k = 0; k < selRegion.length; k++) {
+    if (selRegion[k] === id) { hit = true; } else { out.push(selRegion[k]); }
+  }
+  if (!hit) { out.push(id); }
+  selRegion = out;
+  clearSpokes();
+  sync();
+  syncRegion();
+  render();
+}
+
+function syncRegion() {
+  var c = document.querySelectorAll("#regionChips .chip");
+  for (var i = 0; i < c.length; i++) {
+    c[i].setAttribute("aria-pressed", has(selRegion, c[i].getAttribute("data-id")) ? "true" : "false");
+  }
+}
+
+// Redefines the original render(). The later definition is the one that runs.
+function render() {
+  var list = [], i;
+  for (i = 0; i < D.PROGRAMS.length; i++) {
+    var p = D.PROGRAMS[i];
+    if (anyOf(p.serves, selAud) && anyOf(p.funds, selType) && regionOK(p)) { list.push(p); }
+  }
+  var a = labels(D.AUDIENCES, selAud),
+      t = labels(D.PROJECT_TYPES, selType),
+      r = labels(D.REGIONS, selRegion);
+  var head = list.length + (list.length === 1 ? " program" : " programs");
+  if (a && t) { head += " for " + a + " doing " + t; }
+  else if (a) { head += " for " + a; }
+  else if (t) { head += " for " + t; }
+  if (r) { head += " in " + r; }
+  paint(list, head);
+  var pc = document.getElementById("pwcount"), pl = document.getElementById("pwcountlabel");
+  if (pc) { pc.textContent = list.length; }
+  if (pl) { pl.textContent = list.length === 1 ? "program matches" : "programs match"; }
+}
+
+document.getElementById("reset").onclick = function () {
+  selAud = []; selType = []; selRegion = [];
+  clearSpokes(); sync(); syncRegion(); render();
+};
+
+syncRegion();
+render();
 </script>
 </body>
 </html>
