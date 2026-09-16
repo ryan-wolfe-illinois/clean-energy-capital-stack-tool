@@ -210,9 +210,9 @@
       "agency": "IPA",
       "name": "Illinois Shines (Adjustable Block)",
       "kind": "Incentive",
-      "url": "https://illinoisshines.com/",
-      "v": "2026-09-04",
-      "detail": "Upfront lump-sum payment for 15 years of REC value. PY 2026-27 opened June 1, 2026 with a 1,000 MW initial allocation across Small DG, Large DG, Traditional Community Solar and CDCS.",
+      "url": "https://illinoisshines.com/become-an-av-or-designee/",
+      "v": "2026-09-16",
+      "detail": "Upfront lump-sum payment for 15 years of REC value. To participate you work through an Approved Vendor, or become one yourself. This link is the Approved Vendor and Designee requirements page. PY 2026-27 opened June 1, 2026 with a 1,000 MW initial allocation across Small DG, Large DG, Traditional Community Solar, CDCS and Public Schools.",
       "funds": [
         "solar",
         "csolar"
@@ -234,8 +234,8 @@
       "name": "Illinois Solar for All",
       "kind": "Incentive",
       "url": "https://www.illinoissfa.com/",
-      "v": "carry",
-      "detail": "No-upfront-cost solar for income-qualified households, nonprofits and public facilities in EJ communities.",
+      "v": "2026-09-16",
+      "detail": "No-upfront-cost solar for income-qualified households, non-profits and public facilities in or adjacent to environmental justice and income-eligible communities. Submitted on your behalf by an ILSFA Approved Vendor, not directly by you. Sub-programs include Residential Solar, Non-Profit & Public Facilities, and Community Solar.",
       "funds": [
         "solar",
         "csolar"
@@ -246,7 +246,9 @@
       "serves": [
         "cbo",
         "resident",
-        "college"
+        "muni",
+        "college",
+        "contractor"
       ]
     },
     {
@@ -1290,11 +1292,11 @@
     {
       "id": "eecportal",
       "agency": "IPA",
-      "name": "Equity Eligible Person & Contractor Portal",
+      "name": "Become an Equity Eligible Contractor (EEC)",
       "kind": "Tool",
-      "url": "https://portal.illinoisabp.com/",
-      "v": "2026-09-08",
-      "detail": "Illinois Shines portal for Approved Vendors and their designees. Homeowners, businesses and contractors use it to confirm Equity Eligible status before applying.",
+      "url": "https://illinoisshines.com/become-an-equity-eligible-contractor-eec-approved-vendor-or-designee/",
+      "v": "2026-09-16",
+      "detail": "Certification path for Approved Vendors, Designees and Subcontractors majority-owned by an Equity Eligible Person under CEJA. EEC status is the gateway credential for CEJA contractor money and for Illinois Shines and ILSFA equity set-asides. Vendor login is separate, at portal.illinoisabp.com.",
       "funds": [
         "solar",
         "csolar",
@@ -1307,6 +1309,50 @@
         "contractor",
         "smallbiz",
         "resident"
+      ]
+    },
+    {
+      "id": "energyequity",
+      "agency": "IPA",
+      "name": "Energy Equity Portal",
+      "kind": "Tool",
+      "url": "https://energyequity.illinois.gov/",
+      "v": "2026-09-16",
+      "detail": "The IPA's hub for the clean energy workforce. Register as a clean energy company, post jobs, and connect with job seekers. Also hosts the Small & Emerging Business Hub.",
+      "funds": [
+        "workforce"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "serves": [
+        "contractor",
+        "smallbiz",
+        "cbo",
+        "college",
+        "resident",
+        "developer"
+      ]
+    },
+    {
+      "id": "seb",
+      "agency": "IPA",
+      "name": "Small & Emerging Business (SEB) Designation",
+      "kind": "Credential",
+      "url": "https://energyequity.illinois.gov/small-emerging-business-hub.html",
+      "v": "2026-09-16",
+      "detail": "New for Program Year 2026-27. One registration covers both Illinois Shines and ILSFA. 'Small' means independently owned with under $4M gross revenue last year; 'emerging' means authorized to do business for under 3 years. Benefits include a lower batch threshold for project submittal, plus project selection preference and a collateral deduction on REC payments in ILSFA. Single Project Approved Vendors are not eligible.",
+      "funds": [
+        "workforce",
+        "solar",
+        "csolar"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "serves": [
+        "contractor",
+        "smallbiz"
       ]
     },
     {
