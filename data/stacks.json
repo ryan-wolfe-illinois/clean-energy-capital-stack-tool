@@ -2,6 +2,14 @@
   "stacks": [
     {
       "id": "cbo",
+      "audience": "Community-Based Organization",
+      "project": "500 kW community solar — community center rooftop plus parking canopy",
+      "total": "$1,400,000",
+      "facts": [
+        "Nonprofit owner, no tax appetite",
+        "Subscribers are income-qualified households",
+        "18-month predevelopment runway"
+      ],
       "wf": [
         {
           "name": "CEJA Workforce Hub",
@@ -18,14 +26,6 @@
           "note": "Get the community contractor bonded, insured and bid-ready before the RFP.",
           "agency": "DCEO"
         }
-      ],
-      "audience": "Community-Based Organization",
-      "project": "500 kW community solar — community center rooftop plus parking canopy",
-      "total": "$1,400,000",
-      "facts": [
-        "Nonprofit owner, no tax appetite",
-        "Subscribers are income-qualified households",
-        "18-month predevelopment runway"
       ],
       "layers": [
         {
@@ -163,6 +163,14 @@
     },
     {
       "id": "smallbiz",
+      "audience": "Small Business Owner",
+      "project": "18,000 sf light industrial building — HVAC, envelope, LED, 100 kW rooftop solar",
+      "total": "$640,000",
+      "facts": [
+        "Owner-occupied, taxable entity",
+        "Existing banking relationship",
+        "Wants payback under 7 years"
+      ],
       "wf": [
         {
           "name": "SBDC / Business Information Center",
@@ -179,14 +187,6 @@
           "note": "If the client is also the installer, this is the bonding and insurance line.",
           "agency": "DCEO"
         }
-      ],
-      "audience": "Small Business Owner",
-      "project": "18,000 sf light industrial building — HVAC, envelope, LED, 100 kW rooftop solar",
-      "total": "$640,000",
-      "facts": [
-        "Owner-occupied, taxable entity",
-        "Existing banking relationship",
-        "Wants payback under 7 years"
       ],
       "layers": [
         {
