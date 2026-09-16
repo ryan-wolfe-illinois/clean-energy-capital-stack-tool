@@ -71,12 +71,15 @@ const D = {
   AUDIENCES:     source(["data/audiences.json", "data/audience.json"],
                         ["audiences", "audience"], "AUDIENCES"),
   STACKS:        source(["data/stacks.json", "data/stack.json"],
-                        ["stacks", "stack"], "STACKS")
+                        ["stacks", "stack"], "STACKS"),
+  REGIONS:       source(["data/regions.json", "data/region.json"],
+                        ["regions", "region"], "REGIONS")
 };
 
 // --- integrity checks: catch a bad tag before it ships silently -------------
 const audienceIds = new Set(D.AUDIENCES.map(a => a.id));
 const typeIds     = new Set(D.PROJECT_TYPES.map(t => t.id));
+const regionIds   = new Set(D.REGIONS.map(r => r.id));
 const problems    = [];
 
 D.PROGRAMS.forEach(p => {
@@ -88,6 +91,10 @@ D.PROGRAMS.forEach(p => {
   });
   if (!p.serves || !p.serves.length) problems.push(p.id + ": no audience — it will never appear in results");
   if (!p.funds  || !p.funds.length)  problems.push(p.id + ": no project type — it will never appear in results");
+  (p.regions || []).forEach(r => {
+    if (!regionIds.has(r)) problems.push(p.id + ": unknown region \"" + r + "\"");
+  });
+  if (!p.regions || !p.regions.length) problems.push(p.id + ": no region — add \"statewide\" unless it is region-specific");
 });
 
 const seen = new Set();
@@ -126,7 +133,16 @@ console.log("  " + D.PROGRAMS.length + " programs");
 console.log("  " + D.AUDIENCES.length + " audiences");
 console.log("  " + D.PROJECT_TYPES.length + " project types");
 console.log("  " + D.STACKS.length + " capital stacks\n");
+const regionCounts = {};
+D.REGIONS.forEach(r => {
+  regionCounts[r.name] = D.PROGRAMS.filter(p => (p.regions || []).includes(r.id)).length;
+});
+
 console.log("Programs per audience:");
 Object.entries(counts).forEach(([name, n]) => {
   console.log("  " + String(n).padStart(3) + "  " + name + (n === 0 ? "   <-- nothing will show for this filter" : ""));
+});
+console.log("\nPrograms tagged to each region (statewide programs always match):");
+Object.entries(regionCounts).forEach(([name, n]) => {
+  console.log("  " + String(n).padStart(3) + "  " + name);
 });
