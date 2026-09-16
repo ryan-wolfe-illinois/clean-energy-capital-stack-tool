@@ -257,8 +257,8 @@
       "name": "CRGA Energy Storage Procurement",
       "kind": "Incentive",
       "url": "https://ipa.illinois.gov/renewable-resources/energy-storage.html",
-      "v": "2026-09-04",
-      "detail": "20-year Indexed Storage Credit contracts. 3,000 MW target committed to commercial operation by Dec 31, 2030. First procurement August 2026.",
+      "v": "2026-09-16",
+      "detail": "20-year Indexed Storage Credit contracts for standalone, utility-scale storage. Initial procurement conducted August 2026 targeting 1,038 MW, split between MISO Zone 4 and the PJM ComEd area; those projects must reach commercial operation by Dec 31, 2029. Procurements continue until 3,000 MW is committed by Dec 31, 2030. Bidders must meet the Minimum Equity Standard and Prevailing Wage Act and execute a Project Labor Agreement.",
       "funds": [
         "storage"
       ],
@@ -266,8 +266,8 @@
         "statewide"
       ],
       "serves": [
-        "contractor",
-        "muni"
+        "developer",
+        "contractor"
       ]
     },
     {
@@ -275,9 +275,9 @@
       "agency": "IPA",
       "name": "CRGA Implementation Hub",
       "kind": "Policy",
-      "url": "https://ipa.illinois.gov/renewable-resources/energy-storage.html",
-      "v": "2026-09-04",
-      "detail": "Public Act 104-0458, signed Jan 8, 2026, effective June 1, 2026. Storage, virtual power plants, expanded efficiency, state integrated resource planning.",
+      "url": "https://ipa.illinois.gov/crga.html",
+      "v": "2026-09-16",
+      "detail": "Public Act 104-0458, signed Jan 8, 2026, effective June 1, 2026. The IPA's implementation hub, updated as work progresses: storage procurement, Storage for All evaluation, virtual power plants, expanded efficiency, thermal energy, and the state's first Integrated Resource Plan, due to the ICC by Nov 15, 2026.",
       "funds": [
         "storage",
         "ee",
@@ -1529,11 +1529,11 @@
     {
       "id": "brightneighborhood",
       "agency": "IPA",
-      "name": "Bright Neighborhood Pilot",
-      "kind": "Grant / Pilot",
-      "url": "https://illinoisshines.com/",
-      "v": "2026-09-08",
-      "detail": "Illinois Shines pilot supporting community solar development targeted at specific equity investment eligible communities.",
+      "name": "ILSFA Bright Neighborhoods Initiative — CLOSED",
+      "kind": "Expired",
+      "url": "https://www.illinoissfa.com/announcements/2025/07/explore-ilsfas-findings-from-the-bright-neighborhoods-initiative/",
+      "v": "2026-09-16",
+      "detail": "An Illinois Solar for All pilot, not Illinois Shines. Tested a consolidated model where the Program Administrator recruited participants directly and matched them to one pre-selected Approved Vendor. Ran in program years 2023-24 and 2024-25 in West Garfield Park and the West Side of Chicago, Waukegan, and the Carbondale-Marion area. Applications are closed; this link is the findings report. Watch for elements of it folding into the main ILSFA program.",
       "funds": [
         "csolar",
         "solar"
@@ -1543,7 +1543,8 @@
       ],
       "serves": [
         "cbo",
-        "resident"
+        "resident",
+        "contractor"
       ]
     },
     {
