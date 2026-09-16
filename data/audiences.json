@@ -1,28 +1,11 @@
 {
   "audiences": [
-    {
-      "id": "cbo",
-      "name": "Community-based organization"
-    },
-    {
-      "id": "muni",
-      "name": "Municipality"
-    },
-    {
-      "id": "smallbiz",
-      "name": "Small business owner"
-    },
-    {
-      "id": "contractor",
-      "name": "Contractor / EEC"
-    },
-    {
-      "id": "developer",
-      "name": "Developer"
-    },
-    {
-      "id": "resident",
-      "name": "Resident / household"
-    }
+    { "id": "cbo",        "name": "Community-based organization" },
+    { "id": "muni",       "name": "Municipality" },
+    { "id": "college",    "name": "College or university" },
+    { "id": "smallbiz",   "name": "Small business owner" },
+    { "id": "contractor", "name": "Contractor / EEC" },
+    { "id": "developer",  "name": "Developer" },
+    { "id": "resident",   "name": "Resident / household" }
   ]
 }
