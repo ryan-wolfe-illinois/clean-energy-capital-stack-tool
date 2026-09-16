@@ -30,28 +30,48 @@ const htmlSrc = fs.readFileSync(HTML, "utf8");
 const inlineMatch = htmlSrc.match(/var D = (\{[\s\S]*?\});/);
 const inline = inlineMatch ? JSON.parse(inlineMatch[1]) : {};
 
-function source(rel, jsonKey, inlineKey) {
-  const file = path.join(ROOT, rel);
-  if (fs.existsSync(file)) {
-    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
-    const val = jsonKey ? parsed[jsonKey] : parsed;
-    if (Array.isArray(val)) return val;
-    console.error("MALFORMED: " + rel + ' has no "' + jsonKey + '" array.');
+// Each entry lists the filenames this data has gone by. Singular vs plural has
+// bitten us once already; accept either rather than failing on a naming choice.
+function source(candidates, jsonKeys, inlineKey) {
+  for (const rel of candidates) {
+    const file = path.join(ROOT, rel);
+    if (!fs.existsSync(file)) continue;
+    let parsed;
+    try {
+      parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (e) {
+      console.error("INVALID JSON in " + rel + ":\n  " + e.message);
+      process.exit(1);
+    }
+    for (const key of jsonKeys) {
+      if (Array.isArray(parsed[key])) {
+        console.log("read " + rel + " (" + parsed[key].length + " entries)");
+        return parsed[key];
+      }
+    }
+    if (Array.isArray(parsed)) { console.log("read " + rel); return parsed; }
+    console.error("MALFORMED: " + rel + " has none of these arrays: " + jsonKeys.join(", "));
     process.exit(1);
   }
   if (inline[inlineKey]) {
-    console.log("note: " + rel + " does not exist — carrying " + inlineKey + " through from index.html unchanged.");
+    console.log("note: none of [" + candidates.join(", ") + "] exist — carrying " +
+                inlineKey + " through from index.html unchanged.");
     return inline[inlineKey];
   }
-  console.error("MISSING: " + rel + " and no " + inlineKey + " in index.html. Cannot build.");
+  console.error("MISSING: none of [" + candidates.join(", ") + "] exist and there is no " +
+                inlineKey + " in index.html. Cannot build.");
   process.exit(1);
 }
 
 const D = {
-  PROGRAMS:      source("data/programs.json",     "programs",      "PROGRAMS"),
-  PROJECT_TYPES: source("data/project-types.json","project_types", "PROJECT_TYPES"),
-  AUDIENCES:     source("data/audience.json",     "audiences",     "AUDIENCES"),
-  STACKS:        source("data/stacks.json",       "stacks",        "STACKS")
+  PROGRAMS:      source(["data/programs.json"],
+                        ["programs"], "PROGRAMS"),
+  PROJECT_TYPES: source(["data/project-types.json", "data/project_types.json", "data/projecttypes.json", "data/types.json"],
+                        ["project_types", "projectTypes", "types"], "PROJECT_TYPES"),
+  AUDIENCES:     source(["data/audiences.json", "data/audience.json"],
+                        ["audiences", "audience"], "AUDIENCES"),
+  STACKS:        source(["data/stacks.json", "data/stack.json"],
+                        ["stacks", "stack"], "STACKS")
 };
 
 // --- integrity checks: catch a bad tag before it ships silently -------------
