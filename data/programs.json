@@ -432,14 +432,16 @@
       "name": "ComEd Energy Efficiency (Business & Residential)",
       "kind": "Rebate",
       "url": "https://www.comed.com/WaysToSave",
-      "v": "carry",
-      "detail": "Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026–2029 plan.",
+      "v": "2026-09-16",
+      "detail": "Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026-2029 plan. ComEd serves northern Illinois only: roughly Iroquois County and I-80 north to Wisconsin, Iowa border to Indiana border. If your electric bill does not say ComEd, this is not your program.",
       "funds": [
         "ee",
         "elec"
       ],
       "regions": [
-        "statewide"
+        "northeast",
+        "northernstateline",
+        "northwest"
       ],
       "serves": [
         "smallbiz",
@@ -454,14 +456,20 @@
       "name": "Ameren Illinois Energy Efficiency",
       "kind": "Rebate",
       "url": "https://www.amerenillinoissavings.com/",
-      "v": "carry",
-      "detail": "Standard and custom business incentives, retro-commissioning, income-qualified programs.",
+      "v": "2026-09-16",
+      "detail": "Standard and custom business incentives, retro-commissioning, income-qualified programs. Ameren Illinois serves central and southern Illinois, about 1.2 million electric and 800,000 gas customers across 40,000 square miles. Not available in ComEd territory.",
       "funds": [
         "ee",
         "elec"
       ],
       "regions": [
-        "statewide"
+        "central",
+        "eastcentral",
+        "northcentral",
+        "southeastern",
+        "southern",
+        "southwestern",
+        "westcentral"
       ],
       "serves": [
         "smallbiz",
@@ -476,19 +484,67 @@
       "name": "Nicor Gas Energy Efficiency",
       "kind": "Rebate",
       "url": "https://www.nicorgas.com/",
-      "v": "carry",
-      "detail": "Gas efficiency rebates. CRGA allows Nicor, Peoples and North Shore to pursue increased energy reduction goals.",
+      "v": "2026-09-16",
+      "detail": "Gas efficiency rebates, public sector custom incentives and on-bill financing. CRGA lets Nicor, Peoples and North Shore pursue increased energy reduction goals. Nicor serves most of the northern third of Illinois but NOT the city of Chicago, which is Peoples Gas.",
       "funds": [
         "ee"
       ],
       "regions": [
-        "statewide"
+        "northeast",
+        "northernstateline",
+        "northwest"
       ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "college"
+      ]
+    },
+    {
+      "id": "peoplesgas",
+      "agency": "Peoples Gas & North Shore Gas",
+      "name": "Peoples Gas / North Shore Gas Energy Efficiency",
+      "kind": "Rebate",
+      "url": "https://www.peoplesgasdelivery.com/savings",
+      "v": "2026-09-16",
+      "detail": "Gas efficiency rebates and direct-install programs. Peoples Gas serves the city of Chicago; North Shore Gas serves the northern suburbs in Cook and Lake counties. If you are in Chicago, this is your gas utility, not Nicor.",
+      "funds": [
+        "ee",
+        "elec"
+      ],
+      "regions": [
+        "northeast"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni",
+        "college",
+        "resident"
+      ]
+    },
+    {
+      "id": "midamerican",
+      "agency": "MidAmerican Energy",
+      "name": "MidAmerican Energy Efficiency Programs",
+      "kind": "Rebate",
+      "url": "https://www.midamericanenergy.com/energy-efficiency-business",
+      "v": "2026-09-16",
+      "detail": "Electric and gas efficiency rebates for the Illinois communities MidAmerican serves, mainly the Quad Cities area including Rock Island and Moline. Neither ComEd nor Ameren serves these customers.",
+      "funds": [
+        "ee",
+        "elec"
+      ],
+      "regions": [
+        "northwest"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni",
+        "college",
+        "resident"
       ]
     },
     {
@@ -1539,7 +1595,8 @@
         "solar"
       ],
       "regions": [
-        "statewide"
+        "northeast",
+        "southern"
       ],
       "serves": [
         "cbo",
@@ -1668,13 +1725,15 @@
       "name": "Pillars of Giving",
       "kind": "Philanthropic",
       "url": "https://www.nicorgas.com/company/about-us/charitable-giving/pillars-of-giving.html",
-      "v": "2026-09-08",
+      "v": "2026-09-16",
       "detail": "Nicor's charitable program supporting education, workforce and technical/vocational training aligned with its service territory.",
       "funds": [
         "capital"
       ],
       "regions": [
-        "statewide"
+        "northeast",
+        "northernstateline",
+        "northwest"
       ],
       "serves": [
         "cbo"
