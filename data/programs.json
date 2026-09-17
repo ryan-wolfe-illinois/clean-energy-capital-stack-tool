@@ -233,9 +233,9 @@
       "agency": "IPA",
       "name": "Illinois Solar for All",
       "kind": "Incentive",
-      "url": "https://www.illinoissfa.com/",
-      "v": "2026-09-16",
-      "detail": "No-upfront-cost solar for income-qualified households, non-profits and public facilities in or adjacent to environmental justice and income-eligible communities. Submitted on your behalf by an ILSFA Approved Vendor, not directly by you. Sub-programs include Residential Solar, Non-Profit & Public Facilities, and Community Solar.",
+      "url": "https://www.illinoissfa.com/vendors/",
+      "v": "2026-09-17",
+      "detail": "Approved Vendors are qualified and vetted solar companies that play a pivotal role in Illinois Solar for All. No-upfront-cost solar for income-qualified households, non-profits and public facilities in or adjacent to environmental justice and income-eligible communities. Submitted on your behalf by an ILSFA Approved Vendor, not directly by you. Sub-programs include Residential Solar, Non-Profit & Public Facilities, and Community Solar.",
       "funds": [
         "solar",
         "csolar"
@@ -1393,10 +1393,10 @@
     {
       "id": "seb",
       "agency": "IPA",
-      "name": "Small & Emerging Business (SEB) Designation",
+      "name": "Small and Emerging Businesses in Illinois Solar for All and Illinois Shines",
       "kind": "Credential",
-      "url": "https://energyequity.illinois.gov/small-emerging-business-hub.html",
-      "v": "2026-09-16",
+      "url": "https://www.illinoissfa.com/vendors/",
+      "v": "2026-09-17",
       "detail": "New for Program Year 2026-27. One registration covers both Illinois Shines and ILSFA. 'Small' means independently owned with under $4M gross revenue last year; 'emerging' means authorized to do business for under 3 years. Benefits include a lower batch threshold for project submittal, plus project selection preference and a collateral deduction on REC payments in ILSFA. Single Project Approved Vendors are not eligible.",
       "funds": [
         "workforce",
