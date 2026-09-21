@@ -95,6 +95,17 @@ D.PROGRAMS.forEach(p => {
     if (!regionIds.has(r)) problems.push(p.id + ": unknown region \"" + r + "\"");
   });
   if (!p.regions || !p.regions.length) problems.push(p.id + ": no region — add \"statewide\" unless it is region-specific");
+
+  if (!p.links || !p.links.hub || !p.links.hub.url) {
+    problems.push(p.id + ": no links.hub.url — this is the fallback link and is required");
+  }
+  ((p.links && p.links.audience) || []).forEach(a => {
+    (a.tags || []).forEach(t => {
+      if (!audienceIds.has(t)) problems.push(p.id + ": links.audience tag \"" + t + "\" is not a known audience");
+    });
+    if (!a.tags || !a.tags.length) problems.push(p.id + ": an audience-specific link has no tags — it will never be shown");
+    if (!a.url) problems.push(p.id + ": an audience-specific link has no url");
+  });
 });
 
 const seen = new Set();
