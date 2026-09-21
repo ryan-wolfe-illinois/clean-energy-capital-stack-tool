@@ -74,10 +74,47 @@ collections:
                   - "Expired"
                 hint: "'Not yet live' and 'Expired' both still show in the tool, flagged, instead of disappearing — that is usually better than deleting."
 
-              - label: "Application Link"
-                name: "url"
-                widget: "string"
-                pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"]
+              - label: "Links"
+                name: "links"
+                widget: "object"
+                hint: "Three tiers. Hub is required — it's what shows when no audience-specific page applies. Program and audience-specific pages are optional; add them as you find the right page for each stakeholder."
+                summary: "{{fields.hub.label}}"
+                fields:
+                  - label: "Hub Page (agency or program home page — the fallback everyone sees by default)"
+                    name: "hub"
+                    widget: "object"
+                    fields:
+                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                      - { label: "Label", name: "label", widget: "string" }
+                  - label: "Program Page (optional — more specific than the hub, but not tailored to one audience)"
+                    name: "program"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - { label: "URL", name: "url", widget: "string", required: false, pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                      - { label: "Label", name: "label", widget: "string", required: false }
+                  - label: "Audience-Specific Pages (optional — the exact page for one stakeholder role. An audience can have more than one; the same page can serve more than one audience.)"
+                    name: "audience"
+                    widget: "list"
+                    default: []
+                    summary: "{{fields.label}}"
+                    fields:
+                      - label: "Applies To"
+                        name: "tags"
+                        widget: "select"
+                        multiple: true
+                        options:
+                          - { label: "Community-based organization", value: "cbo" }
+                          - { label: "Municipality", value: "muni" }
+                          - { label: "College or university", value: "college" }
+                          - { label: "Small business owner", value: "smallbiz" }
+                          - { label: "Contractor / EEC", value: "contractor" }
+                          - { label: "Developer", value: "developer" }
+                          - { label: "Resident / household", value: "resident" }
+                          - { label: "University staff / other agency staff", value: "otheragency" }
+                        hint: "Triple-check this page is actually the right one for the exact audience selected — a mismatched link points people at a dead end."
+                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                      - { label: "Label", name: "label", widget: "string" }
 
               - label: "Last Verified"
                 name: "v"
@@ -120,6 +157,7 @@ collections:
                   - { label: "Contractor / EEC", value: "contractor" }
                   - { label: "Developer", value: "developer" }
                   - { label: "Resident / household", value: "resident" }
+                  - { label: "University staff / other agency staff", value: "otheragency" }
                 hint: "At least one. Only tag a client type that could actually be the applicant or direct beneficiary — tagging one that would be rejected on eligibility points people at a dead end."
 
               - label: "Geographic Scope"
