@@ -6,6 +6,7 @@
     { "id": "smallbiz",   "name": "Small business owner" },
     { "id": "contractor", "name": "Contractor / EEC" },
     { "id": "developer",  "name": "Developer" },
-    { "id": "resident",   "name": "Resident / household" }
+    { "id": "resident",   "name": "Resident / household" },
+    { "id": "otheragency", "name": "University staff / other agency staff" }
   ]
 }
