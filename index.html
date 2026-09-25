@@ -550,18 +550,25 @@ function clearSpokes(){
 }
 
 // Resolves which link(s) to show for a program given the active audience
-// selection. selAud is the multi-select chip/pathway array — audience-tier
-// matching only kicks in when it holds exactly one tag, since with zero or
-// several selected there is no single role to tailor the link to. Falls
-// through program tier, then hub, then (for any program not yet migrated
-// to this schema) the legacy flat p.url.
+// selection. selAud is the multi-select chip/pathway array. An audience-
+// tagged link shows whenever ANY of its tags intersects ANY selected
+// audience — same OR logic already used to decide which programs are
+// shown at all (anyOf below), so selecting more than one role never hides
+// a link that applies to one of them. Falls through program tier, then
+// hub, then (for any program not yet migrated to this schema) the legacy
+// flat p.url.
 function resolveLinks(p, selAudArr){
   var links = p.links || {};
   var out = [];
-  if (selAudArr && selAudArr.length === 1) {
-    var tag = selAudArr[0], aud = links.audience || [];
+  if (selAudArr && selAudArr.length) {
+    var aud = links.audience || [];
     for (var i=0; i<aud.length; i++){
-      if (aud[i].tags && aud[i].tags.indexOf(tag) !== -1) out.push(aud[i]);
+      var tags = aud[i].tags || [];
+      var match = false;
+      for (var j=0; j<tags.length; j++){
+        if (selAudArr.indexOf(tags[j]) !== -1){ match = true; break; }
+      }
+      if (match) out.push(aud[i]);
     }
   }
   if (out.length) return out;
