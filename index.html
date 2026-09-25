@@ -52,6 +52,7 @@
              padding:14px 0 18px;border-top:1px solid var(--line);flex-wrap:wrap}
   .resultbar strong{font-family:var(--serif);font-size:26px;color:var(--ink)}
   .reset{font-size:15.5px;background:none;border:none;color:var(--green);cursor:pointer;text-decoration:underline;font:inherit;padding:0}
+  .audiencehint{font-size:14.5px;color:var(--muted);font-style:italic;margin:0 0 16px}
 
   /* program cards */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
@@ -291,6 +292,7 @@
       <strong id="count"></strong>
       <button class="reset" id="reset" type="button">Clear my selections</button>
     </div>
+    <p class="audiencehint" id="audienceHint" style="display:none"></p>
 
     <div class="grid" id="results"></div>
   </div>
@@ -614,11 +616,17 @@ function card(p){
   return c;
 }
 
-function paint(list, headline){
+function paint(list, headline, note){
   var out = document.getElementById("results");
   out.innerHTML = "";
   document.getElementById("count").innerHTML = "";
   document.getElementById("count").appendChild(document.createTextNode(headline));
+  var hintEl = document.getElementById("audienceHint");
+  if(hintEl){
+    hintEl.innerHTML = "";
+    if(note){ hintEl.appendChild(document.createTextNode(note)); hintEl.style.display = ""; }
+    else { hintEl.style.display = "none"; }
+  }
   if(!list.length){
     out.appendChild(el("div","empty","No program in this database matches that combination. Widen one filter \u2014 or treat it as a gap worth reporting."));
     return;
@@ -637,7 +645,8 @@ function render(){
   if(a && t){ head += " for " + a + " doing " + t; }
   else if(a){ head += " for " + a; }
   else if(t){ head += " for " + t; }
-  paint(list, head);
+  var note = (!selAud.length) ? "Select who you are above to see the exact page for your role, not just each program's general homepage." : "";
+  paint(list, head, note);
   var pc = document.getElementById("pwcount"), pl = document.getElementById("pwcountlabel");
   if(pc){ pc.textContent = list.length; }
   if(pl){ pl.textContent = list.length===1 ? "program matches" : "programs match"; }
@@ -653,10 +662,11 @@ for(var ni=0; ni<nodesEls.length; ni++){
     function go(){
       var ag = n.getAttribute("data-agency"), i;
       var raw = GROUP_AGENCIES[ag] || [ag];
-      selAud = []; selType = []; selRegion = []; sync(); if(typeof syncRegion==="function"){ syncRegion(); }
+      selRegion = []; sync(); if(typeof syncRegion==="function"){ syncRegion(); }
       var list = [];
       for(i=0;i<D.PROGRAMS.length;i++){ if(has(raw, D.PROGRAMS[i].agency)){ list.push(D.PROGRAMS[i]); } }
-      paint(list, list.length + (list.length===1?" program":" programs") + " from " + ag);
+      var note = (!selAud.length) ? "Showing every program from " + ag + ". Select who you are above for the page built for your role, not just each program's general homepage." : "";
+      paint(list, list.length + (list.length===1?" program":" programs") + " from " + ag, note);
       var sp = document.querySelectorAll("svg.web .spoke");
       for(i=0;i<sp.length;i++){
         sp[i].setAttribute("class", sp[i].getAttribute("data-agency") === ag ? "spoke on" : "spoke");
@@ -882,7 +892,8 @@ function render() {
   else if (a) { head += " for " + a; }
   else if (t) { head += " for " + t; }
   if (r) { head += " in " + r; }
-  paint(list, head);
+  var note = (!selAud.length) ? "Select who you are above to see the exact page for your role, not just each program's general homepage." : "";
+  paint(list, head, note);
   var pc = document.getElementById("pwcount"), pl = document.getElementById("pwcountlabel");
   if (pc) { pc.textContent = list.length; }
   if (pl) { pl.textContent = list.length === 1 ? "program matches" : "programs match"; }
