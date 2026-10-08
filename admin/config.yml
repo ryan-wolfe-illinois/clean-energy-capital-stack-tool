@@ -2,7 +2,7 @@ backend:
   name: github
   # REQUIRED — fill in before this works.
   # Format: your-github-username-or-org/repo-name
-  repo: YOUR-ORG/clean-energy-capital-stack-tool
+  repo: ryan-wolfe-illinois/clean-energy-capital-stack-tool
   branch: main
   # REQUIRED — the address of the small OAuth helper described in SETUP.md.
   # Decap calls "<base_url>/auth" and "<base_url>/callback" to sign people in
@@ -19,7 +19,7 @@ backend:
 collections:
   - name: "programs"
     label: "Funding Programs"
-    description: "Every program in the tool. Add one for a new program, edit one when a link or description changes. Use 'Not yet live' or 'Expired' under Status instead of deleting, if a program might come back."
+    description: "Every program in the tool. Set Status to closed or paused instead of deleting a program that might come back. Programs still under review live in data/candidates.json and never show on the site."
     files:
       - name: "programs"
         label: "All Programs"
@@ -28,72 +28,118 @@ collections:
           - label: "Programs"
             name: "programs"
             widget: "list"
-            summary: "{{fields.agency}} — {{fields.name}}"
+            summary: "{{fields.agency}} — {{fields.name}} ({{fields.status}})"
             fields:
-              - label: "Internal ID"
-                name: "id"
-                widget: "string"
-                hint: "Lowercase, no spaces, must be unique (e.g. 'ihwap'). Only change this if you know a filter references it — safest to leave alone once set."
-
-              - label: "Agency"
-                name: "agency"
-                widget: "string"
-                hint: "Exactly as it should appear on the network diagram, e.g. 'DCEO', 'IFA Climate Bank', 'ComEd'. Reusing an existing agency name exactly, spelling and all, keeps that program grouped with the others from the same agency."
-
-              - label: "Program Name"
-                name: "name"
-                widget: "string"
-
-              - label: "Status"
+              - { label: "Internal ID", name: "id", widget: "string", hint: "Lowercase, no spaces, unique (e.g. 'ihwap'). Leave alone once set." }
+              - { label: "Agency / Source", name: "agency", widget: "string", hint: "Reuse an existing name exactly so the program groups with its agency on the network diagram." }
+              - { label: "Program Name", name: "name", widget: "string" }
+              - label: "Type"
                 name: "kind"
                 widget: "select"
+                multiple: true
+                options: ["Grant", "Loan", "Incentive/Rebate", "Tax", "Technical assistance", "Tool", "Credential", "Philanthropic"]
+                hint: "One or more."
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                default: "unverified"
+                options: ["open", "rolling", "forthcoming", "paused", "closed", "unverified"]
+                hint: "open = taking applications with a deadline. rolling = no deadline. forthcoming = announced, not open. paused = frozen or in litigation. closed = round ended. unverified = not yet checked."
+              - { label: "Status Note", name: "statusNote", widget: "text", required: false, hint: "One line shown on the card under the status, e.g. 'FY26 round closed June 30, 2026.'" }
+              - { label: "Deadline", name: "deadline", widget: "string", required: false, pattern: ['^(\d{4}-\d{2}-\d{2})?$', "Use YYYY-MM-DD or leave empty"] }
+              - label: "Award Range"
+                name: "award"
+                widget: "object"
+                fields:
+                  - { label: "Minimum ($)", name: "min", widget: "number", value_type: "int", required: false }
+                  - { label: "Maximum ($)", name: "max", widget: "number", value_type: "int", required: false }
+              - { label: "Match Requirement", name: "match", widget: "string", required: false }
+              - label: "Eligible Cost Types"
+                name: "costTypes"
+                widget: "select"
+                multiple: true
+                options: ["capital", "soft", "operating"]
+              - { label: "Stacking Restrictions", name: "stacking", widget: "text", required: false }
+              - { label: "Last Verified", name: "v", widget: "string", pattern: ['^\d{4}-\d{2}-\d{2}$', "Use YYYY-MM-DD"], hint: "The date you checked this program. Cards older than 90 days are flagged." }
+              - { label: "Description", name: "detail", widget: "text", hint: "One or two sentences shown on the card. Say who is not eligible." }
+              - label: "Funds These Project Types"
+                name: "funds"
+                widget: "select"
+                multiple: true
                 options:
-                  - "Grant"
-                  - "Loan"
-                  - "Grant / Loan"
-                  - "Grant / Loan guarantee"
-                  - "Grant / Debt"
-                  - "Grant / Pilot"
-                  - "Grant / Workforce"
-                  - "Debt"
-                  - "Debt / Equity"
-                  - "Tax credit"
-                  - "Tax incentive"
-                  - "Rebate"
-                  - "Incentive"
-                  - "Tariff"
-                  - "Financing"
-                  - "Technical assistance"
-                  - "Direct install"
-                  - "Workforce"
-                  - "Credential"
-                  - "Tool"
-                  - "Policy"
-                  - "Philanthropic"
-                  - "Not yet live"
-                  - "Expired"
-                hint: "'Not yet live' and 'Expired' both still show in the tool, flagged, instead of disappearing — that is usually better than deleting."
-
+                  - { label: "Energy efficiency upgrades", value: "ee" }
+                  - { label: "Building electrification", value: "elec" }
+                  - { label: "Solar installation", value: "solar" }
+                  - { label: "Community solar", value: "csolar" }
+                  - { label: "Predevelopment & soft costs", value: "predev" }
+                  - { label: "Storage & resilience", value: "storage" }
+                  - { label: "EV & fleet electrification", value: "ev" }
+                  - { label: "Workforce & contractor capacity", value: "workforce" }
+                  - { label: "New construction & code", value: "newcon" }
+                  - { label: "Planning & organizational capacity", value: "plan" }
+                  - { label: "General capital & construction", value: "capital" }
+                  - { label: "Bioenergy & biomass", value: "bio" }
+                  - { label: "Agriculture & food systems", value: "ag" }
+                  - { label: "Industrial & manufacturing process", value: "industrial" }
+                  - { label: "Wind, geothermal & district energy", value: "windgeo" }
+                  - { label: "Waste, recycling & circular economy", value: "waste" }
+                  - { label: "Brownfield & site remediation", value: "brownfield" }
+                  - { label: "Freight, rail & logistics", value: "freight" }
+                  - { label: "Operating & working capital", value: "operating" }
+              - label: "Serves These Applicant Types"
+                name: "serves"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Community-based organization", value: "cbo" }
+                  - { label: "Municipality", value: "muni" }
+                  - { label: "College or university", value: "college" }
+                  - { label: "Small business owner", value: "smallbiz" }
+                  - { label: "Contractor / EEC", value: "contractor" }
+                  - { label: "Developer", value: "developer" }
+                  - { label: "Resident / household", value: "resident" }
+                  - { label: "University staff / other agency staff", value: "otheragency" }
+                  - { label: "Agricultural producer or cooperative", value: "ag" }
+                  - { label: "Manufacturer or industrial facility", value: "manufacturer" }
+                  - { label: "School district, park district or housing authority", value: "district" }
+                  - { label: "Faith-based institution", value: "faith" }
+                  - { label: "Electric co-op or municipal utility", value: "utility" }
+              - label: "Regions"
+                name: "regions"
+                widget: "select"
+                multiple: true
+                default: ["statewide"]
+                options:
+                  - { label: "Statewide", value: "statewide" }
+                  - { label: "Central", value: "central" }
+                  - { label: "East Central", value: "eastcentral" }
+                  - { label: "North Central", value: "northcentral" }
+                  - { label: "Northeast", value: "northeast" }
+                  - { label: "Northern Stateline", value: "northernstateline" }
+                  - { label: "Northwest", value: "northwest" }
+                  - { label: "Southeastern", value: "southeastern" }
+                  - { label: "Southern", value: "southern" }
+                  - { label: "Southwestern", value: "southwestern" }
+                  - { label: "West Central", value: "westcentral" }
               - label: "Links"
                 name: "links"
                 widget: "object"
-                hint: "Three tiers. Hub is required — it's what shows when no audience-specific page applies. Program and audience-specific pages are optional; add them as you find the right page for each stakeholder."
                 summary: "{{fields.hub.label}}"
                 fields:
-                  - label: "Hub Page (agency or program home page — the fallback everyone sees by default)"
+                  - label: "Hub Page (fallback everyone sees)"
                     name: "hub"
                     widget: "object"
                     fields:
-                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Full link starting with http:// or https://"] }
                       - { label: "Label", name: "label", widget: "string" }
-                  - label: "Program Page (optional — more specific than the hub, but not tailored to one audience)"
+                  - label: "Program Page (optional)"
                     name: "program"
                     widget: "object"
                     required: false
                     fields:
-                      - { label: "URL", name: "url", widget: "string", required: false, pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                      - { label: "URL", name: "url", widget: "string", required: false }
                       - { label: "Label", name: "label", widget: "string", required: false }
-                  - label: "Audience-Specific Pages (optional — the exact page for one stakeholder role. An audience can have more than one; the same page can serve more than one audience.)"
+                  - label: "Audience-Specific Pages (optional)"
                     name: "audience"
                     widget: "list"
                     default: []
@@ -112,82 +158,28 @@ collections:
                           - { label: "Developer", value: "developer" }
                           - { label: "Resident / household", value: "resident" }
                           - { label: "University staff / other agency staff", value: "otheragency" }
-                        hint: "Triple-check this page is actually the right one for the exact audience selected — a mismatched link points people at a dead end."
-                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Must be a full link starting with http:// or https://"] }
+                          - { label: "Agricultural producer or cooperative", value: "ag" }
+                          - { label: "Manufacturer or industrial facility", value: "manufacturer" }
+                          - { label: "School district, park district or housing authority", value: "district" }
+                          - { label: "Faith-based institution", value: "faith" }
+                          - { label: "Electric co-op or municipal utility", value: "utility" }
+                      - { label: "URL", name: "url", widget: "string", pattern: ['^https?://.+', "Full link starting with http:// or https://"] }
                       - { label: "Label", name: "label", widget: "string" }
-
-              - label: "Last Verified"
-                name: "v"
-                widget: "string"
-                pattern: ['^(\d{4}-\d{2}-\d{2}|carry)$', "Use YYYY-MM-DD, e.g. 2026-09-04, or the word carry"]
-                hint: "The date you personally checked this link and description were still accurate. 'carry' means it was brought over from an earlier version and has not been re-checked."
-
-              - label: "Description"
-                name: "detail"
-                widget: "text"
-                hint: "One or two sentences. This is what shows on the program's card. If a client type would be rejected on eligibility, say so here."
-
-              - label: "Funds These Project Types"
-                name: "funds"
-                widget: "select"
-                multiple: true
-                options:
-                  - { label: "Energy efficiency upgrades", value: "ee" }
-                  - { label: "Building electrification", value: "elec" }
-                  - { label: "Solar installation", value: "solar" }
-                  - { label: "Community solar", value: "csolar" }
-                  - { label: "Predevelopment & soft costs", value: "predev" }
-                  - { label: "Storage & resilience", value: "storage" }
-                  - { label: "EV & fleet electrification", value: "ev" }
-                  - { label: "Workforce & contractor capacity", value: "workforce" }
-                  - { label: "New construction & code", value: "newcon" }
-                  - { label: "Planning & organizational capacity", value: "plan" }
-                  - { label: "General capital & construction", value: "capital" }
-                hint: "At least one. A program with none will never appear in results."
-
-              - label: "Serves These Client Types"
-                name: "serves"
-                widget: "select"
-                multiple: true
-                options:
-                  - { label: "Community-based organization", value: "cbo" }
-                  - { label: "Municipality", value: "muni" }
-                  - { label: "College or university", value: "college" }
-                  - { label: "Small business owner", value: "smallbiz" }
-                  - { label: "Contractor / EEC", value: "contractor" }
-                  - { label: "Developer", value: "developer" }
-                  - { label: "Resident / household", value: "resident" }
-                  - { label: "University staff / other agency staff", value: "otheragency" }
-                hint: "At least one. Only tag a client type that could actually be the applicant or direct beneficiary — tagging one that would be rejected on eligibility points people at a dead end."
-
-              - label: "Geographic Scope"
-                name: "regions"
-                widget: "select"
-                multiple: true
-                default: ["statewide"]
-                options:
-                  - { label: "Statewide", value: "statewide" }
-                  - { label: "Central", value: "central" }
-                  - { label: "East Central", value: "eastcentral" }
-                  - { label: "North Central", value: "northcentral" }
-                  - { label: "Northeast", value: "northeast" }
-                  - { label: "Northern Stateline", value: "northernstateline" }
-                  - { label: "Northwest", value: "northwest" }
-                  - { label: "Southeastern", value: "southeastern" }
-                  - { label: "Southern", value: "southern" }
-                  - { label: "Southwestern", value: "southwestern" }
-                  - { label: "West Central", value: "westcentral" }
-                hint: "Select all regions where this program operates. Most are statewide; only a few are region-specific."
 
   - name: "settings"
     label: "Site Settings"
-    description: "The one field to touch during the annual review pass."
+    description: "Review date and out-of-scope referrals."
     files:
       - name: "settings"
-        label: "Verified Date"
+        label: "Settings"
         file: "data/settings.json"
         fields:
-          - label: "Programs Verified As Of"
-            name: "verified_date"
-            widget: "string"
-            hint: "Plain text, shown to visitors at the top and bottom of the page. Example: September 4, 2026"
+          - { label: "Program data last reviewed", name: "verified_date", widget: "string", hint: "Plain text shown at the top and bottom of the page, e.g. October 8, 2026" }
+          - label: "Referrals (shown when nothing fits)"
+            name: "referrals"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Why", name: "why", widget: "text" }
