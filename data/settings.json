@@ -1,3 +1,25 @@
 {
-  "verified_date": "September 4, 2026"
+  "verified_date": "October 8, 2026",
+  "referrals": [
+    {
+      "name": "Illinois Small Business Development Centers",
+      "url": "https://dceo.illinois.gov/smallbizassistance/beginhere/sbdc.html",
+      "why": "Free one-on-one advising. Builds the financial model, unit economics and loan package a lender will ask for."
+    },
+    {
+      "name": "DCEO Regional Economic Development team",
+      "url": "https://dceo.illinois.gov/smallbizassistance/regionspecificassistance.html",
+      "why": "Regional managers know local incentives, county revolving loan funds and partners this tool does not list."
+    },
+    {
+      "name": "DCEO grant opportunities (NOFO search)",
+      "url": "https://dceo.illinois.gov/aboutdceo/grant-opportunities.html",
+      "why": "Every open DCEO notice of funding opportunity, including programs outside energy."
+    },
+    {
+      "name": "Connect with a DCEO representative",
+      "url": "https://dceo.illinois.gov/dceo-program-inquiry.html",
+      "why": "Routes a project to the right DCEO office when no program here fits."
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 # Clean Energy Capital Stack Tool
 
-Illinois DCEO — Office of Energy and Business Utilization
+Illinois DCEO — Office of Energy & Business Utility
 
 A single static page (`index.html`) mapping Illinois clean energy funding
 programs to project types and client types, generated from the JSON files

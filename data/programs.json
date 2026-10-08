@@ -4,8 +4,23 @@
       "id": "eef",
       "agency": "DCEO",
       "name": "Equitable Energy Future Grant (EEF)",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "forthcoming",
+      "statusNote": "New NOFO being released by DCEO. Watch DCEO grant opportunities.",
+      "deadline": null,
+      "award": {
+        "min": 250000,
+        "max": 1000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "$250K–$1M. Seed and predevelopment funding for Equity Eligible Contractors and equity-building projects.",
       "funds": [
         "predev",
@@ -14,20 +29,23 @@
         "csolar",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "smallbiz",
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/other-ceja-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/ceja/ceja-program-announcements.html",
+          "label": "DCEO — CEJA program status"
+        },
         "audience": []
       }
     },
@@ -35,26 +53,44 @@
       "id": "cses",
       "agency": "DCEO",
       "name": "Community Solar Energy Sovereignty Grant (CSES)",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "forthcoming",
+      "statusNote": "New NOFO being released by DCEO. Watch DCEO grant opportunities.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Up to $8.5M/yr. Predevelopment and development for community-owned solar. Municipalities and community organizations.",
       "funds": [
         "csolar",
         "predev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/other-ceja-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/ceja/ceja-program-announcements.html",
+          "label": "DCEO — CEJA program status"
+        },
         "audience": []
       }
     },
@@ -62,26 +98,43 @@
       "id": "incub",
       "agency": "DCEO",
       "name": "Clean Energy Contractor Incubator",
-      "kind": "Technical assistance",
-      "v": "carry",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "forthcoming",
+      "statusNote": "NOFO coming soon. Watch DCEO grant opportunities.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Business development, bonding and insurance support for small and equity eligible contractors.",
       "funds": [
         "workforce"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "contractor",
         "smallbiz",
         "college"
       ],
+      "regions": [
+        "statewide"
+      ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/ceja-contractor-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/ceja/ceja-contractor-programs.html#1",
+          "label": "DCEO — Contractor Incubator"
+        },
         "audience": []
       }
     },
@@ -89,25 +142,42 @@
       "id": "primes",
       "agency": "DCEO",
       "name": "Clean Energy Primes Accelerator",
-      "kind": "Technical assistance",
-      "v": "carry",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "forthcoming",
+      "statusNote": "NOFO coming soon. Watch DCEO grant opportunities.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Capital access and prime-contractor readiness for established equity eligible firms.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/ceja-contractor-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/ceja/ceja-contractor-programs.html#2",
+          "label": "DCEO — Primes Accelerator"
+        },
         "audience": []
       }
     },
@@ -115,26 +185,44 @@
       "id": "hubs",
       "agency": "DCEO",
       "name": "Clean Jobs Workforce Hubs",
-      "kind": "Technical assistance",
-      "v": "2026-09-04",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "open",
+      "statusNote": "Clean Jobs Workforce Network Program NOFO open. Applications due October 30, 2026.",
+      "deadline": "2026-10-30",
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft",
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Regional training and placement. Note: CEJA workforce training funding opportunities are closed; DCEO says check back fall 2026.",
       "funds": [
         "workforce"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
         "contractor",
         "college"
       ],
+      "regions": [
+        "statewide"
+      ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/workforce-training-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html",
+          "label": "DCEO — Apply for Funding"
+        },
         "audience": []
       }
     },
@@ -142,24 +230,41 @@
       "id": "climworks",
       "agency": "DCEO",
       "name": "Climate Works Pre-Apprenticeship",
-      "kind": "Technical assistance",
-      "v": "2026-09-04",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "open",
+      "statusNote": "Climate Works Pre-apprenticeship Program NOFO open. Applications due October 30, 2026.",
+      "deadline": "2026-10-30",
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Pre-apprenticeship pipeline into building trades for clean energy work.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/workforce-training-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html",
+          "label": "DCEO — Apply for Funding"
+        },
         "audience": []
       }
     },
@@ -167,26 +272,44 @@
       "id": "navigators",
       "agency": "DCEO",
       "name": "Energy Transition Navigators",
-      "kind": "Technical assistance",
-      "v": "carry",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "open",
+      "statusNote": "Energy Transition Navigator Program NOFO open. Applications due October 30, 2026.",
+      "deadline": "2026-10-30",
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft",
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Community outreach staff who connect residents and businesses to CEJA programs.",
       "funds": [
         "plan",
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/workforce-training-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html",
+          "label": "DCEO — Apply for Funding"
+        },
         "audience": []
       }
     },
@@ -194,8 +317,23 @@
       "id": "etcg",
       "agency": "DCEO",
       "name": "Energy Transition Community Grants",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "forthcoming",
+      "statusNote": "NOFO coming soon. Watch DCEO grant opportunities.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "For communities affected by plant or mine closure. Awards sized to property tax and job losses.",
       "funds": [
         "plan",
@@ -203,19 +341,22 @@
         "capital",
         "newcon"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/ceja/other-ceja-programs.html",
           "label": "DCEO"
         },
-        "program": null,
+        "program": {
+          "url": "https://dceo.illinois.gov/ceja/ceja-program-announcements.html",
+          "label": "DCEO — CEJA program status"
+        },
         "audience": []
       }
     },
@@ -223,19 +364,33 @@
       "id": "ihwap",
       "agency": "DCEO",
       "name": "Illinois Home Weatherization Assistance Program",
-      "kind": "Direct install",
-      "v": "carry",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": "Delivered year-round through local agencies. Federal WAP funded at $329M for FY26. Apply through your local community action agency.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Income-qualified weatherization and efficiency measures delivered through local agencies.",
       "funds": [
         "ee",
         "elec"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "resident"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -250,14 +405,25 @@
       "id": "cejamap",
       "agency": "DCEO",
       "name": "CEJA Program Map",
-      "kind": "Tool",
-      "v": "carry",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Live map of workforce hubs, contractor programs, EJ and R3 community layers.",
       "funds": [
         "plan"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
@@ -266,6 +432,9 @@
         "contractor",
         "college",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -280,15 +449,26 @@
       "id": "shines",
       "agency": "IPA",
       "name": "Illinois Shines (Adjustable Block)",
-      "kind": "Incentive",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Upfront lump-sum payment for 15 years of REC value. To participate you work through an Approved Vendor, or become one yourself. This link is the Approved Vendor and Designee requirements page. PY 2026-27 opened June 1, 2026 with a 1,000 MW initial allocation across Small DG, Large DG, Traditional Community Solar, CDCS and Public Schools.",
       "funds": [
         "solar",
         "csolar"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "smallbiz",
@@ -296,6 +476,9 @@
         "muni",
         "contractor",
         "college"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -318,22 +501,37 @@
       "id": "ilsfa",
       "agency": "IPA",
       "name": "Illinois Solar for All",
-      "kind": "Incentive",
-      "v": "2026-09-17",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": "The state-funded program continues. The separate federal Solar for All award that would have expanded it was terminated in August 2025; courts vacated that termination in September 2026 but money has not resumed. Treat any federal expansion as unavailable.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Approved Vendors are qualified and vetted solar companies that play a pivotal role in Illinois Solar for All. No-upfront-cost solar for income-qualified households, non-profits and public facilities in or adjacent to environmental justice and income-eligible communities. Submitted on your behalf by an ILSFA Approved Vendor, not directly by you. Sub-programs include Residential Solar, Non-Profit & Public Facilities, and Community Solar.",
       "funds": [
         "solar",
         "csolar"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
         "resident",
         "muni",
         "college",
-        "contractor"
+        "contractor",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -356,18 +554,32 @@
       "id": "storage",
       "agency": "IPA",
       "name": "CRGA Energy Storage Procurement",
-      "kind": "Incentive",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "20-year Indexed Storage Credit contracts for standalone, utility-scale storage. Initial procurement conducted August 2026 targeting 1,038 MW, split between MISO Zone 4 and the PJM ComEd area; those projects must reach commercial operation by Dec 31, 2029. Procurements continue until 3,000 MW is committed by Dec 31, 2030. Bidders must meet the Minimum Equity Standard and Prevailing Wage Act and execute a Project Labor Agreement.",
       "funds": [
         "storage"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "developer",
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -382,7 +594,22 @@
       "id": "crga",
       "agency": "IPA",
       "name": "CRGA Implementation Hub",
-      "kind": "Policy",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Public Act 104-0458, signed Jan 8, 2026, effective June 1, 2026. The IPA's implementation hub, updated as work progresses: storage procurement, Storage for All evaluation, virtual power plants, expanded efficiency, thermal energy, and the state's first Integrated Resource Plan, due to the ICC by Nov 15, 2026.",
       "funds": [
@@ -390,14 +617,14 @@
         "ee",
         "plan"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo",
         "smallbiz",
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -412,30 +639,50 @@
       "id": "cpace",
       "agency": "IFA Climate Bank",
       "name": "C-PACE Financing",
-      "kind": "Debt",
-      "v": "2026-09-04",
-      "detail": "Long-term financing repaid through a voluntary property assessment. Up to 25% of property value. Existing buildings and new construction. Not available to government-owned property. Not available to government-owned property, which includes public community college and university campuses.",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Long-term financing repaid through a voluntary property assessment. Up to 25% of property value. Existing buildings and new construction. Not available to government-owned property, which includes public community college and university campuses.",
       "funds": [
         "ee",
         "elec",
         "solar",
         "newcon",
-        "capital"
-      ],
-      "regions": [
-        "statewide"
+        "capital",
+        "industrial"
       ],
       "serves": [
         "smallbiz",
         "cbo",
-        "developer"
+        "developer",
+        "manufacturer",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/c-pace/",
+          "label": "Climate Bank — Commercial PACE"
+        },
         "audience": []
       }
     },
@@ -443,8 +690,22 @@
       "id": "ssbci",
       "agency": "IFA Climate Bank",
       "name": "Climate Bank Finance / SSBCI Loan Participation",
-      "kind": "Debt",
-      "v": "2026-09-04",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": 25000,
+        "max": 2000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Loans $25K–$2M covering 25–50% of project cost. Interest bought down to 2% max, 1% for socially and economically disadvantaged and very small businesses. Applied through an enrolled lender, not directly.",
       "funds": [
         "ee",
@@ -454,20 +715,25 @@
         "storage",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "contractor",
-        "developer"
+        "developer",
+        "manufacturer",
+        "ag"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/state-small-business-credit-initiative-ssbci/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/state-small-business-credit-initiative-ssbci/",
+          "label": "Climate Bank — SSBCI"
+        },
         "audience": []
       }
     },
@@ -475,14 +741,25 @@
       "id": "cbhub",
       "agency": "IFA Climate Bank",
       "name": "Climate Bank Financing Directory",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "All Climate Bank programs sorted by who you are: residents, developers and contractors, local governments and nonprofits, municipal and cooperative utilities.",
       "funds": [
         "plan"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
@@ -491,6 +768,9 @@
         "contractor",
         "resident",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -505,7 +785,23 @@
       "id": "ifafed",
       "agency": "IFA Climate Bank",
       "name": "Federal Funding Programs (Grid Resilience, EE Revolving Loan Fund)",
-      "kind": "Grant / Debt",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Includes the DOE Grid Resilience State formula allocation and the Energy Efficiency Revolving Loan Fund capitalization.",
       "funds": [
@@ -514,13 +810,13 @@
         "plan",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo",
         "developer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -535,18 +831,32 @@
       "id": "iccdg",
       "agency": "Illinois Commerce Commission",
       "name": "DG / EE Measures / EV Installer Certification",
-      "kind": "Credential",
-      "v": "carry",
+      "kind": [
+        "Credential"
+      ],
+      "status": "rolling",
+      "statusNote": "Rolling. EE Measures recertification due June 1 each year.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Required before a contractor can install for others or touch utility incentive money. Rolling applications. EE Measures recertification due June 1 annually.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -561,19 +871,33 @@
       "id": "eeup",
       "agency": "Illinois Commerce Commission",
       "name": "Equitable Energy Upgrade Program",
-      "kind": "Not yet live",
-      "v": "carry",
+      "kind": [
+        "Loan"
+      ],
+      "status": "forthcoming",
+      "statusNote": "Still in ICC rulemaking (Docket 25-0863) as of October 8, 2026. No tariff in effect.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Tariffed on-bill program. Still in rulemaking (Docket 25-0863). Delivered through utility tariffs, not directly by ICC. Do not build a capital stack on it yet.",
       "funds": [
         "ee",
         "elec"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "resident",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -588,24 +912,42 @@
       "id": "comed",
       "agency": "ComEd",
       "name": "ComEd Energy Efficiency (Business & Residential)",
-      "kind": "Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Prescriptive and custom incentives, free assessments, instant discounts, small business direct install. Part of the ICC-approved 2026-2029 plan. ComEd serves northern Illinois only: roughly Iroquois County and I-80 north to Wisconsin, Iowa border to Indiana border. If your electric bill does not say ComEd, this is not your program.",
       "funds": [
         "ee",
-        "elec"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
+        "elec",
+        "industrial"
       ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "college",
-        "otheragency"
+        "otheragency",
+        "manufacturer",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "northeast",
+        "northernstateline",
+        "northwest"
       ],
       "links": {
         "hub": {
@@ -620,12 +962,37 @@
       "id": "ameren",
       "agency": "Ameren Illinois",
       "name": "Ameren Illinois Energy Efficiency",
-      "kind": "Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Standard and custom business incentives, retro-commissioning, income-qualified programs. Ameren Illinois serves central and southern Illinois, about 1.2 million electric and 800,000 gas customers across 40,000 square miles. Not available in ComEd territory.",
       "funds": [
         "ee",
-        "elec"
+        "elec",
+        "industrial"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni",
+        "college",
+        "otheragency",
+        "manufacturer",
+        "ag",
+        "faith"
       ],
       "regions": [
         "central",
@@ -635,13 +1002,6 @@
         "southern",
         "southwestern",
         "westcentral"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "college",
-        "otheragency"
       ],
       "links": {
         "hub": {
@@ -656,23 +1016,39 @@
       "id": "nicor",
       "agency": "Nicor Gas",
       "name": "Nicor Gas Energy Efficiency",
-      "kind": "Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Gas efficiency rebates, public sector custom incentives and on-bill financing. CRGA lets Nicor, Peoples and North Shore pursue increased energy reduction goals. Nicor serves most of the northern third of Illinois but NOT the city of Chicago, which is Peoples Gas.",
       "funds": [
         "ee"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
       ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "college",
-        "otheragency"
+        "otheragency",
+        "manufacturer",
+        "faith"
+      ],
+      "regions": [
+        "northeast",
+        "northernstateline",
+        "northwest"
       ],
       "links": {
         "hub": {
@@ -687,15 +1063,26 @@
       "id": "peoplesgas",
       "agency": "Peoples Gas & North Shore Gas",
       "name": "Peoples Gas / North Shore Gas Energy Efficiency",
-      "kind": "Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Gas efficiency rebates and direct-install programs. Peoples Gas serves the city of Chicago; North Shore Gas serves the northern suburbs in Cook and Lake counties. If you are in Chicago, this is your gas utility, not Nicor.",
       "funds": [
         "ee",
         "elec"
-      ],
-      "regions": [
-        "northeast"
       ],
       "serves": [
         "smallbiz",
@@ -703,7 +1090,12 @@
         "muni",
         "college",
         "resident",
-        "otheragency"
+        "otheragency",
+        "manufacturer",
+        "faith"
+      ],
+      "regions": [
+        "northeast"
       ],
       "links": {
         "hub": {
@@ -718,15 +1110,26 @@
       "id": "midamerican",
       "agency": "MidAmerican Energy",
       "name": "MidAmerican Energy Efficiency Programs",
-      "kind": "Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Electric and gas efficiency rebates for the Illinois communities MidAmerican serves, mainly the Quad Cities area including Rock Island and Moline. Neither ComEd nor Ameren serves these customers.",
       "funds": [
         "ee",
         "elec"
-      ],
-      "regions": [
-        "northwest"
       ],
       "serves": [
         "smallbiz",
@@ -734,7 +1137,12 @@
         "muni",
         "college",
         "resident",
-        "otheragency"
+        "otheragency",
+        "manufacturer",
+        "ag"
+      ],
+      "regions": [
+        "northwest"
       ],
       "links": {
         "hub": {
@@ -749,7 +1157,21 @@
       "id": "vpp",
       "agency": "All ICC-regulated utilities",
       "name": "Virtual Power Plant Programs (CRGA)",
-      "kind": "Incentive",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "New under CRGA. Pays households and businesses for smart thermostats, solar, small batteries and EVs dispatched at peak. Utilities filed program details June 1, 2026.",
       "funds": [
@@ -757,14 +1179,15 @@
         "ee",
         "ev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
-        "resident"
+        "resident",
+        "utility"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -779,20 +1202,35 @@
       "id": "ihda",
       "agency": "IHDA",
       "name": "Multifamily Retrofit & Preservation Financing",
-      "kind": "Debt / Equity",
-      "v": "carry",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "IHDA financing is offered through rounds and rolling programs. Confirm the current round with IHDA.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Layered financing for affordable multifamily including energy retrofits and new all-electric construction.",
       "funds": [
         "ee",
         "elec",
         "newcon"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
-        "developer"
+        "developer",
+        "district"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -807,17 +1245,31 @@
       "id": "evrebate",
       "agency": "IEPA",
       "name": "Electric Vehicle Rebate Program",
-      "kind": "Rebate",
-      "v": "2026-09-04",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "open",
+      "statusNote": "FY27 cycle open August 1 to December 31, 2026. $14M appropriated; rebates paid as funds allow. Apply within 180 days of purchase.",
+      "deadline": "2026-12-31",
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "$2,000 per eligible new or used EV, plus $2,000 more for low-income applicants. Vehicle price under $80,000. Application cycle OPEN August 1 – December 31, 2026. Apply within 180 days of purchase.",
       "funds": [
         "ev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "resident"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -832,18 +1284,32 @@
       "id": "idot",
       "agency": "IDOT",
       "name": "EV Charging & Transportation Infrastructure",
-      "kind": "Grant",
-      "v": "carry",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "Illinois resumed NEVI awards after the 2025 federal freeze was lifted by court order. Confirm the next round with IDOT.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "NEVI corridor charging and related transportation infrastructure grants.",
       "funds": [
         "ev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -858,7 +1324,21 @@
       "id": "itc48e",
       "agency": "IRS",
       "name": "Section 48E Clean Electricity Investment Credit",
-      "kind": "Tax credit",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "30% base credit. The July 4, 2026 begin-construction deadline has passed. Projects that started by then have until Dec 31, 2030. Everything starting now must be PLACED IN SERVICE by Dec 31, 2027. Foreign entity sourcing rules apply.",
       "funds": [
@@ -866,16 +1346,18 @@
         "storage",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "cbo",
         "muni",
         "developer",
         "college",
-        "otheragency"
+        "otheragency",
+        "faith",
+        "ag"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -890,8 +1372,22 @@
       "id": "electivepay",
       "agency": "IRS",
       "name": "Elective Pay (Direct Pay)",
-      "kind": "Tax credit",
-      "v": "carry",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": "Still available to tax-exempt owners. Solar and wind starting construction after July 4, 2026 must be placed in service by December 31, 2027. Geothermal and storage run into the 2030s.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Lets nonprofits, churches, municipalities and other tax-exempt owners receive 48E as a cash payment. This is the single most under-used tool in the CBO and municipal stack.",
       "funds": [
         "solar",
@@ -899,14 +1395,16 @@
         "ev",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni",
         "college",
-        "otheragency"
+        "otheragency",
+        "faith",
+        "district"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -921,19 +1419,34 @@
       "id": "storage48e",
       "agency": "IRS",
       "name": "48E for Standalone Storage",
-      "kind": "Tax credit",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Battery storage not co-located with solar is NOT subject to the accelerated solar and wind deadlines. Its longer runway is why storage is the strongest 2027–2030 play.",
       "funds": [
         "storage"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "smallbiz",
-        "developer"
+        "developer",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -947,18 +1460,32 @@
     {
       "id": "resi25d",
       "agency": "IRS",
-      "name": "Section 25D Residential Credit — TERMINATED",
-      "kind": "Expired",
+      "name": "Section 25D Residential Credit",
+      "kind": [
+        "Tax"
+      ],
+      "status": "closed",
+      "statusNote": "Terminated for expenditures after December 31, 2025.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Ended December 31, 2025 with no step-down. Any client still budgeting a 30% homeowner credit has a hole in their pro forma.",
       "funds": [
         "solar"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "resident"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -973,19 +1500,38 @@
       "id": "reap",
       "agency": "USDA",
       "name": "Rural Energy for America Program (REAP)",
-      "kind": "Grant / Loan guarantee",
-      "v": "carry",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "paused",
+      "statusNote": "USDA rescinded the FY2025-2027 REAP funding notice on April 15, 2026. A new REAP rule takes effect October 16, 2026; a new funding notice with application windows has not been published. Under the new rule, ground-mount solar or wind on cropland is ineligible and projects must be completed before applying. Do not budget REAP until the new notice is out.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Grants and loan guarantees for rural small businesses and agricultural producers doing efficiency or renewables.",
       "funds": [
         "ee",
         "solar",
-        "elec"
+        "elec",
+        "ag",
+        "windgeo",
+        "bio"
+      ],
+      "serves": [
+        "smallbiz",
+        "ag"
       ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "smallbiz"
       ],
       "links": {
         "hub": {
@@ -1000,7 +1546,22 @@
       "id": "dceogrants",
       "agency": "DCEO",
       "name": "DCEO Grant Opportunities — search all programs",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Every open DCEO NOFO, not just energy. Grocery initiative, community development, infrastructure, small business — these often cover the capital and construction lines that energy programs will not.",
       "funds": [
@@ -1010,9 +1571,6 @@
         "newcon",
         "ee"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni",
@@ -1021,6 +1579,9 @@
         "developer",
         "college",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1035,14 +1596,25 @@
       "id": "oet",
       "agency": "DCEO OET",
       "name": "Office of Employment & Training — WIOA & regional workforce",
-      "kind": "Workforce",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Regional Workforce Managers, WIOA-funded training dollars, Apprenticeship Illinois and Job Training Economic Development. This is how a client staffs the project once it is funded.",
       "funds": [
         "workforce"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
@@ -1052,6 +1624,9 @@
         "developer",
         "college",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1066,14 +1641,25 @@
       "id": "worknet",
       "agency": "DCEO OET",
       "name": "Illinois workNet — local workforce board finder",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Find the Local Workforce Innovation Area and American Job Center that serves the client's county. First call for hiring, training dollars and on-the-job training contracts.",
       "funds": [
         "workforce"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "cbo",
@@ -1082,6 +1668,9 @@
         "contractor",
         "college",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1096,20 +1685,36 @@
       "id": "oeit",
       "agency": "DCEO OEIT",
       "name": "Office of Entrepreneurship, Innovation & Technology — small business assistance",
-      "kind": "Technical assistance",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft",
+        "operating"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Small Business Development Centers, Business Information Center, procurement and certification help. The office that gets a contractor bid-ready and a small business bankable.",
       "funds": [
         "workforce",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "contractor",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1124,7 +1729,21 @@
       "id": "advil",
       "agency": "DCEO OEIT",
       "name": "Advantage Illinois — low-interest loan programs",
-      "kind": "Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Participation loans and credit enhancement for Illinois small businesses. Pairs with IFA SSBCI on the debt line of a capital stack.",
       "funds": [
@@ -1133,12 +1752,13 @@
         "solar",
         "elec"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
-        "contractor"
+        "contractor",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1153,18 +1773,32 @@
       "id": "ilworks",
       "agency": "DCEO OEIT",
       "name": "Illinois Works — bid credit & contractor resources",
-      "kind": "Technical assistance",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Bid credit program and apprenticeship resources for contractors on public works. Relevant to any project carrying prevailing wage or PLA requirements.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1179,8 +1813,23 @@
       "id": "eecbg",
       "agency": "IEPA",
       "name": "Energy Efficiency & Conservation Block Grant (EECBG)",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "Final IEPA EECBG round awarded August 2025. No new funding announced. Do not budget it.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "DOE/IIJA money for municipal and county strategic energy plans, energy audits and publicly owned building upgrades. Awards ran $50K–$250K. Final round was awarded August 2025 — watch for reauthorization before you budget it. Applicant must be a unit of local government. Schools, school districts and community college districts are not eligible — partner with your municipality, which must be the applicant.",
       "funds": [
         "plan",
@@ -1188,11 +1837,12 @@
         "predev",
         "elec"
       ],
+      "serves": [
+        "muni",
+        "district"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
@@ -1207,23 +1857,39 @@
       "id": "iepaenergy",
       "agency": "IEPA",
       "name": "Office of Energy — codes training, assessments & trust funds",
-      "kind": "Technical assistance",
-      "v": "2026-09-04",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": "IEPA Office of Energy page lists the Efficient & Resilient Public Buildings Grant ($50K-$200K, local governments, DOE State Energy Program funds) but shows it as both open and closed. Confirm with IEPA before referring.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Energy Code training and technical support, wastewater treatment plant energy assessments, and the Energy Efficiency Trust Fund for low-income and government facilities.",
       "funds": [
         "ee",
         "newcon",
         "plan"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "contractor",
         "cbo",
         "college",
-        "otheragency"
+        "otheragency",
+        "district"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1238,17 +1904,32 @@
       "id": "schoolbus",
       "agency": "IEPA",
       "name": "Electric School Bus & fleet programs",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "paused",
+      "statusNote": "US EPA Clean School Bus is being revamped; no open round as of October 2026 and EPA says new funding details come \"later in 2026.\" IEPA VW school bus rounds are awarded. For fleet trucks see Driving a Cleaner Illinois VW Round 9.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Replacement funding for diesel school buses and public fleet vehicles, prioritizing environmental justice areas.",
       "funds": [
         "ev"
       ],
+      "serves": [
+        "muni",
+        "district"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
@@ -1263,26 +1944,44 @@
       "id": "ifagrid",
       "agency": "IFA Climate Bank",
       "name": "GRID — grid resilience for municipal utilities & co-ops",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": 150000,
+        "max": 8000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "DOE 40101(d) grid resilience grants distributed by the Climate Bank. Award range roughly $150,000 to $8,000,000. Built for small utilities and disadvantaged communities.",
       "funds": [
         "storage",
         "capital",
         "plan"
       ],
+      "serves": [
+        "utility"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/municipal-cooperative-utilities/40101d-grid-resilience/",
+          "label": "Climate Bank — 40101(d) Grid Resilience"
+        },
         "audience": []
       }
     },
@@ -1290,25 +1989,42 @@
       "id": "ifaplanning",
       "agency": "IFA Climate Bank",
       "name": "Small Utility Clean Energy Planning Grant",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "CPRG-funded planning money for municipal and cooperative utilities: technical assessments, procurement strategy and PPA readiness. Rolling application plus competitive rounds.",
       "funds": [
         "plan",
         "predev"
       ],
+      "serves": [
+        "utility"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/municipal-cooperative-utilities/clean-energy-planning/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/municipal-cooperative-utilities/clean-energy-planning/",
+          "label": "Climate Bank — Clean Energy Planning"
+        },
         "audience": []
       }
     },
@@ -1316,25 +2032,45 @@
       "id": "ifastretch",
       "agency": "IFA Climate Bank",
       "name": "Stretch Energy Code adoption support",
-      "kind": "Grant",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft",
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Helps municipalities adopt, implement and enforce the Illinois Stretch Energy Code — staff time, training and legal review.",
       "funds": [
         "newcon",
         "plan"
       ],
+      "serves": [
+        "muni",
+        "utility"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/local-governments-nonprofits/stretch-building-code-adoption-support/",
+          "label": "Climate Bank — Stretch Code Adoption Support"
+        },
         "audience": []
       }
     },
@@ -1342,8 +2078,22 @@
       "id": "ifabridge",
       "agency": "IFA Climate Bank",
       "name": "Federal Tax Credit / REC Bridge Loan",
-      "kind": "Loan",
-      "v": "2026-09-04",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Short-term financing that covers the gap between paying for a project and receiving the federal credit through elective pay, or the Illinois Shines REC payment.",
       "funds": [
         "solar",
@@ -1351,15 +2101,15 @@
         "ee",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo",
         "developer",
         "college",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1374,20 +2124,34 @@
       "id": "ifasovereignty",
       "agency": "IFA Climate Bank",
       "name": "Energy Sovereignty Loan",
-      "kind": "Loan",
-      "v": "2026-09-04",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Low-cost debt supporting community ownership of clean energy assets rather than third-party ownership.",
       "funds": [
         "csolar",
         "solar",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1402,20 +2166,36 @@
       "id": "ifahubs",
       "agency": "IFA Climate Bank",
       "name": "Community Resilience Hubs & Community Charging",
-      "kind": "Grant / Loan",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Backup power and solar-plus-storage at community facilities, and publicly accessible EV charging in underserved areas.",
       "funds": [
         "storage",
         "ev",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
-        "cbo"
+        "cbo",
+        "district"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1430,19 +2210,34 @@
       "id": "idotprog",
       "agency": "IDOT",
       "name": "NEVI, Carbon Reduction, CMAQ & Freight-Port Infrastructure",
-      "kind": "Grant",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Four federal formula and competitive programs a village or county can use for corridor charging, fleet depots, congestion and air quality projects, and freight infrastructure.",
       "funds": [
         "ev",
-        "capital"
-      ],
-      "regions": [
-        "statewide"
+        "capital",
+        "freight"
       ],
       "serves": [
         "muni",
         "developer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1457,15 +2252,26 @@
       "id": "iccnetmeter",
       "agency": "Illinois Commerce Commission",
       "name": "Net metering & distributed generation rules",
-      "kind": "Tariff",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Retail-rate net metering for systems up to 2 MW, plus the DG installer certification your contractor must hold. Sets what the solar actually earns on the bill.",
       "funds": [
         "solar",
         "storage"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "muni",
@@ -1473,6 +2279,9 @@
         "cbo",
         "resident",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1487,7 +2296,22 @@
       "id": "cbn",
       "agency": "DCEO",
       "name": "Clean Building Navigator & Concierge (CPRG)",
-      "kind": "Technical assistance",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-04",
       "detail": "Outreach, intake, contractor coordination and project navigation for residents and small businesses pursuing electrification and efficiency upgrades.",
       "funds": [
@@ -1495,14 +2319,14 @@
         "elec",
         "plan"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "resident",
         "cbo",
         "muni"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1517,8 +2341,23 @@
       "id": "ihdagrrp",
       "agency": "IHDA",
       "name": "Green Resilient Retrofit & Energy Efficiency Program",
-      "kind": "Grant / Loan",
-      "v": "2026-09-04",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "If this relies on HUD GRRP: HUD restructured GRRP effective March 1, 2026 (awards converted to loans, solar and EV chargers no longer fundable). Confirm with IHDA what remains available.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Retrofit and resilience financing for affordable multifamily housing — relevant when a municipality or CBO controls housing stock.",
       "funds": [
         "ee",
@@ -1526,13 +2365,14 @@
         "capital",
         "newcon"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo",
-        "developer"
+        "developer",
+        "district"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1547,22 +2387,39 @@
       "id": "iac",
       "agency": "ICCB",
       "name": "Industrial Assessment Center — UIC",
-      "kind": "Technical assistance",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "DOE-funded program pairing trained staff and students to conduct free energy and pollution assessments at mid-size industrial facilities. UIC is Illinois' center, one of 28 nationally.",
       "funds": [
         "ee",
-        "workforce"
-      ],
-      "regions": [
-        "statewide"
+        "workforce",
+        "industrial"
       ],
       "serves": [
         "smallbiz",
         "developer",
         "contractor",
         "college",
-        "otheragency"
+        "otheragency",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1577,22 +2434,39 @@
       "id": "pab",
       "agency": "IFA Climate Bank",
       "name": "Private Activity Bonds",
-      "kind": "Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Tax-exempt financing for 501(c)(3) organizations and other conduit borrowers to finance or refinance capital expenditures, including clean energy assets.",
       "funds": [
         "capital",
         "predev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni",
         "developer",
         "college",
-        "otheragency"
+        "otheragency",
+        "faith",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1607,8 +2481,22 @@
       "id": "ggrf",
       "agency": "US EPA",
       "name": "Greenhouse Gas Reduction Fund (GGRF)",
-      "kind": "Grant",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "paused",
+      "statusNote": "Two tracks, both unresolved. NCIF/CCIA: en banc D.C. Circuit upheld the injunction August 4, 2026; the government is seeking Supreme Court review. Solar for All: termination vacated by federal courts in Rhode Island (Sept. 18, 2026) and D.C. (late Sept. 2026), but funds were not flowing as of October 7 and EPA is weighing appeal. Do not count on this in a capital stack.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Federal program funding clean energy and climate projects in low-income and disadvantaged communities. Solar for All Expansion and National Clean Investment Fund instruments are in litigation with funding paused — confirm current status before counting on this.",
       "funds": [
         "capital",
@@ -1616,12 +2504,12 @@
         "ee",
         "csolar"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "muni"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1636,18 +2524,33 @@
       "id": "eetf",
       "agency": "IEPA",
       "name": "Energy Efficiency Trust Fund Grant Program",
-      "kind": "Grant",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 round closed (first-come, first-served through June 30, 2026). $50K-$1M with match. Watch for the next IEPA NOFO.",
+      "deadline": null,
+      "award": {
+        "min": 50000,
+        "max": 1000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Funds residential energy efficiency projects for public housing authorities, local governments, or nonprofit organizations.",
       "funds": [
         "ee"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
-        "cbo"
+        "cbo",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1662,20 +2565,35 @@
       "id": "eeassess",
       "agency": "IEPA",
       "name": "Energy Efficiency Assessment Program",
-      "kind": "Grant",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 round closed (through March 31, 2026). $5K-$60K, first-come, first-served. Watch for the next IEPA NOFO.",
+      "deadline": null,
+      "award": {
+        "min": 5000,
+        "max": 60000
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Grant funding for public housing authorities, local governments, or nonprofit organizations to assess energy efficiency opportunities before committing to a project.",
       "funds": [
         "ee",
         "predev",
         "plan"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1690,19 +2608,34 @@
       "id": "ebecc",
       "agency": "IEPA",
       "name": "Energy Benchmarking & Efficiency at Community Colleges",
-      "kind": "Grant",
-      "v": "2026-09-16",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "Delivered through IGEN to member colleges, not by open application. No current application window posted. Confirm with IGEN.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Technical assistance and implementation funding to benchmark energy use and complete efficiency upgrades at Illinois community colleges. Delivered through the Illinois Green Economy Network (IGEN), not by direct application to IEPA. Prior awards ran about $106,000 per college, with priority to financially constrained institutions.",
       "funds": [
         "ee",
         "plan",
         "predev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "college"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1717,20 +2650,36 @@
       "id": "revil",
       "agency": "DCEO",
       "name": "REV Illinois Act",
-      "kind": "Tax incentive",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Reimagining Energy and Vehicles in Illinois Act — a highly competitive incentive program for manufacturers of EVs, EV components, and renewable energy equipment locating or expanding in Illinois.",
       "funds": [
         "ev",
         "capital",
-        "newcon"
-      ],
-      "regions": [
-        "statewide"
+        "newcon",
+        "industrial"
       ],
       "serves": [
         "developer",
-        "smallbiz"
+        "smallbiz",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1745,18 +2694,32 @@
       "id": "dotcfi",
       "agency": "US DOT",
       "name": "Charging & Fueling Infrastructure Grant",
-      "kind": "Grant",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Federal discretionary grant for publicly accessible EV charging and alternative fueling infrastructure, with a rural and community set-aside.",
       "funds": [
         "ev"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "developer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1771,19 +2734,33 @@
       "id": "drivingcleaner",
       "agency": "IEPA",
       "name": "Driving a Cleaner Illinois",
-      "kind": "Grant",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "open",
+      "statusNote": "VW Round 9 (all-electric Class 4-8 local freight trucks, up to $18M) open until funds run out. CEJA EV Charging Round 3 closed. No open DERA NOFO. Checked October 8, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Funded by the Volkswagen settlement and federal DERA dollars. Covers charging station infrastructure and other mobile-source electrification projects, including publicly accessible charging.",
       "funds": [
         "ev"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "muni",
         "smallbiz",
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1798,17 +2775,31 @@
       "id": "returning",
       "agency": "DCEO",
       "name": "Returning Resident Clean Jobs Training Program",
-      "kind": "Grant",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "CEJA program delivering clean jobs training inside Illinois Department of Corrections facilities to individuals within 36 months of release, and post-release support into employment.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1823,7 +2814,22 @@
       "id": "eecportal",
       "agency": "IPA",
       "name": "Become an Equity Eligible Contractor (EEC)",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Certification path for Approved Vendors, Designees and Subcontractors majority-owned by an Equity Eligible Person under CEJA. EEC status is the gateway credential for CEJA contractor money and for Illinois Shines and ILSFA equity set-asides. Vendor login is separate, at portal.illinoisabp.com.",
       "funds": [
@@ -1831,13 +2837,13 @@
         "csolar",
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "smallbiz",
         "resident"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1861,14 +2867,25 @@
       "id": "energyequity",
       "agency": "IPA",
       "name": "Energy Equity Portal",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "The IPA's hub for the clean energy workforce. Register as a clean energy company, post jobs, and connect with job seekers. Also hosts the Small & Emerging Business Hub.",
       "funds": [
         "workforce"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "contractor",
@@ -1878,6 +2895,9 @@
         "resident",
         "developer",
         "otheragency"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1892,7 +2912,22 @@
       "id": "seb",
       "agency": "IPA",
       "name": "Small and Emerging Businesses in Illinois Solar for All and Illinois Shines",
-      "kind": "Credential",
+      "kind": [
+        "Credential"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-17",
       "detail": "New for Program Year 2026-27. One registration covers both Illinois Shines and ILSFA. 'Small' means independently owned with under $4M gross revenue last year; 'emerging' means authorized to do business for under 3 years. Benefits include a lower batch threshold for project submittal, plus project selection preference and a collateral deduction on REC payments in ILSFA. Single Project Approved Vendors are not eligible.",
       "funds": [
@@ -1900,12 +2935,12 @@
         "solar",
         "csolar"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1937,17 +2972,33 @@
       "id": "sba504",
       "agency": "US Small Business Administration",
       "name": "SBA 504 Loans",
-      "kind": "Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Long-term, fixed-rate financing for major fixed assets — real estate, equipment — that promote business growth. Usable for clean energy retrofits bundled into a larger capital project.",
       "funds": [
         "capital"
       ],
+      "serves": [
+        "smallbiz",
+        "manufacturer",
+        "ag"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "smallbiz"
       ],
       "links": {
         "hub": {
@@ -1962,17 +3013,31 @@
       "id": "iltreasurer",
       "agency": "Illinois State Treasurer",
       "name": "Charitable Trust Grant",
-      "kind": "Grant",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "General economic development funding for nonprofits. Not clean-energy specific, but usable for a CBO's broader capital campaign.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -1987,26 +3052,43 @@
       "id": "fleetelec",
       "agency": "IFA Climate Bank",
       "name": "Fleet Electrification Financing",
-      "kind": "Loan",
-      "v": "2026-09-08",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Climate Bank debt product for converting municipal, business or nonprofit vehicle fleets to electric.",
       "funds": [
         "ev"
-      ],
-      "regions": [
-        "statewide"
       ],
       "serves": [
         "muni",
         "smallbiz",
         "developer"
       ],
+      "regions": [
+        "statewide"
+      ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/fleet-electrification/",
+          "label": "Climate Bank — Fleet Electrification"
+        },
         "audience": []
       }
     },
@@ -2014,19 +3096,33 @@
       "id": "leasetoown",
       "agency": "IFA Climate Bank",
       "name": "Standard Offer Lease-to-Own",
-      "kind": "Financing",
-      "v": "2026-09-08",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Lets a homeowner or small nonprofit access solar or efficiency upgrades with no upfront cost, paying down to ownership over time.",
       "funds": [
         "solar",
         "ee"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "resident",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2041,19 +3137,34 @@
       "id": "carbonfreeschools",
       "agency": "IFA Climate Bank",
       "name": "Carbon Free Schools",
-      "kind": "Grant / Loan",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Financing and technical support for Illinois school districts pursuing solar, storage and efficiency upgrades. K-12 school districts only. Community colleges are governed by the Public Community College Act, not the School Code.",
       "funds": [
         "ee",
         "solar",
         "capital"
       ],
+      "serves": [
+        "district"
+      ],
       "regions": [
         "statewide"
-      ],
-      "serves": [
-        "muni"
       ],
       "links": {
         "hub": {
@@ -2068,25 +3179,44 @@
       "id": "workingcapital",
       "agency": "IFA Climate Bank",
       "name": "Working Capital Loan",
-      "kind": "Loan",
-      "v": "2026-09-08",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Short-term operating capital for contractors and small businesses carrying a clean energy project through to payment.",
       "funds": [
-        "capital"
-      ],
-      "regions": [
-        "statewide"
+        "capital",
+        "operating"
       ],
       "serves": [
         "contractor",
-        "smallbiz"
+        "smallbiz",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/working-capital/",
+          "label": "Climate Bank — Working Capital"
+        },
         "audience": []
       }
     },
@@ -2094,19 +3224,34 @@
       "id": "ifabuildelec",
       "agency": "IFA Climate Bank",
       "name": "Building Electrification Financing",
-      "kind": "Loan",
-      "v": "2026-09-08",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Climate Bank debt product specifically for heat pump and all-electric conversion projects.",
       "funds": [
         "elec"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo",
-        "smallbiz"
+        "smallbiz",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2121,17 +3266,31 @@
       "id": "contractorportal",
       "agency": "IFA Climate Bank",
       "name": "Contractor Portal",
-      "kind": "Tool",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Climate Bank's intake tool for contractors to access financing products and track applications.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2146,17 +3305,31 @@
       "id": "fourfj",
       "agency": "IFA Climate Bank",
       "name": "Federal Funds for Future Jobs (4FJ) Procurement",
-      "kind": "Technical assistance",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "IFA procurement and technical assistance pathway connecting contractors to federal clean energy job opportunities.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2170,22 +3343,36 @@
     {
       "id": "brightneighborhood",
       "agency": "IPA",
-      "name": "ILSFA Bright Neighborhoods Initiative — CLOSED",
-      "kind": "Expired",
+      "name": "ILSFA Bright Neighborhoods Initiative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "closed",
+      "statusNote": "Initiative closed.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "An Illinois Solar for All pilot, not Illinois Shines. Tested a consolidated model where the Program Administrator recruited participants directly and matched them to one pre-selected Approved Vendor. Ran in program years 2023-24 and 2024-25 in West Garfield Park and the West Side of Chicago, Waukegan, and the Carbondale-Marion area. Applications are closed; this link is the findings report. Watch for elements of it folding into the main ILSFA program.",
       "funds": [
         "csolar",
         "solar"
       ],
-      "regions": [
-        "northeast",
-        "southern"
-      ],
       "serves": [
         "cbo",
         "resident",
         "contractor"
+      ],
+      "regions": [
+        "northeast",
+        "southern"
       ],
       "links": {
         "hub": {
@@ -2200,18 +3387,32 @@
       "id": "doelpo",
       "agency": "IFA Climate Bank",
       "name": "DOE Loan Programs Office / SEFI Partnership",
-      "kind": "Loan",
-      "v": "2026-09-08",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Illinois Climate Bank is a designated State Energy Financing Institution, which gives Illinois projects access to DOE Loan Programs Office credit support on large clean energy deals.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "developer"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2226,20 +3427,34 @@
       "id": "enablingupgrades",
       "agency": "IFA Climate Bank",
       "name": "Enabling Upgrades for Solar",
-      "kind": "Grant",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed — a common hidden cost that stalls a project.",
       "funds": [
         "solar",
         "elec"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "resident",
         "cbo",
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2254,19 +3469,33 @@
       "id": "solarpipeline",
       "agency": "DCEO",
       "name": "Solar Training Pipeline Program",
-      "kind": "Grant / Workforce",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Established under the Future Energy Jobs Act (FEJA), now continued through DCEO. Builds a pool of trained solar installers, with priority for foster care alumni and returning citizens. Feeds into Illinois Solar for All projects.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo",
         "contractor",
         "college"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2281,18 +3510,32 @@
       "id": "craftapprentice",
       "agency": "DCEO",
       "name": "Craft Apprenticeship Program",
-      "kind": "Grant / Workforce",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "FEJA-established program administered with IBEW to place solar and electrical trades training inside existing union apprenticeship programs statewide.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "contractor",
         "college"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2307,17 +3550,31 @@
       "id": "multicultural",
       "agency": "DCEO",
       "name": "Multicultural Jobs Program",
-      "kind": "Grant / Workforce",
-      "v": "2026-09-08",
+      "kind": [
+        "Grant"
+      ],
+      "status": "rolling",
+      "statusNote": "Listed as a rolling DCEO opportunity (Future Energy Jobs Act Multi-Cultural) as of October 8, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
       "detail": "FEJA-established program funding diversity-focused community organizations to deliver clean energy job training, sales and business-expansion support.",
       "funds": [
         "workforce"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2332,17 +3589,31 @@
       "id": "pepsico",
       "agency": "PepsiCo (private)",
       "name": "Juntos Crecemos Grant Program",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "$10,000 grants for woman-owned food and beverage small businesses nationwide. Not clean-energy specific — general small business capital.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2357,19 +3628,33 @@
       "id": "nicorpillars",
       "agency": "Nicor Gas",
       "name": "Pillars of Giving",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-16",
       "detail": "Nicor's charitable program supporting education, workforce and technical/vocational training aligned with its service territory.",
       "funds": [
         "capital"
       ],
+      "serves": [
+        "cbo"
+      ],
       "regions": [
         "northeast",
         "northernstateline",
         "northwest"
-      ],
-      "serves": [
-        "cbo"
       ],
       "links": {
         "hub": {
@@ -2384,17 +3669,31 @@
       "id": "footlocker",
       "agency": "LISC / Foot Locker Foundation (private)",
       "name": "Community Empowerment Program",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Youth-focused community grants. Not clean-energy specific — relevant if a CBO's clean energy work is bundled with a youth or community facility.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2409,18 +3708,32 @@
       "id": "midlandsb",
       "agency": "Midland States Bank Foundation (private)",
       "name": "Fall Awards",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Grants for nonprofits and small businesses across education, workforce development, housing and economic development.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "smallbiz",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2435,18 +3748,32 @@
       "id": "tmobilehometown",
       "agency": "T-Mobile (private)",
       "name": "Hometown Grants",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Capital grants for small-town community development projects nationwide, open to local government and nonprofit applicants.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "muni",
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2461,18 +3788,33 @@
       "id": "forefrontmsi",
       "agency": "Forefront (nonprofit)",
       "name": "Mission Sustainability Initiative Grants",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Capacity-building and strategic planning grants for Illinois nonprofits — useful for a CBO building the organizational capacity to run a clean energy program.",
       "funds": [
         "plan",
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -2487,22 +3829,2452 @@
       "id": "walmartspark",
       "agency": "Walmart (private)",
       "name": "Spark Good Local Grants",
-      "kind": "Philanthropic",
+      "kind": [
+        "Philanthropic"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
       "v": "2026-09-08",
       "detail": "Local cash grants from nearby Walmart stores and distribution centers for community, youth and education projects.",
       "funds": [
         "capital"
       ],
-      "regions": [
-        "statewide"
-      ],
       "serves": [
         "cbo"
+      ],
+      "regions": [
+        "statewide"
       ],
       "links": {
         "hub": {
           "url": "https://walmart.org/how-we-give/program-guidelines/spark-good-local-grants-guidelines",
           "label": "Walmart (private)"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "usdabi",
+      "agency": "USDA",
+      "name": "Business & Industry Loan Guarantees",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "USDA guarantees a commercial lender's loan to a rural business: 85% on requests under $5M, 80% at $5M and up (FY2026). Terms up to 40 years. Covers buildings, land, equipment, machinery, inventory and some refinancing. Rural means outside cities over 50,000. Applied through your lender.",
+      "funds": [
+        "capital",
+        "bio",
+        "ag",
+        "industrial"
+      ],
+      "serves": [
+        "smallbiz",
+        "ag",
+        "manufacturer",
+        "cbo"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://www.rd.usda.gov/programs-services/business-programs/business-and-industry-guaranteed-loan-3",
+          "label": "USDA — B&I Guaranteed Loans"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usdarbdg",
+      "agency": "USDA",
+      "name": "Rural Business Development Grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 window closed June 30, 2026. Next cycle expected spring 2027.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Grants to public bodies and nonprofits that help small rural businesses: technical assistance, training, feasibility, revolving loan capital. No cost share. Smaller requests get priority. For-profits cannot apply directly.",
+      "funds": [
+        "capital",
+        "predev",
+        "plan",
+        "ag"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "utility"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://rd.usda.gov/programs-services/rural-business-development-grants",
+          "label": "USDA — RBDG"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usdavapg",
+      "agency": "USDA",
+      "name": "Value-Added Producer Grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 window closed April 22, 2026. Next window expected early 2027.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 200000
+      },
+      "match": "1:1 match (at least 50% of total project cost)",
+      "costTypes": [
+        "soft",
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Up to $50K for planning (feasibility, business plans) or $200K for working capital to process and market a value-added agricultural product. Match must be spent before each reimbursement.",
+      "funds": [
+        "ag",
+        "bio",
+        "predev",
+        "operating"
+      ],
+      "serves": [
+        "ag"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://www.rd.usda.gov/programs-services/business-programs/value-added-producer-grants",
+          "label": "USDA — VAPG"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usdacf",
+      "agency": "USDA",
+      "name": "Community Facilities Direct Loan & Grant",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Loans and grants for essential community facilities in rural places of 20,000 or fewer: public buildings, schools, health care, public safety, utility services. Grants cover 15% to 75% of cost depending on population and income. Applications year-round.",
+      "funds": [
+        "capital",
+        "ee",
+        "solar",
+        "newcon"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "district",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://www.rd.usda.gov/programs-services/community-facilities/community-facilities-direct-loan-grant-program",
+          "label": "USDA — Community Facilities"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usdaresp",
+      "agency": "USDA",
+      "name": "Rural Energy Savings Program",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": "Open first-come, first-served until funds run out.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "0% loans for up to 20 years to electric co-ops and rural utilities, which relend to their members at up to 5% for efficiency, renewables and storage. Consumers do not apply to USDA; ask your co-op if it participates.",
+      "funds": [
+        "ee",
+        "elec",
+        "solar",
+        "storage"
+      ],
+      "serves": [
+        "utility"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://rd.usda.gov/programs-services/electric-programs/rural-energy-savings-program",
+          "label": "USDA — RESP"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usda9003",
+      "agency": "USDA",
+      "name": "Biorefinery, Renewable Chemical & Biobased Product Manufacturing Assistance (9003)",
+      "kind": [
+        "Loan"
+      ],
+      "status": "open",
+      "statusNote": "Accepted year-round with two decision cycles. Next: letter of intent by March 1, Phase 1 by April 1, 2027. Updated rule published July 9, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 250000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Loan guarantees up to $250M for building or retrofitting facilities that make advanced biofuels, renewable chemicals or biobased products with new technology.",
+      "funds": [
+        "bio",
+        "industrial",
+        "capital"
+      ],
+      "serves": [
+        "manufacturer",
+        "developer",
+        "ag"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://www.rd.usda.gov/programs-services/energy-programs/biorefinery-renewable-chemical-and-biobased-product-manufacturing-assistance-program",
+          "label": "USDA — 9003"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "usdaabpp",
+      "agency": "USDA",
+      "name": "Advanced Biofuel Payment Program",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "open",
+      "statusNote": "Enrollment open October 1-31, 2026.",
+      "deadline": "2026-10-31",
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Production payments to producers of advanced biofuel made from renewable biomass other than corn kernel starch. Blenders do not qualify.",
+      "funds": [
+        "bio",
+        "operating"
+      ],
+      "serves": [
+        "manufacturer",
+        "ag",
+        "smallbiz"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rd.usda.gov/",
+          "label": "USDA Rural Development"
+        },
+        "program": {
+          "url": "https://www.rd.usda.gov/programs-services/energy-programs/advanced-biofuel-payment-program",
+          "label": "USDA — ABPP"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "fswood",
+      "agency": "USDA Forest Service",
+      "name": "Wood Innovations Grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 round closed April 22, 2026.",
+      "deadline": null,
+      "award": {
+        "min": 300000,
+        "max": null
+      },
+      "match": "Match required",
+      "costTypes": [
+        "soft",
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Expands markets for wood products and wood energy, including mass timber and wood energy feasibility.",
+      "funds": [
+        "bio",
+        "predev"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.fs.usda.gov/science-technology/energy-forest-products/wood-innovation",
+          "label": "USDA Forest Service"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "fscwood",
+      "agency": "USDA Forest Service",
+      "name": "Community Wood Grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY26 round closed April 22, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 1000000
+      },
+      "match": "Federal share capped at 35% of capital cost (50% in special cases)",
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Capital grants for thermally led community wood energy systems and innovative wood product facilities.",
+      "funds": [
+        "bio",
+        "capital"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.fs.usda.gov/science-technology/energy-forest-products/wood-innovation",
+          "label": "USDA Forest Service"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "eda",
+      "agency": "US EDA",
+      "name": "EDA Public Works & Economic Adjustment Assistance",
+      "kind": [
+        "Grant"
+      ],
+      "status": "rolling",
+      "statusNote": "Rolling, no deadline, until a new notice is issued or funds run out.",
+      "deadline": null,
+      "award": {
+        "min": 100000,
+        "max": 30000000
+      },
+      "match": "Cost share required",
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Infrastructure and economic recovery grants for distressed areas: industrial sites, rail spurs, utilities, workforce facilities. Applicant is a public body, nonprofit or college, not a private business.",
+      "funds": [
+        "capital",
+        "freight",
+        "plan",
+        "industrial",
+        "brownfield"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "college",
+        "district"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.eda.gov/funding/funding-opportunities",
+          "label": "US EDA"
+        },
+        "program": {
+          "url": "https://simpler.grants.gov/opportunity/b5365cea-b07c-4e8d-8313-e23ab0fd3766",
+          "label": "Grants.gov — PWEAA"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "dra",
+      "agency": "Delta Regional Authority",
+      "name": "DRA States' Economic Development Assistance Program",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "2026 round closed July 31, 2026. Annual.",
+      "deadline": null,
+      "award": {
+        "min": 50000,
+        "max": 500000
+      },
+      "match": "Encouraged; higher match scores better",
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Infrastructure, workforce and business development grants in the 16 Illinois DRA counties: Alexander, Franklin, Gallatin, Hamilton, Hardin, Jackson, Johnson, Massac, Perry, Pope, Pulaski, Randolph, Saline, Union, White, Williamson.",
+      "funds": [
+        "capital",
+        "freight",
+        "workforce"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "college",
+        "faith"
+      ],
+      "regions": [
+        "southern",
+        "southwestern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://dra.gov",
+          "label": "Delta Regional Authority"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "epabf",
+      "agency": "US EPA",
+      "name": "Brownfields Assessment, Cleanup & RLF Grants",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "forthcoming",
+      "statusNote": "FY27 solicitations expected fall 2026, due about 60 days after release. No multipurpose grants in FY27.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 1000000
+      },
+      "match": "20% for cleanup and RLF",
+      "costTypes": [
+        "soft",
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Assessment up to $500K (coalitions up to $1M), cleanup up to $500K, revolving loan funds up to $1M. Clears contaminated sites for redevelopment, including clean energy siting.",
+      "funds": [
+        "brownfield",
+        "predev"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "district"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.epa.gov/brownfields/types-funding",
+          "label": "US EPA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "edge",
+      "agency": "DCEO",
+      "name": "EDGE Tax Credit",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Income or withholding tax credits for a business that adds jobs in Illinois when the project would not happen here otherwise. 50% of new-hire withholding, 25% for retained jobs, more in underserved areas. Small firms (100 or fewer) need the lesser of 5% growth or 50 jobs.",
+      "funds": [
+        "capital",
+        "industrial"
+      ],
+      "serves": [
+        "smallbiz",
+        "manufacturer",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://dceo.illinois.gov/expandrelocate/incentives/edge.html",
+          "label": "DCEO"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "ez",
+      "agency": "DCEO",
+      "name": "Enterprise Zones",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Inside a designated zone: 6.25% state sales tax exemption on building materials, 0.5% investment tax credit, local property tax abatement. Larger projects can get machinery and utility tax exemptions. Ask the local zone administrator.",
+      "funds": [
+        "capital",
+        "industrial",
+        "newcon",
+        "solar"
+      ],
+      "serves": [
+        "smallbiz",
+        "manufacturer",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://ev.illinois.gov/incentives/enterprise-zone-high-impact-business.html",
+          "label": "Illinois"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "hib",
+      "agency": "DCEO",
+      "name": "High Impact Business designation",
+      "kind": [
+        "Tax"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Enterprise-zone-style tax exemptions for very large investments outside a zone, including qualifying wind, solar and storage facilities. Thresholds are high; this is for utility-scale and major manufacturing projects.",
+      "funds": [
+        "capital",
+        "industrial",
+        "windgeo",
+        "solar",
+        "storage"
+      ],
+      "serves": [
+        "manufacturer",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://ev.illinois.gov/incentives/enterprise-zone-high-impact-business.html",
+          "label": "Illinois"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "cdbg",
+      "agency": "DCEO",
+      "name": "Community Development Block Grant (CDBG)",
+      "kind": [
+        "Grant"
+      ],
+      "status": "rolling",
+      "statusNote": "Economic Development and Community Revitalization are rolling. Public Infrastructure and Housing Rehab are annual competitive rounds.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "HUD money for non-entitlement (mostly rural) Illinois communities: public infrastructure ($25M in 2026), housing rehab, community revitalization and economic development. Applicant is the local government.",
+      "funds": [
+        "capital",
+        "plan",
+        "ee"
+      ],
+      "serves": [
+        "muni"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/grants.html",
+          "label": "DCEO"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "idoa",
+      "agency": "Illinois Department of Agriculture",
+      "name": "IDOA food and farm infrastructure grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "No energy-specific IDOA grant found October 8, 2026. Check each program page for the current round.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Resilient Food Systems Infrastructure, Local Food Infrastructure and Specialty Crop Block Grants fund processing, aggregation and value-added equipment for small farms and food businesses.",
+      "funds": [
+        "ag",
+        "capital"
+      ],
+      "serves": [
+        "ag",
+        "smallbiz",
+        "cbo"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://agr.illinois.gov/assistance/grant-programs.html",
+          "label": "IDOA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "idnr",
+      "agency": "IDNR",
+      "name": "OSLAD park grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "FY27 round closed August 31, 2026. Annual.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 600000
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Park acquisition (up to $1.125M) and development (up to $600K) for local governments. Relevant when a park building or site upgrade includes efficiency or solar. School districts are not eligible.",
+      "funds": [
+        "capital",
+        "plan"
+      ],
+      "serves": [
+        "muni",
+        "district"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://dnr.illinois.gov/grants/openspacelandsaquisitiondevelopment-grant.html",
+          "label": "IDNR"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "iepabf",
+      "agency": "IEPA",
+      "name": "Illinois brownfields: cleanup loans and free site assessments",
+      "kind": [
+        "Loan",
+        "Technical assistance"
+      ],
+      "status": "rolling",
+      "statusNote": "No posted deadline. Confirm loan funds are available with IEPA.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Brownfields Cleanup Revolving Loan Fund: low or no interest loans for municipally owned sites with an approved remedial plan. Targeted Brownfield Assessments: free soil and groundwater testing for communities.",
+      "funds": [
+        "brownfield",
+        "predev"
+      ],
+      "serves": [
+        "muni"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://epa.illinois.gov/topics/cleanup-programs/brownfields/funding.html",
+          "label": "IEPA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "srf",
+      "agency": "IEPA",
+      "name": "State Revolving Fund (water & wastewater loans)",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": "Projects are funded from the annual Intended Use Plan list. Get on the project priority list first.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Low-interest loans for drinking water and wastewater systems, including energy efficiency at treatment plants. Applicant is the local government or utility.",
+      "funds": [
+        "capital",
+        "ee",
+        "waste"
+      ],
+      "serves": [
+        "muni",
+        "utility"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://epa.illinois.gov/topics/grants-loans/state-revolving-fund.html",
+          "label": "IEPA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "ifaag",
+      "agency": "IFA",
+      "name": "First-Time Farmer Bond",
+      "kind": [
+        "Loan"
+      ],
+      "status": "rolling",
+      "statusNote": "Lender-driven. Confirm with IFA or your lender.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 682700
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Lower-rate loan through your own lender for a first-time farmer buying land, farm buildings or new equipment. Net worth up to $500K. Individuals only.",
+      "funds": [
+        "ag",
+        "capital"
+      ],
+      "serves": [
+        "ag"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.il-fa.com/",
+          "label": "IFA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "cbheavy",
+      "agency": "IFA Climate Bank",
+      "name": "Heavy Duty Charging Loans",
+      "kind": [
+        "Loan"
+      ],
+      "status": "open",
+      "statusNote": "Accepting initial intake submissions. Email climatebank@il-fa.com.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "$10M CPRG-funded loan program for medium and heavy-duty fleet charging: depots, corridor hubs and grid upgrades. Fleets, charge operators, municipalities, schools and nonprofits.",
+      "funds": [
+        "ev",
+        "freight"
+      ],
+      "serves": [
+        "smallbiz",
+        "developer",
+        "muni",
+        "district",
+        "cbo"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/heavy-duty-charging/",
+          "label": "Climate Bank — Heavy Duty Charging"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "cbgeo",
+      "agency": "IFA Climate Bank",
+      "name": "Community Geothermal Planning + Pilots",
+      "kind": [
+        "Grant"
+      ],
+      "status": "forthcoming",
+      "statusNote": "Phase One (planning) closed. Phase Two construction solicitation not yet open.",
+      "deadline": null,
+      "award": {
+        "min": 100000,
+        "max": 5000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "$16M CPRG program. Phase One planning $100K-$250K; Phase Two construction $1M-$5M for shovel-ready community geothermal.",
+      "funds": [
+        "windgeo",
+        "plan",
+        "predev"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "utility"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/local-governments-nonprofits/community-geothermal-planning-pilots/",
+          "label": "Climate Bank — Community Geothermal"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "cbprimes",
+      "agency": "IFA Climate Bank",
+      "name": "CEJA Primes Accelerator Loan Program",
+      "kind": [
+        "Loan"
+      ],
+      "status": "closed",
+      "statusNote": "Not accepting applications as of October 8, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Low-interest working capital for contractors who completed the CEJA Primes Accelerator: payroll, supplies, inventory, equipment, vehicles.",
+      "funds": [
+        "workforce",
+        "operating"
+      ],
+      "serves": [
+        "contractor"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/ceja-primes-accelerator-loan-program/",
+          "label": "Climate Bank — Primes Loan"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "cbeerlf",
+      "agency": "IFA Climate Bank",
+      "name": "Energy Efficiency Revolving Loan Fund (bridge loans)",
+      "kind": [
+        "Loan"
+      ],
+      "status": "open",
+      "statusNote": "Pre-applications open.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": 3000000
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "12-18 month bridge loans up to $3M while a project waits on elective pay, tax credits or incentives. Existing commercial buildings (incl. 5+ unit multifamily) with an energy audit from the last 5 years. No new construction.",
+      "funds": [
+        "ee",
+        "elec",
+        "solar",
+        "capital"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "contractor",
+        "developer",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/energy-efficiency-revolving-loan-fund/",
+          "label": "Climate Bank — EE RLF"
+        },
+        "audience": []
+      }
+    },
+    {
+      "id": "imea",
+      "agency": "Municipal utilities",
+      "name": "IMEA Electric Efficiency Program",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "$1M a year in incentives for business and public customers of IMEA's 32 member municipal electric systems: LED lighting, compressed air, refrigeration, variable speed drives, custom projects. Residential offers vary by town.",
+      "funds": [
+        "ee",
+        "industrial"
+      ],
+      "serves": [
+        "smallbiz",
+        "muni",
+        "manufacturer",
+        "district",
+        "cbo"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://imea.org/EEIncentives.aspx",
+          "label": "IMEA"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "chisbif",
+      "agency": "City of Chicago",
+      "name": "Small Business Improvement Fund (SBIF)",
+      "kind": [
+        "Grant"
+      ],
+      "status": "closed",
+      "statusNote": "2026 round closed August 30, 2026. Rounds open by TIF district.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Reimbursement grants for permanent building improvements in eligible Chicago TIF districts, including HVAC, electrical, windows and roofs. Not competitive; meet the rules and you are funded.",
+      "funds": [
+        "ee",
+        "elec",
+        "capital"
+      ],
+      "serves": [
+        "smallbiz",
+        "developer",
+        "manufacturer"
+      ],
+      "regions": [
+        "northeast"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.chicago.gov/city/en/depts/dcd/supp_info/small_business_improvementfundsbif.html",
+          "label": "City of Chicago"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "chicdg",
+      "agency": "City of Chicago",
+      "name": "Community Development Grant / Neighborhood Opportunity Fund",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "Rounds announced periodically; a $42.5M round was awarded June 2026. Check Chicago.gov for the next deadline.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Grants for commercial corridor projects: storefront rehab, community centers, job training facilities, building reuse on the South, West and Southwest sides.",
+      "funds": [
+        "capital",
+        "ee",
+        "newcon"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "developer"
+      ],
+      "regions": [
+        "northeast"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.chicago.gov/city/en/depts/dcd/provdrs/BusinessAssistance.html",
+          "label": "City of Chicago"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "cooksunsave",
+      "agency": "Cook County",
+      "name": "Cook County Sun and Save",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "closed",
+      "statusNote": "Program ran through August 31, 2026 or until funds ran out.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "ARPA-funded residential solar subsidy for owner-occupied homes of 1-4 units with income between 80% and 120% of area median.",
+      "funds": [
+        "solar"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northeast"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.cookcountyil.gov/sunandsave",
+          "label": "Cook County"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "adamsec",
+      "agency": "Electric cooperatives",
+      "name": "Adams Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Adams, Brown, Fulton, Hancock, McDonough, Pike, Schuyler. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "westcentral",
+        "northcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://adamselectric.coop/member-services/energyefficiencymembers/",
+          "label": "Adams Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "clayec",
+      "agency": "Electric cooperatives",
+      "name": "Clay Electric Co-operative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Clay County area (Flora). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.ceci.coop/",
+          "label": "Clay Electric Co-operative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "clintonec",
+      "agency": "Electric cooperatives",
+      "name": "Clinton County Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Clinton, Fayette, Madison, Marion, St. Clair, Washington. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southwestern",
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.cceci.com/member-benefits-and-programs/",
+          "label": "Clinton County Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "colesmoultrie",
+      "agency": "Electric cooperatives",
+      "name": "Coles-Moultrie Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Coles, Moultrie area (Mattoon). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southeastern",
+        "central"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cmec.coop/rebates/",
+          "label": "Coles-Moultrie Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "cornbelt",
+      "agency": "Electric cooperatives",
+      "name": "Corn Belt Energy",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Air source heat pump $1,800 cold-climate / $750 standard; mini-split $800 / $250; dual fuel $750; geothermal $750; hybrid water heater $800; EV charger circuit $200; smart thermostat $75. Commercial, school and farm incentives through Wabash Valley Power Alliance. Serves: Central and north-central Illinois (Bloomington). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag",
+        "ev"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/programs-services/rebate-programs/",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "easternillini",
+      "agency": "Electric cooperatives",
+      "name": "Eastern Illini Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "$700 for a new air source heat pump, $350 per mini-split (up to $700). Pre-approval and an approved contractor required; not for replacing an existing heat pump. Serves: East-central Illinois (Paxton). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "eastcentral",
+        "northcentral",
+        "northeast"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://eiec.org/heat-pump-rebate-program",
+          "label": "Eastern Illini Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "egyptianec",
+      "agency": "Electric cooperatives",
+      "name": "Egyptian Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "$100 bill credit for a Level 2 EV charger or a generator with transfer switch. Serves: Franklin, Jackson, Johnson, Monroe, Perry, Randolph, Union, Williamson, Washington, St. Clair. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag",
+        "ev"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southern",
+        "southwestern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://eeca.coop/rebates-and-tax-credits-available/",
+          "label": "Egyptian Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "enerstar",
+      "agency": "Electric cooperatives",
+      "name": "EnerStar Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Edgar and Clark County area (Paris). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southeastern",
+        "eastcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://enerstar.com/rebates-resources",
+          "label": "EnerStar Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "illinoisec",
+      "agency": "Electric cooperatives",
+      "name": "Illinois Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Energy efficiency loan program for members. Serves: West-central Illinois (Winchester). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "westcentral",
+        "central",
+        "southwestern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://e-co-op.com/about-us/energy-efficiency-loan-program/",
+          "label": "Illinois Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "jce",
+      "agency": "Electric cooperatives",
+      "name": "JCE Co-op (Jo-Carroll Energy)",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Northwest Illinois (Elizabeth, Savanna, Geneseo). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "northwest",
+        "northernstateline"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://jcecoop.com/incentives",
+          "label": "JCE Co-op (Jo-Carroll Energy)"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "mcdonoughpower",
+      "agency": "Electric cooperatives",
+      "name": "McDonough Power Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: McDonough County area (Macomb). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "westcentral",
+        "northcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.mcdonoughpower.com/",
+          "label": "McDonough Power Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "mjmec",
+      "agency": "Electric cooperatives",
+      "name": "M.J.M. Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Macoupin, Jersey, Montgomery, Bond, Fayette, Greene, Madison. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "central",
+        "southwestern",
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.mjmec.coop/powermoves-rebates",
+          "label": "M.J.M. Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "menardec",
+      "agency": "Electric cooperatives",
+      "name": "Menard Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Cass, Logan, Macon, Mason, Menard, Morgan, Sangamon, Tazewell. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "central",
+        "northcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.menard.com/incentives",
+          "label": "Menard Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "monroeec",
+      "agency": "Electric cooperatives",
+      "name": "Monroe County Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Monroe County area (Waterloo). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southwestern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://mcec.org/community/programs-and-rebates/",
+          "label": "Monroe County Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "norrisec",
+      "agency": "Electric cooperatives",
+      "name": "Norris Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Southeastern Illinois (Newton). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.norriselectric.com/together-we-save",
+          "label": "Norris Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "rockenergy",
+      "agency": "Electric cooperatives",
+      "name": "Rock Energy Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Boone and Winnebago County area (South Beloit office). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "northernstateline"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.rock.coop/rebates-incentives",
+          "label": "Rock Energy Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "recc",
+      "agency": "Electric cooperatives",
+      "name": "Rural Electric Convenience Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Sangamon County area (Auburn). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "central"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.recc.coop/rebates/",
+          "label": "Rural Electric Convenience Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "shelbyec",
+      "agency": "Electric cooperatives",
+      "name": "Shelby Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Christian, Cumberland, Effingham, Fayette, Macon, Montgomery, Moultrie, Sangamon, Shelby. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "central",
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.shelbyelectric.coop/energy-efficiency-center",
+          "label": "Shelby Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "seiec",
+      "agency": "Electric cooperatives",
+      "name": "SouthEastern Illinois Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Southeastern Illinois (Carrier Mills). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://seiec.com/peakpower/",
+          "label": "SouthEastern Illinois Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "siec",
+      "agency": "Electric cooperatives",
+      "name": "Southern Illinois Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Alexander, Johnson, Massac, Pope, Pulaski, Union, Jackson, Williamson. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://siec.org/energy-efficiency",
+          "label": "Southern Illinois Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "sweci",
+      "agency": "Electric cooperatives",
+      "name": "Southwestern Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Technology rebates including $250 for an ENERGY STAR electric water heater, plus EV charger rebates and loans. Serves: 11 counties on the I-70 corridor (Greenville). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag",
+        "ev"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southwestern",
+        "southeastern",
+        "central"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.sweci.com/technology-rebates",
+          "label": "Southwestern Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "spoonriver",
+      "agency": "Electric cooperatives",
+      "name": "Spoon River Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Fulton, Peoria, Knox, McDonough, Schuyler. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "northcentral",
+        "westcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.srecoop.org",
+          "label": "Spoon River Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "tricountyec",
+      "agency": "Electric cooperatives",
+      "name": "Tri-County Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Jefferson, Marion, Washington. Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southern",
+        "southeastern",
+        "southwestern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.tricountycoop.com/rebates-and-tax-credits-available",
+          "label": "Tri-County Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "waynewhite",
+      "agency": "Electric cooperatives",
+      "name": "Wayne-White Counties Electric Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Wayne, White and surrounding counties (Fairfield). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "southern",
+        "southeastern"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.waynewhitecoop.com/energy-solutions/rebates/",
+          "label": "Wayne-White Counties Electric Cooperative"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "wiec",
+      "agency": "Electric cooperatives",
+      "name": "Western Illinois Electrical Cooperative",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Hancock County area (Carthage). Only for members of this co-op.",
+      "funds": [
+        "ee",
+        "elec",
+        "ag"
+      ],
+      "serves": [
+        "resident",
+        "smallbiz",
+        "ag",
+        "faith"
+      ],
+      "regions": [
+        "westcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.wiec.net",
+          "label": "Western Illinois Electrical Cooperative"
         },
         "program": null,
         "audience": []

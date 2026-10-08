@@ -1,12 +1,62 @@
 {
   "audiences": [
-    { "id": "cbo",        "name": "Community-based organization" },
-    { "id": "muni",       "name": "Municipality" },
-    { "id": "college",    "name": "College or university" },
-    { "id": "smallbiz",   "name": "Small business owner" },
-    { "id": "contractor", "name": "Contractor / EEC" },
-    { "id": "developer",  "name": "Developer" },
-    { "id": "resident",   "name": "Resident / household" },
-    { "id": "otheragency", "name": "University staff / other agency staff" }
+    {
+      "id": "cbo",
+      "name": "Community-based organization"
+    },
+    {
+      "id": "muni",
+      "name": "Municipality"
+    },
+    {
+      "id": "college",
+      "name": "College or university"
+    },
+    {
+      "id": "smallbiz",
+      "name": "Small business owner"
+    },
+    {
+      "id": "contractor",
+      "name": "Contractor / EEC"
+    },
+    {
+      "id": "developer",
+      "name": "Developer"
+    },
+    {
+      "id": "resident",
+      "name": "Resident / household"
+    },
+    {
+      "id": "otheragency",
+      "name": "University staff / other agency staff",
+      "short": "University / other agency"
+    },
+    {
+      "id": "ag",
+      "name": "Agricultural producer or cooperative",
+      "short": "Ag producer / co-op"
+    },
+    {
+      "id": "manufacturer",
+      "name": "Manufacturer or industrial facility",
+      "short": "Manufacturer / industrial"
+    },
+    {
+      "id": "district",
+      "name": "School district, park district or housing authority",
+      "short": "Schools, parks, housing auth."
+    },
+    {
+      "id": "faith",
+      "name": "Faith-based institution",
+      "short": "Faith-based institution"
+    },
+    {
+      "id": "utility",
+      "name": "Electric co-op or municipal utility",
+      "short": "Co-op / municipal utility"
+    }
   ]
 }

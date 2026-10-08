@@ -73,8 +73,28 @@ const D = {
   STACKS:        source(["data/stacks.json", "data/stack.json"],
                         ["stacks", "stack"], "STACKS"),
   REGIONS:       source(["data/regions.json", "data/region.json"],
-                        ["regions", "region"], "REGIONS")
+                        ["regions", "region"], "REGIONS"),
+  SETTINGS:      JSON.parse(fs.readFileSync(path.join(ROOT, "data/settings.json"), "utf8"))
 };
+
+// Draft stacks stay in data/stacks.json for review but never ship.
+const draftStacks = D.STACKS.filter(s => s.draft);
+D.STACKS = D.STACKS.filter(s => !s.draft);
+if (!D.STACKS.length) { console.error("No published stacks — at least one stack must not be marked draft."); process.exit(1); }
+
+// --- staleness: anything carried forward or verified more than 90 days ago --
+const STALE_DAYS = 90;
+const today = new Date();
+let staleCount = 0;
+D.PROGRAMS.forEach(p => {
+  let stale = true;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(p.v || "")) {
+    const age = (today - new Date(p.v + "T00:00:00")) / 86400000;
+    stale = age > STALE_DAYS;
+  }
+  p.stale = stale;
+  if (stale) staleCount++;
+});
 
 // --- integrity checks: catch a bad tag before it ships silently -------------
 const audienceIds = new Set(D.AUDIENCES.map(a => a.id));
@@ -106,6 +126,21 @@ D.PROGRAMS.forEach(p => {
     if (!a.tags || !a.tags.length) problems.push(p.id + ": an audience-specific link has no tags — it will never be shown");
     if (!a.url) problems.push(p.id + ": an audience-specific link has no url");
   });
+});
+
+const STATUSES = new Set(["open", "rolling", "forthcoming", "paused", "closed", "unverified"]);
+const KINDS = new Set(["Grant", "Loan", "Incentive/Rebate", "Tax", "Technical assistance", "Tool", "Credential", "Philanthropic"]);
+const COSTS = new Set(["capital", "soft", "operating"]);
+D.PROGRAMS.forEach(p => {
+  if (!STATUSES.has(p.status)) problems.push(p.id + ": status \"" + p.status + "\" must be one of " + [...STATUSES].join(", "));
+  if (!Array.isArray(p.kind) || !p.kind.length) problems.push(p.id + ": kind must be a list with at least one value");
+  else p.kind.forEach(k => { if (!KINDS.has(k)) problems.push(p.id + ": kind \"" + k + "\" must be one of " + [...KINDS].join(", ")); });
+  (p.costTypes || []).forEach(c => { if (!COSTS.has(c)) problems.push(p.id + ": cost type \"" + c + "\" is not capital, soft or operating"); });
+  const a = p.award || {};
+  ["min", "max"].forEach(k => {
+    if (a[k] !== null && a[k] !== undefined && typeof a[k] !== "number") problems.push(p.id + ": award." + k + " must be a number or empty");
+  });
+  if (typeof a.min === "number" && typeof a.max === "number" && a.min > a.max) problems.push(p.id + ": award.min is larger than award.max");
 });
 
 const seen = new Set();
@@ -143,7 +178,20 @@ console.log("Built index.html from data/\n");
 console.log("  " + D.PROGRAMS.length + " programs");
 console.log("  " + D.AUDIENCES.length + " audiences");
 console.log("  " + D.PROJECT_TYPES.length + " project types");
-console.log("  " + D.STACKS.length + " capital stacks\n");
+console.log("  " + D.STACKS.length + " capital stacks" + (draftStacks.length ? " (+" + draftStacks.length + " draft, not published)" : "") + "\n");
+console.log("Status:");
+const st = {};
+D.PROGRAMS.forEach(p => { st[p.status] = (st[p.status] || 0) + 1; });
+Object.entries(st).forEach(([k, n]) => console.log("  " + String(n).padStart(3) + "  " + k));
+console.log("\n" + staleCount + " programs carried forward or not verified in the last " + STALE_DAYS + " days (flagged on their cards):");
+D.PROGRAMS.filter(p => p.stale).forEach(p => console.log("       " + p.id + "  (" + p.v + ")"));
+console.log("");
+console.log("Programs per project type:");
+D.PROJECT_TYPES.forEach(t => {
+  const n = D.PROGRAMS.filter(p => (p.funds || []).includes(t.id)).length;
+  console.log("  " + String(n).padStart(3) + "  " + t.name + (n === 0 ? "   <-- nothing will show for this filter" : ""));
+});
+console.log("");
 const regionCounts = {};
 D.REGIONS.forEach(r => {
   regionCounts[r.name] = D.PROGRAMS.filter(p => (p.regions || []).includes(r.id)).length;

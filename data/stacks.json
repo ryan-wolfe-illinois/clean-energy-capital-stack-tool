@@ -243,6 +243,175 @@
         }
       ],
       "first": "First move: SSBCI is applied for through the client's own bank, not through IFA. Enroll the lender before you scope the project."
+    },
+    {
+      "id": "ag",
+      "audience": "Agricultural Producer",
+      "project": "Grain dryer replacement plus 100 kW ground-mount solar on a family farm",
+      "total": "$480,000",
+      "facts": [
+        "For-profit sole proprietor, has tax appetite",
+        "Rural electric co-op territory",
+        "Dryer runs only at harvest"
+      ],
+      "wf": [
+        {
+          "name": "Illinois SBDC",
+          "note": "Builds the energy savings and cash-flow model REAP and the lender will ask for.",
+          "agency": "DCEO"
+        }
+      ],
+      "layers": [
+        {
+          "pct": 30,
+          "source": "Tax credit",
+          "program": "Section 48E (solar portion only)",
+          "agency": "IRS",
+          "color": "E0A526",
+          "note": "Solar starting construction after July 4, 2026 must be placed in service by Dec 31, 2027."
+        },
+        {
+          "pct": 5,
+          "source": "Incentive",
+          "program": "Electric co-op rebates",
+          "agency": "Electric co-op",
+          "color": "4A8FC7",
+          "note": "Amounts vary by co-op. Check before ordering equipment."
+        },
+        {
+          "pct": 50,
+          "source": "Debt",
+          "program": "Ag lender loan (Farm Credit or local bank)",
+          "agency": "Lender",
+          "color": "5A7488",
+          "note": "REAP grants and guarantees would normally sit here. USDA paused REAP in 2026; a new funding notice is pending. Re-check before closing."
+        },
+        {
+          "pct": 15,
+          "source": "Owner equity",
+          "program": "Cash",
+          "agency": "Owner",
+          "color": "B6C9DA",
+          "note": "Smallest line."
+        }
+      ],
+      "first": "First move: check whether REAP has reopened under the new rule. If it has, the solar must be ground-mounted off cropland or on a roof, and finished before you apply."
+    },
+    {
+      "id": "industrial",
+      "audience": "Manufacturer",
+      "project": "Compressed air system rebuild, VFDs on process motors, waste-heat recovery",
+      "total": "$1,200,000",
+      "facts": [
+        "Mid-size plant, owns the building",
+        "High electric load, three shifts",
+        "Board wants payback under five years"
+      ],
+      "wf": [
+        {
+          "name": "Industrial Assessment Center — UIC",
+          "note": "Free assessment that sizes the savings before anyone designs anything.",
+          "agency": "ICCB"
+        }
+      ],
+      "layers": [
+        {
+          "pct": 20,
+          "source": "Incentive",
+          "program": "Utility custom & prescriptive incentives",
+          "agency": "ComEd / Ameren",
+          "color": "4A8FC7",
+          "note": "Pre-approval required before equipment is ordered."
+        },
+        {
+          "pct": 55,
+          "source": "Debt",
+          "program": "C-PACE",
+          "agency": "IFA Climate Bank",
+          "color": "5A7488",
+          "note": "Repaid through the property assessment. Up to 25% of property value.",
+          "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/c-pace/"
+        },
+        {
+          "pct": 10,
+          "source": "Tax",
+          "program": "EDGE or High Impact Business (if expanding)",
+          "agency": "DCEO",
+          "color": "E0A526",
+          "note": "Only applies if the project is part of an expansion or new jobs."
+        },
+        {
+          "pct": 15,
+          "source": "Owner equity",
+          "program": "Capital budget",
+          "agency": "Owner",
+          "color": "B6C9DA",
+          "note": ""
+        }
+      ],
+      "first": "First move: book the IAC assessment. It sets the savings number every other line depends on."
+    },
+    {
+      "id": "fleet",
+      "audience": "Municipal Fleet",
+      "project": "Six electric public works trucks plus depot charging",
+      "total": "$3,100,000",
+      "facts": [
+        "Tax-exempt owner",
+        "Depot needs a service upgrade",
+        "Federal vehicle and charger tax credits ended in 2025-2026"
+      ],
+      "wf": [
+        {
+          "name": "Illinois workNet / OET",
+          "note": "Trains fleet mechanics on high-voltage systems.",
+          "agency": "DCEO OET"
+        }
+      ],
+      "layers": [
+        {
+          "pct": 25,
+          "source": "Grant",
+          "program": "Driving a Cleaner Illinois",
+          "agency": "IEPA",
+          "color": "0D497F",
+          "note": "Confirm current round."
+        },
+        {
+          "pct": 30,
+          "source": "Grant",
+          "program": "IDOT CMAQ / Carbon Reduction",
+          "agency": "IDOT",
+          "color": "0D497F",
+          "note": "Federal formula funds; local match required."
+        },
+        {
+          "pct": 10,
+          "source": "Incentive",
+          "program": "Utility make-ready / beneficial electrification",
+          "agency": "ComEd / Ameren",
+          "color": "4A8FC7",
+          "note": "Covers utility-side and some customer-side charger wiring."
+        },
+        {
+          "pct": 25,
+          "source": "Debt",
+          "program": "Fleet Electrification Financing",
+          "agency": "IFA Climate Bank",
+          "color": "5A7488",
+          "note": "Sized after grants are known.",
+          "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/fleet-electrification/"
+        },
+        {
+          "pct": 10,
+          "source": "Owner equity",
+          "program": "General fund or vehicle replacement reserve",
+          "agency": "Municipality",
+          "color": "B6C9DA",
+          "note": ""
+        }
+      ],
+      "first": "First move: get the utility to scope the depot service upgrade. It is the line that most often blows the budget."
     }
   ]
 }

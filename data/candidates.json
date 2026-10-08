@@ -1,0 +1,11 @@
+{
+  "_readme": "NOT PUBLISHED. Candidate programs from the October 2026 review. Nothing here appears on the site. To publish one: verify it, move it into data/programs.json with status, award, deadline, match, costTypes, links and today's date in v, then delete it here. URLs are starting points and have not been checked unless 'confirm' says so.",
+  "candidates": [
+    {
+      "id": "regional",
+      "agency": "Various",
+      "name": "Local workforce boards, county revolving loan funds, community foundations",
+      "confirm": "Not published. No single public list exists. Source from the CEJA ecosystem CRM and DCEO regional managers, one entry per source, tagged to its region."
+    }
+  ]
+}
