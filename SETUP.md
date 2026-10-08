@@ -18,11 +18,12 @@ form.
 ```
 index.html              ← the live site (generated — don't hand-edit)
 data/
-  programs.json          ← the 83 programs. This is what /admin edits.
+  programs.json          ← the funding programs (142 as of October 2026). This is what /admin edits.
   settings.json           ← the "verified as of" date. Also CMS-edited.
-  project-types.json      ← the 11 project-type filters. Edit by hand, rarely.
-  audiences.json          ← the 6 client-type filters. Edit by hand, rarely.
-  stacks.json              ← the three capital-stack scenarios. Edit by hand, rarely.
+  project-types.json      ← the project-type filters (19). Edit by hand, rarely.
+  audiences.json          ← the applicant-type filters (13). Edit by hand, rarely.
+  stacks.json              ← the capital-stack scenarios (6). Add "draft": true to hold one back. Edit by hand, rarely.
+  candidates.json         ← unpublished programs awaiting verification. Never shown on the site.
 scripts/build.js          ← reads everything in data/, writes index.html
 admin/
   index.html               ← the CMS admin app (loads from a CDN, nothing to install)
@@ -112,7 +113,7 @@ This is what lets the CMS ask "sign in with GitHub."
 
 Go to `https://YOUR-PAGES-URL/admin`, click **Login with GitHub**,
 authorize the app the first time, and you'll see two things to edit:
-**Funding Programs** (the 83 program cards) and **Site Settings** (the
+**Funding Programs** (the program cards) and **Site Settings** (the
 verified-date stamp). Edit, click **Publish**, and the live site updates
 itself within about a minute — that's the GitHub Action rebuilding and
 republishing automatically.
