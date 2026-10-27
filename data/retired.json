@@ -1,0 +1,537 @@
+{
+  "_readme": "NOT PUBLISHED. Programs removed from the tool. Kept for the record only.",
+  "removed": [
+    {
+      "id": "ifabuildelec",
+      "agency": "IFA Climate Bank",
+      "name": "Building Electrification Financing",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Climate Bank debt product specifically for heat pump and all-electric conversion projects.",
+      "funds": [
+        "elec"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "smallbiz",
+        "faith"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "carbonfreeschools",
+      "agency": "IFA Climate Bank",
+      "name": "Carbon Free Schools",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Financing and technical support for Illinois school districts pursuing solar, storage and efficiency upgrades. K-12 school districts only. Community colleges are governed by the Public Community College Act, not the School Code.",
+      "funds": [
+        "ee",
+        "solar",
+        "capital"
+      ],
+      "serves": [
+        "district"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "enablingupgrades",
+      "agency": "IFA Climate Bank",
+      "name": "Enabling Upgrades for Solar",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed — a common hidden cost that stalls a project.",
+      "funds": [
+        "solar",
+        "elec"
+      ],
+      "serves": [
+        "resident",
+        "cbo",
+        "smallbiz"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "ifasovereignty",
+      "agency": "IFA Climate Bank",
+      "name": "Energy Sovereignty Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Low-cost debt supporting community ownership of clean energy assets rather than third-party ownership.",
+      "funds": [
+        "csolar",
+        "solar",
+        "capital"
+      ],
+      "serves": [
+        "cbo",
+        "muni"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "ifafed",
+      "agency": "IFA Climate Bank",
+      "name": "Federal Funding Programs (Grid Resilience, EE Revolving Loan Fund)",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital",
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-09-04",
+      "detail": "Includes the DOE Grid Resilience State formula allocation and the Energy Efficiency Revolving Loan Fund capitalization.",
+      "funds": [
+        "ee",
+        "storage",
+        "plan",
+        "capital"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.il-fa.com/programs/cb/federal-funding",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "leasetoown",
+      "agency": "IFA Climate Bank",
+      "name": "Standard Offer Lease-to-Own",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Lets a homeowner or small nonprofit access solar or efficiency upgrades with no upfront cost, paying down to ownership over time.",
+      "funds": [
+        "solar",
+        "ee"
+      ],
+      "serves": [
+        "resident",
+        "cbo"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "doelpo",
+      "agency": "IFA Climate Bank",
+      "name": "DOE Loan Programs Office / SEFI Partnership",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Illinois Climate Bank is a designated State Energy Financing Institution, which gives Illinois projects access to DOE Loan Programs Office credit support on large clean energy deals.",
+      "funds": [
+        "capital"
+      ],
+      "serves": [
+        "muni",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "ifahubs",
+      "agency": "IFA Climate Bank",
+      "name": "Community Resilience Hubs & Community Charging",
+      "kind": [
+        "Grant",
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Backup power and solar-plus-storage at community facilities, and publicly accessible EV charging in underserved areas.",
+      "funds": [
+        "storage",
+        "ev",
+        "capital"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "district"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "contractorportal",
+      "agency": "IFA Climate Bank",
+      "name": "Contractor Portal",
+      "kind": [
+        "Tool"
+      ],
+      "status": "rolling",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-09-08",
+      "detail": "Climate Bank's intake tool for contractors to access financing products and track applications.",
+      "funds": [
+        "workforce"
+      ],
+      "serves": [
+        "contractor"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "fourfj",
+      "agency": "IFA Climate Bank",
+      "name": "Federal Funds for Future Jobs (4FJ) Procurement",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": "2026-09-08",
+      "detail": "IFA procurement and technical assistance pathway connecting contractors to federal clean energy job opportunities.",
+      "funds": [
+        "workforce"
+      ],
+      "serves": [
+        "contractor"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "workingcapital",
+      "agency": "IFA Climate Bank",
+      "name": "Working Capital Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "operating"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Short-term operating capital for contractors and small businesses carrying a clean energy project through to payment.",
+      "funds": [
+        "capital",
+        "operating"
+      ],
+      "serves": [
+        "contractor",
+        "smallbiz",
+        "manufacturer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": {
+          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/working-capital/",
+          "label": "Climate Bank — Working Capital"
+        },
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    },
+    {
+      "id": "ifabridge",
+      "agency": "IFA Climate Bank",
+      "name": "Federal Tax Credit / REC Bridge Loan",
+      "kind": [
+        "Loan"
+      ],
+      "status": "unverified",
+      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": "2026-10-08",
+      "detail": "Short-term financing that covers the gap between paying for a project and receiving the federal credit through elective pay, or the Illinois Shines REC payment.",
+      "funds": [
+        "solar",
+        "storage",
+        "ee",
+        "capital"
+      ],
+      "serves": [
+        "muni",
+        "cbo",
+        "developer",
+        "college",
+        "otheragency"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://illinoisclimatebank.com/financing-programs/",
+          "label": "IFA Climate Bank"
+        },
+        "program": null,
+        "audience": []
+      },
+      "removedOn": "2026-10-27",
+      "removedReason": "Removed by IFA in its October 2026 review of the tool."
+    }
+  ]
+}
