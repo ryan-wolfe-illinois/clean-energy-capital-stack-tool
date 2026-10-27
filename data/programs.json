@@ -654,7 +654,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-10-08",
+      "v": "2026-10-27",
       "detail": "Long-term financing repaid through a voluntary property assessment. Up to 25% of property value. Existing buildings and new construction. Not available to government-owned property, which includes public community college and university campuses.",
       "funds": [
         "ee",
@@ -689,7 +689,7 @@
     {
       "id": "ssbci",
       "agency": "IFA Climate Bank",
-      "name": "Climate Bank Finance / SSBCI Loan Participation",
+      "name": "SSBCI Loan Participation",
       "kind": [
         "Loan"
       ],
@@ -705,8 +705,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Loans $25K–$2M covering 25–50% of project cost. Interest bought down to 2% max, 1% for socially and economically disadvantaged and very small businesses. Applied through an enrolled lender, not directly.",
+      "v": "2026-10-27",
+      "detail": "Participation loans of $25K–$2M. IFA purchases up to 50% of a loan at 2%, or 1% for socially and economically disadvantaged and very small businesses. Must apply through an enrolled lender, not directly.",
       "funds": [
         "ee",
         "elec",
@@ -756,7 +756,7 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-09-04",
+      "v": "2026-10-27",
       "detail": "All Climate Bank programs sorted by who you are: residents, developers and contractors, local governments and nonprofits, municipal and cooperative utilities.",
       "funds": [
         "plan"
@@ -775,52 +775,6 @@
       "links": {
         "hub": {
           "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "ifafed",
-      "agency": "IFA Climate Bank",
-      "name": "Federal Funding Programs (Grid Resilience, EE Revolving Loan Fund)",
-      "kind": [
-        "Grant",
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital",
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-09-04",
-      "detail": "Includes the DOE Grid Resilience State formula allocation and the Energy Efficiency Revolving Loan Fund capitalization.",
-      "funds": [
-        "ee",
-        "storage",
-        "plan",
-        "capital"
-      ],
-      "serves": [
-        "muni",
-        "cbo",
-        "developer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.il-fa.com/programs/cb/federal-funding",
           "label": "IFA Climate Bank"
         },
         "program": null,
@@ -1948,7 +1902,7 @@
         "Grant"
       ],
       "status": "unverified",
-      "statusNote": null,
+      "statusNote": "Listed as a current program in IFA's October 2026 review. Confirm the application window with IFA.",
       "deadline": null,
       "award": {
         "min": 150000,
@@ -1960,8 +1914,8 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "DOE 40101(d) grid resilience grants distributed by the Climate Bank. Award range roughly $150,000 to $8,000,000. Built for small utilities and disadvantaged communities.",
+      "v": "2026-10-27",
+      "detail": "DOE 40101(d) grid resilience grants distributed by the Climate Bank. Award range roughly $150K to $8M. Built for small utilities and disadvantaged communities.",
       "funds": [
         "storage",
         "capital",
@@ -1993,7 +1947,7 @@
         "Grant"
       ],
       "status": "unverified",
-      "statusNote": null,
+      "statusNote": "Listed as a current program in IFA's October 2026 review. Confirm the application window with IFA.",
       "deadline": null,
       "award": {
         "min": null,
@@ -2004,7 +1958,7 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-10-08",
+      "v": "2026-10-27",
       "detail": "CPRG-funded planning money for municipal and cooperative utilities: technical assessments, procurement strategy and PPA readiness. Rolling application plus competitive rounds.",
       "funds": [
         "plan",
@@ -2036,7 +1990,7 @@
         "Grant"
       ],
       "status": "unverified",
-      "statusNote": null,
+      "statusNote": "Listed as a current program in IFA's October 2026 review. Confirm the application window with IFA.",
       "deadline": null,
       "award": {
         "min": null,
@@ -2049,8 +2003,8 @@
         "operating"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Helps municipalities adopt, implement and enforce the Illinois Stretch Energy Code — staff time, training and legal review.",
+      "v": "2026-10-27",
+      "detail": "CPRG-funded planning money to help municipalities adopt, implement and enforce the Illinois Stretch Energy Code — staff time, training and legal review.",
       "funds": [
         "newcon",
         "plan"
@@ -2071,138 +2025,6 @@
           "url": "https://illinoisclimatebank.com/financing-programs/local-governments-nonprofits/stretch-building-code-adoption-support/",
           "label": "Climate Bank — Stretch Code Adoption Support"
         },
-        "audience": []
-      }
-    },
-    {
-      "id": "ifabridge",
-      "agency": "IFA Climate Bank",
-      "name": "Federal Tax Credit / REC Bridge Loan",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Short-term financing that covers the gap between paying for a project and receiving the federal credit through elective pay, or the Illinois Shines REC payment.",
-      "funds": [
-        "solar",
-        "storage",
-        "ee",
-        "capital"
-      ],
-      "serves": [
-        "muni",
-        "cbo",
-        "developer",
-        "college",
-        "otheragency"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "ifasovereignty",
-      "agency": "IFA Climate Bank",
-      "name": "Energy Sovereignty Loan",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Low-cost debt supporting community ownership of clean energy assets rather than third-party ownership.",
-      "funds": [
-        "csolar",
-        "solar",
-        "capital"
-      ],
-      "serves": [
-        "cbo",
-        "muni"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "ifahubs",
-      "agency": "IFA Climate Bank",
-      "name": "Community Resilience Hubs & Community Charging",
-      "kind": [
-        "Grant",
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Backup power and solar-plus-storage at community facilities, and publicly accessible EV charging in underserved areas.",
-      "funds": [
-        "storage",
-        "ev",
-        "capital"
-      ],
-      "serves": [
-        "muni",
-        "cbo",
-        "district"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
         "audience": []
       }
     },
@@ -2450,8 +2272,8 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-09-08",
-      "detail": "Tax-exempt financing for 501(c)(3) organizations and other conduit borrowers to finance or refinance capital expenditures, including clean energy assets.",
+      "v": "2026-10-27",
+      "detail": "Tax-exempt financing for 501(c)(3) organizations and other conduit borrowers to finance or refinance capital expenditures, including clean energy assets. Typical project size $2M+.",
       "funds": [
         "capital",
         "predev"
@@ -2473,7 +2295,10 @@
           "url": "https://www.il-fa.com/programs/private-activity-bonds",
           "label": "IFA Climate Bank"
         },
-        "program": null,
+        "program": {
+          "url": "https://www.il-fa.com/programs/private-activity-bonds",
+          "label": "IFA — Private Activity Bonds"
+        },
         "audience": []
       }
     },
@@ -3051,12 +2876,12 @@
     {
       "id": "fleetelec",
       "agency": "IFA Climate Bank",
-      "name": "Fleet Electrification Financing",
+      "name": "Zero-Emission Vehicle Loan Program",
       "kind": [
         "Loan"
       ],
       "status": "unverified",
-      "statusNote": null,
+      "statusNote": "Listed as a current program in IFA's October 2026 review. Confirm the application window with IFA.",
       "deadline": null,
       "award": {
         "min": null,
@@ -3067,8 +2892,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Climate Bank debt product for converting municipal, business or nonprofit vehicle fleets to electric.",
+      "v": "2026-10-27",
+      "detail": "Climate Bank debt product for converting heavy-duty municipal, business or nonprofit vehicle fleets to electric.",
       "funds": [
         "ev"
       ],
@@ -3087,256 +2912,8 @@
         },
         "program": {
           "url": "https://illinoisclimatebank.com/financing-programs/commercial-industrial-businesses/fleet-electrification/",
-          "label": "Climate Bank — Fleet Electrification"
+          "label": "Climate Bank — Zero-Emission Vehicle Loans"
         },
-        "audience": []
-      }
-    },
-    {
-      "id": "leasetoown",
-      "agency": "IFA Climate Bank",
-      "name": "Standard Offer Lease-to-Own",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Lets a homeowner or small nonprofit access solar or efficiency upgrades with no upfront cost, paying down to ownership over time.",
-      "funds": [
-        "solar",
-        "ee"
-      ],
-      "serves": [
-        "resident",
-        "cbo"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "carbonfreeschools",
-      "agency": "IFA Climate Bank",
-      "name": "Carbon Free Schools",
-      "kind": [
-        "Grant",
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Financing and technical support for Illinois school districts pursuing solar, storage and efficiency upgrades. K-12 school districts only. Community colleges are governed by the Public Community College Act, not the School Code.",
-      "funds": [
-        "ee",
-        "solar",
-        "capital"
-      ],
-      "serves": [
-        "district"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "workingcapital",
-      "agency": "IFA Climate Bank",
-      "name": "Working Capital Loan",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Short-term operating capital for contractors and small businesses carrying a clean energy project through to payment.",
-      "funds": [
-        "capital",
-        "operating"
-      ],
-      "serves": [
-        "contractor",
-        "smallbiz",
-        "manufacturer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": {
-          "url": "https://illinoisclimatebank.com/financing-programs/developers-contractors/working-capital/",
-          "label": "Climate Bank — Working Capital"
-        },
-        "audience": []
-      }
-    },
-    {
-      "id": "ifabuildelec",
-      "agency": "IFA Climate Bank",
-      "name": "Building Electrification Financing",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Climate Bank debt product specifically for heat pump and all-electric conversion projects.",
-      "funds": [
-        "elec"
-      ],
-      "serves": [
-        "muni",
-        "cbo",
-        "smallbiz",
-        "faith"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "contractorportal",
-      "agency": "IFA Climate Bank",
-      "name": "Contractor Portal",
-      "kind": [
-        "Tool"
-      ],
-      "status": "rolling",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-09-08",
-      "detail": "Climate Bank's intake tool for contractors to access financing products and track applications.",
-      "funds": [
-        "workforce"
-      ],
-      "serves": [
-        "contractor"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "fourfj",
-      "agency": "IFA Climate Bank",
-      "name": "Federal Funds for Future Jobs (4FJ) Procurement",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-09-08",
-      "detail": "IFA procurement and technical assistance pathway connecting contractors to federal clean energy job opportunities.",
-      "funds": [
-        "workforce"
-      ],
-      "serves": [
-        "contractor"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
         "audience": []
       }
     },
@@ -3378,88 +2955,6 @@
         "hub": {
           "url": "https://www.illinoissfa.com/announcements/2025/07/explore-ilsfas-findings-from-the-bright-neighborhoods-initiative/",
           "label": "IPA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "doelpo",
-      "agency": "IFA Climate Bank",
-      "name": "DOE Loan Programs Office / SEFI Partnership",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Illinois Climate Bank is a designated State Energy Financing Institution, which gives Illinois projects access to DOE Loan Programs Office credit support on large clean energy deals.",
-      "funds": [
-        "capital"
-      ],
-      "serves": [
-        "muni",
-        "developer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "enablingupgrades",
-      "agency": "IFA Climate Bank",
-      "name": "Enabling Upgrades for Solar",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": "Not on the Climate Bank's current program list (checked October 8, 2026). Confirm with IFA before using.",
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-10-08",
-      "detail": "Covers the electrical panel and service upgrades a building sometimes needs before solar can be installed — a common hidden cost that stalls a project.",
-      "funds": [
-        "solar",
-        "elec"
-      ],
-      "serves": [
-        "resident",
-        "cbo",
-        "smallbiz"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinoisclimatebank.com/financing-programs/",
-          "label": "IFA Climate Bank"
         },
         "program": null,
         "audience": []
@@ -4801,7 +4296,7 @@
     {
       "id": "cbheavy",
       "agency": "IFA Climate Bank",
-      "name": "Heavy Duty Charging Loans",
+      "name": "Heavy-Duty Charging Vehicle Loan Program",
       "kind": [
         "Loan"
       ],
@@ -4817,8 +4312,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "$10M CPRG-funded loan program for medium and heavy-duty fleet charging: depots, corridor hubs and grid upgrades. Fleets, charge operators, municipalities, schools and nonprofits.",
+      "v": "2026-10-27",
+      "detail": "Climate Bank debt product for medium- and heavy-duty charging infrastructure for small- and medium-sized fleets. Includes electrified depots, fleet charging installations, and corridor charging hubs.",
       "funds": [
         "ev",
         "freight"
@@ -4865,12 +4360,15 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "$16M CPRG program. Phase One planning $100K-$250K; Phase Two construction $1M-$5M for shovel-ready community geothermal.",
+      "v": "2026-10-27",
+      "detail": "CPRG-funded planning and construction grants for community-scale geothermal projects. $16M program. Phase One planning $100K–$250K; Phase Two construction $1M–$5M.",
       "funds": [
         "windgeo",
         "plan",
-        "predev"
+        "predev",
+        "ee",
+        "storage",
+        "capital"
       ],
       "serves": [
         "muni",
@@ -4938,7 +4436,7 @@
     {
       "id": "cbeerlf",
       "agency": "IFA Climate Bank",
-      "name": "Energy Efficiency Revolving Loan Fund (bridge loans)",
+      "name": "Energy Efficiency Revolving Loan Fund",
       "kind": [
         "Loan"
       ],
@@ -4954,13 +4452,12 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-10-08",
-      "detail": "12-18 month bridge loans up to $3M while a project waits on elective pay, tax credits or incentives. Existing commercial buildings (incl. 5+ unit multifamily) with an energy audit from the last 5 years. No new construction.",
+      "v": "2026-10-27",
+      "detail": "Short-term financing for energy efficiency improvements that covers the gap between funding a project and receiving various tax credits and incentives. Eligible projects must be commercial buildings that have undergone a qualified energy audit. New construction and community solar projects not eligible.",
       "funds": [
-        "ee",
-        "elec",
         "solar",
-        "capital"
+        "storage",
+        "ee"
       ],
       "serves": [
         "smallbiz",
