@@ -128,7 +128,7 @@ D.PROGRAMS.forEach(p => {
   });
 });
 
-const STATUSES = new Set(["open", "rolling", "forthcoming", "paused", "closed", "unverified"]);
+const STATUSES = new Set(["open", "rolling", "forthcoming", "paused", "closed", "unverified", "active"]);
 const KINDS = new Set(["Grant", "Loan", "Incentive/Rebate", "Tax", "Technical assistance", "Tool", "Credential", "Philanthropic"]);
 const COSTS = new Set(["capital", "soft", "operating"]);
 D.PROGRAMS.forEach(p => {
@@ -136,6 +136,11 @@ D.PROGRAMS.forEach(p => {
   if (!Array.isArray(p.kind) || !p.kind.length) problems.push(p.id + ": kind must be a list with at least one value");
   else p.kind.forEach(k => { if (!KINDS.has(k)) problems.push(p.id + ": kind \"" + k + "\" must be one of " + [...KINDS].join(", ")); });
   (p.costTypes || []).forEach(c => { if (!COSTS.has(c)) problems.push(p.id + ": cost type \"" + c + "\" is not capital, soft or operating"); });
+  (p.statusByAudience || []).forEach(r => {
+    if (!r.tags || !r.tags.length) problems.push(p.id + ": a statusByAudience row has no tags — it will never be shown");
+    (r.tags || []).forEach(t => { if (!audienceIds.has(t)) problems.push(p.id + ": statusByAudience tag \"" + t + "\" is not a known audience"); });
+    if (r.status && !STATUSES.has(r.status)) problems.push(p.id + ": statusByAudience status \"" + r.status + "\" must be one of " + [...STATUSES].join(", "));
+  });
   const a = p.award || {};
   ["min", "max"].forEach(k => {
     if (a[k] !== null && a[k] !== undefined && typeof a[k] !== "number") problems.push(p.id + ": award." + k + " must be a number or empty");

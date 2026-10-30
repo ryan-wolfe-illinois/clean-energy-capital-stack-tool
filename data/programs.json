@@ -522,7 +522,23 @@
             "detail": "Illinois Shines provides resources designed for public schools to discuss, plan, and implement solar projects. Check out these resources, and watch a recorded presentation (or read the presentation slides) covering the details of the Public Schools category. You can also begin by requesting a tailored workshop for your school or to talk to an Illinois Shines Public Schools Strategist."
           }
         ]
-      }
+      },
+      "statusByAudience": [
+        {
+          "tags": [
+            "contractor",
+            "developer"
+          ],
+          "statusNote": "The Illinois Shines program is open from June through May of each year. Available capacity can be monitored through the [Block Capacity Dashboard](https://illinoisshines.com/project-status-and-capacity-dashboard/)."
+        },
+        {
+          "tags": [
+            "resident"
+          ],
+          "status": "active",
+          "statusNote": null
+        }
+      ]
     },
     {
       "id": "ilsfa",
@@ -587,7 +603,23 @@
             "detail": "Non-profit leaders and public administrators can lower electricity costs for their organizations by installing solar panels directly on their property through Illinois Solar for All. Additionally, a single non-profit or public facility can also save money on electric bills by serving as a Community Solar “anchor subscriber.”"
           }
         ]
-      }
+      },
+      "statusByAudience": [
+        {
+          "tags": [
+            "contractor",
+            "developer"
+          ],
+          "statusNote": "The Illinois Solar for All program calendar is updated each PY and includes project submission deadlines: https://www.illinoissfa.com/vendors/calendar/"
+        },
+        {
+          "tags": [
+            "resident"
+          ],
+          "status": "active",
+          "statusNote": null
+        }
+      ]
     },
     {
       "id": "storage",

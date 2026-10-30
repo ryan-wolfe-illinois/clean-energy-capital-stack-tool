@@ -43,9 +43,37 @@ collections:
                 name: "status"
                 widget: "select"
                 default: "unverified"
-                options: ["open", "rolling", "forthcoming", "paused", "closed", "unverified"]
-                hint: "open = taking applications with a deadline. rolling = no deadline. forthcoming = announced, not open. paused = frozen or in litigation. closed = round ended. unverified = not yet checked."
+                options: ["open", "rolling", "forthcoming", "paused", "closed", "unverified", "active"]
+                hint: "open = taking applications with a deadline. rolling = no deadline. forthcoming = announced, not open. paused = frozen or in litigation. closed = round ended. unverified = not yet checked. active = program is running (no application window)."
               - { label: "Status Note", name: "statusNote", widget: "text", required: false, hint: "One line shown on the card under the status, e.g. 'FY26 round closed June 30, 2026.'" }
+              - label: "Status by Audience (optional)"
+                name: "statusByAudience"
+                widget: "list"
+                required: false
+                default: []
+                summary: "{{fields.tags}}: {{fields.status}}"
+                hint: "Overrides Status and Status Note when one of these audiences is selected. Leave Status empty to keep the main status. Links in notes: [text](https://...)"
+                fields:
+                  - label: "Applies To"
+                    name: "tags"
+                    widget: "select"
+                    multiple: true
+                    options:
+                      - { label: "Community-based organization", value: "cbo" }
+                      - { label: "Municipality", value: "muni" }
+                      - { label: "College or university", value: "college" }
+                      - { label: "Small business owner", value: "smallbiz" }
+                      - { label: "Contractor / EEC", value: "contractor" }
+                      - { label: "Developer", value: "developer" }
+                      - { label: "Resident / household", value: "resident" }
+                      - { label: "University staff / other agency staff", value: "otheragency" }
+                      - { label: "Agricultural producer or cooperative", value: "ag" }
+                      - { label: "Manufacturer or industrial facility", value: "manufacturer" }
+                      - { label: "School district, park district or housing authority", value: "district" }
+                      - { label: "Faith-based institution", value: "faith" }
+                      - { label: "Electric co-op or municipal utility", value: "utility" }
+                  - { label: "Status", name: "status", widget: "select", required: false, options: ["open", "rolling", "forthcoming", "paused", "closed", "unverified", "active"] }
+                  - { label: "Status Note", name: "statusNote", widget: "text", required: false }
               - { label: "Deadline", name: "deadline", widget: "string", required: false, pattern: ['^(\d{4}-\d{2}-\d{2})?$', "Use YYYY-MM-DD or leave empty"] }
               - label: "Award Range"
                 name: "award"
