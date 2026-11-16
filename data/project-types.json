@@ -4,115 +4,115 @@
       "id": "ee",
       "code": "EE",
       "name": "Energy efficiency upgrades",
-      "ex": "HVAC, lighting, controls, insulation, air sealing, roof and envelope"
+      "ex": "Reducing energy use in existing buildings: HVAC equipment, lighting, controls and building automation, insulation, air sealing, windows, roof and envelope work, and energy assessments that identify these"
     },
     {
       "id": "elec",
       "code": "EL",
       "name": "Building electrification",
-      "ex": "Heat pumps, heat pump water heaters, induction, panel and service upgrades"
+      "ex": "Replacing fossil-fuel equipment with electric: air source and ground source heat pumps, heat pump water heaters, induction cooking, and the panel and service upgrades needed to support them"
     },
     {
       "id": "solar",
       "code": "PV",
       "name": "Solar installation",
-      "ex": "Rooftop, ground mount, parking canopy, solar paired with storage"
+      "ex": "Customer-sited solar generation: rooftop, ground-mount and parking-canopy arrays, including solar paired with on-site storage, and the financing or incentives for them"
     },
     {
       "id": "csolar",
       "code": "CS",
       "name": "Community solar",
-      "ex": "Subscriber projects, community-owned and community-driven solar"
+      "ex": "Shared solar arrays that households or organizations subscribe to without hosting panels: subscriber projects, community-owned and community-driven solar, and the predevelopment for them"
     },
     {
       "id": "predev",
       "code": "PD",
       "name": "Predevelopment & soft costs",
-      "ex": "Feasibility, engineering, legal, site control, interconnection, permitting, outreach"
+      "ex": "Costs before construction starts: feasibility studies, engineering, legal work, site control, utility interconnection, permitting and community outreach"
     },
     {
       "id": "storage",
       "code": "ST",
       "name": "Storage & resilience",
-      "ex": "Batteries, backup power, resilience hubs, virtual power plant enrollment"
+      "ex": "Batteries and other energy storage, backup power, resilience hubs that keep services running during outages, and enrollment in virtual power plants"
     },
     {
       "id": "ev",
       "code": "EV",
       "name": "EV & fleet electrification",
-      "ex": "Chargers, fleet conversion, school and transit buses, depot infrastructure"
+      "ex": "Electric vehicles and their infrastructure: charging stations, fleet conversion, electric school and transit buses, and the depot charging needed to support them"
     },
     {
       "id": "workforce",
       "code": "WF",
       "name": "Workforce & contractor capacity",
-      "ex": "Training, apprenticeship, bonding, insurance, certification, prime readiness"
+      "ex": "Building the clean energy workforce and contractor base: training, registered apprenticeships, bonding, insurance, certifications and readiness to act as a prime contractor"
     },
     {
       "id": "newcon",
       "code": "NC",
       "name": "New construction & code",
-      "ex": "All-electric new build, stretch energy code adoption, affordable housing"
+      "ex": "New buildings designed to exceed the energy code: all-electric new construction, adoption of stretch energy codes, and affordable housing built to these standards"
     },
     {
       "id": "plan",
       "code": "PL",
       "name": "Planning & organizational capacity",
-      "ex": "Energy plans, benchmarking ordinances, staff capacity, community engagement"
+      "ex": "Planning and staff capacity: energy plans, benchmarking and efficiency ordinances, staffing and program administration, and community engagement"
     },
     {
       "id": "capital",
       "code": "GC",
       "name": "General capital & construction",
-      "ex": "Hard costs, equipment purchase, construction, building acquisition and improvement"
+      "ex": "Hard costs for physical projects: construction, equipment purchase, building acquisition and improvement, paid from a grant, loan or other capital source"
     },
     {
       "id": "bio",
       "code": "BI",
       "name": "Bioenergy & biomass",
-      "ex": "Woody feedstock, wood processing, anaerobic digestion, renewable natural gas, biofuels"
+      "ex": "Energy from biological material: woody feedstock, wood processing, anaerobic digestion, renewable natural gas and biofuel production"
     },
     {
       "id": "ag",
       "code": "AG",
       "name": "Agriculture & food systems",
-      "ex": "On-farm energy, grain drying, irrigation, value-added processing"
+      "ex": "Energy and food systems on farms and in food businesses: on-farm energy, grain drying, irrigation pumping, conservation practices, and value-added processing"
     },
     {
       "id": "industrial",
       "code": "IN",
       "name": "Industrial & manufacturing process",
-      "ex": "Process heat, motors and drives, compressed air, industrial decarbonization"
+      "ex": "Energy use inside manufacturing and industrial plants: process heat, motors and drives, compressed air, and industrial decarbonization projects"
     },
     {
       "id": "windgeo",
       "code": "WG",
       "name": "Wind, geothermal & district energy",
-      "ex": "Distributed wind, ground-source heat pumps, geothermal networks, district systems"
+      "ex": "Wind, geothermal and district energy: distributed wind turbines, ground source heat pumps, geothermal networks and district heating and cooling systems"
     },
     {
       "id": "waste",
       "code": "WR",
       "name": "Waste, recycling & circular economy",
-      "ex": "Recycling infrastructure, organics diversion, materials reuse"
+      "ex": "Recycling and reuse infrastructure: recycling facilities, organics diversion and composting, and materials reuse that reduces energy-intensive waste"
     },
     {
       "id": "brownfield",
       "code": "BF",
       "name": "Brownfield & site remediation",
-      "ex": "Site assessment, cleanup, redevelopment of contaminated land for clean energy siting"
+      "ex": "Cleaning up contaminated land so it can host clean energy: site assessment, remediation and redevelopment of brownfield sites for solar, storage or other clean energy use"
     },
     {
       "id": "freight",
       "code": "FR",
       "name": "Freight, rail & logistics",
-      "ex": "Rail spurs, port and intermodal infrastructure, freight corridor improvements"
+      "ex": "Cleaner movement of goods: rail spurs, port and intermodal infrastructure, and freight corridor improvements that reduce emissions from freight transport"
     },
     {
       "id": "operating",
       "code": "OP",
       "name": "Operating & working capital",
-      "ex": "Payroll, inventory, receivables gap, ongoing operating costs"
+      "ex": "Ongoing costs that keep a project or organization running: payroll, inventory, bridging a gap between receivables and payment, and other working capital"
     }
   ]
 }
