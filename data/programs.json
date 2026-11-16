@@ -5127,8 +5127,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Member rebates for qualifying ENERGY STAR washers, dishwashers, dehumidifiers, refrigerators, lighting and window air conditioners, plus heat pumps, boilers, furnaces and natural gas water heaters. A $25 appliance recycling rebate rewards proper recycling of older appliances. Residential and commercial customers. Serves: Northwest Illinois (Elizabeth, Savanna, Geneseo). Only for members of this co-op.",
+      "v": "2026-10-08",
+      "detail": "Member rebates and efficiency programs. Amounts vary; check the co-op's rebate page. Serves: Northwest Illinois (Elizabeth, Savanna, Geneseo). Only for members of this co-op.",
       "funds": [
         "ee",
         "elec",
@@ -5826,9 +5826,9 @@
       }
     },
     {
-      "id": "grocery",
-      "agency": "DCEO",
-      "name": "Illinois Grocery Initiative Equipment Upgrade Program",
+      "id": "xl-buildings-4",
+      "agency": "Illinois Department of Commerce & Economic Opportunity",
+      "name": "Illinois Grocery Initiative - Equipment Upgrade Program",
       "kind": [
         "Grant"
       ],
@@ -5836,19 +5836,18 @@
       "statusNote": null,
       "deadline": null,
       "award": {
-        "min": 25000,
-        "max": 250000
+        "min": null,
+        "max": null
       },
       "match": null,
       "costTypes": [
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides grants for new energy-efficient equipment upgrades for existing stores. Awards range from $25,000 to $250,000.",
       "funds": [
-        "ee",
-        "capital"
+        "ee"
       ],
       "serves": [
         "smallbiz",
@@ -5860,16 +5859,16 @@
       "links": {
         "hub": {
           "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/3295-2956.html",
-          "label": "DCEO"
+          "label": "Illinois Department of Commerce & Economic Opportunity"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "cr25c",
-      "agency": "IRS",
-      "name": "Energy Efficient Home Improvement Credit (Section 25C)",
+      "id": "xl-buildings-6",
+      "agency": "Internal Revenue Service",
+      "name": "Energy Efficient Home Improvement Credit",
       "kind": [
         "Tax"
       ],
@@ -5885,8 +5884,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "A tax credit of up to $3,200 is available for home improvements made in existing home from 2023 through 2032. Ended for property placed in service after December 31, 2025.",
+      "v": null,
+      "detail": "A tax credit of up to $3,200 is available for home improvements made in existing home from 2023 through 2032.",
       "funds": [
         "ee",
         "elec"
@@ -5900,16 +5899,16 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "cr45l",
-      "agency": "IRS",
-      "name": "New Energy Efficient Home Credit (Section 45L)",
+      "id": "xl-buildings-8",
+      "agency": "Internal Revenue Service",
+      "name": "Credit for builders of new energy-efficient homes",
       "kind": [
         "Tax"
       ],
@@ -5925,13 +5924,12 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Contractors who build or substantially reconstruct qualified new energy-efficient homes can claim a tax credit of up to $5,000 per home. Offers tax credits ranging from $1,000 to $5,000 per residential unit for EPA Energy Star-certified homes, including multifamily housing. Ended for homes acquired after June 30, 2026.",
+      "v": null,
+      "detail": "Contractors who build or substaintially reconstruct qualified new enerfy-efficient homes can claim a tax credit of up to $5,000 per home.",
       "funds": [
         "newcon"
       ],
       "serves": [
-        "developer",
         "contractor"
       ],
       "regions": [
@@ -5939,17 +5937,17 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.irs.gov/credits-deductions/credit-for-builders-of-energy-efficient-homes",
-          "label": "IRS"
+          "url": "https://www.irs.gov/credits-deductions/credit-for-builders-of-energy-efficient-homes#eligibility",
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "d179",
-      "agency": "IRS",
-      "name": "Energy Efficient Commercial Buildings Deduction (Section 179D)",
+      "id": "xl-buildings-9",
+      "agency": "Internal Revenue Service",
+      "name": "Energy efficient commercial buildings deduction",
       "kind": [
         "Tax"
       ],
@@ -5965,18 +5963,14 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Building owners who place in service energy efficient commercial building property or energy efficient commercial building retrofit property may be able to claim a tax deduction. Ended for property whose construction begins after June 30, 2026.",
+      "v": null,
+      "detail": "Building owners who place in service energy efficient commercial building property or energy efficient commercial building retrofit property may be able to claim a tax dedcution.",
       "funds": [
         "ee",
         "newcon"
       ],
       "serves": [
         "developer",
-        "contractor",
-        "muni",
-        "college",
-        "cbo",
         "smallbiz"
       ],
       "regions": [
@@ -5985,15 +5979,15 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/energy-efficient-commercial-buildings-deduction",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "growgeo",
-      "agency": "Geothermal Alliance of Illinois / Citizens Utility Board",
+      "id": "xl-buildings-10",
+      "agency": "Geothermal Alliance of Illinois and Citizens Utility Board of Illinois",
       "name": "GrowGeo Chicagoland",
       "kind": [
         "Technical assistance"
@@ -6010,11 +6004,11 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "A non-profit-run program connecting residents of northeastern Illinois with education and contractors for geothermal heat pump systems. This program provides free educational sessions and connection to vetted geothermal heat pump installers.",
       "funds": [
-        "windgeo",
-        "elec"
+        "elec",
+        "windgeo"
       ],
       "serves": [
         "resident"
@@ -6025,19 +6019,18 @@
       "links": {
         "hub": {
           "url": "https://www.gaoi.org/growgeo",
-          "label": "Geothermal Alliance of Illinois / Citizens Utility Board"
+          "label": "Geothermal Alliance of Illinois and Citizens Utility Board of Illinois"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "bungalow",
+      "id": "xl-buildings-12",
       "agency": "Chicago Bungalow Association",
-      "name": "Chicago Bungalow Association Energy Savers Program",
+      "name": "Chicago Bungalow Association's Energy Savers Program",
       "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
+        "Technical assistance"
       ],
       "status": "unverified",
       "statusNote": null,
@@ -6048,11 +6041,11 @@
       },
       "match": null,
       "costTypes": [
-        "capital"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides weatherization services such as attic insulation, first floor exterior facing wall insulation, furnace or boiler cleaning and tune-ups, high efficiency ventilation fan installation for the bathroom, and weather stripping around windows and doors.",
+      "v": null,
+      "detail": "Program provides weatherization services such as attic insulation, first floor exterior facing wal insulation, furnace or boiler cleaning and tune-ups, high efficiency ventilation fan installation for the bathroom, and weather stripping around windows and doors.",
       "funds": [
         "ee"
       ],
@@ -6072,189 +6065,9 @@
       }
     },
     {
-      "id": "sedaccode",
-      "agency": "Smart Energy Design Assistance Center",
-      "name": "Energy Conservation Code Training",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides training to increase awareness of the Illinois Energy Conservation Code and to improve the energy efficiency of new constrction and renovation in Illinois through workshops, webinars, online training, resources, and technical support. Training program serves community code official, construction professionals and trade and design professionals such as architects and engineers in Illinois.",
-      "funds": [
-        "newcon",
-        "plan",
-        "ee"
-      ],
-      "serves": [
-        "contractor",
-        "developer",
-        "muni",
-        "otheragency"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://smartenergy.illinois.edu/energy-code/",
-          "label": "Smart Energy Design Assistance Center"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "subsidyexcl",
-      "agency": "IRS",
-      "name": "Energy Conservation Subsidy Exclusion",
-      "kind": [
-        "Tax"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Energy conservation provided to customers by public utilities are non-taxable. If a taxpayer claims federal tax credits or deductions for the energy conservation property, the investment basis for the purpose of claiming the deduction or tax credit must be reduced by the value of the energy conservation subsidy (i.e., a taxpayer may not claim a tax credit for an expense that the taxpayer ultimately did not pay). Energy subsidies provided to customers by public utilities are non-taxable.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz",
-        "manufacturer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://programs.dsireusa.org/system/program/detail/666/residential-energy-conservation-subsidy-exclusion-personal",
-          "label": "IRS"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "sedacrcx",
-      "agency": "Smart Energy Design Assistance Center",
-      "name": "Retro-Commissioning (RCx) Program",
-      "kind": [
-        "Technical assistance",
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft",
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Retro-commissioning (RCx) ensures that equipment and systems function as intended and operate at optimal efficiency. RCx helps buildings identify what needs to be repaired, tuned, or better maintained to meet needs and reduce energy costs. Energy efficiency services for facilities include energy assessments, COVID-19 readieness building assessments, long-term energy planning, retro-comissioning, new construction design assistance, wastewater treatment plant energy assessments, and energy code assistance.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "college",
-        "manufacturer",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://smartenergy.illinois.edu/rcx/",
-          "label": "Smart Energy Design Assistance Center"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comednc",
-      "agency": "ComEd",
-      "name": "ComEd Commercial New Construction Efficiency Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Facilities are eligible to receive incentives for new construction, addition/expansion or major renovation of an existing space designed to exceed energy code requirements. This program offers two pathways: the Best practices pathway - a prescriptive approach to new construction projects - and Performance pathway - a custome approach that targets projects in their early design phase to maximize performance improvement opportunities.",
-      "funds": [
-        "newcon",
-        "ee"
-      ],
-      "serves": [
-        "developer",
-        "smallbiz",
-        "muni",
-        "cbo",
-        "college",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/resource-center/fact-sheets/new-construction",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "fhaeem",
+      "id": "xl-buildings-19",
       "agency": "Federal Housing Administration",
-      "name": "FHA Energy Efficient Mortgage",
+      "name": "Federal Housing Administration Energy Efficient Mortgage Loan Program",
       "kind": [
         "Loan"
       ],
@@ -6270,7 +6083,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Loans can finance the cost of making energy-efficient improvements with heating and cooling systems, such as weatherizing and insulating older homes. FHA insures a borrower's mortgage used to purchase or refinance a principal residence, and the cost of energy efficient imporvements to be made on the home.",
       "funds": [
         "ee",
@@ -6292,93 +6105,9 @@
       }
     },
     {
-      "id": "peoplesnc",
-      "agency": "Peoples Gas / North Shore Gas",
-      "name": "Peoples Gas / North Shore Gas Custom and New Construction Rebate",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Custom rebates are available for energy efficient materials used in the new construction of a building.",
-      "funds": [
-        "newcon",
-        "ee"
-      ],
-      "serves": [
-        "developer",
-        "smallbiz",
-        "muni",
-        "cbo",
-        "faith"
-      ],
-      "regions": [
-        "northeast"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.peoplesgasdelivery.com/savings",
-          "label": "Peoples Gas / North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdasfhg",
-      "agency": "USDA",
-      "name": "USDA Single Family Housing Guaranteed Loan Program",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program assists approved lenders in providing low-and moderate-income households the opportunity of homeownership in eligible rural areas. Eligible appliants may purchase, build, rehabilitate, improve, or relocate a dwelling in an eligible rural area with 100% financing.",
-      "funds": [
-        "newcon",
-        "capital"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-guaranteed-loan-program",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "vaeem",
+      "id": "xl-buildings-22",
       "agency": "US Department of Veterans Affairs",
-      "name": "VA Energy Efficient Mortgage",
+      "name": "Veterans Affairs Energy Efficient Mortgage",
       "kind": [
         "Loan"
       ],
@@ -6394,7 +6123,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Mortgage is available to qualified military personnel, reservists, and veterans for energy improvements when purchasing an existing home.",
       "funds": [
         "ee",
@@ -6416,9 +6145,9 @@
       }
     },
     {
-      "id": "fanniehomestyle",
+      "id": "xl-buildings-23",
       "agency": "Fannie Mae",
-      "name": "Fannie Mae HomeStyle Energy Mortgage",
+      "name": "Fannie Mae's HomeStyle Energy Mortgage",
       "kind": [
         "Loan"
       ],
@@ -6434,12 +6163,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Borrowers can make upgrades to reduce utility costs and improve the comfort and safety of their homes by financing energy improvements directly in a purchase or refinance mortgage. Upgrades may also include solar, geothermal, or wind power. In addition, borrowers may use HomeStyle Energy to pay off existing energy debt, including but not limited to PACE loans.",
       "funds": [
         "ee",
-        "elec",
-        "solar"
+        "elec"
       ],
       "serves": [
         "resident"
@@ -6457,9 +6185,9 @@
       }
     },
     {
-      "id": "freddiegreen",
+      "id": "xl-buildings-24",
       "agency": "Freddie Mac",
-      "name": "Freddie Mac GreenCHOICE Mortgage",
+      "name": "Freddie Mac's GreenCHOICE Mortgage",
       "kind": [
         "Loan"
       ],
@@ -6475,7 +6203,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Borrowers to finance energy efficient improvements with any mortgage product, property type and financing terms up to 30 years to provide affordable financing opportunities and greater purchasing power despite higher debt-to-income and housing expense-to-income rations for manually underwritten.",
       "funds": [
         "ee",
@@ -6497,7 +6225,7 @@
       }
     },
     {
-      "id": "espc",
+      "id": "xl-buildings-25",
       "agency": "US Department of Energy",
       "name": "Energy Savings Performance Contracting Campaign",
       "kind": [
@@ -6515,17 +6243,16 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Campaign engages public sector building owners works with partners to increase awareness of benefits of using performance contracting to increase efficiency, modernize public buildings, reduce utility expenses, and meet lead-by-example goals; share and leverage practical resoruces to build ESPC knowledge and expand ESPEC accessibility across the MUSH market; amplify and implement best practice approaches for ESPC projects and programs; demonstrate impact wiht measured and verified savings.",
+      "v": null,
+      "detail": "Campaign engages public sector building owners acrworks with partners to increase awareness of benefits of using performance contracting to increase efficiency, modernize public buildings, reduce utility expenses, and meet lead-by-example goals; share and leverage practical resoruces to build ESPC knowledge and expand ESPEC accessibility across the MUSH market; amplify and implement best practice approaches for ESPC projects and programs; demonstrate impact wiht measured and verified savings.",
       "funds": [
         "ee",
         "plan"
       ],
       "serves": [
         "muni",
-        "college",
         "district",
-        "otheragency"
+        "college"
       ],
       "regions": [
         "statewide"
@@ -6540,241 +6267,9 @@
       }
     },
     {
-      "id": "onbillsb",
-      "agency": "ComEd / Nicor Gas",
-      "name": "Small Business Illinois On-Bill Energy Efficiency Loan Program",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": 150000
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "ComEd and Nicor Gas customers are eligible to receive loans up to $150,000 for energy efficiency projects in their buildings. The loan is repaid through an additional charge on the customer's utility bill. Loans can be paid over 1-10 years with a fixed interest rate. There is no penalty for early payment.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "smallbiz",
-        "developer",
-        "cbo",
-        "faith"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://slipstream2.my.site.com/IL/nPortal__SelfRegistration?product=a0u4W00000WbqzFQAR&core=es5",
-          "label": "ComEd / Nicor Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedsb",
-      "agency": "ComEd",
-      "name": "ComEd Small Business and Facilities Efficiency Program",
-      "kind": [
-        "Incentive/Rebate",
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "ComEd customers that operate smaller businesses and facilities (peak demand under 400 kW) are eligible for incentives on energy-saving projects in their buildings. Building owners can submit an interest form and get matched with a ComEd-approved Service Provider that will complete an energy assessment, compile a list of recommendations, and coordinate project delivery. The Service Provider can also apply ComEd incentives to bring project costs down. The program applies to existing buildings looking to pursue energy efficiency upgrades.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/incentives/small-businesses-facilities",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedassess",
-      "agency": "ComEd",
-      "name": "ComEd Facility Assessments",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "When scheduled, an approved energy engineer will either conduct an in-person or virtual Facility Assessment. There, they will spend approximately two hours with you assessing your facility to identify energy-efficiency opportunities. Within three to four weeks, you will receive a report detailing energy efficiency projects that you can start working on immediately. Each recommendation will include estimated energy savings, cost savings, project cost, potential incentives and simple payback.",
-      "funds": [
-        "ee",
-        "plan"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "college",
-        "manufacturer",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/assessments/facility-assessments",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedrcx",
-      "agency": "ComEd",
-      "name": "ComEd Retro-Commissioning",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "An authorized Energy Efficiency Service Provider will perform a fully-funded study of your facility’s energy management systems to identify low-cost operational improvements. You’ll save an average of 5-15% on annual energy costs and may also qualify for incentives or additional savings through your natural gas utility’s partnership with ComEd.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "manufacturer",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/building-optimization/retro-commissioning",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedhpd",
-      "agency": "ComEd",
-      "name": "ComEd High Performance Design Incentive",
-      "kind": [
-        "Incentive/Rebate",
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides free consultations with experienced technical experts and one-time financial incentives for new construction or major renovations designed to exceed energy code requirements. Major renovations are eligible if including significant beyond-code upgrades to at least two major building systems. Additional funds are available for lead design firms that actively engage with the program. ComEd provides recommendations, assistance, and ginancial incetives for energy-saving improvements to all major building systems - envelope, HVAC equipment, lighting, commericial refridgeration, and more.",
-      "funds": [
-        "newcon",
-        "ee"
-      ],
-      "serves": [
-        "developer",
-        "smallbiz",
-        "cbo",
-        "muni",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "resurrectionloan",
+      "id": "xl-buildings-33",
       "agency": "The Resurrection Project",
-      "name": "Resurrection Project Home Improvement Loan",
+      "name": "Home Improvement Loan",
       "kind": [
         "Loan"
       ],
@@ -6783,18 +6278,17 @@
       "deadline": null,
       "award": {
         "min": null,
-        "max": 30000
+        "max": null
       },
       "match": null,
       "costTypes": [
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program allows homeowners to borrow up to $30,000 at a 4.99% fixed interest rate for home repairs, home improvements, and energy efficiency-related upgrades in the following Chicago neighborhoods: Archer Heights, Ashburn, Auburn Gresham, Brighton Park, Chicago Lawn, Englewood, Lower West Side, Gage Park, McKinley Park, New City, North Lawndale, South Lawndale, West Englewood, West Elston, West Lawn.",
       "funds": [
-        "ee",
-        "capital"
+        "ee"
       ],
       "serves": [
         "resident"
@@ -6812,7 +6306,46 @@
       }
     },
     {
-      "id": "retrofitchi",
+      "id": "xl-buildings-34",
+      "agency": "ENERGY STAR",
+      "name": "ENERGY STAR Single-Family New Homes (SNFH) and ENERGY STAR Multifamily New Construction (MFNC)",
+      "kind": [
+        "Tax"
+      ],
+      "status": "closed",
+      "statusNote": "Terminated for homes acquired after June 30, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Offers tax credits ranging from $1,000 to $5,000 per residential unit for EPA Energy Star-certified homes, including multifamily housing.",
+      "funds": [
+        "newcon"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.energystar.gov/sites/default/files/asset/document/Guidance%20for%20Homes%20and%20Buildings%20Undergoing%20Gut%20Rehabilitation.pdf",
+          "label": "ENERGY STAR"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-buildings-35",
       "agency": "City of Chicago",
       "name": "Retrofit Chicago Multi-Family Residential Partnership",
       "kind": [
@@ -6830,17 +6363,16 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Provides free energy assessments and assistance with energy efficiency projects. Retrofits for most building types can include weatherization, smart thermostats, lighting, appliance replacements, and HVAC upgrades.",
       "funds": [
-        "ee"
+        "ee",
+        "elec"
       ],
       "serves": [
         "developer",
         "smallbiz",
-        "cbo",
-        "faith",
-        "otheragency"
+        "cbo"
       ],
       "regions": [
         "northeast"
@@ -6855,52 +6387,9 @@
       }
     },
     {
-      "id": "comedtod",
+      "id": "xl-power-and-utilities-21",
       "agency": "ComEd",
-      "name": "ComEd Time-of-Day Pricing",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "ComEd offers a \"dynamic\" rate, where the day is divided into three parts with different rates: - Off-Peak (10pm - 6am): 2.447 cents per kWh - Peak (6am - 2pm & 7pm - 10pm): 3.970 cents per kWh - Super Peak (2pm - 7pm): 6.117 cents per kWh Participants can lower their electric bills by putting off heavy electricity usage until the period when the rate is lower.",
-      "funds": [
-        "elec",
-        "ee",
-        "ev"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.citizensutilityboard.org/time-use-pricing-plans/",
-          "label": "Citizens Utility Board"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "dgrebate",
-      "agency": "Ameren Illinois / ComEd",
-      "name": "Ameren and ComEd Distributed Generation Rebates",
+      "name": "Air Source and Centrally Ducted Mini-Split Heat Pumps",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -6916,633 +6405,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers will earn a rebate of $300 per kW of solar and $300 per kWh of energy storage. Eligibility: Ameren: https://www.ameren.com/illinois/residential/supply-choice/renewables/rebates ComEd: https://www.comed.com/smart-energy/my-green-power-connection/solar-energy/solar-rebates.",
-      "funds": [
-        "solar",
-        "storage"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz",
-        "cbo",
-        "faith"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "northeast",
-        "northernstateline",
-        "northwest",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.ameren.com/illinois/residential/supply-choice/renewables/rebates",
-          "label": "Ameren Illinois / ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedpts",
-      "agency": "ComEd",
-      "name": "ComEd Peak Time Savings Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers enrolled in this free program receive alerts 3-5 times during the summer to voluntarily lower their electric usage for a few hours, in exchange for bill credits ($1 per kilowatt-hour saved).",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-home/manage-my-energy/peak-time-savings",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedcycling",
-      "agency": "ComEd",
-      "name": "ComEd Central AC Cycling Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers enrolled in this free program volunteer to have their AC compressors cycled off for 15-minute periods during peak usage in the summer, in exchange for bill credits ($10 per month, $40 total).",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-home/manage-my-energy/central-ac-cycling",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenpts",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois Peak Time Savings Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers earn bill credits by reducing electricity unsafe during peak demand periods, typically on hot afternoons in the summer.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.thermostatrewards.com/ameren-il/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "partnersee",
-      "agency": "Nicor Gas / ComEd / Peoples Gas / North Shore Gas",
-      "name": "Partners for Energy Efficiency Assessment",
-      "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "An Energy Advisor at Nicor Gas will walk customers through their home to suggest improvements and install money-saving products. Homeowners can receive a programmable thermostat, faucet aerators, WaterSense showerheads, hot water pipe insulation, ENERGY STAR certified LEDs, Advanced Power Strips, and select smart thermostats free of cost or at a discounted rate.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://eesavings.com/?refsource=eepartner",
-          "label": "Nicor Gas / ComEd / Peoples Gas / North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "nicorresi",
-      "agency": "Nicor Gas",
-      "name": "Nicor Gas Residential Heating and Cooling Rebates",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Residential customers are eligible for rebates for energy efficiency improvements. All improvements must be installed by a professional contract and the rebate must be applied for within 90 days of installation or by January 31, whichever comes first.",
-      "funds": [
-        "ee",
-        "elec"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://apply.nicorgasrebates.com/nicor/#/home",
-          "label": "Nicor Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "cubkit",
-      "agency": "Citizens Utility Board",
-      "name": "Citizens Utility Board Money-Saving Kit",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Free money-saving kit for Illinois consumers, requested through the Citizens Utility Board.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.citizensutilityboard.org/vubc-form-cub-website-social/",
-          "label": "Citizens Utility Board"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "peoplesresi",
-      "agency": "Peoples Gas / North Shore Gas",
-      "name": "Peoples Gas and North Shore Gas Home Energy Rebate Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This program offers customers with HVAC, water heater, and weatherization rebates. Program offers incentives to encourage customers to make energy-efficiency improvements to their homes and apartments. Rebates are available on energy efficient furnaces, boilers, water heaters, controls and insulation.",
-      "funds": [
-        "ee",
-        "elec"
-      ],
-      "serves": [
-        "resident",
-        "developer"
-      ],
-      "regions": [
-        "northeast"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.northshoregasdelivery.com/savings/rebates-residential",
-          "label": "Peoples Gas / North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "nsgincome",
-      "agency": "North Shore Gas",
-      "name": "North Shore Gas Income-Eligible Energy Efficiency Program",
-      "kind": [
-        "Incentive/Rebate",
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers can receive support to improve energy efficiency, home comfort, and building safety through energy-efficient weatherization projects, retrofits, installations of high-efficiency products, and technical and financial assistance.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.northshoregasdelivery.com/savings/income-eligible",
-          "label": "North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenmf",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Multi-Family Energy Efficiency Program",
-      "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers can take a free assessment, after which an Ameren Energy Advisor will contact the customer within a week to discuss available incentives for the property to save energy and money. Buildings may be eligible for free energy-saving products, including LEDs for individual units and common areas, showerheads and faucet aerators, advanced power strips, smart thermostats, and hot water heater pipe insulation.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "developer",
-        "cbo",
-        "faith"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoissavings.com/multifamily/property-owners-managers/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenrenters",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Renters Home Energy Assessment",
-      "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers can qualify for a free Home Energy Assessment, which can provide energy-saving upgrades at little to no cost.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoissavings.com/residential/energy-efficiency-home-upgrades/single-family-homeowners/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amereniq",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Income Qualified Program (Single Family)",
-      "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Eligible customers qualify for a free home energy audit, which may include the following free energy-saving measures: LED lightbulbs, showerheads and faucet aerators, advanced power strips, smart thermostats, upgrades to heating and cooling equipment, and air sealing and insulation.",
-      "funds": [
-        "ee",
-        "elec"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoissavings.com/residential/energy-efficiency-home-upgrades/single-family-homeowners/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenrebates",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois Rebates",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers can receive rebates on some energy efficient equipment and appliances, such as smart thermostats, heat pumps and air conditioners, EV chargers, air purifiers, showerheads and faucet aerators, advanced power strips an switches, and weatherization products.",
-      "funds": [
-        "ee",
-        "elec",
-        "ev"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoiseemarketplace.com/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenconsult",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois Energy Consultation",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Businesses and organizations can request a free energy consultation from an Energy Advisor to determine if their facility can benefit from financial incentives.",
-      "funds": [
-        "ee",
-        "plan"
-      ],
-      "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "college",
-        "manufacturer",
-        "faith",
-        "district"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://cloud.ee.ameren.com/EnergyConsult",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedhp",
-      "agency": "ComEd",
-      "name": "ComEd Heat Pump Discounts (Air Source and Mini-Split)",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Heat pump discounts up to $1,600; discounts available with ENERGY STAR Smart Thermostats up to $1,675. A list of ComEd heat pump-trained contractors are available. Heat pump discounts up to $1,000; discounts available with ENERGY STAR Smart Thermostats up to $1,075. A list of ComEd heat pump-trained contractors are available.",
+      "v": null,
+      "detail": "Heat pump discounts up to $1,600; discounts available with ENERGY STAR Smart Thermostats up to $1,675. A list of ComEd heat pump-trained contractors are available",
       "funds": [
         "elec",
         "ee"
@@ -7565,9 +6429,9 @@
       }
     },
     {
-      "id": "comedgeo",
+      "id": "xl-power-and-utilities-22",
       "agency": "ComEd",
-      "name": "ComEd Geothermal Heat Pump Discounts",
+      "name": "Ductless and Mixed Use Mini-Split Heat Pumps",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -7583,11 +6447,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Heat pump discounts up to $6,000/home. Geothermal systems must be installed by an ICC and geothermal certified ComEd Energy Efficiency Service Provider. Pre-approval is required. ComEd offers indoor unit replacements of existing heating systems (furnace, heat pump, etc.), retrofit of an existing geothermal heat pump or unit or replacement of an indoor heat pump unit, when installed by an ICC and geothermal certified Service Provider. Pre-approval is required. Discounts up to $1,200/unit.",
+      "v": null,
+      "detail": "Heat pump discounts up to $1,000; discounts available with ENERGY STAR Smart Thermostats up to $1,075. A list of ComEd heat pump-trained contractors are available",
       "funds": [
-        "windgeo",
-        "elec"
+        "elec",
+        "ee"
       ],
       "serves": [
         "resident"
@@ -7607,9 +6471,9 @@
       }
     },
     {
-      "id": "comedestar",
+      "id": "xl-power-and-utilities-23",
       "agency": "ComEd",
-      "name": "ComEd ENERGY STAR Appliance Rebates",
+      "name": "Geothermal (Ground Source) Heat Pump System (including loop)",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -7625,11 +6489,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "ComEd customers are eligible for rebates for purchasing these ENERGY STAR products: '- Air Purifier: $50 off - All-in-one Washer Electric Dryer: $250 off - All-in-one Washer Heat Pump Dryer: $350 off - Clothes Washer: $40 off - Dehumidifier: $45 off - Electric Clothes Dryer: $40 off - Heat Pump Clothes Dryer: $200 off - Select Induction Cooktops and Ranges: $100 off - Smart Thermostat: $75 off - Water Dispensers: $25 off - Select Low Flow Showerheads: up to $8 off - Select Weatherization Products: up to $5 off.",
+      "v": null,
+      "detail": "Heat pump discounts up to $6,000/home. Geothermal systems must be installed by an ICC and geothermal certified ComEd Energy Efficiency Service Provider. Pre-approval is required.",
       "funds": [
-        "ee",
-        "elec"
+        "elec",
+        "windgeo"
       ],
       "serves": [
         "resident"
@@ -7641,7 +6505,7 @@
       ],
       "links": {
         "hub": {
-          "url": "https://comedappliancerebates.com/",
+          "url": "https://www.comed.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-discounts",
           "label": "ComEd"
         },
         "program": null,
@@ -7649,9 +6513,9 @@
       }
     },
     {
-      "id": "comedinstant",
+      "id": "xl-power-and-utilities-24",
       "agency": "ComEd",
-      "name": "ComEd Energy Efficient Appliance Discounts and Rebates",
+      "name": "Geothermal (Ground Source) Heat Pump System Indoor Replacement",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -7667,11 +6531,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers qualify for discounts when purchasing energy-efficient products in-store or for a rebate for an already-purchased and installed appliance. Higher rebates are available based on household income.",
+      "v": null,
+      "detail": "ComEd offers indoor unit replacements of existing heating systems (furnace, heat pump, etc.), retrofit of an existing geothermal heat pump or unit or replacement of an indoor heat pump unit, when installed by an ICC and geothermal certified Service Provider. Pre-approval is required. Discounts up to $1,200/unit.",
       "funds": [
-        "ee",
-        "elec"
+        "elec",
+        "windgeo"
       ],
       "serves": [
         "resident"
@@ -7683,7 +6547,7 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-home/income-eligible/instant-discounts",
+          "url": "https://www.comed.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-discounts",
           "label": "ComEd"
         },
         "program": null,
@@ -7691,9 +6555,9 @@
       }
     },
     {
-      "id": "comedpantry",
+      "id": "xl-power-and-utilities-29",
       "agency": "ComEd",
-      "name": "ComEd Free Energy-Saving Products at Food Pantries",
+      "name": "Whole Home Electric",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -7709,97 +6573,14 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Free LED bulbs, night lights and weatherstripping are available at food pantries in the ComEd service territory. Eligibility for free energy-saving products follows the eligibility criteria for each participating food pantry.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-home/income-eligible/energy-products-distribution",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedkits",
-      "agency": "ComEd",
-      "name": "ComEd Free Energy Saving Kits",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers who meet income qualifications may be eligible to receive a free energy savings kit containing energy-saving products such as energy-efficient LED bulbs, high-efficiency faucet aerators, LED night lights, weatherstripping, high-efficiency showerhead, door sweep, window insulation kit, and rope caulk. Eligibility: Annual household income must fall within the eligibility limits for the Low Income Home Energy Assistance Program (LIHEAP). Customers can contact local Community Action Agency to determine eligibility: https://www.comed.com/my-account/customer-support/payment-assistance/community-action-agencies.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-home/income-eligible/energy-saving-kits",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "wholehome",
-      "agency": "ComEd",
-      "name": "ComEd Whole Home Electric",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers are eligible for free improvements including an air source heat pump, heat pump water heater, induction or electric stove, and electric or heat pump clothes dryer. Eligibility: Total household income must be at or below 80% Area Median Income (AMI): https://www.comed.com/ways-to-save/for-your-home/income-eligible/whole-home-electric.",
+      "v": null,
+      "detail": "Customers are eligible for free improvements including an air source heat pump, heat pump water heater, induction or electric stove, and electric or heat pump clothes dryer.",
       "funds": [
         "elec",
         "ee"
       ],
       "serves": [
-        "resident",
-        "developer"
+        "resident"
       ],
       "regions": [
         "northeast",
@@ -7816,8 +6597,8 @@
       }
     },
     {
-      "id": "solarbridge",
-      "agency": "IFA Climate Bank",
+      "id": "xl-power-and-utilities-31",
+      "agency": "Illinois Climate Bank",
       "name": "Solar Bridge Loans",
       "kind": [
         "Loan"
@@ -7834,17 +6615,15 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Solar bridge loans provide short-term financing to cover the period between funding a solar project and receiving federal tax credits (including elective pay), renewable energy credits (RECs), or other financial incentives. Loans are up to $1 million each for 12-18 months.",
       "funds": [
-        "solar"
+        "solar",
+        "capital"
       ],
       "serves": [
-        "developer",
-        "cbo",
-        "muni",
-        "faith",
-        "smallbiz"
+        "smallbiz",
+        "developer"
       ],
       "regions": [
         "statewide"
@@ -7852,15 +6631,15 @@
       "links": {
         "hub": {
           "url": "https://illinois-climate-bank.web.app/financing-programs/local-governments-nonprofits/solar-bridge-loans/",
-          "label": "IFA Climate Bank"
+          "label": "Illinois Climate Bank"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "solarappplus",
-      "agency": "IFA Climate Bank",
+      "id": "xl-power-and-utilities-32",
+      "agency": "Illinois Climate Bank",
       "name": "SolarAPP+ Adoption Support",
       "kind": [
         "Grant"
@@ -7874,14 +6653,14 @@
       },
       "match": null,
       "costTypes": [
-        "soft"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "The program will provide grants to permitting units of government that may be used for costs associate with adopting and implementing SolarAPP+, as well as costs associated with updating residential electrical and other codes, if needed to meet SolarAPP+ requirements. Grants will be up to $30,000.",
       "funds": [
-        "plan",
-        "solar"
+        "solar",
+        "plan"
       ],
       "serves": [
         "muni"
@@ -7892,15 +6671,15 @@
       "links": {
         "hub": {
           "url": "https://il.amplifund.com/Public/Opportunities/Details/0426e182-f171-47e8-8481-544d52e67773",
-          "label": "IFA Climate Bank"
+          "label": "Illinois Climate Bank"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "solaroutreach",
-      "agency": "IFA Climate Bank",
+      "id": "xl-power-and-utilities-33",
+      "agency": "Illinois Climate Bank",
       "name": "Residential Solar Outreach Grants",
       "kind": [
         "Grant"
@@ -7914,14 +6693,14 @@
       },
       "match": null,
       "costTypes": [
-        "soft"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Grants will fund trusted community messengers to help residents understand their options and decide if solar is right for them. Eligibility: Priority given to applications addressing residents of census tracts identified by the Illinois Solar for All program's Income-Eligible Census Map, as well as geographically distributed residents experiencing low incomes.",
+      "v": null,
+      "detail": "Grants will fund trusted community messengers to help residents understand their options and decide if solar is right for them.",
       "funds": [
-        "plan",
-        "solar"
+        "solar",
+        "plan"
       ],
       "serves": [
         "muni",
@@ -7933,57 +6712,16 @@
       "links": {
         "hub": {
           "url": "https://illinois-climate-bank.web.app/financing-programs/local-governments-nonprofits/residential-solar-outreach-grants/",
-          "label": "IFA Climate Bank"
+          "label": "Illinois Climate Bank"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "grid40101d",
-      "agency": "IFA Climate Bank",
-      "name": "40101(d) Grid Resilience",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program will distribute $8 million annually for five years to enhance gird resilience through microgrids, weatherization, automation, and emission-reducing grid upgrades. Awards are based on population, land area, and risk factors with ensure effective mitigation, and modernization. Expected amounts of individual awards will be between $150,000 to $8,000,000 per project. Eligibility: Secretary of Energy can approve the following additional eligible recipients: non-profit organizations, units of local government, critical facilities, Illinois Municipal Utilities Association (IMUA), Association of Illinois Electric Cooperatives (AIEC).",
-      "funds": [
-        "storage",
-        "capital"
-      ],
-      "serves": [
-        "utility",
-        "muni"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://illinois-climate-bank.web.app/financing-programs/municipal-cooperative-utilities/40101d-grid-resilience/",
-          "label": "IFA Climate Bank"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "communitysolar",
-      "agency": "Illinois Power Agency",
-      "name": "Community Solar (subscriber)",
+      "id": "xl-power-and-utilities-36",
+      "agency": "Illinois Power Association",
+      "name": "Community Solar",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -7999,7 +6737,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program allows consumers who cannot put solar on their own homes to subscribe to a portion of a community solar garden's monthly output.",
       "funds": [
         "csolar"
@@ -8012,59 +6750,17 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.citizensutilityboard.org/solar-in-the-community/",
-          "label": "Citizens Utility Board"
+          "url": "https://www.citizensutilityboard.org/solar-in-the-community/#1587673577145-670b6001-4a22",
+          "label": "Illinois Power Association"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "sbesp",
-      "agency": "ComEd / Nicor Gas / Peoples Gas / North Shore Gas",
-      "name": "Small Business Energy Savings Program",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft",
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "An energy advisor conducts a free on-site energy assessment and provides free installation of energy saving products as well as recommendations for further improvements with rebates. Projects should bring about a permanent reduction in electric or natural gas use. Eligibility: Must be a non-residential customer of the utility with an electrical peak demand under 400 kW for private businesses and public facilities. Qualified facilities include retail stores, warehouses, convenience stores, low rise offices, restaurants, grocery stores, fire departments, police departments, park districts, libraries, schools, and government facilities.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "smallbiz"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/incentives/small-businesses-facilities",
-          "label": "ComEd / Nicor Gas / Peoples Gas / North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedadders",
-      "agency": "ComEd",
-      "name": "ComEd Small Business and Public Sector Incentive Adders",
+      "id": "xl-power-and-utilities-41",
+      "agency": "Corn Belt Energy",
+      "name": "All-Electric Air Source Heat Pump Rebates",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -8080,33 +6776,244 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Three adders on top of ComEd small business and facility incentives (peak demand under 400 kW). Made in Illinois Bonus: measures using select Illinois-manufactured products earn an additional 10%. Select communities: customers in select cities and ZIP codes earn an additional 20%. Public sector: public sector facilities earn an additional 20% on energy efficiency upgrade projects.",
+      "v": null,
+      "detail": "Available air source heat pump rebates: All-Electric Air Source Heat Pump: '- Cold Climate Heat Pump: $1,800 - Non-Cold Climate Heat Pump: $750 Mini-Split Air Source Heat Pump - Cold Climate Heat Pump: $800 - Non-Cold Climate Heat Pump: $250",
       "funds": [
+        "elec",
         "ee"
       ],
       "serves": [
-        "smallbiz",
-        "muni",
-        "district",
-        "cbo"
+        "resident"
       ],
       "regions": [
-        "northeast",
-        "northernstateline",
+        "northcentral",
+        "central",
+        "eastcentral",
         "northwest"
       ],
       "links": {
         "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/incentives/small-businesses-facilities",
-          "label": "ComEd"
+          "url": "https://cornbeltenergy.com/water-heater-air-source-heat-pump-rebate-form/",
+          "label": "Corn Belt Energy"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "pmhome",
+      "id": "xl-power-and-utilities-42",
+      "agency": "Corn Belt Energy",
+      "name": "Dual Fuel Heat Pump Rebate",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "A dual fuel air source heat pump combines an electric air source heat pump with a traditional gas furnace.",
+      "funds": [
+        "elec",
+        "ee"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/wp-admin/admin-ajax.php?action=frm_forms_preview&form=dualfuelheatpumprebateform2",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-power-and-utilities-43",
+      "agency": "Corn Belt Energy",
+      "name": "Electric Water Heater Rebates",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Purchase a water heater of 40 gallons or greater in capacity from any retailer to qualify for a rebate ranging from $100 to $800.",
+      "funds": [
+        "elec"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/electric-water-heater-rebate-application/",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-power-and-utilities-44",
+      "agency": "Corn Belt Energy",
+      "name": "Geothermal Comfort Systems",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Purchase a new geothermal system with an electric backup to replace an existing geothermal system to qualify for a $750 rebate.",
+      "funds": [
+        "elec",
+        "windgeo"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/geothermal-heat-pump-rebate-application-2/",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-power-and-utilities-45",
+      "agency": "Corn Belt Energy",
+      "name": "Outdoor Battery-Powered Equipment",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Members that purchase an outdoor batter-power equipment on or after January 1, 2025 may be eligible for a rebate.",
+      "funds": [
+        "ee"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/wp-admin/admin-ajax.php?action=frm_forms_preview&form=electriclawngardenrebate",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-power-and-utilities-46",
+      "agency": "Corn Belt Energy",
+      "name": "Wi-Fi Thermostat Rebates",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "$75 rebate for the installation of a qualifying Wi-Fi thermostat.",
+      "funds": [
+        "ee"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.powermoves.com/wp-content/uploads/2025/01/Final-2025-WiFi-Thermostat-Rebate-Application.pdf",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-power-and-utilities-47",
       "agency": "Wabash Valley Power Alliance",
       "name": "Power Moves Home Program",
       "kind": [
@@ -8121,18 +7028,16 @@
       },
       "match": null,
       "costTypes": [
-        "capital"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program assigns a Home Energy Rating System rate to a building project to verify that requirements are met before and during construction and provide a full energy-efficiency report that includes a HERS rating for the home. Available to customers of participating electric cooperatives.",
+      "v": null,
+      "detail": "Program assigns a Home Energy Rating System rate to a building project to verify that requirements are met before and ruing construction and provide a full energy-efficiency report that includes a HERS rating for the home.",
       "funds": [
-        "newcon",
-        "ee"
+        "newcon"
       ],
       "serves": [
-        "resident",
-        "developer"
+        "resident"
       ],
       "regions": [
         "statewide"
@@ -8147,7 +7052,7 @@
       }
     },
     {
-      "id": "pmsolar",
+      "id": "xl-power-and-utilities-48",
       "agency": "Wabash Valley Power Alliance",
       "name": "Power Moves Solar Co-Op Program",
       "kind": [
@@ -8165,7 +7070,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides a subscription to a community solar system with the benefits of energy produced form a 300-watt portion of 6.8 MW solar array.",
       "funds": [
         "csolar"
@@ -8174,8 +7079,7 @@
         "resident"
       ],
       "regions": [
-        "southeastern",
-        "eastcentral"
+        "statewide"
       ],
       "links": {
         "hub": {
@@ -8187,9 +7091,9 @@
       }
     },
     {
-      "id": "pmresi",
+      "id": "xl-power-and-utilities-50",
       "agency": "Wabash Valley Power Alliance",
-      "name": "Power Moves Residential Energy Efficiency Rebates",
+      "name": "Residential Energy Efficiency Program",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -8205,7 +7109,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program offers rebates for energy-efficient upgrades, including dual fuel heat pumps, air source heat pumps (including cold climate models), heat pump water heaters, geothermal heat pumps, and Wi-Fi thermostats.",
       "funds": [
         "elec",
@@ -8232,98 +7136,9 @@
       }
     },
     {
-      "id": "resonbill",
-      "agency": "Slipstream Energy Finance Solutions",
-      "name": "Residential On-Bill Financing",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides loans for energy efficiency investments through a monthly loan charge on their utility bill. Eligible technologies including clothes washers, refrigerators/freezers, lighting, furnaces, boilers, heat pumps, air conditioners, programmable thermostats, duct/air sealing, building insulation, and motors.",
-      "funds": [
-        "ee",
-        "elec"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "northeast",
-        "northernstateline",
-        "northwest",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.ilenergyloan.com/",
-          "label": "Slipstream Energy Finance Solutions"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "nsgjump",
-      "agency": "North Shore Gas",
-      "name": "North Shore Gas Home Energy Jumpstart Program",
-      "kind": [
-        "Incentive/Rebate",
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides a free assessment that include free and discounted products for the home. Free installation of these products are available.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "resident"
-      ],
-      "regions": [
-        "northeast"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.northshoregasdelivery.com/savings/rebates-direct",
-          "label": "North Shore Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "nicorcomm",
-      "agency": "Nicor Gas",
-      "name": "Nicor Gas Commercial Energy Efficiency Rebates",
+      "id": "xl-power-and-utilities-54",
+      "agency": "City of Springfield Energy Services Office",
+      "name": "City Water Light and Power - Residential Energy Efficiency Rebate Programs",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -8339,60 +7154,14 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Commercial customers who install qualifying high-efficiency equipment through a professional contractor between January 1 and December 31, 2025 can receive a rebate. Eligible efficiency technologies include clothes washers, equipment insulation, water heaters, furnaces, boilers, heat recovery, steam-system upgrades, programmable thermostats, energy management systems/building controls, duct/air sealing, processing and manufacturing equipment, agricultural equipment, food service equipment, tankless water heater, attic insulation, and electric clothes dryer.",
+      "v": null,
+      "detail": "Program offers rebates for increase energy efficiency of participating homes. Rebates are available for geothermal heat pumps, air source heat pumps, water heaters, rain barrels, and high efficiency toilets.",
       "funds": [
+        "elec",
         "ee"
       ],
       "serves": [
-        "smallbiz",
-        "cbo",
-        "muni",
-        "manufacturer",
-        "faith"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://programs.dsireusa.org/system/program/detail/4130/nicor-gas-commercial-energy-efficiency-rebates",
-          "label": "Nicor Gas"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "cwlp",
-      "agency": "City Water, Light & Power (Springfield)",
-      "name": "City Water, Light & Power Efficiency Rebates (Springfield)",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program offers rebates for increase energy efficiency of participating homes. Rebates are available for geothermal heat pumps, air source heat pumps, water heaters, rain barrels, and high efficiency toilets. Program offers rebates to help commercial customers increase energy efficiency of participating facilities. Energy efficient air-to-air and geothermal are eligible for rebates which vary according to the technology type, cooling capacity, cooling efficiency, and category.",
-      "funds": [
-        "ee",
-        "elec"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz"
+        "resident"
       ],
       "regions": [
         "central"
@@ -8400,15 +7169,15 @@
       "links": {
         "hub": {
           "url": "https://www.cwlp.com/ServicesHome/ServicesInformation/AllRebates.aspx",
-          "label": "City Water, Light & Power (Springfield)"
+          "label": "City of Springfield Energy Services Office"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "liheap",
-      "agency": "US Department of Health and Human Services",
+      "id": "xl-power-and-utilities-56",
+      "agency": "U.S. Department of Health and Human Services",
       "name": "Low Income Home Energy Assistance Program (LIHEAP)",
       "kind": [
         "Grant"
@@ -8425,11 +7194,10 @@
         "operating"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides resources to assist families with energy costs associated with home energy bills, energy crises, amd weatherization and energy-related minor home repairs. Eligibility: 150 percent of the poverty level is the maximum income level allowed in determining income eligibility, except where 60 percent of the state median income is higher.",
+      "v": null,
+      "detail": "Program provides resources to assist families with energy costs associated with home energy bills, energy crises, amd weatherization and energy-related minor home repairs.",
       "funds": [
-        "operating",
-        "ee"
+        "operating"
       ],
       "serves": [
         "resident"
@@ -8440,16 +7208,16 @@
       "links": {
         "hub": {
           "url": "https://acf.gov/ocs/programs/liheap",
-          "label": "US Department of Health and Human Services"
+          "label": "U.S. Department of Health and Human Services"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "greenpower",
-      "agency": "Illinois Municipal Electric Agency",
-      "name": "IMEA Green Power Choices",
+      "id": "xl-power-and-utilities-58",
+      "agency": "Jo-Carroll Energy Cooperative, Inc.",
+      "name": "Jo-Carroll Energy - Energy Efficiency Rebate Program",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -8465,441 +7233,31 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "An opt-in renewable energy credits program.",
+      "v": null,
+      "detail": "Customers are eliglbe for rebates for the purchase and installation of qualifying ENERGY STAR rated washers, dishwashers, dehumifiers, refrigerators, lighting, and window air conditioning units, as well as heat pumps, boilers, furnaces, and natural gas water heaters. An appliance recycling rebate of $25 is also available, which rewards members for the proper recycling of older appliances.",
       "funds": [
-        "solar",
-        "windgeo"
+        "ee",
+        "elec"
       ],
       "serves": [
         "resident",
-        "muni"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.imea.org/Green%20Power%20Choices.html",
-          "label": "Illinois Municipal Electric Agency"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "imeamutual",
-      "agency": "Illinois Municipal Electric Agency",
-      "name": "IMEA Mutual Aid Program",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program coordinates energy restoration efforts and emergency services in the event of natural disasters such as floods, tornadoes, and similar events.",
-      "funds": [
-        "storage"
-      ],
-      "serves": [
-        "utility"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.imea.org/Mutual%20Aid.html",
-          "label": "Illinois Municipal Electric Agency"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "imuatrain",
-      "agency": "Illinois Municipal Utilities Association",
-      "name": "IMUA Training",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides on-site programs and services designed to serve the needs of its members, a well as provide assistance in satisfying compliance with various regulatory directives and requirements. Examples of safety topics and programs offered include: arc-blase/arc-flash protection and prevention, confined space enetry and resuce, electrical safety, emergency planning and disaster preparedness, flagger training and certification, hazardous communications, lockout/tagout (LO/TO), pole-top and bucket rescue, trenching and shoring, respiratory protection, and First Aid/CPR/AED.",
-      "funds": [
-        "workforce"
-      ],
-      "serves": [
-        "utility"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.imea.org/IMUA%20Training.html",
-          "label": "Illinois Municipal Utilities Association"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "imeadr",
-      "agency": "Illinois Municipal Electric Agency",
-      "name": "IMEA Demand Response Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Customers can receive a billing credit incentive from the IMEA for voluntarily agreeing to keep their electric use at or b elow a specified amount when called upon during a Demand Response Event.",
-      "funds": [
-        "ee",
-        "storage"
-      ],
-      "serves": [
-        "muni",
-        "smallbiz",
-        "manufacturer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.imea.org/Demand%20Response%20Program.html",
-          "label": "Illinois Municipal Electric Agency"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdadg",
-      "agency": "USDA",
-      "name": "Distributed Generation Energy Project Financing",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program can provide loans and loan guarantees to energy project developers for distributed energy projects including renewables that provide wholesale or retails electricity to existing Electric Program borrowers or to rural communities served by other utilites.",
-      "funds": [
-        "solar",
-        "storage",
-        "windgeo"
-      ],
-      "serves": [
-        "developer",
-        "utility",
-        "muni",
-        "cbo",
         "smallbiz"
       ],
       "regions": [
-        "statewide"
+        "northwest",
+        "northernstateline"
       ],
       "links": {
         "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/electric-programs/distributed-generation-energy-project-financing#overview",
-          "label": "USDA"
+          "url": "https://www.midamericanenergy.com/il_qualifications-and-conditions",
+          "label": "Jo-Carroll Energy Cooperative, Inc."
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "usdaeil",
-      "agency": "USDA",
-      "name": "Electric Infrastructure Loan and Loan Guarantee Program",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program makes insured loans and loan guarantees to nonprofit and cooperative associations, public bodies, and other utilities. Insured loans primarily finance the construction of electric distribution, transmission, and generation facilities, including system improvements and replacement required to furnish and improve electric service in rural areas, as well as demand side management, energy conservation programs, and on-grid and off-grid renewable energy systems.",
-      "funds": [
-        "capital",
-        "storage"
-      ],
-      "serves": [
-        "utility",
-        "muni",
-        "cbo"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/electric-programs/electric-infrastructure-loan-loan-guarantee-program",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdaeec",
-      "agency": "USDA",
-      "name": "Energy Efficiency and Conservation Loan Program",
-      "kind": [
-        "Loan"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides loans to finance energy efficiency and conservation projects for commercial, industrial, and residential consumers. Eligible utilities can borrow money tied to Treasury rates of interset and re-lend the money to develop new and diverse energy service products within their service territories.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "utility"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/electric-programs/energy-efficiency-and-conservation-loan-program",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdaerc",
-      "agency": "USDA",
-      "name": "Energy Resource Conservation",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program enables borrowers to make funds available to customers for energy conservation and renewable energy projects by deferring payment of principal and interest.",
-      "funds": [
-        "ee",
-        "solar"
-      ],
-      "serves": [
-        "utility"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/electric-programs/energy-resource-conservation#overview",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdahecg",
-      "agency": "USDA",
-      "name": "High Energy Costs Grants",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program assists energy providers and other eligible entities in lowering energy costs for families and individuals in communities with extremely high per-household energy costs (275 percent of national average or higher). Eligibility: Eligible communities must demonstrate annual average household energy cost exceeding 275 percent of the national average under benchmarks published in the 2025 High Energy Cost Grant Funding Opportunity Announcement. https://www.rd.usda.gov/about-rd/agencies/rural-utilities-service.",
-      "funds": [
-        "ee",
-        "solar",
-        "capital"
-      ],
-      "serves": [
-        "muni",
-        "cbo",
-        "utility"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/about-rd/agencies/rural-utilities-service",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "usdaredlg",
-      "agency": "USDA",
-      "name": "Rural Economic Development Loan and Grant Programs",
-      "kind": [
-        "Loan",
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides funding for rural projects through zero-interest loans to local utilities which they, in turn, pass through to local businesses for projects that will create and retail employment in rural areas. Maximum grant amount of $300,000 to establish the Revolving Loan Fund and a maximum loan amount of $1 million.",
-      "funds": [
-        "capital"
-      ],
-      "serves": [
-        "utility",
-        "smallbiz"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/business-programs/rural-economic-development-loan-grant-programs#overview",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "cicsavers",
-      "agency": "Community Investment Corporation",
-      "name": "CIC Energy Savers Program",
-      "kind": [
-        "Loan",
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Bundle energy conservation expenses into an overall acquisition/rehab or refinance loan to finance your practical retrofit work: replace a boiler, improve air sealing and insulation, install a high-efficiency water heater, and more. Receive a free comprehensive building assessment and access to utility grant funds through CIC’s Energy Savers program.",
-      "funds": [
-        "ee"
-      ],
-      "serves": [
-        "developer",
-        "cbo"
-      ],
-      "regions": [
-        "northeast"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.cicchicago.com/loans/#energy-feature-1",
-          "label": "Community Investment Corporation"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "chisolarexpress",
+      "id": "xl-power-and-utilities-73",
       "agency": "City of Chicago",
       "name": "Chicago Solar Express",
       "kind": [
@@ -8918,7 +7276,7 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Provides reduced fees and permitting and zoning assistance to facilitate rooftop solar installations.",
       "funds": [
         "solar",
@@ -8926,8 +7284,7 @@
       ],
       "serves": [
         "resident",
-        "smallbiz",
-        "contractor"
+        "smallbiz"
       ],
       "regions": [
         "northeast"
@@ -8942,146 +7299,9 @@
       }
     },
     {
-      "id": "comedevbiz",
-      "agency": "ComEd",
-      "name": "ComEd Business and Public Sector EV Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Rebates are available for business and public sector customers to purchase or lease new, pre-owned, and repowered battery electric vehicles: https://www.comed.com/about-us/clean-energy/electric-vehicle-rebate-program. Eligibility: Customers who reside in or serve a low-income of Equity Investmet Eligible community are eligible for a large rebate.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "smallbiz",
-        "muni",
-        "cbo",
-        "district",
-        "faith"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/about-us/clean-energy/electric-vehicle-rebate-program",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedmakeready",
-      "agency": "ComEd",
-      "name": "ComEd Business and Public Sector Make-Ready Rebate Program",
-      "kind": [
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Rebates are available for business and public sector customers for completed make-ready projects that include the infrastructure necessary to install electric vehicle (EV) charging stations from the transformer to the EV charging station's stub. Eligibility: Projects installed in low-income or an Equity Investment Eligible Community and/or customers who demosntrate through attestation that over 50% of the driving done by their business fleet vehicles using the make-ready infrastructure applying for a rebate serves one of those communities. https://www.comed.com/about-us/clean-energy/make-ready-rebate-program.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "smallbiz",
-        "muni",
-        "cbo",
-        "developer",
-        "district",
-        "faith"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/about-us/clean-energy/make-ready-rebate-program",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "comedfleet",
-      "agency": "ComEd",
-      "name": "ComEd Fleet Electrification Assessment",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "The ComEd Fleet Electrification Assessment provides an assessment to identify vehicles and charging infrastructure that can support fleet electrification.",
-      "funds": [
-        "ev",
-        "plan"
-      ],
-      "serves": [
-        "smallbiz",
-        "muni",
-        "cbo",
-        "district",
-        "faith"
-      ],
-      "regions": [
-        "northeast",
-        "northernstateline",
-        "northwest"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.comed.com/ways-to-save/for-your-business/assessments/fleet-electrification-assessment",
-          "label": "ComEd"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "cr45w",
-      "agency": "IRS",
-      "name": "Qualified Commercial Clean Vehicle Credit (Section 45W)",
+      "id": "xl-transportation-5",
+      "agency": "Internal Revenue Service",
+      "name": "IRS Commerical Clean Vehicle Credit",
       "kind": [
         "Tax"
       ],
@@ -9097,17 +7317,15 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Businesses and tax-exempt organizations that buy a qualified commericial clean vehicle may qualify for a clean vehicle tax credit of up to $40,000 under Internal Revenue Code (IRC) 45W. Ended for vehicles acquired after September 30, 2025.",
+      "v": null,
+      "detail": "Businesses and tax-exempty organizations that buy a qualified commericial clean vehicle may qualify for a clean vehicle tax credit of up to $40,000 under Internal Revenue Code (IRC) 45W.",
       "funds": [
         "ev"
       ],
       "serves": [
         "smallbiz",
         "cbo",
-        "muni",
-        "district",
-        "faith"
+        "muni"
       ],
       "regions": [
         "statewide"
@@ -9115,58 +7333,16 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/commercial-clean-vehicle-credit",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "iepacharging",
-      "agency": "IEPA",
-      "name": "IEPA Charging Incentive Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "IEPA provides funding to public and private organizations and companies to install and maintain publicly-available Level 2 of Level 3 charging stations.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "muni",
-        "smallbiz",
-        "cbo",
-        "developer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://epa.illinois.gov/topics/ceja.html",
-          "label": "IEPA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "cr30c",
-      "agency": "IRS",
-      "name": "Alternative Fuel Vehicle Refueling Property Credit (Section 30C)",
+      "id": "xl-transportation-8",
+      "agency": "Internal Revenue Service",
+      "name": "IRS Federal Tax Credit for EV Charging Equipment for Businesses",
       "kind": [
         "Tax"
       ],
@@ -9182,16 +7358,13 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Credit for alternative fuel vehicle refueling property, including EV charging stations, of up to 30% of the cost to purchase and install the equipment, available in qualified locations. Ended for property placed in service after June 30, 2026.",
+      "v": null,
+      "detail": "Businesses are eligible to receive a Federal Tax Credit for alterntaive fueling infrastructure, including EV charging stations. Tax credits are up to 30% of the cost to purchase and install the infrastructure.",
       "funds": [
         "ev"
       ],
       "serves": [
         "smallbiz",
-        "cbo",
-        "muni",
-        "developer",
         "resident"
       ],
       "regions": [
@@ -9199,57 +7372,17 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit",
-          "label": "IRS"
+          "url": "https://www.irs.gov/instructions/i8911",
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "faazev",
-      "agency": "Federal Aviation Administration",
-      "name": "Federal Airport Zero Emission Vehicle and Infrastructure Incentives",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This program allows airport sponsors to use Airport Improvement Program funds to purchase zero emissions vehicles and to construct or modify infrastructure needed to use electric vehicles.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "muni",
-        "otheragency"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.faa.gov/airports/environmental/zero_emissions_vehicles",
-          "label": "Federal Aviation Administration"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "ctafare",
+      "id": "xl-transportation-10",
       "agency": "Chicago Transit Authority",
-      "name": "CTA Reduced Fare and Free Ride Programs",
+      "name": "CTA Reduced Fare & Free Ride Programs",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -9265,7 +7398,7 @@
         "operating"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Certain CTA riders qualify for reduced fares or can ride the CTA for free.",
       "funds": [
         "operating"
@@ -9286,9 +7419,9 @@
       }
     },
     {
-      "id": "rtafare",
+      "id": "xl-transportation-11",
       "agency": "Regional Transportation Authority",
-      "name": "RTA Discounted Fare and Ride Free Programs",
+      "name": "Regional Transportation Authority Discounted Fare and Ride Free Programs",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -9304,7 +7437,7 @@
         "operating"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Ride Free Permit allows seniors age 65 and over or individuals with disabilities under the age of 65 to ride at no cost on CTA, Metra, and Pace bus and rail service. Applicants must be enrolled in the Benefit Access Program administered by the Illinois Department of Aging.",
       "funds": [
         "operating"
@@ -9325,8 +7458,8 @@
       }
     },
     {
-      "id": "amerenfleet",
-      "agency": "Ameren Illinois",
+      "id": "xl-transportation-12",
+      "agency": "Ameren",
       "name": "Ameren Free Fleet Assessment",
       "kind": [
         "Technical assistance"
@@ -9343,8 +7476,8 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This assessment will help customers evaluate their vehicle fleets to understand the business and technical information needed to make a decision about converting their fleets to electric. This program will provide financial, environmental, and technical impacts to help with the decision for converting to an electric fleet.",
+      "v": null,
+      "detail": "This assessment will help customers evaluate their vehicle fleets to underestand the business and technical information needed to make a decision about converting their fleets to electric. This program will provide financial, environmental, and technical impacts to help with the decision for converting to an electric fleet.",
       "funds": [
         "ev",
         "plan"
@@ -9352,9 +7485,8 @@
       "serves": [
         "smallbiz",
         "muni",
-        "cbo",
         "district",
-        "faith"
+        "cbo"
       ],
       "regions": [
         "central",
@@ -9367,68 +7499,17 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.ameren.com/illinois/business/electric-vehicles",
-          "label": "Ameren Illinois"
+          "url": "https://survey.zohopublic.com/zs/XsCNI5",
+          "label": "Ameren"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "amerenchargebiz",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois ChargeSmart Program (Non-Residential)",
-      "kind": [
-        "Technical assistance",
-        "Incentive/Rebate"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This program supports multifamily, education, fleet, transit, corridor, and public charging facilities in adopting EV charging solutions with incentives, tools, and guidance to manage energy usage effectively,.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "developer",
-        "cbo",
-        "muni",
-        "smallbiz",
-        "district",
-        "college"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.ameren.com/illinois/business/electric-vehicles/chargesmart/apply",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerencec",
-      "agency": "Ameren Illinois",
-      "name": "Ameren EV Community Engagement Consultation Program",
+      "id": "xl-transportation-13",
+      "agency": "Ameren",
+      "name": "Ameren Illinois ChargeSmart Program",
       "kind": [
         "Technical assistance"
       ],
@@ -9444,7 +7525,57 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
+      "detail": "This program supports multifamily, education, fleet, transit, corridor, and public charging facilities in adopting EV charging solutions with incentives, tools, and guidance to manage energy usage effectively,",
+      "funds": [
+        "ev"
+      ],
+      "serves": [
+        "developer",
+        "cbo",
+        "muni",
+        "district",
+        "college",
+        "smallbiz"
+      ],
+      "regions": [
+        "central",
+        "eastcentral",
+        "northcentral",
+        "southeastern",
+        "southern",
+        "southwestern",
+        "westcentral"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.ameren.com/illinois/business/electric-vehicles/chargesmart/apply",
+          "label": "Ameren"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-transportation-14",
+      "agency": "Ameren",
+      "name": "Ameren EV Community Engagement Consultation Program (CEC)",
+      "kind": [
+        "Technical assistance"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "soft"
+      ],
+      "stacking": null,
+      "v": null,
       "detail": "A free consultation that provides funding, resources, and support to help communities transition to electric vehicles and transportation infrastructure.",
       "funds": [
         "ev",
@@ -9466,17 +7597,18 @@
       "links": {
         "hub": {
           "url": "https://www.ameren.com/illinois/business/electric-vehicles/community",
-          "label": "Ameren Illinois"
+          "label": "Ameren"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "amerendrivers",
-      "agency": "Ameren Illinois",
+      "id": "xl-transportation-15",
+      "agency": "Ameren",
       "name": "Ameren Drivers Education Program",
       "kind": [
+        "Technical assistance",
         "Incentive/Rebate"
       ],
       "status": "unverified",
@@ -9488,14 +7620,13 @@
       },
       "match": null,
       "costTypes": [
-        "capital"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This program offers free electrical vehicle resources and rebates for high school driving programs in eligible communities to purchase an EV and charger. EV Curriculum Support is available to all driving education programs.",
+      "v": null,
+      "detail": "This program offers free electricial vehicle resources and rebates for high school driving programs in eligible communities to purchase an EV and charger. EV Curriculum Support is availble to all driving education programs.",
       "funds": [
-        "ev",
-        "workforce"
+        "ev"
       ],
       "serves": [
         "district"
@@ -9512,16 +7643,57 @@
       "links": {
         "hub": {
           "url": "https://www.ameren.com/illinois/business/electric-vehicles/education",
-          "label": "Ameren Illinois"
+          "label": "Ameren"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "amerenchargeres",
-      "agency": "Ameren Illinois",
-      "name": "Ameren ChargeSmart Program (Residential)",
+      "id": "xl-transportation-16",
+      "agency": "Internal Revenue Service",
+      "name": "Alternative Fuel Infrastructure Tax Credit",
+      "kind": [
+        "Tax"
+      ],
+      "status": "closed",
+      "statusNote": "Terminated for property placed in service after June 30, 2026.",
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Alternative fuel vehicle fueling property installed in qualified locations can qualify for a tax credit. A single item of 30C property is each charging port or fuel dispense, each energy storage property for electricty, hydrogen, natural gas, propane, E85, biodiesel blends of at least 20%, compoentns and parts that are essential to the operation of the charging port or fuel dispense, including labro costs for constructing and isntalling the property. Businessea re eligible for a tax credit of: '- 6% of depreciable costs, up to $100,000 per item - 30% of the depreciable costs, up to $100,000 per item if the istnallation meets U.S. Department of lbaor prevailing wage and apprencticeship requirements",
+      "funds": [
+        "ev"
+      ],
+      "serves": [
+        "smallbiz",
+        "cbo",
+        "muni"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://afdc.energy.gov/laws/10513",
+          "label": "Internal Revenue Service"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-transportation-17",
+      "agency": "Ameren",
+      "name": "Ameren ChargeSmart Program",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -9534,10 +7706,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Customers are encouraged to charge their electric vehicles during off-peak hours. Customers receive bill credits for charging their Evs during the utility's preferred charging hours (11pm to 7am) and may incur extra charges for charging during no-preferred hours (11am to 7pm).",
       "funds": [
         "ev"
@@ -9557,14 +7729,14 @@
       "links": {
         "hub": {
           "url": "https://www.ameren.com/illinois/residential/electric-vehicles/chargesmart",
-          "label": "Ameren Illinois"
+          "label": "Ameren"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "amerenl2",
+      "id": "xl-transportation-18",
       "agency": "Ameren Illinois",
       "name": "Ameren Level 2 Charger Incentive",
       "kind": [
@@ -9582,8 +7754,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Qualified EV drivers can install or upgrade their EV charger at no cost. The incentive includes all electrician costs, any panel upgrades, and the charger itself.",
+      "v": null,
+      "detail": "Qualified EV drivers can install or upgrade their EV charger at no cost. The incentive includes all electrician costs, any panel upfrades, and the charger itself.",
       "funds": [
         "ev"
       ],
@@ -9609,8 +7781,8 @@
       }
     },
     {
-      "id": "chdv",
-      "agency": "US EPA",
+      "id": "xl-transportation-22",
+      "agency": "Illinois Environmental Protection Agency",
       "name": "Clean Heavy-Duty Vehicles Grant Program",
       "kind": [
         "Grant"
@@ -9627,7 +7799,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Grants are provided to incentivize and accelerate the replacement of existing internal combustion engine heavy-duty vehicles with zero-emission vehicles. Funding may be used for zero emission vehicle refueling infrastructure, workforce development and training, and project implementation costs.",
       "funds": [
         "ev",
@@ -9635,24 +7807,25 @@
       ],
       "serves": [
         "muni",
-        "district"
+        "district",
+        "cbo"
       ],
       "regions": [
         "statewide"
       ],
       "links": {
         "hub": {
-          "url": "https://www.epa.gov/clean-heavy-duty-vehicles-program",
-          "label": "US EPA"
+          "url": "https://www.fhwa.dot.gov/environment/nevi/evc_raa/",
+          "label": "Illinois Environmental Protection Agency"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "cr30d",
-      "agency": "IRS",
-      "name": "Clean Vehicle Credit (Section 30D)",
+      "id": "xl-transportation-23",
+      "agency": "Internal Revenue Service",
+      "name": "Clean New Vehicle Tax Credit for 2023 to 2032",
       "kind": [
         "Tax"
       ],
@@ -9668,8 +7841,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Tax credit of up to $7,500 for buying a new EV between 2023 to 2032 that is bought for one's onw use and is used primarily in the U.S. Ended for vehicles acquired after September 30, 2025.",
+      "v": null,
+      "detail": "Tax credit of up to $7,500 for buying a new EV between 2023 to 2032 that is bought for one's onw use and is used primarily in the U.S.",
       "funds": [
         "ev"
       ],
@@ -9683,16 +7856,16 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/credits-for-new-clean-vehicles-purchased-in-2023-or-after",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "cr25e",
-      "agency": "IRS",
-      "name": "Previously Owned Clean Vehicle Credit (Section 25E)",
+      "id": "xl-transportation-25",
+      "agency": "Internal Revenue Service",
+      "name": "Used Clean Vehicle Tax Credit",
       "kind": [
         "Tax"
       ],
@@ -9708,8 +7881,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Tax credit of up to $4,000 buying a used EV in 2023 or after. Ended for vehicles acquired after September 30, 2025.",
+      "v": null,
+      "detail": "Tax credit of up to $4,000 buying a used EV in 2023 or after.",
       "funds": [
         "ev"
       ],
@@ -9722,16 +7895,16 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/used-clean-vehicle-credit",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "itep",
-      "agency": "IDOT",
-      "name": "Illinois Transportation Enhancement Program (ITEP)",
+      "id": "xl-transportation-26",
+      "agency": "Illinois Department of Transportation",
+      "name": "Illinois Transportation Enhancement Program",
       "kind": [
         "Grant"
       ],
@@ -9747,11 +7920,10 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides $140 million in state and federal funding for walking, biking, and trail projects around Illinois.",
       "funds": [
-        "capital",
-        "plan"
+        "capital"
       ],
       "serves": [
         "muni"
@@ -9762,15 +7934,15 @@
       "links": {
         "hub": {
           "url": "https://activetrans.org/itep/",
-          "label": "IDOT"
+          "label": "Illinois Department of Transportation"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "srts",
-      "agency": "IDOT",
+      "id": "xl-transportation-27",
+      "agency": "Illinois Department of Transportation",
       "name": "Safe Routes to School (SRTS) Grant",
       "kind": [
         "Grant"
@@ -9787,7 +7959,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "A bi-annual funding opportunity that funds programming and infrastructure projects that improve conditions for walking and biking wihtinn 2-milies of an elementary, middle, or high school.",
       "funds": [
         "capital",
@@ -9803,177 +7975,16 @@
       "links": {
         "hub": {
           "url": "https://idot.illinois.gov/transportation-system/local-transportation-partners/county-engineers-and-local-public-agencies/funding-programs/safe-routes-to-school.html",
-          "label": "IDOT"
+          "label": "Illinois Department of Transportation"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "imeaev",
-      "agency": "Illinois Municipal Electric Agency",
-      "name": "IMEA EV and Charging Incentive Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Municipalities can use $250,000 to establish a locally managed EV Charging Station Program so that municipalities can provide incentives to retail customers that install qualified EV charging stations; and/or incentivize up to 100% of the cost of purchasing or leasing for the municipality a level 2 or level 3 EV charging station; and/or incentivize up to 100% of the cost of purchasing or leasing for the municipality an Electric Vehicle; and/or transger funds for the city use int eh IMEA Electric Efficiency Program.",
-      "funds": [
-        "ev"
-      ],
-      "serves": [
-        "muni"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.imea.org/Electric%20Vehicle%20Incentives%20Program%20Details.asp",
-          "label": "Illinois Municipal Electric Agency"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "ruraltribal",
-      "agency": "Build America Bureau",
-      "name": "Rural and Tribal Assistance Pilot Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides grants to support legal, technical, and financial advisors to help advance infrastructure projects. Eligible project sponors may receive grant funds to select advisors to assist with predevelopment phase activities, including: feasibility studies, project planning, revenue forecasting and funding and financing options analyses, preliminary engineering and design work, environmental review, economic assessments and cost-benefit analyses, public benefits studies, statutory and regulatory framework analyses, value-for-money (VFM) studies, evaluation of costs to sustain the project, evaluation opoortunities for private financing and project bundling.",
-      "funds": [
-        "predev",
-        "plan"
-      ],
-      "serves": [
-        "muni"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.transportation.gov/buildamerica/RuralandTribalGrants",
-          "label": "Build America Bureau"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "higherblends",
-      "agency": "USDA",
-      "name": "Higher Blends Infrastructure Incentive Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "$90 million is made available each quarter for activities related to higher blends of fuel ethanol greater than 10 percent ethanol, such as E15 or higher, and biodiesel greater than 5 percent biodiesel, such as B20 or higher, as well as activities related to higher blends of fuel ethanol greater than 10 percent.",
-      "funds": [
-        "bio",
-        "capital"
-      ],
-      "serves": [
-        "smallbiz",
-        "developer"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/energy-programs/higher-blends-infrastructure-incentive-program",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "mcleanev",
-      "agency": "DCEO",
-      "name": "Strategic EV Component Part Manufacturing",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program supports the expansion of electric vehicle component and vehicle manufacturing in McLean County by funding capital improvements.",
-      "funds": [
-        "industrial",
-        "ev",
-        "capital"
-      ],
-      "serves": [
-        "manufacturer"
-      ],
-      "regions": [
-        "northcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/3219-3127.html",
-          "label": "DCEO"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "icover",
-      "agency": "Illinois Department of Agriculture",
-      "name": "Infield Conservation for Operationalizing Vital Ecosystem Resilience (I-COVER)",
+      "id": "xl-transportation-28",
+      "agency": "Corn Belt Energy",
+      "name": "Electric Vehicle Charger Rebates",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -9989,7 +8000,50 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
+      "detail": "Program offers a $200 rebate for the installation of a 240volt 50 amp EV circuit in an existing home. New construction is not eligible for this rebate. Members must enroll in the 1 EV time-of-use electric rate.",
+      "funds": [
+        "ev",
+        "elec"
+      ],
+      "serves": [
+        "resident"
+      ],
+      "regions": [
+        "northcentral",
+        "central",
+        "eastcentral",
+        "northwest"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://cornbeltenergy.com/electric-vehicle-circuit-rebate-application/",
+          "label": "Corn Belt Energy"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-agriculture-2",
+      "agency": "Illinois Department of Agriculture",
+      "name": "Infield Conservation for Operationalizing Vital Ecosystem Resilience (I-COVER) Program",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
       "detail": "Program offers cost-share/financial incentives through the Partners for Conservation (PFC) Program to producers and landowners who seed cover crops in the late summer and fall.",
       "funds": [
         "ag"
@@ -10010,48 +8064,7 @@
       }
     },
     {
-      "id": "lust",
-      "agency": "IEPA",
-      "name": "Leaking Underground Storage Tank Fund",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program helps tank owners and operators pay for cleaning up leaks from petroleum underground storage tanks by paying for site investigation, site cleanup, laboratory services, and engineering oversight. A maximum of $1,500,000 is available per occurrence. Eligibility: USTs must have reported a petroleum release and have registered their tanks with the Office of the Illinois State Fire Marshal.",
-      "funds": [
-        "brownfield"
-      ],
-      "serves": [
-        "smallbiz",
-        "muni",
-        "ag"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://epa.illinois.gov/topics/cleanup-programs/lust.html",
-          "label": "IEPA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "covercrop",
+      "id": "xl-agriculture-6",
       "agency": "Illinois Department of Agriculture",
       "name": "Cover Crops Premium Discount Program",
       "kind": [
@@ -10066,10 +8079,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program offers applicants a premium discount up to $5 per acre on the following year's crop insurance for every cover crop acre enrolled and verified in the program.",
       "funds": [
         "ag"
@@ -10090,7 +8103,7 @@
       }
     },
     {
-      "id": "scbg",
+      "id": "xl-agriculture-7",
       "agency": "Illinois Department of Agriculture",
       "name": "Specialty Crop Block Grant",
       "kind": [
@@ -10108,7 +8121,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Funds will support projects that expand the availability of fresh, locally-grown produce and strengthen the competitiveness of the state's specialty crop industry.",
       "funds": [
         "ag"
@@ -10129,7 +8142,7 @@
       }
     },
     {
-      "id": "aginvest",
+      "id": "xl-agriculture-8",
       "agency": "Illinois State Treasurer",
       "name": "Ag Invest Loan Program",
       "kind": [
@@ -10147,7 +8160,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides farmers, agri-business, and agriculture professionals below-market rate loans to start, expand or add value to their farm operations. The loans can be used for the purchase of farm equipment, purchase of land, construction-related expenses, provide operating lines of credit, or other costs related to conventional or sustainable farming.",
       "funds": [
         "ag",
@@ -10170,8 +8183,8 @@
       }
     },
     {
-      "id": "biopreferred",
-      "agency": "USDA",
+      "id": "xl-agriculture-10",
+      "agency": "US Department of Agriculture",
       "name": "BioPreferred Program",
       "kind": [
         "Technical assistance"
@@ -10188,15 +8201,14 @@
         "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "The two major parts of the Program are mandatory purchasing requirements for federal agencies and their contractors and a voluntary labeling initiative for biobased products.",
       "funds": [
-        "bio",
-        "industrial"
+        "ag",
+        "bio"
       ],
       "serves": [
-        "ag",
-        "manufacturer"
+        "ag"
       ],
       "regions": [
         "statewide"
@@ -10204,101 +8216,14 @@
       "links": {
         "hub": {
           "url": "https://www.biopreferred.gov/BioPreferred/faces/pages/AboutBioPreferred.xhtml",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "fertilizer",
-      "agency": "USDA",
-      "name": "Fertilizer Production Expansion Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "capital"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Provides grants to help eligible applicants increase or otherwise expand the manufacturing and processing of fertilizer and nutrient alternatives and their availability in the United States. The maximum award amount is $100 million. The minimum award amount is $1 million.",
-      "funds": [
-        "ag",
-        "industrial"
-      ],
-      "serves": [
-        "manufacturer",
-        "ag"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.rd.usda.gov/programs-services/business-programs/fertilizer-production-expansion-program#overview",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "amerenfarm",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois Farm Energy Audit",
-      "kind": [
-        "Technical assistance"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program offers a Free Energy Audit for Agricultural Facilities, providing a great step towards a more cost effective operation. In addition to the Free Energy Audit, participants in this program will receive both technical and implementation support so that energy-efficiency opportunities identified during the audit can be implemented successfully to save both energy and money.",
-      "funds": [
-        "ag",
-        "ee"
-      ],
-      "serves": [
-        "ag"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoissavings.com/business/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "rfsi",
+      "id": "xl-agriculture-14",
       "agency": "Illinois Department of Agriculture",
       "name": "Resilient Food Systems Infrastructure (RFSI) Program",
       "kind": [
@@ -10316,15 +8241,15 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides funding to expand the capacity and market opportunities for local and regional producers in the middle of the food supply chain (processing and aggregation/distribution).",
       "funds": [
         "ag"
       ],
       "serves": [
         "ag",
-        "smallbiz",
-        "cbo"
+        "cbo",
+        "smallbiz"
       ],
       "regions": [
         "statewide"
@@ -10339,7 +8264,7 @@
       }
     },
     {
-      "id": "lfig",
+      "id": "xl-agriculture-15",
       "agency": "Illinois Department of Agriculture",
       "name": "Illinois Local Food Infrastructure Grant",
       "kind": [
@@ -10357,7 +8282,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program is intended to assist Illinois applicants with purchasing, leasing to own, renting, building or installation of infrastructure that will increase market access of Illinois agricultural products to Illinois communities. Funding can support value-added processing, livestock, processing, milling, dairy, refrigerated vehicles, food hubs, community kitchens, and other critical pieces of the local food supply chain.",
       "funds": [
         "ag"
@@ -10380,7 +8305,7 @@
       }
     },
     {
-      "id": "iamchi",
+      "id": "xl-agriculture-16",
       "agency": "University of Illinois Extension",
       "name": "Innovative Agriculture Micro-grants for Chicago (IAM-Chi)",
       "kind": [
@@ -10398,7 +8323,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Grants are designed to fund innovating, forward-thinking, and novel projects to advance urban agriculture in Chicago. Grants will support conservation practices which improve soil quality, support or provide cost-share for infrastructure and on-farm equipment, or improve supply chain issues, among other activities. Grants will range in amount, from $1,000 (minimum) to $25,000 (maximum) in funding. Grants are small, one-time allocations awarded to eligible producers for short-term projects.",
       "funds": [
         "ag"
@@ -10412,7 +8337,7 @@
       ],
       "links": {
         "hub": {
-          "url": "https://extension.illinois.edu/",
+          "url": "https://extension.illinois.edu/sites/default/files/2024-05/rfp_usda_iam-chi_grants_2024_to_2026.pdf",
           "label": "University of Illinois Extension"
         },
         "program": null,
@@ -10420,11 +8345,11 @@
       }
     },
     {
-      "id": "fvfellow",
+      "id": "xl-agriculture-17",
       "agency": "Farmer Veteran Coalition",
       "name": "Farmer Veteran Fellowship Fund",
       "kind": [
-        "Philanthropic"
+        "Grant"
       ],
       "status": "unverified",
       "statusNote": null,
@@ -10438,7 +8363,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Grant program that provides direct assistance to veterans who are in their beginning years of farming or ranching. The Fellowship Fund does not give money directly to the veteran, but rather to third-party vendors for items the veteran has identified will make a crucial difference in the launch of their farm business. Awards range from $1,000 to $5,000, and nearly $4 million has been awarded to more than 930 veterans since 2011.",
       "funds": [
         "ag"
@@ -10459,12 +8384,12 @@
       }
     },
     {
-      "id": "crep",
+      "id": "xl-agriculture-18",
       "agency": "Illinois Department of Natural Resources",
       "name": "Conservation Reserve Enhancement Program (CREP)",
       "kind": [
-        "Incentive/Rebate",
-        "Technical assistance"
+        "Technical assistance",
+        "Incentive/Rebate"
       ],
       "status": "unverified",
       "statusNote": null,
@@ -10475,10 +8400,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program encouragers farmers and landowners to enroll in long-term conservation contracts, removing environmentally sensitive land from agricultural production and implementing conservation practices. Participants receive annual rental payments, cost-share assistance for establishing conservation practices, and other financial incentives.",
       "funds": [
         "ag"
@@ -10499,8 +8424,8 @@
       }
     },
     {
-      "id": "csafarm",
-      "agency": "USDA",
+      "id": "xl-agriculture-19",
+      "agency": "US Department of Agriculture",
       "name": "Climate-Smart Agriculture and Farm Loan Programs",
       "kind": [
         "Loan"
@@ -10517,10 +8442,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program offers financials support to farmers and ranchers seeking to adopt climate-smart practices. The loans cover a wide range of activities, including conservation projects, renewable energy systems, and other climate-smart technologies.",
       "funds": [
-        "ag"
+        "ag",
+        "capital"
       ],
       "serves": [
         "ag"
@@ -10531,15 +8457,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/climate-smart-agriculture-farm-loan-programs",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "crp",
-      "agency": "USDA",
+      "id": "xl-agriculture-20",
+      "agency": "US Department of Agriculture",
       "name": "Conservation Reserve Program (CRP)",
       "kind": [
         "Incentive/Rebate"
@@ -10553,10 +8479,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "A voluntary program that encourage agricultural producers and landowners to convert highly erodible and other environmentally sensitive acreage to vegetative cover, such as native grasses, trees, and riparian buggers. By enrolling, participants receive annual rental payments and cost-share assistance to establish long-term, resource-conserving vegetative covers.",
       "funds": [
         "ag"
@@ -10570,16 +8496,16 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/conservation-reserve-program",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "crpgrass",
-      "agency": "USDA",
-      "name": "Grassland Conservation Reserve Program",
+      "id": "xl-agriculture-21",
+      "agency": "US Department of Agriculture",
+      "name": "Grassland Conservation Reserve Program (CRP)",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -10592,10 +8518,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "A federally funded voluntary program that contracts with agricultural producers so that environmentally sensitive agricultural land is not farmed, but instead used for conversation. Participants receive rental payments and cost-share assistance. Contract duration is 10 to 15 years.",
       "funds": [
         "ag"
@@ -10609,15 +8535,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/crp-grasslands",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "fwp",
-      "agency": "USDA",
+      "id": "xl-agriculture-22",
+      "agency": "US Department of Agriculture",
       "name": "Farmable Wetlands Program (FWP)",
       "kind": [
         "Incentive/Rebate",
@@ -10632,10 +8558,10 @@
       },
       "match": null,
       "costTypes": [
-        "capital"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program encourages farmers and landowners to restore farmable wetlands and establish conservation practices to improvements, targeting specific areas of non-floodplain wetlands that are suitable for restoration. Participants receive annual rental payments, cost-share assistance for establishing conservation practices, and other financial incentives for the duration of their contract, typically 10 to 15 years.",
       "funds": [
         "ag"
@@ -10649,15 +8575,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/farmable-wetlands-program",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "grazeout",
-      "agency": "USDA",
+      "id": "xl-agriculture-23",
+      "agency": "US Department of Agriculture",
       "name": "Graze-Out Program",
       "kind": [
         "Incentive/Rebate"
@@ -10671,10 +8597,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program is available to producers who elect to use their acreage planted to wheat, barley, oats, or triticale for grazing by livestock and agree to forgo any other harvesting of the commodity on such acreage during the applicable crop year. Eligible commodities include barley, oats, wheat, and tricale. Payments are made to these producers.",
       "funds": [
         "ag"
@@ -10688,15 +8614,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/graze-out",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "tap",
-      "agency": "USDA",
+      "id": "xl-agriculture-24",
+      "agency": "US Department of Agriculture",
       "name": "Tree Assistance Program (TAP)",
       "kind": [
         "Incentive/Rebate"
@@ -10710,10 +8636,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program offers financial support to orchardists and nursery tree growers who experience losses due to natural disasters by covering the cost of replanting or rehabilitating eligible trees, bushes, and vines that produce annual crops and have been damaged or destroyed.",
       "funds": [
         "ag"
@@ -10727,15 +8653,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/tree-assistance-program-tap",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "wsc",
-      "agency": "USDA",
+      "id": "xl-agriculture-25",
+      "agency": "US Department of Agriculture",
       "name": "Water-Saving Commodities (WSC) Program",
       "kind": [
         "Grant"
@@ -10752,14 +8678,13 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program supports agricultural commodity production while reducing water losses in places experiencing impacts from drought. Grants will help producers, and the organizations delivering water to producers, build long-term drought resilience and expand market opportunities.",
       "funds": [
         "ag"
       ],
       "serves": [
-        "ag",
-        "utility"
+        "ag"
       ],
       "regions": [
         "statewide"
@@ -10767,15 +8692,15 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/water-saving-commodities-wsc-program",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "youthloan",
-      "agency": "USDA",
+      "id": "xl-agriculture-26",
+      "agency": "US Department of Agriculture",
       "name": "Youth Loans",
       "kind": [
         "Loan"
@@ -10792,10 +8717,11 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Loans are designed support young individuals in pursuing agricultural projects that generate income and promote hands-on learning in farming, ranching, and agricultural business management. Loan amounts are up to $10,000 per eligible applicant.",
       "funds": [
-        "ag"
+        "ag",
+        "capital"
       ],
       "serves": [
         "ag"
@@ -10806,16 +8732,16 @@
       "links": {
         "hub": {
           "url": "https://www.fsa.usda.gov/resources/programs/youth-loans",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "ilcsp",
+      "id": "xl-agriculture-27",
       "agency": "Illinois Department of Natural Resources",
-      "name": "Illinois Conservation Stewardship Program (property tax incentive)",
+      "name": "Conservation Stewardship Program",
       "kind": [
         "Tax"
       ],
@@ -10828,10 +8754,10 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Landowners outside of Cook county who have at least five acres of unimproved land and are willing to commit to developing and implementing a habitat management plan for their property may apply for this program in exchange for reduced valuation of property taxes.",
       "funds": [
         "ag"
@@ -10852,11 +8778,11 @@
       }
     },
     {
-      "id": "lwcf",
+      "id": "xl-agriculture-28",
       "agency": "Illinois Department of Natural Resources",
       "name": "Land and Water Conservation Fund (LWCF) Grant Program",
       "kind": [
-        "Grant"
+        "Incentive/Rebate"
       ],
       "status": "unverified",
       "statusNote": null,
@@ -10870,14 +8796,14 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "A grant program that provides up to 50% funding assistance to eligible, local units of government to acquire land for public outdoor recreation areas.",
       "funds": [
-        "capital"
+        "capital",
+        "plan"
       ],
       "serves": [
-        "muni",
-        "district"
+        "muni"
       ],
       "regions": [
         "statewide"
@@ -10892,7 +8818,7 @@
       }
     },
     {
-      "id": "insgp",
+      "id": "xl-agriculture-29",
       "agency": "Illinois Department of Natural Resources",
       "name": "Illinois Natural Areas Stewardship Grant Program",
       "kind": [
@@ -10910,7 +8836,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides grants to conservation land trusts to increase stewardship on dedicated Illinois Nature Preserves and registered Land and Water Reserves and increase stewardship capacity within conservation land trusts.",
       "funds": [
         "plan"
@@ -10931,9 +8857,9 @@
       }
     },
     {
-      "id": "acep",
-      "agency": "USDA",
-      "name": "Agricultural Conservation Easement Program",
+      "id": "xl-agriculture-30",
+      "agency": "US Department of Agriculture",
+      "name": "Agricultural Conservation Easement Program - Illinois",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -10949,8 +8875,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides financial assistance for purchasing Agricultural Land Easements that protect the agricultural use and conservation values of eligible lands.",
+      "v": null,
+      "detail": "Program provides financial assistance for pruchasing Agricultural Land Easements that protect the agricultural use and conservation values of eligible lands.",
       "funds": [
         "ag"
       ],
@@ -10963,16 +8889,16 @@
       "links": {
         "hub": {
           "url": "https://www.nrcs.usda.gov/programs-initiatives/acep-agricultural-conservation-easement-program/illinois/agricultural",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "eqip",
-      "agency": "USDA",
-      "name": "Environmental Quality Incentives Program (EQIP)",
+      "id": "xl-agriculture-31",
+      "agency": "US Department of Agriculture",
+      "name": "Environmental Quality Incentives Program - Illinois",
       "kind": [
         "Technical assistance",
         "Incentive/Rebate"
@@ -10986,10 +8912,10 @@
       },
       "match": null,
       "costTypes": [
-        "capital"
+        "soft"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program provides technical and financial assistance to agricultural producers and forest landowners to address natural resource concerns. Producers receive support to develop a conservation plan, and financial assistance is available to implement practices.",
       "funds": [
         "ag"
@@ -11003,15 +8929,15 @@
       "links": {
         "hub": {
           "url": "https://www.nrcs.usda.gov/programs-initiatives/eqip-environmental-quality-incentives/illinois/environmental-quality",
-          "label": "USDA"
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "crptip",
-      "agency": "USDA",
+      "id": "xl-agriculture-32",
+      "agency": "US Department of Agriculture",
       "name": "Conservation Reserve Program Transition Incentives Program",
       "kind": [
         "Incentive/Rebate"
@@ -11028,7 +8954,7 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Program offers a special incentive of two years of extra CRP rental payments to owners of land that is returning from CRP back into production whor ent or sell their land to underserved producers who commit to using sustianable grazing practices, resource-conserving cropping systems, or transitioning to organic production.",
       "funds": [
         "ag"
@@ -11041,17 +8967,17 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.fsa.usda.gov/resources/programs/conservation-reserve-program",
-          "label": "USDA"
+          "url": "https://sustainableagriculture.net/publications/grassrootsguide/conservation-environment/crp-transition-incentives-program/#basics",
+          "label": "US Department of Agriculture"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "pmci",
+      "id": "xl-industry-3",
       "agency": "Wabash Valley Power Alliance",
-      "name": "Power Moves Commercial and Industrial Rebate Program",
+      "name": "Power Moves Commercial & Industrial Rebate Program",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -11067,17 +8993,15 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program helps make upgrades, renovations, and new construction projects more affordable by offering rebates on energy-efficient equipment for lighting and non-lighting retrofits. Program provide rebates for commercial accounts that are building a new facility, adding on to an existing facility, or changing the use of an existing facility or completing a total gut rehab. Rebates per building per year are up to $25,000 prescriptive and $50,000 custom. Includes a new construction track for new facilities and additions.",
+      "v": null,
+      "detail": "Program helps make upgrades, renovations, and new construction projects more affordable by offering rebates on energy-efficient equipment for lighting and non-lighting retrofits.",
       "funds": [
         "ee",
-        "industrial",
-        "newcon"
+        "industrial"
       ],
       "serves": [
         "smallbiz",
-        "manufacturer",
-        "ag"
+        "manufacturer"
       ],
       "regions": [
         "statewide"
@@ -11092,9 +9016,9 @@
       }
     },
     {
-      "id": "amereninstant",
-      "agency": "Ameren Illinois",
-      "name": "Ameren Illinois Instant Incentives Program",
+      "id": "xl-industry-4",
+      "agency": "Wabash Valley Power Alliance",
+      "name": "Power Moves Commercial & Industrial New Construction Program",
       "kind": [
         "Incentive/Rebate"
       ],
@@ -11110,204 +9034,35 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Instant incentives are provided for Ameren Illinois businsesses to purchase energy-efficiecny equipment and receive instant discounts. Contractors can receive discounts from participating distributors and pass those savings on their customers. Incentives are split into two categories, Lighting and Non-Lighting incentives.",
+      "v": null,
+      "detail": "Program provide rebates for commerical accounts that are building a new facility, adding on to an existing facility, or changing the use of an existing facility or completing a total gut rehab. Rebates per building per year are up to $25,000 perscriptive and $50,000 custom.",
       "funds": [
-        "ee",
-        "industrial"
+        "newcon",
+        "ee"
       ],
       "serves": [
+        "developer",
         "smallbiz",
-        "manufacturer",
-        "cbo"
-      ],
-      "regions": [
-        "central",
-        "eastcentral",
-        "northcentral",
-        "southeastern",
-        "southern",
-        "southwestern",
-        "westcentral"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://amerenillinoissavings.com/business/incentives-services/instant-incentives/",
-          "label": "Ameren Illinois"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "careerpath",
-      "agency": "DCEO",
-      "name": "Clean Energy Career Pathway Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft",
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "This program will provide funding directly to eligible recipients to support the planning and implmentation of a Clean Energy Career Pathway. Programs will include coursework, dield experiences, and work-based learning designed to prepare students for entrance into careers focusing on electric vehicles. Awards will range from $250,000 - $750,000.",
-      "funds": [
-        "workforce"
-      ],
-      "serves": [
-        "college",
-        "district",
-        "cbo"
+        "manufacturer"
       ],
       "regions": [
         "statewide"
       ],
       "links": {
         "hub": {
-          "url": "https://dceo.illinois.gov/aboutdceo/grantopportunities/3460-2973.html",
-          "label": "DCEO"
+          "url": "https://www.powermoves.com/rebates/business/",
+          "label": "Wabash Valley Power Alliance"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "displacedscholar",
-      "agency": "Illinois Student Assistance Commission",
-      "name": "Displaced Energy Worker Dependent Transition Scholarship Program",
+      "id": "xl-industry-5",
+      "agency": "Illinois Municipal Electric Agency",
+      "name": "Illinois Municipal Electric Agency - Electric Efficienct Program",
       "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides assistance to children (including adopted and stepchildren) of eligible displaced energy workers. Tuition and fees at public colleges or community colleges are covered for a period equal to one calendar year, including a summer terms, for undergraduate or graduate study.",
-      "funds": [
-        "workforce"
-      ],
-      "serves": [
-        "resident",
-        "college"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://dceo.illinois.gov/ceja/other-ceja-programs.html#coal-to-solar",
-          "label": "Illinois Student Assistance Commission"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "doefecm",
-      "agency": "US Department of Energy",
-      "name": "University Training and Research for Fossil Energy and Carbon Management",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program aims to educate and train the next generation of engineers and scientists; support novel, early-stage research at U.S. colleges and universities; increase research and development opporunities for underrepresented and structurally marginalized communities; ensure that students are being equipped with cutting-edge, translatable skillsets that will allow them to contribute to the U.S. workforce and greater economy over the course of a longstanding and enduring career.",
-      "funds": [
-        "workforce",
-        "plan"
-      ],
-      "serves": [
-        "college"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.energy.gov/fecm/notice-intent-issue-funding-opportunity-university-training-and-research-fossil-energy-and",
-          "label": "US Department of Energy"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "farmlabor",
-      "agency": "USDA",
-      "name": "Farm Labor Stabilization and Protection Pilot Grant Program",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "operating"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides grants to employers to adopt practices that promote labor retention, enhance worker safety and health, and ensure compliance with labor laws and regulations.",
-      "funds": [
-        "workforce",
-        "ag"
-      ],
-      "serves": [
-        "ag"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.fsa.usda.gov/resources/programs/farm-labor-stabilization-protection-pilot-grant-program",
-          "label": "USDA"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "publicwater",
-      "agency": "IEPA",
-      "name": "Public Water Supply Energy Efficiency Grant Program and Assessments",
-      "kind": [
-        "Grant",
-        "Technical assistance"
+        "Incentive/Rebate"
       ],
       "status": "unverified",
       "statusNote": null,
@@ -11321,31 +9076,111 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program provides funding for energy efficiency upgrades at public water supply facilities, also referred to as drinking water treatment plants. Awards will range from $20,000 to $500,000. Projects must reduce the amount of energy consumed by the water treatment operations and must be identified in an energy efficiency assessment completed within the last 5 years. Program provides no-cost energy use assessments in partnership with the Smart Energy Design Assistance Center (SEDAC).",
+      "v": null,
+      "detail": "Program provides incentives for electricity-saving projects, including those involving LED lights, compressors and compressed air nozzles, more efficient refrigeration, variable speed drives for HVAC pumps and motors, and custom projects. Incentives can cover up to 75% of project costs.",
       "funds": [
         "ee"
       ],
       "serves": [
+        "smallbiz",
         "muni",
-        "district"
+        "manufacturer"
       ],
       "regions": [
         "statewide"
       ],
       "links": {
         "hub": {
-          "url": "https://epa.illinois.gov/topics/energy/energy-efficiency/energy-efficiency-public-water-infrastructure-/pws-grants.html",
-          "label": "IEPA"
+          "url": "https://www.imea.org/Electric%20Efficiency%20Program.html",
+          "label": "Illinois Municipal Electric Agency"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "c48c",
-      "agency": "IRS",
-      "name": "Advanced Energy Project Credit (Section 48C)",
+      "id": "xl-industry-6",
+      "agency": "Illinois Municipal Electric Agency",
+      "name": "City Water Light and Power - Commericial Energy Efficiency Rebate Programs",
+      "kind": [
+        "Incentive/Rebate"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Program offers rebates to help commercial customers increase energy efficiency of participating facilities. Energy efficient air-to-air and geothermal are eligible for rebates which vary according to the technology type, cooling capacity, cooling efficiency, and category.",
+      "funds": [
+        "ee"
+      ],
+      "serves": [
+        "smallbiz",
+        "muni"
+      ],
+      "regions": [
+        "central"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://www.cwlp.com/ServicesHome/ServicesInformation/AllRebates.aspx",
+          "label": "Illinois Municipal Electric Agency"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-grant-application-assistance-24",
+      "agency": "Susrainable Agriculture Research and Education",
+      "name": "Sustasinable Agriculture Research and Education Projects Grants",
+      "kind": [
+        "Grant"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "Almost 200 grants are available for agricultural producers in Illinois to cultivate sustainablel, regenerative, and organic agricultural practices.",
+      "funds": [
+        "ag"
+      ],
+      "serves": [
+        "ag"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://projects.sare.org/search-projects/?q&search_action=Search&orderby=r&reg=0&st=IL&g=0&yl=1988&yh=2025",
+          "label": "Susrainable Agriculture Research and Education"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-other-7",
+      "agency": "Internal Revenue Service",
+      "name": "Advanced Energy Project Credit",
       "kind": [
         "Tax"
       ],
@@ -11361,8 +9196,8 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Manufacturers and other entities that invest in qualifying advanced energy projects may apply for a credits equal to 30% of qualified investment costs for projects that meet prevailing wage and apprenticeship requirements or 6% of projects that don't meet prevailing wage and apprenticeship requirements. Eligibility: Qualifying projects: '- Re-equips, expands or establishes an industrial or a manufacturing facility to produce or recycle specified advanced energy property - Installs technology in an industrial or manufacturing facility to reduce greenhouse gas emissions by at least 20% - Re-equips, expands or establishes an industrial facility to process, refine or recycle critical materials.",
+      "v": null,
+      "detail": "Manufacturers and other entities that invest in qualifying advanced energy projects may apply for a credits equal to 30% of qualified investment costs for projects that meet prevailing wage and apprenticeship requirements or 6% of projects that don't meet prevailing wage and apprenticeship requirements.",
       "funds": [
         "industrial",
         "capital"
@@ -11376,56 +9211,16 @@
       "links": {
         "hub": {
           "url": "https://www.irs.gov/credits-deductions/businesses/advanced-energy-project-credit",
-          "label": "IRS"
+          "label": "Internal Revenue Service"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "nsfcas",
-      "agency": "National Science Foundation",
-      "name": "Critical Aspects of Sustainability: Innovative Solutions to Climate Change",
-      "kind": [
-        "Grant"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Program encourages submisison of proposals to lay the foundation for interdisciplinary research to answer fundamental questions related to novel apporaches and solutions to climate change and reduce GHG emissions and concentrations. Topics may include improved or new apporaches that reduce energy use and energy waste relevant for manufacturing, recycling, and upcycling; strategies for reducing nitrous oxide and methan emissoins; reduction in energy use and increased energy efficiency in manufacturing; new smart technologies for homes, cities, communities, power grids, etc. Also supports projects to host conferences and workshops. Maximum funding request of $100,000.",
-      "funds": [
-        "plan"
-      ],
-      "serves": [
-        "college",
-        "otheragency"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://www.nsf.gov/funding/opportunities/dcl-critical-aspects-sustainability-cas-innovative-solutions",
-          "label": "National Science Foundation"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "doelpo",
-      "agency": "US Department of Energy",
-      "name": "DOE Loan Guarantee Program",
+      "id": "xl-other-10",
+      "agency": "U.S. Department of Energy",
+      "name": "U.S. Department of Energy - Loan Guarantee Program",
       "kind": [
         "Loan"
       ],
@@ -11441,17 +9236,14 @@
         "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
+      "v": null,
       "detail": "Loan guarantees are issued for projects with high technology risks and are intended to encourage early commericial use of new or significantly improved technologies in energy projects, specifically in innovative clean energy, advanced transportation, and Tribal energy projects.",
       "funds": [
         "capital",
-        "industrial",
-        "windgeo"
+        "industrial"
       ],
       "serves": [
-        "developer",
-        "manufacturer",
-        "utility"
+        "developer"
       ],
       "regions": [
         "statewide"
@@ -11459,15 +9251,57 @@
       "links": {
         "hub": {
           "url": "https://www.energy.gov/lpo/loan-programs-office",
-          "label": "US Department of Energy"
+          "label": "U.S. Department of Energy"
         },
         "program": null,
         "audience": []
       }
     },
     {
-      "id": "solarassess",
-      "agency": "Illinois Department of Revenue",
+      "id": "xl-other-11",
+      "agency": "Illinois Department of Commerce and Economic Opportunity",
+      "name": "Sales Tax Exemption for Wind and Solar Energy - High Impact Business",
+      "kind": [
+        "Tax"
+      ],
+      "status": "unverified",
+      "statusNote": null,
+      "deadline": null,
+      "award": {
+        "min": null,
+        "max": null
+      },
+      "match": null,
+      "costTypes": [
+        "capital"
+      ],
+      "stacking": null,
+      "v": null,
+      "detail": "A businesses establishing a new wind power facility in Illinois that is not located in an Enterprise Zone may be eligible for diesgnation as a \"High Impact Business\" (HIB). After receiving the designation, the facility is entitled to full exemption of the state sales tax (6.25%) and any additional local state sales taxes (up to an additional 3.5%) for building materials incorporated into the facility.",
+      "funds": [
+        "industrial",
+        "windgeo",
+        "solar"
+      ],
+      "serves": [
+        "manufacturer",
+        "developer"
+      ],
+      "regions": [
+        "statewide"
+      ],
+      "links": {
+        "hub": {
+          "url": "https://dceo.illinois.gov/expandrelocate/incentives/highimpactbusinessprogram.html",
+          "label": "Illinois Department of Commerce and Economic Opportunity"
+        },
+        "program": null,
+        "audience": []
+      }
+    },
+    {
+      "id": "xl-other-12",
+      "agency": "Illinois Department of Commerce and Economic Opportunity",
       "name": "Special Assessment for Solar Energy Systems",
       "kind": [
         "Tax"
@@ -11481,54 +9315,13 @@
       },
       "match": null,
       "costTypes": [
-        "operating"
+        "capital"
       ],
       "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Illinois offers a special assessment of solar energy systems for property tax purposes. When a claim for alternate valuation is filed, the chief county assessment officer is required to ascertaion two values: the value of the improvements as if equipped with a conventional heating or cooling system and the the value of the improvements as equipped with the solar energy system. Eligible equipment includes both active and passive solar energy systems.",
+      "v": null,
+      "detail": "Illinois offers a special assessment of solar energy systems for property tax purposes. When a cliam for alternate valuation is filed, the chief county assessment officer is required to ascertaion two values: the value of the improvements as if equipped with a conventional heating or cooling system and the the value of the improvements as equipped with the solar energy system. Eligible equipment includes both active and passive solar energy systems.",
       "funds": [
         "solar"
-      ],
-      "serves": [
-        "resident",
-        "smallbiz",
-        "cbo"
-      ],
-      "regions": [
-        "statewide"
-      ],
-      "links": {
-        "hub": {
-          "url": "https://tax.illinois.gov/localgovernments/property/solar-energy-systems.html",
-          "label": "Illinois Department of Revenue"
-        },
-        "program": null,
-        "audience": []
-      }
-    },
-    {
-      "id": "imuascholar",
-      "agency": "Illinois Municipal Utilities Association",
-      "name": "IMUA Scholarship Program",
-      "kind": [
-        "Philanthropic"
-      ],
-      "status": "unverified",
-      "statusNote": null,
-      "deadline": null,
-      "award": {
-        "min": null,
-        "max": null
-      },
-      "match": null,
-      "costTypes": [
-        "soft"
-      ],
-      "stacking": null,
-      "v": "2026-11-16",
-      "detail": "Winners of the scholarship receives a $1,000 award from IMUA to be used for college tuition and other college related expenses.",
-      "funds": [
-        "workforce"
       ],
       "serves": [
         "resident"
@@ -11538,8 +9331,8 @@
       ],
       "links": {
         "hub": {
-          "url": "https://www.imea.org/GetScholarshipPDF.asp",
-          "label": "Illinois Municipal Utilities Association"
+          "url": "https://tax.illinois.gov/localgovernments/property/solar-energy-systems.html",
+          "label": "Illinois Department of Commerce and Economic Opportunity"
         },
         "program": null,
         "audience": []
